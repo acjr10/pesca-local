@@ -1,7 +1,18 @@
+import type { Metadata } from 'next'
 import cidadesData from '@/data/cidades.json'
 import pontosData from '@/data/pontos-de-pesca.json'
 import parceirosData from '@/data/parceiros.json'
 import pesqueirosData from '@/data/pesqueiros.json'
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
+  const cidade = (cidadesData as any[]).find(c => c.id === slug)
+  if (!cidade) return {}
+  return {
+    title: `Pesca em ${cidade.nome}`,
+    description: `Veja onde pescar em ${cidade.nome}, principais espécies, pontos de pesca, iscas recomendadas, pesqueiros e parceiros da região.`,
+  }
+}
 
 export default async function CidadePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params

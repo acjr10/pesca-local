@@ -7,7 +7,7 @@ a { color: inherit; text-decoration: none; }
 button, input, select { font-family: inherit; }
 
 /* PAGE */
-.page { max-width: 1440px; margin: 0 auto; background: #fff; overflow: hidden; }
+.page { max-width: 1280px; margin: 0 auto; background: #fff; overflow: hidden; }
 
 /* TOPBAR */
 .topbar {
@@ -56,10 +56,17 @@ button, input, select { font-family: inherit; }
   position: relative; color: #fff; min-height: 300px;
   padding: 40px 52px 48px; overflow: hidden;
   background:
-    linear-gradient(90deg, rgba(3,21,38,0.97) 0%, rgba(3,21,38,0.88) 38%, rgba(3,21,38,0.3) 72%, transparent 100%),
-    linear-gradient(165deg, #0a3459 0%, #0b638f 38%, #f6c36b 53%, #87c4df 62%, #0e4f74 100%);
+    linear-gradient(90deg, rgba(3,21,38,0.97) 0%, rgba(3,21,38,0.88) 38%, rgba(3,21,38,0.3) 58%, transparent 75%),
+    url('/hero-bg.png');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
 }
 .hero-content { position: relative; z-index: 2; max-width: 600px; }
+.hero-illustration {
+  position: absolute; right: 0; top: 0; bottom: 0; width: 52%;
+  z-index: 1; pointer-events: none;
+}
 .hero-tag { font-size: 13px; font-weight: 700; letter-spacing: 0.05em; color: #14c8c2; margin-bottom: 14px; }
 .hero h1 { font-size: 48px; font-weight: 900; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 16px; }
 .hero-highlight { color: #14c8c2; }
@@ -114,14 +121,22 @@ button, input, select { font-family: inherit; }
 .section-link:hover { color: #0e96c5; }
 
 /* CITIES GRID */
-.cities-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.cities-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .city-card {
-  border-radius: 14px; overflow: hidden; border: 1px solid #dbe6ee;
-  background: #fff; cursor: pointer; transition: transform 0.18s, box-shadow 0.18s;
+  border-radius: 16px; overflow: hidden; border: 1px solid #dbe6ee;
+  background: #fff; cursor: pointer;
+  transition: transform 0.18s, box-shadow 0.18s;
+  text-decoration: none; color: inherit; display: block;
+  box-shadow: 0 2px 8px rgba(3,21,38,0.06);
 }
-.city-card:hover { transform: translateY(-4px); box-shadow: 0 14px 38px rgba(3,21,38,0.12); }
+.city-card:hover { transform: translateY(-4px); box-shadow: 0 14px 38px rgba(3,21,38,0.13); }
 .city-thumb {
-  height: 80px; display: flex; align-items: flex-end; padding: 10px 12px;
+  height: 120px; position: relative; display: flex; align-items: flex-end; padding: 12px 14px;
+}
+.city-thumb-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(3,21,38,0.55) 0%, transparent 60%);
+  border-radius: 0;
 }
 .city-praia-grande  { background: linear-gradient(135deg, #0e6898, #0fbfa3); }
 .city-sao-vicente   { background: linear-gradient(135deg, #107880, #0d9ea0); }
@@ -129,10 +144,16 @@ button, input, select { font-family: inherit; }
 .city-mongagua      { background: linear-gradient(135deg, #106844, #1aac7a); }
 .city-itanhaem      { background: linear-gradient(135deg, #0e7860, #0fa898); }
 .city-peruibe       { background: linear-gradient(135deg, #0a5478, #0e9b70); }
-.city-name { font-size: 14px; font-weight: 800; color: #fff; text-shadow: 0 1px 4px rgba(0,0,0,0.3); }
-.city-info { padding: 10px 12px; display: flex; gap: 10px; font-size: 11px; color: #64748b; font-weight: 600; }
-.city-info span::before { content: "• "; color: #0e96c5; }
-.city-info span:first-child::before { content: ""; }
+.city-name { position: relative; z-index: 1; font-size: 14px; font-weight: 800; color: #fff; text-shadow: 0 1px 4px rgba(0,0,0,0.4); }
+.city-card-body { padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.city-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.city-chip {
+  font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 20px;
+  background: #eff8ff; color: #0b78aa; letter-spacing: 0.03em;
+}
+.city-stats-row { display: flex; justify-content: space-between; align-items: center; }
+.city-stats { font-size: 11px; color: #64748b; font-weight: 600; }
+.city-guide-link { font-size: 12px; font-weight: 700; color: #14c8c2; white-space: nowrap; }
 
 /* CONDITIONS */
 .conditions-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
@@ -810,6 +831,7 @@ button, input, select { font-family: inherit; }
   .hero { padding: 32px 20px 40px; min-height: auto; }
   .hero h1 { font-size: 30px; }
   .hero-sub { font-size: 14px; }
+  .hero-illustration { opacity: 0.3; }
   .search-box { grid-template-columns: 1fr 1fr; padding: 14px; }
   .search-btn { grid-column: 1 / -1; min-width: 0; width: 100%; }
   .quick-cities { margin-top: 14px; }

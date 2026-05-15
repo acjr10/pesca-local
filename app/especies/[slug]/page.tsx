@@ -1,5 +1,16 @@
+import type { Metadata } from 'next'
 import especiesData from '@/data/especies.json'
 import cidadesData from '@/data/cidades.json'
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
+  const especie = (especiesData as any[]).find(e => e.id === slug)
+  if (!especie) return {}
+  return {
+    title: `Como pescar ${especie.nome} na Baixada Santista`,
+    description: `Veja onde encontrar ${especie.nome}, melhores épocas, horários, iscas naturais, artificiais e materiais recomendados.`,
+  }
+}
 
 export default async function EspeciePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params

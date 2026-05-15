@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import pesqueirosData from '@/data/pesqueiros.json'
+import cidadesData from '@/data/cidades.json'
 import ConditionsWidget from './components/ConditionsWidget'
 
 const CITY_SLUGS: Record<string, string> = {
@@ -45,7 +46,7 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="hero">
-        <div className="hero-content">
+<div className="hero-content">
           <p className="hero-tag">🎣 Guia regional de pesca</p>
           <h1>Descubra onde pescar,<br />o que usar e <span className="hero-highlight">quando ir</span></h1>
           <p className="hero-sub">Encontre espécies, melhores pontos, marés, lua, clima, lojas, guias, barcos e pesqueiros na Baixada Santista e litoral sul de São Paulo.</p>
@@ -89,8 +90,15 @@ export default function Home() {
 
           <div className="quick-cities">
             <span className="quick-label">Acesso rápido:</span>
-            {['Praia Grande','São Vicente','Santos','Mongaguá','Itanhaém','Peruíbe'].map(c => (
-              <a key={c} href={`/cidades/${c.toLowerCase().replace(/\s/g,'-').normalize('NFD').replace(/[̀-ͯ]/g,'')}`} className="city-pill">{c}</a>
+            {[
+              {nome:'Praia Grande', slug:'praia-grande'},
+              {nome:'São Vicente',  slug:'sao-vicente'},
+              {nome:'Santos',       slug:'santos'},
+              {nome:'Mongaguá',     slug:'mongagua'},
+              {nome:'Itanhaém',     slug:'itanhaem'},
+              {nome:'Peruíbe',      slug:'peruibe'},
+            ].map(c => (
+              <a key={c.slug} href={`/cidades/${c.slug}`} className="city-pill">{c.nome}</a>
             ))}
           </div>
         </div>
@@ -104,22 +112,24 @@ export default function Home() {
             <a href="/cidades" className="section-link">Ver todas →</a>
           </div>
           <div className="cities-grid">
-            {[
-              {nome:'Praia Grande',slug:'praia-grande',esp:8,pts:5,lojas:3},
-              {nome:'São Vicente',slug:'sao-vicente',esp:7,pts:4,lojas:2},
-              {nome:'Santos',slug:'santos',esp:9,pts:6,lojas:5},
-              {nome:'Mongaguá',slug:'mongagua',esp:6,pts:3,lojas:1},
-              {nome:'Itanhaém',slug:'itanhaem',esp:7,pts:4,lojas:2},
-              {nome:'Peruíbe',slug:'peruibe',esp:8,pts:5,lojas:2},
-            ].map(c => (
-              <a key={c.slug} href={`/cidades/${c.slug}`} className="city-card">
-                <div className={`city-thumb city-${c.slug}`}>
+            {(cidadesData as any[]).slice(0, 6).map((c: any) => (
+              <a key={c.id} href={`/cidades/${c.id}`} className="city-card">
+                <div className={`city-thumb city-${c.id}`}>
+                  <div className="city-thumb-overlay" />
                   <span className="city-name">{c.nome}</span>
                 </div>
-                <div className="city-info">
-                  <span>{c.esp} espécies</span>
-                  <span>{c.pts} pontos</span>
-                  <span>{c.lojas} lojas</span>
+                <div className="city-card-body">
+                  <div className="city-chips">
+                    {(c.tiposPesca as string[]).slice(0, 3).map((t: string) => (
+                      <span key={t} className="city-chip">{t}</span>
+                    ))}
+                  </div>
+                  <div className="city-stats-row">
+                    <span className="city-stats">
+                      {(c.especies as string[]).length} espécies · {(c.pontos as string[]).length} pontos
+                    </span>
+                    <span className="city-guide-link">Ver guia →</span>
+                  </div>
                 </div>
               </a>
             ))}
@@ -145,7 +155,7 @@ export default function Home() {
           ].map(e => (
             <a key={e.nome} href={`/especies/${e.slug}`} className="species-card">
               <div className="fish-art">
-                <Image src={`/especies/${e.slug}.png`} alt={e.nome} fill style={{objectFit:'contain',objectPosition:'center'}} />
+                <Image src={`/especies/${e.slug}.png`} alt={`Ilustração de ${e.nome}`} fill style={{objectFit:'contain',objectPosition:'center'}} />
               </div>
               <h3>{e.nome}</h3>
               <div className="species-meta"><strong>Melhor época</strong>{e.epoca}</div>

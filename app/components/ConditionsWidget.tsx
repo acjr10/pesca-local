@@ -29,13 +29,13 @@ function moonFrac(date: Date): number {
 }
 function moonName(frac: number): [string, string] {
   if      (frac < 0.0625 || frac >= 0.9375) return ['Lua Nova',         '🌑']
-  else if (frac < 0.1875)                    return ['Crescente',         '🌒']
-  else if (frac < 0.3125)                    return ['Quarto Crescente',  '🌓']
-  else if (frac < 0.4375)                    return ['Crescente Gibosa',  '🌔']
-  else if (frac < 0.5625)                    return ['Lua Cheia',         '🌕']
-  else if (frac < 0.6875)                    return ['Minguante Gibosa',  '🌖']
-  else if (frac < 0.8125)                    return ['Quarto Minguante',  '🌗']
-  else                                        return ['Minguante',         '🌘']
+  else if (frac < 0.1875)                    return ['Lua Crescente',    '🌒']
+  else if (frac < 0.3125)                    return ['Quarto Crescente', '🌓']
+  else if (frac < 0.4375)                    return ['Crescente Gibosa', '🌔']
+  else if (frac < 0.5625)                    return ['Lua Cheia',        '🌕']
+  else if (frac < 0.6875)                    return ['Minguante Gibosa', '🌖']
+  else if (frac < 0.8125)                    return ['Quarto Minguante', '🌗']
+  else                                        return ['Lua Minguante',   '🌘']
 }
 
 function fishingWindows(sunriseISO: string, sunsetISO: string): [string, string] {
@@ -56,7 +56,7 @@ function calcIndice(precipProb: number, windSpeed: number, windGusts: number, wa
   return Math.min(10, Math.max(0, Math.round(s * 10) / 10))
 }
 function indexColor(n: number) { return n >= 8 ? '#14c8c2' : n >= 5 ? '#f59e0b' : '#ef4444' }
-function indexLabel(n: number) { return n >= 8 ? 'Bom para pescar' : n >= 5 ? 'Atenção' : 'Ruim / Evitar' }
+function indexLabel(n: number) { return n >= 8 ? 'Bom para planejar' : n >= 5 ? 'Atenção' : 'Melhor evitar' }
 
 async function fetchData() {
   const wq = new URLSearchParams({
@@ -80,12 +80,17 @@ async function fetchData() {
   }
 }
 
+const DISCLAIMER = 'Dados via Open-Meteo. Índice experimental — não substitui avaliação das condições locais, maré e segurança.'
+
 export default function ConditionsWidget() {
-  const [data, setData]     = useState<{ weather: any; marine: any } | null>(null)
+  const [data, setData]       = useState<{ weather: any; marine: any } | null>(null)
   const [loading, setLoading] = useState(true)
+  const [error, setError]     = useState(false)
 
   useEffect(() => {
-    fetchData().then(d => { setData(d); setLoading(false) })
+    fetchData()
+      .then(d => { setData(d); setLoading(false) })
+      .catch(() => { setError(true); setLoading(false) })
   }, [])
 
   /* ── Loading ──────────────────────────────────────────────────────────── */
@@ -96,7 +101,8 @@ export default function ConditionsWidget() {
         <div className="section-header">
           <h2 className="section-title">Planejamento da pescaria · Praia Grande</h2>
         </div>
-        <div className="conditions-grid">
+        <p style={{ fontSize: 13, color: '#94a3b8', marginTop: 8 }}>Carregando dados de planejamento...</p>
+        <div className="conditions-grid" style={{ marginTop: 14 }}>
           {[...Array(4)].map((_, i) => <div key={i} className="sk" style={{ height: 72 }} />)}
         </div>
         <div className="sk" style={{ height: 80, marginTop: 14 }} />
@@ -105,15 +111,17 @@ export default function ConditionsWidget() {
   }
 
   /* ── Fallback se API falhou ───────────────────────────────────────────── */
-  if (!data?.weather) {
+  if (error || !data?.weather) {
     return (
       <section className="conditions-section">
         <div className="section-header">
           <h2 className="section-title">Planejamento da pescaria · Praia Grande</h2>
         </div>
         <p style={{ fontSize: 13, color: '#94a3b8', marginTop: 8 }}>
-          Dados indisponíveis no momento. <a href="/previsao" style={{ color: '#0b78aa', fontWeight: 700 }}>Ver previsão completa →</a>
+          Não foi possível carregar os dados. Verifique clima, vento, ondas e maré antes de sair.{' '}
+          <a href="/previsao" style={{ color: '#0b78aa', fontWeight: 700 }}>Ver previsão completa →</a>
         </p>
+        <p style={{ fontSize: 11, color: 'rgba(100,116,139,0.8)', marginTop: 12 }}>{DISCLAIMER}</p>
       </section>
     )
   }
@@ -147,22 +155,22 @@ export default function ConditionsWidget() {
         <div className="cond-card">
           <div className="cond-label">Ondas</div>
           <div className="cond-value">{wave ? `${waveH.toFixed(1)} m` : '—'}</div>
-          <div className="cond-sub">{wave ? `${windDir(wave.wave_direction)} · Mar aberto` : 'Dados indisponíveis'}</div>
+          <div className="cond-sub">{wave ? `${waveH.toFixed(1)} m · mar aberto` : 'Dados indisponíveis'}</div>
         </div>
         <div className="cond-card">
-          <div className="cond-label">Lua</div>
-          <div className="cond-value">{luaEmoji} {luaNome.split(' ')[0]}</div>
-          <div className="cond-sub">Nasc. {fmtTime(daily.sunrise[0])}</div>
+          <div className="cond-label">{luaNome || 'Fase lunar'}</div>
+          <div className="cond-value">{luaEmoji} {luaNome}</div>
+          <div className="cond-sub">Fase lunar · nasc. {fmtTime(daily.sunrise[0])}</div>
         </div>
         <div className="cond-card">
           <div className="cond-label">Clima</div>
           <div className="cond-value">{Math.round(cur.temperature_2m)} °C</div>
-          <div className="cond-sub">{ceuDesc} · {precipProb}% chuva</div>
+          <div className="cond-sub">{Math.round(cur.temperature_2m)}°C · {ceuDesc}</div>
         </div>
         <div className="cond-card">
           <div className="cond-label">Vento</div>
           <div className="cond-value">{Math.round(cur.wind_speed_10m)} km/h</div>
-          <div className="cond-sub">{windDir(cur.wind_direction_10m)} · Raj. {Math.round(gusts)} km/h</div>
+          <div className="cond-sub">{Math.round(cur.wind_speed_10m)} km/h · {windDir(cur.wind_direction_10m)} · raj. {Math.round(gusts)} km/h</div>
         </div>
       </div>
 
@@ -177,6 +185,10 @@ export default function ConditionsWidget() {
           <div className="index-window-times">{janelas[0]}<br />{janelas[1]}</div>
         </div>
       </div>
+
+      <p style={{ fontSize: 11, color: 'rgba(100,116,139,0.8)', marginTop: 12, lineHeight: 1.5 }}>
+        {DISCLAIMER}
+      </p>
     </section>
   )
 }

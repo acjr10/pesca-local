@@ -1,10 +1,34 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import MobileNav from './components/MobileNav'
+import { SITE_URL } from '@/lib/config'
+
+const TITLE       = 'Pesca Local | Guia de pesca da Baixada Santista'
+const DESCRIPTION = 'Encontre pontos de pesca, espécies, iscas, clima, pesqueiros, lojas, guias e parceiros na Baixada Santista e litoral sul de São Paulo.'
+const OG_IMAGE    = '/images/og/pesca-local-og.jpg'
 
 export const metadata: Metadata = {
-  title: 'Pesca Local — Guia de pesca da Baixada Santista',
-  description: 'Descubra onde pescar, quais espécies encontrar, melhores iscas e condições na Baixada Santista e litoral sul de São Paulo.',
+  title: {
+    default:  TITLE,
+    template: '%s | Pesca Local',
+  },
+  description: DESCRIPTION,
+  robots: { index: true, follow: true },
+  openGraph: {
+    title:       TITLE,
+    description: DESCRIPTION,
+    type:        'website',
+    locale:      'pt_BR',
+    url:         SITE_URL,
+    siteName:    'Pesca Local',
+    images: [{ url: OG_IMAGE, width: 1200, height: 630 }],
+  },
+  twitter: {
+    card:        'summary_large_image',
+    title:       TITLE,
+    description: DESCRIPTION,
+    images:      [OG_IMAGE],
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -94,7 +94,7 @@ export default function ConditionsWidget() {
       <section className="conditions-section">
         <style>{`@keyframes sk{0%,100%{opacity:.3}50%{opacity:.6}}.sk{animation:sk 1.4s ease-in-out infinite;background:#e2e8f0;border-radius:10px}`}</style>
         <div className="section-header">
-          <h2 className="section-title">🌊 Condições hoje · Praia Grande</h2>
+          <h2 className="section-title">Planejamento da pescaria · Praia Grande</h2>
         </div>
         <div className="conditions-grid">
           {[...Array(4)].map((_, i) => <div key={i} className="sk" style={{ height: 72 }} />)}
@@ -109,7 +109,7 @@ export default function ConditionsWidget() {
     return (
       <section className="conditions-section">
         <div className="section-header">
-          <h2 className="section-title">🌊 Condições hoje · Praia Grande</h2>
+          <h2 className="section-title">Planejamento da pescaria · Praia Grande</h2>
         </div>
         <p style={{ fontSize: 13, color: '#94a3b8', marginTop: 8 }}>
           Dados indisponíveis no momento. <a href="/previsao" style={{ color: '#0b78aa', fontWeight: 700 }}>Ver previsão completa →</a>
@@ -139,7 +139,7 @@ export default function ConditionsWidget() {
   return (
     <section className="conditions-section">
       <div className="section-header">
-        <h2 className="section-title">🌊 Condições hoje · Praia Grande</h2>
+        <h2 className="section-title">Planejamento da pescaria · Praia Grande</h2>
         <a href="/previsao" className="section-link">Previsão completa →</a>
       </div>
 

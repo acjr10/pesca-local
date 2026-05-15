@@ -1,8 +1,46 @@
+'use client'
+
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 import pesqueirosData from '@/data/pesqueiros.json'
 import ConditionsWidget from './components/ConditionsWidget'
 
+const CITY_SLUGS: Record<string, string> = {
+  'Praia Grande': 'praia-grande',
+  'São Vicente': 'sao-vicente',
+  'Santos': 'santos',
+  'Mongaguá': 'mongagua',
+  'Itanhaém': 'itanhaem',
+  'Peruíbe': 'peruibe',
+}
+
+const SPECIES_SLUGS: Record<string, string> = {
+  'Robalo': 'robalo', 'Pescada': 'pescada', 'Corvina': 'corvina',
+  'Bagre': 'bagre', 'Espada': 'espada', 'Parati': 'parati',
+  'Tainha': 'tainha', 'Carapicu': 'carapicu', 'Betara': 'betara',
+  'Linguado': 'linguado',
+}
+
+
 export default function Home() {
   const pesqueiros = (pesqueirosData as any[]).slice(0, 3)
+  const router = useRouter()
+
+  const [cidade, setCidade] = useState('')
+  const [especie, setEspecie] = useState('')
+  const [tipo, setTipo] = useState('')
+
+  function handleSearch() {
+    if (cidade && CITY_SLUGS[cidade]) {
+      router.push(`/cidades/${CITY_SLUGS[cidade]}`)
+    } else if (especie && SPECIES_SLUGS[especie]) {
+      router.push(`/especies/${SPECIES_SLUGS[especie]}`)
+    } else {
+      router.push('/cidades')
+    }
+  }
+
   return (
     <>
       {/* HERO */}
@@ -15,25 +53,44 @@ export default function Home() {
           <div className="search-box">
             <div className="search-field">
               <label>Cidade</label>
-              <select><option>Todas as cidades</option><option>Praia Grande</option><option>São Vicente</option><option>Santos</option><option>Mongaguá</option><option>Itanhaém</option><option>Peruíbe</option></select>
+              <select value={cidade} onChange={e => setCidade(e.target.value)}>
+                <option value="">Todas as cidades</option>
+                <option>Praia Grande</option>
+                <option>São Vicente</option>
+                <option>Santos</option>
+                <option>Mongaguá</option>
+                <option>Itanhaém</option>
+                <option>Peruíbe</option>
+              </select>
             </div>
-            <div className="search-divider"></div>
             <div className="search-field">
               <label>Espécie</label>
-              <select><option>Qualquer espécie</option><option>Robalo</option><option>Pescada</option><option>Corvina</option><option>Tainha</option><option>Linguado</option></select>
+              <select value={especie} onChange={e => setEspecie(e.target.value)}>
+                <option value="">Qualquer espécie</option>
+                <option>Robalo</option>
+                <option>Pescada</option>
+                <option>Corvina</option>
+                <option>Tainha</option>
+                <option>Linguado</option>
+              </select>
             </div>
-            <div className="search-divider"></div>
             <div className="search-field">
               <label>Tipo de pesca</label>
-              <select><option>Qualquer tipo</option><option>Praia</option><option>Canal</option><option>Embarcada</option><option>Pesqueiro</option></select>
+              <select value={tipo} onChange={e => setTipo(e.target.value)}>
+                <option value="">Qualquer tipo</option>
+                <option>Praia</option>
+                <option>Canal</option>
+                <option>Embarcada</option>
+                <option>Pesqueiro</option>
+              </select>
             </div>
-            <button className="search-btn">🔍 Buscar</button>
+            <button className="search-btn" onClick={handleSearch}>🔍 Buscar</button>
           </div>
 
           <div className="quick-cities">
             <span className="quick-label">Acesso rápido:</span>
             {['Praia Grande','São Vicente','Santos','Mongaguá','Itanhaém','Peruíbe'].map(c => (
-              <a key={c} href={`/cidades/${c.toLowerCase().replace(/\s/g,'-').normalize('NFD').replace(/[\u0300-\u036f]/g,'')}`} className="city-pill">{c}</a>
+              <a key={c} href={`/cidades/${c.toLowerCase().replace(/\s/g,'-').normalize('NFD').replace(/[̀-ͯ]/g,'')}`} className="city-pill">{c}</a>
             ))}
           </div>
         </div>
@@ -87,7 +144,9 @@ export default function Home() {
             {nome:'Tainha',slug:'tainha',epoca:'Mai a Jul',isca:'Corrupto'},
           ].map(e => (
             <a key={e.nome} href={`/especies/${e.slug}`} className="species-card">
-              <div className="fish-art"><div className="fish-fin"></div><div className="fish-body"></div></div>
+              <div className="fish-art">
+                <Image src={`/especies/${e.slug}.png`} alt={e.nome} fill style={{objectFit:'contain',objectPosition:'center'}} />
+              </div>
               <h3>{e.nome}</h3>
               <div className="species-meta"><strong>Melhor época</strong>{e.epoca}</div>
               <div className="species-meta"><strong>Isca</strong>{e.isca}</div>

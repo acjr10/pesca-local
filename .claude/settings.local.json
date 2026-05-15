@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\(p.dependencies.next\\)\")",
+      "Bash(not exist *)",
+      "PowerShell(New-Item *)",
+      "Bash(python3 -c ' *)",
+      "Bash(dir \"C:\\\\Users\\\\Administrador\\\\Documents\\\\projetos\\\\radar-da-pesca\" /b)",
+      "Bash(npx next *)",
+      "Bash(python3 *)"
+    ]
+  }
+}

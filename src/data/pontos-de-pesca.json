@@ -1,0 +1,376 @@
+[
+  {
+    "id": "canto-do-forte",
+    "nome": "Canto do Forte",
+    "cidade": "praia-grande",
+    "tipo": "Praia / costão urbano",
+    "descricao": "Trecho tradicional de Praia Grande, com acesso urbano e boa referência para pesca de praia e tentativas com iscas artificiais em momentos de mar favorável.",
+    "especies": [
+      "robalo",
+      "pescada",
+      "corvina",
+      "betara",
+      "linguado"
+    ],
+    "melhorEpoca": "Primavera e verão para robalo; outono e inverno para espécies de praia.",
+    "melhorHorario": "Amanhecer e fim de tarde.",
+    "mareFavoravel": "Maré enchendo ou vazando com pouca ressaca.",
+    "iscasRecomendadas": [
+      "Camarão",
+      "Corrupto",
+      "Tatuíra",
+      "Jig head",
+      "Camarão artificial"
+    ],
+    "nivelDificuldade": "Iniciante a intermediário",
+    "cuidados": [
+      "Evitar dias de ressaca",
+      "Observar banhistas e áreas movimentadas",
+      "Levar apenas o necessário e recolher lixo"
+    ],
+    "imagem": "/images/pontos/canto-do-forte.jpg"
+  },
+  {
+    "id": "portinho-praia-grande",
+    "nome": "Portinho de Praia Grande",
+    "cidade": "praia-grande",
+    "tipo": "Área de lazer / píer / canal",
+    "descricao": "Área de lazer às margens do Mar Pequeno, com estrutura urbana, píer de pesca e opções de lazer. É interessante para pesca leve, família e reconhecimento de condições de canal.",
+    "especies": [
+      "robalo",
+      "bagre",
+      "parati",
+      "carapicu"
+    ],
+    "melhorEpoca": "Ano todo, com destaque para meses mais quentes no robalo.",
+    "melhorHorario": "Manhã cedo, fim de tarde e maré em movimento.",
+    "mareFavoravel": "Maré correndo no Mar Pequeno.",
+    "iscasRecomendadas": [
+      "Camarão vivo",
+      "Camarão morto",
+      "Massa",
+      "Pão",
+      "Iscas artificiais pequenas"
+    ],
+    "nivelDificuldade": "Iniciante",
+    "cuidados": [
+      "Respeitar áreas permitidas",
+      "Atenção a crianças próximas à água",
+      "Usar repelente em horários de pernilongo"
+    ],
+    "imagem": "/images/pontos/portinho-praia-grande.jpg"
+  },
+  {
+    "id": "ponte-pensil",
+    "nome": "Ponte Pênsil",
+    "cidade": "sao-vicente",
+    "tipo": "Ponte / canal",
+    "descricao": "Ponto clássico da região de São Vicente, próximo ao Mar Pequeno e a áreas de água salobra. Indicado para pesca de canal com iscas naturais e artificiais.",
+    "especies": [
+      "robalo",
+      "pescada",
+      "bagre",
+      "parati",
+      "carapicu"
+    ],
+    "melhorEpoca": "Ano todo, com maior procura por robalo em meses quentes.",
+    "melhorHorario": "Amanhecer, fim de tarde e viradas de maré.",
+    "mareFavoravel": "Maré em movimento, especialmente enchente e início da vazante.",
+    "iscasRecomendadas": [
+      "Camarão vivo",
+      "Sardinha",
+      "Manjuba",
+      "Jig head",
+      "Plug de meia-água"
+    ],
+    "nivelDificuldade": "Intermediário",
+    "cuidados": [
+      "Atenção ao trânsito e circulação de pessoas",
+      "Cuidado com correnteza",
+      "Não pescar em locais proibidos ou perigosos"
+    ],
+    "imagem": "/images/pontos/ponte-pensil.jpg"
+  },
+  {
+    "id": "mar-pequeno-sao-vicente",
+    "nome": "Mar Pequeno",
+    "cidade": "sao-vicente",
+    "tipo": "Canal / estuário",
+    "descricao": "Região de águas abrigadas e salobras entre São Vicente e Praia Grande, procurada para robalo, bagre, parati e pesca leve embarcada ou de margem.",
+    "especies": [
+      "robalo",
+      "bagre",
+      "parati",
+      "carapicu",
+      "pescada"
+    ],
+    "melhorEpoca": "Ano todo, com melhores ações de robalo nos meses mais quentes.",
+    "melhorHorario": "Manhã cedo e fim de tarde.",
+    "mareFavoravel": "Maré enchendo ou vazando com água andando.",
+    "iscasRecomendadas": [
+      "Camarão vivo",
+      "Lambari",
+      "Manjuba",
+      "Camarão artificial",
+      "Soft shad"
+    ],
+    "nivelDificuldade": "Intermediário",
+    "cuidados": [
+      "Observar tráfego de embarcações",
+      "Usar colete se embarcado",
+      "Evitar margens instáveis"
+    ],
+    "imagem": "/images/pontos/mar-pequeno-sao-vicente.jpg"
+  },
+  {
+    "id": "deck-do-pescador-santos",
+    "nome": "Deck do Pescador",
+    "cidade": "santos",
+    "tipo": "Deck / píer urbano",
+    "descricao": "Estrutura urbana avançando sobre o mar, em frente ao Museu de Pesca, muito conhecida para pesca recreativa em Santos.",
+    "especies": [
+      "pescada",
+      "corvina",
+      "espada",
+      "bagre",
+      "parati",
+      "carapicu"
+    ],
+    "melhorEpoca": "Ano todo, variando conforme maré, vento e presença de cardumes.",
+    "melhorHorario": "Manhã cedo, fim de tarde e noite para espada em alguns períodos.",
+    "mareFavoravel": "Maré em movimento.",
+    "iscasRecomendadas": [
+      "Sardinha",
+      "Camarão",
+      "Manjuba",
+      "Sabiki",
+      "Filé de peixe"
+    ],
+    "nivelDificuldade": "Iniciante",
+    "cuidados": [
+      "Consultar horário e regras de uso",
+      "Atenção a lotação",
+      "Usar passaguá para peixes maiores",
+      "Não deixar linhas no deck"
+    ],
+    "imagem": "/images/pontos/deck-do-pescador-santos.jpg"
+  },
+  {
+    "id": "ponta-da-praia-santos",
+    "nome": "Ponta da Praia",
+    "cidade": "santos",
+    "tipo": "Canal / orla / proximidade de marinas",
+    "descricao": "Região de Santos próxima ao canal e à infraestrutura náutica, boa para pesca urbana, acesso a guias e saídas embarcadas.",
+    "especies": [
+      "pescada",
+      "corvina",
+      "espada",
+      "robalo",
+      "bagre"
+    ],
+    "melhorEpoca": "Ano todo.",
+    "melhorHorario": "Amanhecer e fim de tarde; à noite para espécies como espada.",
+    "mareFavoravel": "Maré correndo e água com boa oxigenação.",
+    "iscasRecomendadas": [
+      "Sardinha",
+      "Camarão",
+      "Manjuba",
+      "Jumping jig",
+      "Iscas de meia-água"
+    ],
+    "nivelDificuldade": "Iniciante a intermediário",
+    "cuidados": [
+      "Respeitar áreas de navegação",
+      "Evitar locais restritos",
+      "Atenção à segurança urbana"
+    ],
+    "imagem": "/images/pontos/ponta-da-praia-santos.jpg"
+  },
+  {
+    "id": "plataforma-de-pesca-mongagua",
+    "nome": "Plataforma de Pesca de Mongaguá",
+    "cidade": "mongagua",
+    "tipo": "Plataforma / píer",
+    "descricao": "Um dos pontos turísticos mais conhecidos de Mongaguá, usado para pesca recreativa e observação do mar. A plataforma oferece acesso mais avançado sobre a água em comparação à pesca direto da areia.",
+    "especies": [
+      "pescada",
+      "corvina",
+      "espada",
+      "bagre",
+      "tainha"
+    ],
+    "melhorEpoca": "Ano todo, com destaque para outono e inverno em corvina e tainha.",
+    "melhorHorario": "Manhã cedo, fim de tarde e noite.",
+    "mareFavoravel": "Maré em movimento com mar seguro.",
+    "iscasRecomendadas": [
+      "Sardinha",
+      "Camarão",
+      "Corrupto",
+      "Manjuba",
+      "Filé de peixe"
+    ],
+    "nivelDificuldade": "Iniciante a intermediário",
+    "cuidados": [
+      "Verificar funcionamento e regras locais",
+      "Evitar dias de ressaca",
+      "Usar passaguá",
+      "Atenção ao vento"
+    ],
+    "imagem": "/images/pontos/plataforma-de-pesca-mongagua.jpg"
+  },
+  {
+    "id": "praia-do-centro-mongagua",
+    "nome": "Praia do Centro de Mongaguá",
+    "cidade": "mongagua",
+    "tipo": "Praia",
+    "descricao": "Trecho urbano de praia com boa acessibilidade para pesca de arremesso e leitura de canais de praia.",
+    "especies": [
+      "pescada",
+      "corvina",
+      "bagre",
+      "betara",
+      "tainha"
+    ],
+    "melhorEpoca": "Outono, inverno e primavera.",
+    "melhorHorario": "Amanhecer e fim de tarde.",
+    "mareFavoravel": "Maré enchendo ou início da vazante.",
+    "iscasRecomendadas": [
+      "Corrupto",
+      "Tatuíra",
+      "Camarão",
+      "Sardinha"
+    ],
+    "nivelDificuldade": "Iniciante",
+    "cuidados": [
+      "Observar banhistas",
+      "Evitar arremessos em áreas movimentadas",
+      "Cuidado com ressaca"
+    ],
+    "imagem": "/images/pontos/praia-do-centro-mongagua.jpg"
+  },
+  {
+    "id": "rio-itanhaem",
+    "nome": "Rio Itanhaém",
+    "cidade": "itanhaem",
+    "tipo": "Rio / estuário",
+    "descricao": "Rio costeiro importante de Itanhaém, com áreas de água salobra, mangue e influência de maré. É um dos pontos mais interessantes para robalo e pesca leve na cidade.",
+    "especies": [
+      "robalo",
+      "pescada",
+      "bagre",
+      "parati",
+      "carapicu"
+    ],
+    "melhorEpoca": "Primavera e verão para robalo; ano todo para pesca leve.",
+    "melhorHorario": "Amanhecer e entardecer.",
+    "mareFavoravel": "Maré enchendo e vazando, com água andando.",
+    "iscasRecomendadas": [
+      "Camarão vivo",
+      "Lambari",
+      "Manjuba",
+      "Jig head",
+      "Camarão artificial"
+    ],
+    "nivelDificuldade": "Intermediário",
+    "cuidados": [
+      "Respeitar áreas de mangue",
+      "Usar colete se embarcado",
+      "Atenção a troncos, galhadas e correnteza"
+    ],
+    "imagem": "/images/pontos/rio-itanhaem.jpg"
+  },
+  {
+    "id": "praia-dos-pescadores-itanhaem",
+    "nome": "Praia dos Pescadores",
+    "cidade": "itanhaem",
+    "tipo": "Praia / costão próximo",
+    "descricao": "Região tradicional de Itanhaém, com ligação cultural com a pesca e proximidade de pontos turísticos. Boa para pesca leve e observação das condições costeiras.",
+    "especies": [
+      "pescada",
+      "corvina",
+      "betara",
+      "linguado",
+      "bagre"
+    ],
+    "melhorEpoca": "Outono e inverno para corvina e betara; primavera e verão para pesca variada.",
+    "melhorHorario": "Amanhecer e fim de tarde.",
+    "mareFavoravel": "Maré enchendo com canais visíveis na arrebentação.",
+    "iscasRecomendadas": [
+      "Corrupto",
+      "Camarão",
+      "Tatuíra",
+      "Sardinha",
+      "Jig head leve"
+    ],
+    "nivelDificuldade": "Iniciante a intermediário",
+    "cuidados": [
+      "Atenção a pedras e escorregões",
+      "Evitar mar forte",
+      "Respeitar banhistas e áreas turísticas"
+    ],
+    "imagem": "/images/pontos/praia-dos-pescadores-itanhaem.jpg"
+  },
+  {
+    "id": "praia-do-guarau",
+    "nome": "Praia do Guaraú",
+    "cidade": "peruibe",
+    "tipo": "Praia / costeira",
+    "descricao": "Ponto natural muito conhecido em Peruíbe, com praia, costeira e proximidade de rio. É uma região de grande beleza e potencial para pescarias costeiras, exigindo atenção às condições do mar.",
+    "especies": [
+      "pescada",
+      "corvina",
+      "robalo",
+      "tainha",
+      "betara",
+      "linguado"
+    ],
+    "melhorEpoca": "Abril a novembro, variando por espécie e condição climática.",
+    "melhorHorario": "Amanhecer e fim de tarde.",
+    "mareFavoravel": "Maré em movimento e mar com segurança para arremesso.",
+    "iscasRecomendadas": [
+      "Camarão",
+      "Sardinha",
+      "Corrupto",
+      "Tatuíra",
+      "Iscas artificiais soft"
+    ],
+    "nivelDificuldade": "Intermediário",
+    "cuidados": [
+      "Avaliar ondas e correnteza",
+      "Não pescar em costões com mar batendo",
+      "Respeitar áreas ambientais"
+    ],
+    "imagem": "/images/pontos/praia-do-guarau.jpg"
+  },
+  {
+    "id": "rio-guarau",
+    "nome": "Rio Guaraú",
+    "cidade": "peruibe",
+    "tipo": "Rio / estuário",
+    "descricao": "Região de estuário em Peruíbe, com influência de maré e ambiente indicado para robalo, peixes de água salobra e pesca com iscas naturais ou artificiais.",
+    "especies": [
+      "robalo",
+      "bagre",
+      "parati",
+      "carapicu",
+      "pescada"
+    ],
+    "melhorEpoca": "Primavera e verão para robalo; ano todo para pesca leve.",
+    "melhorHorario": "Manhã cedo e entardecer.",
+    "mareFavoravel": "Maré enchendo ou vazando.",
+    "iscasRecomendadas": [
+      "Camarão vivo",
+      "Camarão artificial",
+      "Lambari",
+      "Manjuba",
+      "Jig head"
+    ],
+    "nivelDificuldade": "Intermediário",
+    "cuidados": [
+      "Verificar acesso e regras locais",
+      "Usar colete se embarcado",
+      "Evitar descarte de lixo e linha em área natural"
+    ],
+    "imagem": "/images/pontos/rio-guarau.jpg"
+  }
+]

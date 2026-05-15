@@ -1,0 +1,439 @@
+[
+  {
+    "id": "robalo",
+    "nome": "Robalo",
+    "nomeCientifico": "Centropomus spp.",
+    "descricao": "Peixe esportivo muito procurado em canais, rios, estuários, manguezais e áreas costeiras. Na Baixada Santista e litoral sul aparece em regiões de água salobra, estruturas, margens com corrente e pontos com alimentação natural.",
+    "ambiente": [
+      "Água salgada",
+      "Água salobra",
+      "Estuário",
+      "Rio costeiro",
+      "Canal"
+    ],
+    "melhorEpoca": "Primavera e verão, com atividade maior em água mais quente; pode aparecer o ano todo em rios e canais.",
+    "melhorHorario": "Amanhecer, entardecer e períodos de baixa luminosidade.",
+    "mareFavoravel": "Maré em movimento, especialmente enchente ou início da vazante, dependendo do ponto.",
+    "iscasNaturais": [
+      "Camarão vivo",
+      "Manjuba",
+      "Lambari",
+      "Camarão morto bem apresentado"
+    ],
+    "iscasArtificiais": [
+      "Camarão artificial",
+      "Jig head com shad",
+      "Plug de meia-água",
+      "Stick pequeno",
+      "Isca soft tipo paddle tail"
+    ],
+    "materialRecomendado": [
+      "Vara 8 a 17 lb ou 10 a 20 lb",
+      "Molinete 2500 a 4000",
+      "Linha multifilamento 15 a 30 lb",
+      "Leader fluorcarbon 0,35 a 0,50 mm",
+      "Jig heads de 5 g a 14 g"
+    ],
+    "nivelDificuldade": "Intermediário",
+    "dicas": "Trabalhar a isca perto de estruturas, sombras, galhadas, pedras, pilares e saídas de água. Evitar barulho excessivo e variar velocidade de recolhimento até encontrar o padrão do dia.",
+    "cidades": [
+      "praia-grande",
+      "sao-vicente",
+      "santos",
+      "itanhaem",
+      "peruibe"
+    ],
+    "imagem": "/images/especies/robalo.jpg"
+  },
+  {
+    "id": "pescada",
+    "nome": "Pescada",
+    "nomeCientifico": "Cynoscion spp.",
+    "descricao": "Grupo de peixes costeiros bastante presente em praias, canais e regiões de fundo arenoso ou lodoso. É uma das espécies mais buscadas por pescadores de praia e embarcados leves no litoral sul paulista.",
+    "ambiente": [
+      "Água salgada",
+      "Praia",
+      "Canal",
+      "Costeira",
+      "Fundo arenoso"
+    ],
+    "melhorEpoca": "Ano todo, com boa incidência entre outono e primavera conforme mar, temperatura e disponibilidade de alimento.",
+    "melhorHorario": "Amanhecer, fim de tarde e noite em alguns pontos.",
+    "mareFavoravel": "Maré correndo, com preferência por água não muito parada e canais de praia bem formados.",
+    "iscasNaturais": [
+      "Camarão",
+      "Sardinha",
+      "Manjuba",
+      "Filé de peixe",
+      "Corrupto"
+    ],
+    "iscasArtificiais": [
+      "Jumping jig leve",
+      "Jig head",
+      "Shad pequeno",
+      "Isca metálica compacta"
+    ],
+    "materialRecomendado": [
+      "Vara média 12 a 25 lb",
+      "Vara de praia 3,60 m a 4,20 m",
+      "Molinete 3000 a 5000",
+      "Chicote com anzóis 1/0 a 3/0",
+      "Chumbadas conforme correnteza"
+    ],
+    "nivelDificuldade": "Iniciante a intermediário",
+    "dicas": "Na praia, procurar valas e canais. Embarcado, trabalhar próximo ao fundo e alternar camarão, sardinha e jumping jig leve.",
+    "cidades": [
+      "praia-grande",
+      "sao-vicente",
+      "santos",
+      "mongagua",
+      "itanhaem",
+      "peruibe"
+    ],
+    "imagem": "/images/especies/pescada.jpg"
+  },
+  {
+    "id": "corvina",
+    "nome": "Corvina",
+    "nomeCientifico": "Micropogonias furnieri",
+    "descricao": "Espécie comum em fundos arenosos e lodosos, muito procurada em pesca de praia, plataforma e embarcada costeira. Costuma aparecer em cardumes e responder bem a iscas naturais.",
+    "ambiente": [
+      "Água salgada",
+      "Praia",
+      "Canal",
+      "Fundo arenoso",
+      "Fundo lodoso"
+    ],
+    "melhorEpoca": "Outono e inverno costumam ser bons períodos, mas pode aparecer durante todo o ano.",
+    "melhorHorario": "Amanhecer, fim de tarde e períodos com maré correndo.",
+    "mareFavoravel": "Maré enchendo ou vazando com água trabalhando e pouca sujeira na linha.",
+    "iscasNaturais": [
+      "Camarão",
+      "Corrupto",
+      "Sardinha",
+      "Tatuíra",
+      "Filé de peixe"
+    ],
+    "iscasArtificiais": [
+      "Jig metálico leve",
+      "Jumping jig pequeno"
+    ],
+    "materialRecomendado": [
+      "Vara de praia 3,90 m a 4,50 m",
+      "Molinete 4000 a 6000",
+      "Linha 0,30 a 0,40 mm",
+      "Chicote de praia com pernadas longas",
+      "Anzóis 1/0 a 3/0"
+    ],
+    "nivelDificuldade": "Iniciante",
+    "dicas": "Manter a isca próxima ao fundo e observar canais na arrebentação. Quando uma corvina aparece, vale insistir no mesmo ponto por possível presença de cardume.",
+    "cidades": [
+      "praia-grande",
+      "santos",
+      "mongagua",
+      "itanhaem",
+      "peruibe"
+    ],
+    "imagem": "/images/especies/corvina.jpg"
+  },
+  {
+    "id": "bagre",
+    "nome": "Bagre",
+    "nomeCientifico": "Ariidae spp.",
+    "descricao": "Peixe resistente e comum em praias, canais, rios e fundos lodosos. É frequente na pesca de espera com iscas naturais e pode aparecer em praticamente todas as cidades do recorte.",
+    "ambiente": [
+      "Água salgada",
+      "Água salobra",
+      "Praia",
+      "Canal",
+      "Rio",
+      "Fundo lodoso"
+    ],
+    "melhorEpoca": "Ano todo, com maior presença em águas mais quentes e locais de fundo lodoso.",
+    "melhorHorario": "Fim de tarde, noite e maré correndo.",
+    "mareFavoravel": "Maré em movimento, especialmente vazante em canais e rios.",
+    "iscasNaturais": [
+      "Sardinha",
+      "Camarão",
+      "Filé de peixe",
+      "Miúdos de peixe",
+      "Corrupto"
+    ],
+    "iscasArtificiais": [
+      "Não é uma espécie-alvo típica para artificiais"
+    ],
+    "materialRecomendado": [
+      "Vara média ou de praia",
+      "Molinete 3000 a 5000",
+      "Linha 0,30 mm ou superior",
+      "Anzol reforçado",
+      "Alicate de contenção"
+    ],
+    "nivelDificuldade": "Iniciante",
+    "dicas": "Manusear com cuidado por causa dos ferrões. Usar alicate e evitar contato direto com as nadadeiras peitorais e dorsal.",
+    "cidades": [
+      "praia-grande",
+      "sao-vicente",
+      "santos",
+      "mongagua",
+      "itanhaem",
+      "peruibe"
+    ],
+    "imagem": "/images/especies/bagre.jpg"
+  },
+  {
+    "id": "espada",
+    "nome": "Espada",
+    "nomeCientifico": "Trichiurus lepturus",
+    "descricao": "Peixe alongado, predador e de dentes afiados, comum em regiões costeiras, canais, plataformas e pontos iluminados à noite. Pode render boas pescarias em estruturas e plataformas.",
+    "ambiente": [
+      "Água salgada",
+      "Canal",
+      "Costeira",
+      "Plataforma",
+      "Píer"
+    ],
+    "melhorEpoca": "Primavera e verão, podendo aparecer em outras épocas conforme temperatura e cardumes de pequenos peixes.",
+    "melhorHorario": "Fim de tarde, noite e madrugada.",
+    "mareFavoravel": "Maré em movimento, especialmente com presença de manjubas e pequenos peixes.",
+    "iscasNaturais": [
+      "Sardinha",
+      "Manjuba",
+      "Filé de peixe"
+    ],
+    "iscasArtificiais": [
+      "Jig metálico",
+      "Colher",
+      "Isca de meia-água",
+      "Isca com brilho"
+    ],
+    "materialRecomendado": [
+      "Vara 12 a 25 lb",
+      "Molinete 3000 a 5000",
+      "Leader de aço ou fluorcarbon grosso",
+      "Anzol com haste longa",
+      "Boia luminosa quando aplicável"
+    ],
+    "nivelDificuldade": "Intermediário",
+    "dicas": "Usar empate de aço ou líder resistente. Cuidado ao retirar o anzol por causa dos dentes cortantes.",
+    "cidades": [
+      "praia-grande",
+      "sao-vicente",
+      "santos",
+      "mongagua",
+      "peruibe"
+    ],
+    "imagem": "/images/especies/espada.jpg"
+  },
+  {
+    "id": "parati",
+    "nome": "Parati",
+    "nomeCientifico": "Mugil curema",
+    "descricao": "Peixe costeiro e de estuário, próximo da família das tainhas, comum em canais, rios e áreas de água calma. Costuma aparecer em cardumes e pode ser pescado com equipamentos leves.",
+    "ambiente": [
+      "Água salgada",
+      "Água salobra",
+      "Canal",
+      "Rio",
+      "Estuário"
+    ],
+    "melhorEpoca": "Ano todo, com boa presença em períodos de água mais limpa e cardumes costeiros.",
+    "melhorHorario": "Manhã e fim de tarde.",
+    "mareFavoravel": "Maré lenta a moderada, em locais de remanso e margens.",
+    "iscasNaturais": [
+      "Massa",
+      "Pão",
+      "Miolo de pão",
+      "Algas",
+      "Pequenos fragmentos de camarão"
+    ],
+    "iscasArtificiais": [
+      "Não é espécie-alvo comum para artificiais"
+    ],
+    "materialRecomendado": [
+      "Vara leve",
+      "Linha fina",
+      "Anzóis pequenos",
+      "Boia pequena",
+      "Chicote sensível"
+    ],
+    "nivelDificuldade": "Iniciante",
+    "dicas": "Usar ceva moderada e anzóis pequenos. O peixe é desconfiado, então linhas finas e apresentação natural ajudam.",
+    "cidades": [
+      "sao-vicente",
+      "santos",
+      "itanhaem",
+      "peruibe",
+      "mongagua"
+    ],
+    "imagem": "/images/especies/parati.jpg"
+  },
+  {
+    "id": "tainha",
+    "nome": "Tainha",
+    "nomeCientifico": "Mugil liza",
+    "descricao": "Espécie migratória muito tradicional no litoral paulista, associada aos meses frios e à cultura pesqueira costeira. Pode ser observada em cardumes e pescada em praias, canais e áreas de passagem.",
+    "ambiente": [
+      "Água salgada",
+      "Praia",
+      "Canal",
+      "Estuário"
+    ],
+    "melhorEpoca": "Outono e inverno, especialmente entre maio e julho.",
+    "melhorHorario": "Manhã cedo e fim de tarde, variando conforme passagem de cardumes.",
+    "mareFavoravel": "Maré em movimento e água com boa oxigenação.",
+    "iscasNaturais": [
+      "Massa",
+      "Pão",
+      "Algas",
+      "Iscas vegetais",
+      "Pequenos crustáceos"
+    ],
+    "iscasArtificiais": [
+      "Não é espécie-alvo típica para artificiais"
+    ],
+    "materialRecomendado": [
+      "Vara leve a média",
+      "Boia",
+      "Linha fina a média",
+      "Anzóis pequenos",
+      "Ceva quando permitido"
+    ],
+    "nivelDificuldade": "Intermediário",
+    "dicas": "Observar cardumes na superfície e movimentação de aves. Usar equipamento mais sensível e evitar barulho.",
+    "cidades": [
+      "praia-grande",
+      "sao-vicente",
+      "santos",
+      "mongagua",
+      "itanhaem",
+      "peruibe"
+    ],
+    "imagem": "/images/especies/tainha.jpg"
+  },
+  {
+    "id": "carapicu",
+    "nome": "Carapicu",
+    "nomeCientifico": "Eucinostomus spp.",
+    "descricao": "Peixe pequeno e comum em canais, estuários e áreas rasas. Serve como espécie de pesca leve e, em alguns contextos, como isca natural para predadores maiores.",
+    "ambiente": [
+      "Água salgada",
+      "Água salobra",
+      "Canal",
+      "Estuário",
+      "Margem rasa"
+    ],
+    "melhorEpoca": "Ano todo, com maior presença em águas rasas e regiões abrigadas.",
+    "melhorHorario": "Manhã e fim de tarde.",
+    "mareFavoravel": "Maré enchendo em áreas rasas e de remanso.",
+    "iscasNaturais": [
+      "Pedacinhos de camarão",
+      "Massa",
+      "Microiscas naturais",
+      "Pão"
+    ],
+    "iscasArtificiais": [
+      "Microjigs",
+      "Sabiki pequeno"
+    ],
+    "materialRecomendado": [
+      "Vara leve",
+      "Linha fina",
+      "Anzol pequeno",
+      "Boia pequena",
+      "Sabiki fino"
+    ],
+    "nivelDificuldade": "Iniciante",
+    "dicas": "Usar anzol pequeno e isca em pedaços mínimos. Boa opção para crianças e pescaria leve em locais seguros.",
+    "cidades": [
+      "sao-vicente",
+      "santos",
+      "itanhaem",
+      "peruibe"
+    ],
+    "imagem": "/images/especies/carapicu.jpg"
+  },
+  {
+    "id": "betara",
+    "nome": "Betara",
+    "nomeCientifico": "Menticirrhus spp.",
+    "descricao": "Peixe bastante associado à pesca de praia, encontrado em fundos arenosos e canais próximos à arrebentação. É muito procurado por pescadores de surfcasting leve.",
+    "ambiente": [
+      "Água salgada",
+      "Praia",
+      "Fundo arenoso",
+      "Arrebentação"
+    ],
+    "melhorEpoca": "Outono, inverno e primavera, variando com formação de canais e temperatura da água.",
+    "melhorHorario": "Amanhecer e fim de tarde.",
+    "mareFavoravel": "Maré enchendo ou início da vazante, com canais bem formados.",
+    "iscasNaturais": [
+      "Corrupto",
+      "Tatuíra",
+      "Camarão",
+      "Minhoca de praia quando permitida"
+    ],
+    "iscasArtificiais": [
+      "Não é espécie-alvo comum para artificiais"
+    ],
+    "materialRecomendado": [
+      "Vara de praia leve a média",
+      "Molinete 3000 a 5000",
+      "Linha 0,25 a 0,35 mm",
+      "Chicote com anzóis pequenos",
+      "Chumbada pirâmide"
+    ],
+    "nivelDificuldade": "Iniciante a intermediário",
+    "dicas": "Ler a praia é essencial: procurar valas, buracos e regiões onde a espuma concentra alimento.",
+    "cidades": [
+      "praia-grande",
+      "mongagua",
+      "itanhaem",
+      "peruibe"
+    ],
+    "imagem": "/images/especies/betara.jpg"
+  },
+  {
+    "id": "linguado",
+    "nome": "Linguado",
+    "nomeCientifico": "Paralichthys spp.",
+    "descricao": "Peixe de fundo, camuflado em areia ou lodo, encontrado em praias, estuários e regiões de canal. É alvo interessante para pesca com isca natural ou artificiais trabalhadas próximas ao fundo.",
+    "ambiente": [
+      "Água salgada",
+      "Água salobra",
+      "Praia",
+      "Estuário",
+      "Fundo arenoso"
+    ],
+    "melhorEpoca": "Primavera e verão, mas pode aparecer em outras épocas em locais de fundo adequado.",
+    "melhorHorario": "Amanhecer, fim de tarde e marés com deslocamento de alimento.",
+    "mareFavoravel": "Maré lenta a moderada, com isca trabalhando rente ao fundo.",
+    "iscasNaturais": [
+      "Camarão",
+      "Manjuba",
+      "Pequenos peixes",
+      "Sardinha em filé"
+    ],
+    "iscasArtificiais": [
+      "Jig head com shad",
+      "Camarão artificial",
+      "Isca soft rastejando no fundo"
+    ],
+    "materialRecomendado": [
+      "Vara 8 a 17 lb",
+      "Molinete 2500 a 4000",
+      "Linha multifilamento 15 a 20 lb",
+      "Leader fluorcarbon",
+      "Jig heads de 5 g a 12 g"
+    ],
+    "nivelDificuldade": "Intermediário",
+    "dicas": "Trabalhar lentamente rente ao fundo, com pequenas pausas. Atenção a toques sutis antes da fisgada.",
+    "cidades": [
+      "praia-grande",
+      "mongagua",
+      "itanhaem",
+      "peruibe"
+    ],
+    "imagem": "/images/especies/linguado.jpg"
+  }
+]

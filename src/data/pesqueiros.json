@@ -1,0 +1,252 @@
+[
+  {
+    "id": "portinho-praia-grande",
+    "nome": "Portinho de Praia Grande",
+    "cidade": "praia-grande",
+    "descricao": "Área de lazer pública às margens do Mar Pequeno, com píer de pesca, quiosques, restaurantes, espaço para família e opções de passeio. Não é um pesqueiro comercial fechado, mas funciona como ponto de pesca recreativa e lazer para o MVP.",
+    "peixes": [
+      "Robalo",
+      "Bagre",
+      "Parati",
+      "Carapicu"
+    ],
+    "estrutura": [
+      "Píer de pesca",
+      "Quiosques",
+      "Restaurante/lanchonete",
+      "Estacionamento",
+      "Área de lazer",
+      "Passeios de barco próximos"
+    ],
+    "tiposPesca": [
+      "Pesca recreativa",
+      "Canal",
+      "Píer"
+    ],
+    "iscasRecomendadas": [
+      "Camarão",
+      "Massa",
+      "Pão",
+      "Iscas artificiais pequenas"
+    ],
+    "materialRecomendado": [
+      "Vara leve ou média",
+      "Molinete 2500 a 4000",
+      "Linha 0,25 a 0,35 mm",
+      "Boia pequena",
+      "Chicote simples"
+    ],
+    "pescaNoturna": false,
+    "whatsapp": "",
+    "instagram": "",
+    "endereco": "Área de Lazer Ézio Dall'Acqua, bairro Sítio do Campo, Praia Grande - SP",
+    "imagem": "/images/pesqueiros/portinho-praia-grande.jpg"
+  },
+  {
+    "id": "pesqueiro-do-horto",
+    "nome": "Pesqueiro do Horto",
+    "cidade": "sao-vicente",
+    "descricao": "Pesqueiro e restaurante localizado em São Vicente, voltado para pesca esportiva, lazer e atendimento familiar.",
+    "peixes": [
+      "Tilápia",
+      "Carpa",
+      "Pacu",
+      "Tambacu"
+    ],
+    "estrutura": [
+      "Restaurante",
+      "Banheiros",
+      "Área de pesca",
+      "Atendimento familiar"
+    ],
+    "tiposPesca": [
+      "Pesca esportiva",
+      "Pesque e solte",
+      "Pesqueiro urbano"
+    ],
+    "iscasRecomendadas": [
+      "Massa",
+      "Ração",
+      "Salsicha",
+      "Beijinho",
+      "Milho"
+    ],
+    "materialRecomendado": [
+      "Vara telescópica",
+      "Molinete leve",
+      "Linha 0,25 a 0,35 mm",
+      "Boia",
+      "Anzóis para tilápia e pacu"
+    ],
+    "pescaNoturna": false,
+    "whatsapp": "5513991742336",
+    "instagram": "https://www.instagram.com/pesqueirosv21/",
+    "endereco": "Rua Catalão, 600, Vila Voturuá, São Vicente - SP",
+    "imagem": "/images/pesqueiros/pesqueiro-do-horto.jpg"
+  },
+  {
+    "id": "clube-de-pesca-de-santos",
+    "nome": "Clube de Pesca de Santos",
+    "cidade": "santos",
+    "descricao": "Clube tradicional na Ponta da Praia, em Santos, com estrutura voltada à pesca, convivência e atividades ligadas ao mar. Para o MVP, funciona como referência de ponto estruturado e comunidade de pesca na cidade.",
+    "peixes": [
+      "Pescada",
+      "Corvina",
+      "Espada",
+      "Parati",
+      "Carapicu"
+    ],
+    "estrutura": [
+      "Secretaria",
+      "Estrutura de clube",
+      "Proximidade do mar",
+      "Contato institucional"
+    ],
+    "tiposPesca": [
+      "Pesca recreativa",
+      "Clube de pesca",
+      "Ponta da Praia"
+    ],
+    "iscasRecomendadas": [
+      "Camarão",
+      "Sardinha",
+      "Manjuba",
+      "Sabiki"
+    ],
+    "materialRecomendado": [
+      "Vara leve a média",
+      "Molinete 2500 a 5000",
+      "Chicote simples",
+      "Passaguá"
+    ],
+    "pescaNoturna": false,
+    "whatsapp": "5513992115808",
+    "instagram": "",
+    "endereco": "Av. Rei Pelé, 85, Ponta da Praia, Santos - SP",
+    "imagem": "/images/pesqueiros/clube-de-pesca-de-santos.jpg"
+  },
+  {
+    "id": "colina-pesqueiro",
+    "nome": "Colina Pesqueiro",
+    "cidade": "mongagua",
+    "descricao": "Pesqueiro citado em roteiros de turismo rural da Baixada Santista, localizado em Mongaguá. Indicado para lazer, pesca em lago e passeio familiar.",
+    "peixes": [
+      "Tilápia",
+      "Pacu",
+      "Carpa",
+      "Tambacu"
+    ],
+    "estrutura": [
+      "Lago de pesca",
+      "Área rural",
+      "Espaço para família"
+    ],
+    "tiposPesca": [
+      "Pesqueiro",
+      "Pesca em lago",
+      "Lazer familiar"
+    ],
+    "iscasRecomendadas": [
+      "Massa",
+      "Ração",
+      "Salsicha",
+      "Milho",
+      "Beijinho"
+    ],
+    "materialRecomendado": [
+      "Vara telescópica",
+      "Molinete leve",
+      "Linha média",
+      "Boia",
+      "Anzóis pequenos e médios"
+    ],
+    "pescaNoturna": false,
+    "whatsapp": "",
+    "instagram": "",
+    "endereco": "Av. Marginal, 530, Mongaguá - SP",
+    "imagem": "/images/pesqueiros/colina-pesqueiro.jpg"
+  },
+  {
+    "id": "pesqueiro-vale-da-serra",
+    "nome": "Pesqueiro Vale da Serra",
+    "cidade": "itanhaem",
+    "descricao": "Pesqueiro citado em roteiro regional de turismo rural, localizado na região de Água Branca, em Itanhaém. Opção de lazer em ambiente mais afastado da orla.",
+    "peixes": [
+      "Tilápia",
+      "Pacu",
+      "Carpa",
+      "Tambacu"
+    ],
+    "estrutura": [
+      "Lago de pesca",
+      "Ambiente rural",
+      "Área para família"
+    ],
+    "tiposPesca": [
+      "Pesqueiro",
+      "Pesca em lago",
+      "Lazer rural"
+    ],
+    "iscasRecomendadas": [
+      "Massa",
+      "Ração",
+      "Salsicha",
+      "Milho",
+      "Beijinho"
+    ],
+    "materialRecomendado": [
+      "Vara telescópica",
+      "Molinete leve",
+      "Linha 0,25 a 0,35 mm",
+      "Boia",
+      "Anzóis para tilápia e pacu"
+    ],
+    "pescaNoturna": false,
+    "whatsapp": "",
+    "instagram": "",
+    "endereco": "Estrada da Água Branca, s/n, Itanhaém - SP",
+    "imagem": "/images/pesqueiros/pesqueiro-vale-da-serra.jpg"
+  },
+  {
+    "id": "rancho-pesqueiro-arco-iris",
+    "nome": "Rancho & Pesqueiro Arco-Íris",
+    "cidade": "peruibe",
+    "descricao": "Rancho e pesqueiro citado em roteiro regional de turismo rural da Baixada Santista, localizado em Peruíbe. Opção para pesca em lago e lazer em área rural.",
+    "peixes": [
+      "Tilápia",
+      "Pacu",
+      "Carpa",
+      "Tambacu"
+    ],
+    "estrutura": [
+      "Lago de pesca",
+      "Área rural",
+      "Estrutura de rancho",
+      "Espaço para família"
+    ],
+    "tiposPesca": [
+      "Pesqueiro",
+      "Pesca em lago",
+      "Lazer rural"
+    ],
+    "iscasRecomendadas": [
+      "Massa",
+      "Ração",
+      "Milho",
+      "Salsicha",
+      "Beijinho"
+    ],
+    "materialRecomendado": [
+      "Vara telescópica",
+      "Molinete leve",
+      "Linha média",
+      "Boia",
+      "Anzóis variados"
+    ],
+    "pescaNoturna": false,
+    "whatsapp": "",
+    "instagram": "",
+    "endereco": "Estrada do Cajueiro, 3315, Peruíbe - SP",
+    "imagem": "/images/pesqueiros/rancho-pesqueiro-arco-iris.jpg"
+  }
+]

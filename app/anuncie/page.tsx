@@ -121,8 +121,23 @@ export default function AnunciePage() {
     document.getElementById('formulario')?.scrollIntoView({ behavior: 'smooth' })
   }
 
+  const WA_URL = 'https://wa.me/5513996243365?text=Ol%C3%A1%21+Tenho+interesse+em+anunciar+meu+neg%C3%B3cio+no+Pesca+Local.'
+
   return (
     <>
+      {/* WHATSAPP CTA */}
+      <div style={{ background: '#25d366', padding: '14px 24px', textAlign: 'center' }}>
+        <a
+          href={WA_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: '#fff', fontWeight: 800, fontSize: 15, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 10 }}
+        >
+          <span style={{ fontSize: 20 }}>💬</span>
+          Fale agora pelo WhatsApp →
+        </a>
+      </div>
+
       {/* HERO */}
       <section className="anuncie-hero">
         <div className="anuncie-hero-content">

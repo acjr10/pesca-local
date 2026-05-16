@@ -21,7 +21,7 @@ const BENEFICIOS = [
   {
     icon: '🏅',
     titulo: 'Autoridade e credibilidade',
-    desc: 'Parceiros com Destaque aparecem primeiro, com selo verificado e avaliações, aumentando a confiança de quem ainda não te conhece.',
+    desc: 'Parceiros com Destaque aparecem primeiro nas listagens e páginas de cidades, aumentando a visibilidade para quem está decidindo onde comprar ou contratar.',
   },
 ]
 
@@ -32,14 +32,15 @@ const PLANOS = [
     destaque: false,
     preco: '0',
     periodo: '/mês',
-    desc: 'Ideal para começar e marcar presença no guia de pesca da região.',
+    desc: 'Presença básica na base inicial do Pesca Local.',
+    note: 'No plano Gratuito seus dados entram na nossa base, mas sem links de contato públicos na listagem.',
     features: [
       { ok: true,  texto: 'Perfil básico no guia' },
-      { ok: true,  texto: 'Informações de contato e endereço' },
       { ok: true,  texto: 'Aparece nas buscas por cidade' },
-      { ok: true,  texto: 'Link para WhatsApp, Instagram ou site' },
+      { ok: true,  texto: 'Informações de contato registradas internamente' },
+      { ok: false, texto: 'Links de contato públicos (WhatsApp, Instagram, site)' },
       { ok: false, texto: 'Posição de destaque nas listagens' },
-      { ok: false, texto: 'Selo "Em Destaque" verificado' },
+      { ok: false, texto: 'Badge "Em Destaque"' },
       { ok: false, texto: 'Aparece em múltiplas cidades' },
       { ok: false, texto: 'Suporte prioritário' },
     ],
@@ -52,14 +53,14 @@ const PLANOS = [
     destaque: true,
     preco: '49',
     periodo: '/mês',
-    desc: 'Para negócios que querem se destacar e gerar mais clientes todo mês.',
+    desc: 'Para negócios que querem aparecer para pescadores da região e gerar mais contatos.',
+    promoNote: 'Valor promocional para os primeiros parceiros',
     features: [
       { ok: true, texto: 'Perfil completo no guia' },
-      { ok: true, texto: 'Informações de contato e endereço' },
       { ok: true, texto: 'Aparece nas buscas por cidade' },
-      { ok: true, texto: 'Link para WhatsApp, Instagram ou site' },
+      { ok: true, texto: 'Links de contato públicos (WhatsApp, Instagram, site)' },
       { ok: true, texto: 'Posição de destaque nas listagens' },
-      { ok: true, texto: 'Selo "Em Destaque" verificado' },
+      { ok: true, texto: 'Maior visibilidade nas listagens e páginas relacionadas' },
       { ok: true, texto: 'Aparece em múltiplas cidades' },
       { ok: true, texto: 'Suporte prioritário' },
     ],
@@ -70,8 +71,16 @@ const PLANOS = [
 
 const FAQ = [
   {
-    p: 'Como meu negócio aparece no guia?',
-    r: 'Após o envio do formulário nossa equipe entra em contato pelo WhatsApp para confirmar as informações e publicar seu perfil. No plano Gratuito, a publicação ocorre em até 5 dias úteis. No Destaque, em até 24 horas.',
+    p: 'Qual a diferença entre o Gratuito e o Destaque?',
+    r: 'No plano Gratuito seu negócio entra na nossa base de dados, mas sem links de contato públicos na listagem. No Destaque, seus links de WhatsApp, Instagram e site ficam visíveis para os pescadores, além de posição privilegiada nas buscas e páginas de cidades.',
+  },
+  {
+    p: 'Meu WhatsApp fica visível para os pescadores no plano Gratuito?',
+    r: 'Não. No plano Gratuito seus dados ficam registrados na base do Pesca Local, mas os links de contato ficam disponíveis apenas para parceiros no plano Destaque.',
+  },
+  {
+    p: 'O preço do Destaque pode mudar?',
+    r: 'O valor de R$ 49/mês é promocional para os primeiros parceiros. Quem assinar agora mantém essa condição enquanto o plano estiver ativo.',
   },
   {
     p: 'Que tipos de negócio podem anunciar?',
@@ -95,11 +104,17 @@ type FormData = {
   negocio: string
   cidade: string
   whatsapp: string
+  instagram: string
+  cidadesAtendidas: string
   categoria: string
   plano: string
+  observacoes: string
 }
 
-const FORM_VAZIO: FormData = { nome: '', negocio: '', cidade: '', whatsapp: '', categoria: '', plano: 'gratuito' }
+const FORM_VAZIO: FormData = {
+  nome: '', negocio: '', cidade: '', whatsapp: '',
+  instagram: '', cidadesAtendidas: '', categoria: '', plano: 'gratuito', observacoes: '',
+}
 
 export default function AnunciePage() {
   const [form, setForm] = useState<FormData>(FORM_VAZIO)
@@ -113,7 +128,28 @@ export default function AnunciePage() {
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
     setCarregando(true)
-    setTimeout(() => { setCarregando(false); setEnviado(true) }, 900)
+
+    const linhas = [
+      'Olá! Quero anunciar meu negócio no Pesca Local.',
+      '',
+      `Nome: ${form.nome}`,
+      `Negócio: ${form.negocio}`,
+      `Categoria: ${form.categoria}`,
+      `Cidade: ${form.cidade}`,
+      `WhatsApp: ${form.whatsapp}`,
+      form.instagram       ? `Instagram: ${form.instagram}`                   : null,
+      form.cidadesAtendidas ? `Cidades atendidas: ${form.cidadesAtendidas}`   : null,
+      `Plano: ${form.plano === 'destaque' ? 'Destaque (R$ 49/mês)' : 'Gratuito'}`,
+      form.observacoes     ? `Observações: ${form.observacoes}`               : null,
+    ].filter(Boolean)
+
+    const waUrl = `https://wa.me/5513996243365?text=${encodeURIComponent(linhas.join('\n'))}`
+
+    setTimeout(() => {
+      setCarregando(false)
+      setEnviado(true)
+      window.open(waUrl, '_blank')
+    }, 900)
   }
 
   function scrollToForm(plano: string) {
@@ -121,29 +157,17 @@ export default function AnunciePage() {
     document.getElementById('formulario')?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  const WA_URL = 'https://wa.me/5513996243365?text=Ol%C3%A1%21+Tenho+interesse+em+anunciar+meu+neg%C3%B3cio+no+Pesca+Local.'
-
   return (
     <>
-      {/* WHATSAPP CTA */}
-      <div style={{ background: '#25d366', padding: '14px 24px', textAlign: 'center' }}>
-        <a
-          href={WA_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: '#fff', fontWeight: 800, fontSize: 15, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 10 }}
-        >
-          <span style={{ fontSize: 20 }}>💬</span>
-          Fale agora pelo WhatsApp →
-        </a>
-      </div>
-
       {/* HERO */}
       <section className="anuncie-hero">
         <div className="anuncie-hero-content">
           <p className="hero-tag">📣 Seja um parceiro</p>
           <h1>Conecte seu negócio<br />a quem <span className="hero-highlight">pesca na região</span></h1>
-          <p>Lojas, guias, marinas, pesqueiros e barcos — apareça para milhares de pescadores da Baixada Santista que buscam exatamente o que você oferece.</p>
+          <p>Lojas, guias, marinas, pesqueiros e barcos — apareça para pescadores da sua região no momento em que estão planejando a próxima pescaria.</p>
+          <p style={{ fontSize: 13, opacity: 0.75, marginTop: -8, marginBottom: 24 }}>
+            🚀 Estamos em fase de lançamento — seja um dos primeiros parceiros a aparecer no guia.
+          </p>
           <div className="anuncie-hero-btns">
             <button className="cta-primary" onClick={() => scrollToForm('destaque')}>
               Quero anunciar agora
@@ -162,10 +186,10 @@ export default function AnunciePage() {
       {/* NÚMEROS */}
       <div className="numeros-bar">
         {[
-          { val: '6', label: 'Cidades cobertas' },
-          { val: '10+', label: 'Espécies mapeadas' },
-          { val: '100%', label: 'Público pescador' },
-          { val: 'Grátis', label: 'Para começar' },
+          { val: '6',    label: 'Cidades cobertas' },
+          { val: '10+',  label: 'Espécies mapeadas' },
+          { val: '50+',  label: 'Pontos de pesca' },
+          { val: 'R$ 0', label: 'Para começar' },
         ].map(n => (
           <div key={n.label} className="numero-item">
             <div className="numero-val">{n.val}</div>
@@ -206,7 +230,7 @@ export default function AnunciePage() {
           {PLANOS.map(plano => (
             <div key={plano.id} className={`plano-card${plano.destaque ? ' destaque' : ''}`}>
               <div className="plano-badge-wrap">
-                {plano.destaque && <span className="tag-featured">Mais popular</span>}
+                {plano.destaque && <span className="tag-featured">Preço de lançamento</span>}
               </div>
               <div className="plano-nome">{plano.nome}</div>
               <div className="plano-preco">
@@ -216,7 +240,17 @@ export default function AnunciePage() {
                   <><sup>R$</sup>{plano.preco}<sub>/mês</sub></>
                 )}
               </div>
+              {'promoNote' in plano && plano.promoNote && (
+                <p style={{ fontSize: 12, color: '#0b78aa', fontWeight: 600, marginBottom: 8, marginTop: -4 }}>
+                  {plano.promoNote}
+                </p>
+              )}
               <p className="plano-desc">{plano.desc}</p>
+              {'note' in plano && plano.note && (
+                <p style={{ fontSize: 12, color: '#94a3b8', marginBottom: 12, lineHeight: 1.5 }}>
+                  {plano.note}
+                </p>
+              )}
 
               <ul className="plano-features">
                 {plano.features.map(f => (
@@ -246,8 +280,8 @@ export default function AnunciePage() {
           <h2 className="section-title" style={{ justifyContent: 'center', marginBottom: 10, fontSize: 32 }}>
             Quero anunciar meu negócio
           </h2>
-          <p style={{ fontSize: 16, color: '#64748b', maxWidth: 440, margin: '0 auto' }}>
-            Preencha o formulário e nossa equipe entra em contato em até 24h.
+          <p style={{ fontSize: 16, color: '#64748b', maxWidth: 480, margin: '0 auto' }}>
+            Preencha o formulário e o Pesca Local entrará em contato pelo WhatsApp para validar as informações.
           </p>
         </div>
 
@@ -257,8 +291,7 @@ export default function AnunciePage() {
               <span className="form-success-icon">🎣</span>
               <h3>Cadastro recebido!</h3>
               <p>
-                Obrigado pelo interesse. Nossa equipe vai entrar em contato pelo WhatsApp
-                informado em até 24 horas para confirmar as informações e publicar seu perfil.
+                Obrigado pelo interesse. O Pesca Local entrará em contato pelo WhatsApp informado para validar as informações e publicar seu perfil.
               </p>
               <a href="/parceiros" className="cta-primary" style={{ display: 'inline-block' }}>
                 Ver parceiros cadastrados
@@ -318,6 +351,17 @@ export default function AnunciePage() {
                   />
                 </div>
                 <div className="form-group">
+                  <label className="form-label" htmlFor="instagram">Instagram <span style={{ fontWeight: 400, color: '#94a3b8' }}>(opcional)</span></label>
+                  <input
+                    id="instagram" type="text" className="form-input"
+                    placeholder="@seunegocio"
+                    value={form.instagram} onChange={e => set('instagram', e.target.value)}
+                  />
+                </div>
+              </div>
+
+              <div className="form-row">
+                <div className="form-group">
                   <label className="form-label" htmlFor="plano">Plano de interesse</label>
                   <select
                     id="plano" className="form-select"
@@ -327,15 +371,39 @@ export default function AnunciePage() {
                     <option value="destaque">Destaque — R$ 49/mês</option>
                   </select>
                 </div>
+                <div className="form-group">
+                  <label className="form-label" htmlFor="cidadesAtendidas">Cidades atendidas <span style={{ fontWeight: 400, color: '#94a3b8' }}>(opcional)</span></label>
+                  <input
+                    id="cidadesAtendidas" type="text" className="form-input"
+                    placeholder="Ex.: Praia Grande, Santos"
+                    value={form.cidadesAtendidas} onChange={e => set('cidadesAtendidas', e.target.value)}
+                  />
+                </div>
               </div>
+
+              <div className="form-group" style={{ gridColumn: '1 / -1' }}>
+                <label className="form-label" htmlFor="observacoes">Observações <span style={{ fontWeight: 400, color: '#94a3b8' }}>(opcional)</span></label>
+                <textarea
+                  id="observacoes" className="form-input"
+                  placeholder="Conte mais sobre seu negócio, horários de funcionamento, especialidades..."
+                  rows={3}
+                  style={{ resize: 'vertical', fontFamily: 'inherit' }}
+                  value={form.observacoes} onChange={e => set('observacoes', e.target.value)}
+                />
+              </div>
+
+              {form.plano === 'gratuito' && (
+                <p style={{ fontSize: 13, color: '#94a3b8', background: '#f8fafc', borderRadius: 8, padding: '10px 14px', lineHeight: 1.5, margin: '0 0 4px' }}>
+                  ℹ️ No plano Gratuito seus dados entram na nossa base, mas sem links de contato públicos na listagem. Para aparecer com WhatsApp e Instagram visíveis, escolha o plano Destaque.
+                </p>
+              )}
 
               <button type="submit" className="form-submit" disabled={carregando}>
                 {carregando ? 'Enviando…' : 'Enviar cadastro'}
               </button>
 
               <p className="form-note">
-                Ao enviar, você concorda em receber contato da equipe Pesca Local pelo WhatsApp informado.
-                Sem spam — prometemos.
+                Ao enviar, você será direcionado para o WhatsApp do Pesca Local com suas informações preenchidas. Sem spam — prometemos.
               </p>
             </form>
           )}
@@ -366,8 +434,8 @@ export default function AnunciePage() {
         <div className="cta-benefits">
           <div className="benefit">🎯<span>Público<br />segmentado</span></div>
           <div className="benefit">📱<span>Contato<br />direto</span></div>
+          <div className="benefit">🗺️<span>6 cidades<br />cobertas</span></div>
           <div className="benefit">🏅<span>Sem<br />fidelidade</span></div>
-          <div className="benefit">⚡<span>Publicação<br />rápida</span></div>
         </div>
         <div className="cta-buttons">
           <button className="cta-primary" onClick={() => document.getElementById('formulario')?.scrollIntoView({ behavior: 'smooth' })}>

@@ -11,7 +11,11 @@ export default function CidadesPage() {
         <div className="cities-list-grid">
           {cidadesData.map((cidade: any) => (
             <a key={cidade.id} href={`/cidades/${cidade.id}`} className="city-list-card">
-              <div className={`city-thumb city-${cidade.id}`}>
+              <div
+                className={`city-thumb city-${cidade.id}`}
+                style={{ backgroundImage: `url('/cidades/${cidade.id}.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+              >
+                <div className="city-thumb-overlay" />
                 <span className="city-name">{cidade.nome}</span>
               </div>
               <div className="city-list-info">

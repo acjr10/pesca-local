@@ -613,6 +613,19 @@ button, input, select { font-family: inherit; }
   z-index: 1;
 }
 
+/* SELETOR DE CIDADE — PREVISÃO */
+.previsao-city-selector { margin: 12px 0; }
+.previsao-city-select {
+  padding: 8px 16px; border: 1.5px solid #dbe6ee; border-radius: 10px;
+  font-size: 14px; font-weight: 600; color: #031526; background: #fff;
+  cursor: pointer; outline: none; font-family: inherit;
+  transition: border-color 0.18s, box-shadow 0.18s;
+}
+.previsao-city-select:focus {
+  border-color: #14c8c2;
+  box-shadow: 0 0 0 3px rgba(20,200,194,0.13);
+}
+
 /* PÁGINA DE PREVISÃO */
 .previsao-index {
   background: #031526;
@@ -775,6 +788,50 @@ button, input, select { font-family: inherit; }
 .form-success-icon { font-size: 64px; margin-bottom: 20px; display: block; }
 .form-success h3 { font-size: 26px; font-weight: 900; color: #031526; margin-bottom: 10px; letter-spacing: -0.02em; }
 .form-success p { font-size: 15px; color: #64748b; line-height: 1.65; margin-bottom: 28px; max-width: 440px; margin-left: auto; margin-right: auto; }
+
+/* WIDGET — CITY SELECT */
+.conditions-header-right { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.conditions-city-select {
+  padding: 5px 10px; border: 1.5px solid #dbe6ee; border-radius: 8px;
+  font-size: 12px; font-weight: 600; color: #031526; background: #fff;
+  cursor: pointer; outline: none; font-family: inherit;
+  transition: border-color 0.18s;
+}
+.conditions-city-select:focus { border-color: #14c8c2; }
+
+/* Widget inline na cidade-section: remove espaçamento duplicado */
+.cidade-section .conditions-section {
+  border-left: none;
+  padding: 0;
+}
+
+/* PÁGINA DE BUSCA */
+.busca-hero {
+  background: #031526;
+  padding: 40px 52px 36px;
+  position: relative;
+  overflow: hidden;
+}
+.busca-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 20% 50%, rgba(20,200,194,0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+.busca-hero-content { position: relative; z-index: 2; }
+.busca-hero-content h1 { font-size: 32px; font-weight: 900; color: #fff; letter-spacing: -0.02em; margin-bottom: 12px; }
+.busca-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+.busca-filter-chip {
+  background: rgba(20,200,194,0.15); border: 1px solid rgba(20,200,194,0.35);
+  color: #14c8c2; font-size: 12px; font-weight: 700;
+  padding: 4px 12px; border-radius: 20px;
+}
+.busca-count { font-size: 14px; color: rgba(255,255,255,0.5); font-weight: 600; }
+.busca-empty { text-align: center; padding: 80px 20px; }
+.busca-empty-icon { font-size: 64px; display: block; margin-bottom: 20px; }
+.busca-empty p { font-size: 16px; color: #64748b; line-height: 1.6; }
+.ponto-cidade-tag { font-size: 12px; color: #64748b; font-weight: 600; margin-bottom: 8px !important; }
 
 /* MOBILE NAV */
 .mobile-menu-btn {
@@ -1048,6 +1105,15 @@ button, input, select { font-family: inherit; }
   .footer { grid-template-columns: 1fr 1fr; gap: 28px; padding: 36px 20px; }
   .footer-brand { grid-column: 1 / -1; }
   .footer-bottom { padding-top: 20px; }
+
+  /* BUSCA PAGE */
+  .busca-hero { padding: 28px 20px 24px; }
+  .busca-hero-content h1 { font-size: 24px; }
+  .busca-empty { padding: 48px 20px; }
+
+  /* WIDGET SELECT */
+  .conditions-header-right { gap: 8px; }
+  .conditions-city-select { font-size: 11px; padding: 4px 8px; }
 
   /* ANUNCIE PAGE */
   .anuncie-hero { padding: 52px 20px 60px; }

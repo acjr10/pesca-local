@@ -2,8 +2,14 @@
 
 import { useState, useEffect } from 'react'
 
-const LAT = -23.98
-const LON = -46.26
+const CITY_COORDS: Record<string, { lat: number; lon: number; name: string }> = {
+  'praia-grande': { lat: -24.0057, lon: -46.4022, name: 'Praia Grande' },
+  'sao-vicente':  { lat: -23.9608, lon: -46.3922, name: 'São Vicente' },
+  'santos':       { lat: -23.9608, lon: -46.3339, name: 'Santos' },
+  'mongagua':     { lat: -24.0889, lon: -46.6269, name: 'Mongaguá' },
+  'itanhaem':     { lat: -24.1833, lon: -46.7897, name: 'Itanhaém' },
+  'peruibe':      { lat: -24.3189, lon: -47.0053, name: 'Peruíbe' },
+}
 
 const WMO: Record<number, [string, string]> = {
   0: ['Céu limpo', '☀️'], 1: ['Principalmente limpo', '🌤️'], 2: ['Parcialmente nublado', '⛅'],
@@ -58,15 +64,15 @@ function calcIndice(precipProb: number, windSpeed: number, windGusts: number, wa
 function indexColor(n: number) { return n >= 8 ? '#14c8c2' : n >= 5 ? '#f59e0b' : '#ef4444' }
 function indexLabel(n: number) { return n >= 8 ? 'Bom para planejar' : n >= 5 ? 'Atenção' : 'Melhor evitar' }
 
-async function fetchData() {
+async function fetchWeatherData(lat: number, lon: number) {
   const wq = new URLSearchParams({
-    latitude: String(LAT), longitude: String(LON),
+    latitude: String(lat), longitude: String(lon),
     current: 'temperature_2m,weather_code,wind_speed_10m,wind_direction_10m,wind_gusts_10m,precipitation_probability',
     daily: 'precipitation_probability_max,sunrise,sunset',
     timezone: 'America/Sao_Paulo', forecast_days: '1', wind_speed_unit: 'kmh',
   })
   const mq = new URLSearchParams({
-    latitude: String(LAT), longitude: String(LON),
+    latitude: String(lat), longitude: String(lon),
     current: 'wave_height,wave_direction',
     timezone: 'America/Sao_Paulo', forecast_days: '1',
   })
@@ -82,25 +88,73 @@ async function fetchData() {
 
 const DISCLAIMER = 'Dados meteorológicos via Open-Meteo. O índice é experimental e não substitui a avaliação das condições locais.'
 
-export default function ConditionsWidget() {
-  const [data, setData]       = useState<{ weather: any; marine: any } | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError]     = useState(false)
+interface Props {
+  initialLat?: number
+  initialLon?: number
+  initialCityName?: string
+  showCitySelect?: boolean
+}
+
+export default function ConditionsWidget({
+  initialLat = -24.0057,
+  initialLon = -46.4022,
+  initialCityName = 'Praia Grande',
+  showCitySelect = false,
+}: Props) {
+  const [citySlug, setCitySlug] = useState('praia-grande')
+  const [lat, setLat]           = useState(initialLat)
+  const [lon, setLon]           = useState(initialLon)
+  const [cityName, setCityName] = useState(initialCityName)
+  const [data, setData]         = useState<{ weather: any; marine: any } | null>(null)
+  const [loading, setLoading]   = useState(true)
+  const [error, setError]       = useState(false)
 
   useEffect(() => {
-    fetchData()
+    setLoading(true)
+    setError(false)
+    setData(null)
+    fetchWeatherData(lat, lon)
       .then(d => { setData(d); setLoading(false) })
       .catch(() => { setError(true); setLoading(false) })
-  }, [])
+  }, [lat, lon])
 
-  /* ── Loading ──────────────────────────────────────────────────────────── */
+  function handleCityChange(slug: string) {
+    const coords = CITY_COORDS[slug]
+    if (!coords) return
+    setCitySlug(slug)
+    setLat(coords.lat)
+    setLon(coords.lon)
+    setCityName(coords.name)
+  }
+
+  function renderHeader() {
+    return (
+      <div className="section-header">
+        <h2 className="section-title">Planejamento da pescaria · {cityName}</h2>
+        <div className="conditions-header-right">
+          {showCitySelect && (
+            <select
+              className="conditions-city-select"
+              value={citySlug}
+              onChange={e => handleCityChange(e.target.value)}
+              aria-label="Selecionar cidade"
+            >
+              {Object.entries(CITY_COORDS).map(([slug, c]) => (
+                <option key={slug} value={slug}>{c.name}</option>
+              ))}
+            </select>
+          )}
+          <a href="/previsao" className="section-link">Previsão completa →</a>
+        </div>
+      </div>
+    )
+  }
+
   if (loading) {
     return (
       <section className="conditions-section">
         <style>{`@keyframes sk{0%,100%{opacity:.3}50%{opacity:.6}}.sk{animation:sk 1.4s ease-in-out infinite;background:#e2e8f0;border-radius:10px}`}</style>
-        <div className="section-header">
-          <h2 className="section-title">Planejamento da pescaria · Praia Grande</h2>
-        </div>
+        {renderHeader()}
         <p style={{ fontSize: 13, color: '#94a3b8', marginTop: 8 }}>Carregando dados de planejamento...</p>
         <div className="conditions-grid" style={{ marginTop: 14 }}>
           {[...Array(4)].map((_, i) => <div key={i} className="sk" style={{ height: 72 }} />)}
@@ -110,13 +164,10 @@ export default function ConditionsWidget() {
     )
   }
 
-  /* ── Fallback se API falhou ───────────────────────────────────────────── */
   if (error || !data?.weather) {
     return (
       <section className="conditions-section">
-        <div className="section-header">
-          <h2 className="section-title">Planejamento da pescaria · Praia Grande</h2>
-        </div>
+        {renderHeader()}
         <p style={{ fontSize: 13, color: '#94a3b8', marginTop: 8 }}>
           Não foi possível carregar os dados agora. Consulte clima, vento, ondas e maré antes de sair.{' '}
           <a href="/previsao" style={{ color: '#0b78aa', fontWeight: 700 }}>Ver previsão completa →</a>
@@ -126,7 +177,6 @@ export default function ConditionsWidget() {
     )
   }
 
-  /* ── Dados processados ────────────────────────────────────────────────── */
   const cur   = data.weather.current
   const daily = data.weather.daily
   const wave  = data.marine?.current ?? null
@@ -146,10 +196,7 @@ export default function ConditionsWidget() {
 
   return (
     <section className="conditions-section">
-      <div className="section-header">
-        <h2 className="section-title">Planejamento da pescaria · Praia Grande</h2>
-        <a href="/previsao" className="section-link">Previsão completa →</a>
-      </div>
+      {renderHeader()}
 
       <div className="conditions-grid">
         <div className="cond-card">

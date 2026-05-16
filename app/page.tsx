@@ -36,10 +36,21 @@ export default function Home() {
   const [tipo, setTipo] = useState('')
 
   function handleSearch() {
-    if (cidade && CITY_SLUGS[cidade]) {
-      router.push(`/cidades/${CITY_SLUGS[cidade]}`)
-    } else if (especie && SPECIES_SLUGS[especie]) {
-      router.push(`/especies/${SPECIES_SLUGS[especie]}`)
+    const cidadeSlug = cidade ? CITY_SLUGS[cidade] : ''
+    const especieSlug = especie ? SPECIES_SLUGS[especie] : ''
+
+    if (cidadeSlug && !especieSlug && !tipo) {
+      router.push(`/cidades/${cidadeSlug}`)
+      return
+    }
+
+    const params = new URLSearchParams()
+    if (cidadeSlug) params.set('cidade', cidadeSlug)
+    if (especieSlug) params.set('especie', especieSlug)
+    if (tipo) params.set('tipo', tipo)
+
+    if (params.toString()) {
+      router.push(`/busca?${params}`)
     } else {
       router.push('/cidades')
     }
@@ -84,6 +95,8 @@ export default function Home() {
                 <option value="">Qualquer tipo</option>
                 <option>Praia</option>
                 <option>Canal</option>
+                <option>Costão</option>
+                <option>Deck/Píer</option>
                 <option>Embarcada</option>
                 <option>Pesqueiro</option>
               </select>
@@ -91,19 +104,6 @@ export default function Home() {
             <button className="search-btn" onClick={handleSearch}>🔍 Buscar</button>
           </div>
 
-          <div className="quick-cities">
-            <span className="quick-label">Acesso rápido:</span>
-            {[
-              {nome:'Praia Grande', slug:'praia-grande'},
-              {nome:'São Vicente',  slug:'sao-vicente'},
-              {nome:'Santos',       slug:'santos'},
-              {nome:'Mongaguá',     slug:'mongagua'},
-              {nome:'Itanhaém',     slug:'itanhaem'},
-              {nome:'Peruíbe',      slug:'peruibe'},
-            ].map(c => (
-              <a key={c.slug} href={`/cidades/${c.slug}`} className="city-pill">{c.nome}</a>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -117,7 +117,10 @@ export default function Home() {
           <div className="cities-grid">
             {(cidadesData as any[]).slice(0, 6).map((c: any) => (
               <a key={c.id} href={`/cidades/${c.id}`} className="city-card">
-                <div className={`city-thumb city-${c.id}`}>
+                <div
+                  className={`city-thumb city-${c.id}`}
+                  style={{ backgroundImage: `url('/cidades/${c.id}.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                >
                   <div className="city-thumb-overlay" />
                   <span className="city-name">{c.nome}</span>
                 </div>
@@ -139,7 +142,7 @@ export default function Home() {
           </div>
         </section>
 
-        <ConditionsWidget />
+        <ConditionsWidget showCitySelect={true} />
       </div>
 
       {/* ESPÉCIES */}

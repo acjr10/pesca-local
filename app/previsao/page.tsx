@@ -1,9 +1,16 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
-const LAT = -23.98
-const LON = -46.26
+const CITY_COORDS: Record<string, { lat: number; lon: number; name: string }> = {
+  'praia-grande': { lat: -24.0057, lon: -46.4022, name: 'Praia Grande' },
+  'sao-vicente':  { lat: -23.9608, lon: -46.3922, name: 'São Vicente' },
+  'santos':       { lat: -23.9608, lon: -46.3339, name: 'Santos' },
+  'mongagua':     { lat: -24.0889, lon: -46.6269, name: 'Mongaguá' },
+  'itanhaem':     { lat: -24.1833, lon: -46.7897, name: 'Itanhaém' },
+  'peruibe':      { lat: -24.3189, lon: -47.0053, name: 'Peruíbe' },
+}
+
 const DIAS = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb']
 
 // ── WMO codes ────────────────────────────────────────────────────────────────
@@ -72,9 +79,9 @@ function indexColor(n: number): string { return n >= 8 ? '#14c8c2' : n >= 5 ? '#
 function indexLabel(n: number): string { return n >= 8 ? 'Bom para planejar' : n >= 5 ? 'Atenção' : 'Ruim / Evitar' }
 
 // ── API ──────────────────────────────────────────────────────────────────────
-async function fetchWeather() {
+async function fetchWeather(lat: number, lon: number) {
   const q = new URLSearchParams({
-    latitude: String(LAT), longitude: String(LON),
+    latitude: String(lat), longitude: String(lon),
     current: [
       'temperature_2m','apparent_temperature','relative_humidity_2m',
       'precipitation','weather_code','cloud_cover',
@@ -94,9 +101,9 @@ async function fetchWeather() {
   return r.json()
 }
 
-async function fetchMarine() {
+async function fetchMarine(lat: number, lon: number) {
   const q = new URLSearchParams({
-    latitude: String(LAT), longitude: String(LON),
+    latitude: String(lat), longitude: String(lon),
     current: [
       'wave_height','wave_direction','wave_period',
       'swell_wave_height','swell_wave_direction','swell_wave_period',
@@ -121,14 +128,39 @@ function CondCard({ label, value, sub }: { label: string; value: string; sub?: s
   )
 }
 
-function Skeleton() {
+function CitySelector({ value, onChange }: { value: string; onChange: (slug: string) => void }) {
+  return (
+    <div className="previsao-city-selector">
+      <select
+        className="previsao-city-select"
+        value={value}
+        onChange={e => onChange(e.target.value)}
+        aria-label="Selecionar cidade"
+      >
+        {Object.entries(CITY_COORDS).map(([slug, c]) => (
+          <option key={slug} value={slug}>{c.name}</option>
+        ))}
+      </select>
+    </div>
+  )
+}
+
+function Skeleton({ citySlug, cityName, onCityChange }: {
+  citySlug: string
+  cityName: string
+  onCityChange: (slug: string) => void
+}) {
+  const hoje = new Date()
+  const dataStr = hoje.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })
   return (
     <div className="page">
       <style>{`@keyframes sk{0%,100%{opacity:.35}50%{opacity:.65}}.sk{animation:sk 1.4s ease-in-out infinite;background:#f1f5f9;border-radius:14px}`}</style>
       <div className="inner-page">
         <div className="page-header">
           <h1>🌊 Previsão de pesca</h1>
-          <p style={{ color: '#94a3b8' }}>Carregando dados meteorológicos em tempo real…</p>
+          <CitySelector value={citySlug} onChange={onCityChange} />
+          <p>Baixada Santista · {cityName} · {dataStr}</p>
+          <p style={{ color: '#94a3b8', marginTop: 4, fontSize: 14 }}>Carregando dados meteorológicos em tempo real…</p>
         </div>
         <div className="sk" style={{ height: 180, marginBottom: 24 }} />
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 12, marginBottom: 24 }}>
@@ -145,35 +177,67 @@ function Skeleton() {
 
 // ── Page ──────────────────────────────────────────────────────────────────────
 export default function PrevisaoPage() {
+  const [citySlug, setCitySlug] = useState('praia-grande')
+  const [lat, setLat]           = useState(CITY_COORDS['praia-grande'].lat)
+  const [lon, setLon]           = useState(CITY_COORDS['praia-grande'].lon)
+  const [cityName, setCityName] = useState(CITY_COORDS['praia-grande'].name)
   const [loading, setLoading]   = useState(true)
   const [error, setError]       = useState<string | null>(null)
   const [weather, setWeather]   = useState<any>(null)
   const [marine, setMarine]     = useState<any>(null)
+  const fetchId = useRef(0)
 
   useEffect(() => {
-    Promise.allSettled([fetchWeather(), fetchMarine()]).then(([w, m]) => {
+    const id = ++fetchId.current
+    setLoading(true)
+    setError(null)
+    Promise.allSettled([fetchWeather(lat, lon), fetchMarine(lat, lon)]).then(([w, m]) => {
+      if (id !== fetchId.current) return
       if (w.status === 'rejected') {
         setError('Não foi possível carregar os dados meteorológicos. Verifique sua conexão e tente novamente.')
       } else {
         setWeather(w.value)
-        if (m.status === 'fulfilled') setMarine(m.value)
+        setMarine(m.status === 'fulfilled' ? m.value : null)
       }
       setLoading(false)
     })
-  }, [])
+  }, [lat, lon])
 
-  if (loading) return <Skeleton />
+  function handleCityChange(slug: string) {
+    const coords = CITY_COORDS[slug]
+    if (!coords) return
+    setCitySlug(slug)
+    setLat(coords.lat)
+    setLon(coords.lon)
+    setCityName(coords.name)
+  }
+
+  if (loading) {
+    return (
+      <Skeleton
+        citySlug={citySlug}
+        cityName={cityName}
+        onCityChange={handleCityChange}
+      />
+    )
+  }
 
   if (error) {
+    const hoje = new Date()
+    const dataStr = hoje.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })
     return (
       <div className="page">
         <div className="inner-page">
-          <div className="page-header"><h1>🌊 Previsão de pesca</h1></div>
+          <div className="page-header">
+            <h1>🌊 Previsão de pesca</h1>
+            <CitySelector value={citySlug} onChange={handleCityChange} />
+            <p>Baixada Santista · {cityName} · {dataStr}</p>
+          </div>
           <div className="ponto-card" style={{ textAlign: 'center', padding: 48 }}>
             <div style={{ fontSize: 48, marginBottom: 16 }}>⚠️</div>
             <h3 style={{ fontSize: 20, marginBottom: 8 }}>Erro ao carregar dados</h3>
             <p style={{ color: '#64748b', marginBottom: 24 }}>{error}</p>
-            <button onClick={() => window.location.reload()} className="cta-primary">
+            <button onClick={() => { setLoading(true); setError(null); const id = ++fetchId.current; Promise.allSettled([fetchWeather(lat, lon), fetchMarine(lat, lon)]).then(([w, m]) => { if (id !== fetchId.current) return; if (w.status === 'rejected') { setError('Não foi possível carregar os dados.') } else { setWeather(w.value); setMarine(m.status === 'fulfilled' ? m.value : null) } setLoading(false) }) }} className="cta-primary">
               Tentar novamente
             </button>
           </div>
@@ -202,7 +266,6 @@ export default function PrevisaoPage() {
 
   const [ceuDesc, ceuEmoji] = wmo(cur.weather_code)
   const dataStr  = hoje.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })
-  const diaStr   = DIAS[hoje.getDay()]
   const tagText  = cor === '#14c8c2' ? '#031526' : cor === '#f59e0b' ? '#1a0f00' : '#fff'
 
   return (
@@ -212,7 +275,8 @@ export default function PrevisaoPage() {
         {/* ── CABEÇALHO ─────────────────────────────────────────────────────── */}
         <div className="page-header">
           <h1>🌊 Previsão de pesca</h1>
-          <p>Baixada Santista · {dataStr} · {diaStr}</p>
+          <CitySelector value={citySlug} onChange={handleCityChange} />
+          <p>Baixada Santista · {cityName} · {dataStr}</p>
         </div>
 
         {/* ── ÍNDICE ────────────────────────────────────────────────────────── */}
@@ -433,8 +497,7 @@ export default function PrevisaoPage() {
           fontSize: 12, color: '#64748b', lineHeight: 1.7,
         }}>
           Dados meteorológicos obtidos via <strong>Open-Meteo</strong> (api.open-meteo.com). Dados marinhos
-          via <strong>Open-Meteo Marine API</strong>. Fase da lua calculada localmente com JavaScript puro,
-          sem biblioteca externa. <strong>O índice é experimental e não substitui a avaliação das condições
+          via <strong>Open-Meteo Marine API</strong>. <strong>O índice é experimental e não substitui a avaliação das condições
           locais.</strong> Atualize a página para obter dados mais recentes.
         </div>
 

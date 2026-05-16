@@ -11,7 +11,9 @@
       "PowerShell(Rename-Item *)",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(node -e \"const d=require\\('./src/data/pontos-de-pesca.json'\\); const tipos=[...new Set\\(d.map\\(p=>p.tipo\\)\\)]; console.log\\(JSON.stringify\\(tipos,null,2\\)\\)\")",
+      "Bash(npx tsc *)"
     ]
   }
 }

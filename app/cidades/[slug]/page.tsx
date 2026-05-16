@@ -3,6 +3,16 @@ import cidadesData  from '@/data/cidades.json'
 import pontosData   from '@/data/pontos-de-pesca.json'
 import parceirosData from '@/data/parceiros.json'
 import pesqueirosData from '@/data/pesqueiros.json'
+import ConditionsWidget from '../../components/ConditionsWidget'
+
+const CITY_COORDS: Record<string, { lat: number; lon: number }> = {
+  'praia-grande': { lat: -24.0057, lon: -46.4022 },
+  'sao-vicente':  { lat: -23.9608, lon: -46.3922 },
+  'santos':       { lat: -23.9608, lon: -46.3339 },
+  'mongagua':     { lat: -24.0889, lon: -46.6269 },
+  'itanhaem':     { lat: -24.1833, lon: -46.7897 },
+  'peruibe':      { lat: -24.3189, lon: -47.0053 },
+}
 
 const PERFIL_LABEL: Record<string, string> = {
   iniciante:     '🐣 Iniciante',
@@ -54,13 +64,17 @@ export default async function CidadePage({ params }: { params: Promise<{ slug: s
   const pontos    = (pontosData    as any[]).filter(p => p.cidade === slug)
   const parceiros = (parceirosData as any[]).filter(p => p.cidade === slug && p.ativo)
   const pesqueiros = (pesqueirosData as any[]).filter(p => p.cidade === slug)
+  const coords    = CITY_COORDS[slug] ?? { lat: -24.0057, lon: -46.4022 }
 
   const roteiros: Record<string, string[]> = cidade?.roteirosPorPerfil ?? {}
 
   return (
     <>
       {/* ── 1. HERO ───────────────────────────────────────────────── */}
-      <div className={`cidade-hero city-${cidade.id}`}>
+      <div
+        className={`cidade-hero city-${cidade.id}`}
+        style={{ backgroundImage: `url('/cidades/${cidade.id}.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
         <div className="cidade-hero-content">
           <p className="cidade-region">{cidade?.regiao} · {cidade?.estado}</p>
           <h1>{cidade.nome}</h1>
@@ -97,6 +111,15 @@ export default async function CidadePage({ params }: { params: Promise<{ slug: s
             <div className="info-label">Observação local</div>
             <div className="info-value">{cidade?.observacaoLocal ?? cidade?.observacoes}</div>
           </div>
+        </div>
+
+        {/* ── 2.5. PLANEJAMENTO DA PESCARIA ────────────────────────── */}
+        <div className="cidade-section">
+          <ConditionsWidget
+            initialLat={coords.lat}
+            initialLon={coords.lon}
+            initialCityName={cidade.nome}
+          />
         </div>
 
         {/* ── 3. ROTEIROS POR PERFIL ────────────────────────────────── */}

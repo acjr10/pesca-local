@@ -41,7 +41,12 @@ button, input, select { font-family: inherit; }
   width: 3px; height: 3px; background: #031526; border-radius: 50%;
 }
 .brand-title { font-size: 22px; font-weight: 900; letter-spacing: -0.03em; line-height: 1; }
-.brand-subtitle { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-top: 3px; }
+.brand-subtitle { font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #14c8c2; margin-top: 3px; }
+.header-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.header-brand-icon { height: 44px; width: auto; display: block; background: none; border: none; box-shadow: none; border-radius: 0; }
+.header-brand-text { display: flex; flex-direction: column; gap: 0; }
+.header-brand-name { color: #fff; font-weight: 700; font-size: 22px; line-height: 1.2; letter-spacing: -0.02em; }
+.header-brand-tagline { color: #14c8c2; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; }
 .nav { display: flex; align-items: center; gap: 28px; font-size: 14px; font-weight: 700; color: rgba(255,255,255,0.8); }
 .nav a { padding: 26px 0 22px; border-bottom: 3px solid transparent; }
 .nav a.active { color: #14c8c2; border-color: #14c8c2; }
@@ -736,6 +741,7 @@ button, input, select { font-family: inherit; }
   background: #fff; border: 2px solid #dbe6ee; border-radius: 20px;
   padding: 36px 32px; position: relative;
   transition: transform 0.18s, box-shadow 0.18s;
+  display: flex; flex-direction: column;
 }
 .plano-card:hover { transform: translateY(-4px); box-shadow: 0 18px 52px rgba(3,21,38,0.11); }
 .plano-card.destaque { border-color: #14c8c2; box-shadow: 0 0 0 4px rgba(20,200,194,0.11); }
@@ -747,10 +753,12 @@ button, input, select { font-family: inherit; }
 .plano-preco sup { font-size: 22px; vertical-align: super; font-weight: 700; }
 .plano-preco sub { font-size: 16px; color: #94a3b8; font-weight: 600; vertical-align: baseline; }
 .plano-desc { font-size: 14px; color: #64748b; margin-bottom: 28px; line-height: 1.55; }
-.plano-features { list-style: none; display: flex; flex-direction: column; gap: 13px; margin-bottom: 32px; }
-.plano-feature { font-size: 14px; color: #334155; display: flex; align-items: flex-start; gap: 10px; line-height: 1.4; }
-.plano-check { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+.plano-features { list-style: none; display: flex; flex-direction: column; gap: 11px; margin-bottom: 20px; }
+.plano-feature { font-size: 14px; color: #334155; display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; }
+.plano-check { width: 20px; flex-shrink: 0; font-size: 14px; font-weight: 700; margin-top: 1px; }
+.plano-feature-text { flex: 1; }
 .plano-feature.off { color: #94a3b8; }
+.plano-feature-divider { height: 1px; background: #f1f5f9; margin: 4px 0; }
 
 .form-card {
   background: #fff; border: 1px solid #dbe6ee; border-radius: 20px;
@@ -783,6 +791,12 @@ button, input, select { font-family: inherit; }
 .form-submit:hover:not(:disabled) { opacity: 0.88; }
 .form-submit:disabled { opacity: 0.55; cursor: not-allowed; }
 .form-note { font-size: 12px; color: #94a3b8; text-align: center; line-height: 1.6; }
+.form-error { color: #ef4444; font-size: 12px; margin-top: 4px; display: block; }
+.form-input-error { border-color: #ef4444 !important; }
+.form-obs-footer { display: flex; justify-content: flex-end; margin-top: 4px; }
+.form-obs-counter { font-size: 12px; color: #94a3b8; }
+.form-obs-counter-warn { color: #f59e0b; }
+.form-obs-counter-error { color: #ef4444; font-weight: 600; }
 
 .form-success { text-align: center; padding: 32px 16px; }
 .form-success-icon { font-size: 64px; margin-bottom: 20px; display: block; }
@@ -1044,6 +1058,9 @@ button, input, select { font-family: inherit; }
   .topbar { padding: 0 20px; height: 60px; }
   .brand-title { font-size: 18px; }
   .brand-subtitle { display: none; }
+  .header-brand-icon { height: 36px; }
+  .header-brand-name { font-size: 18px; }
+  .header-brand-tagline { display: none; }
   .nav { display: none; }
   .announce-btn { display: none; }
   .mobile-menu-btn { display: block; }

@@ -31,18 +31,23 @@ const PLANOS = [
     nome: 'Gratuito',
     destaque: false,
     preco: '0',
-    periodo: '/mês',
     desc: 'Presença básica na base inicial do Pesca Local.',
     note: 'No plano Gratuito seus dados entram na nossa base, mas sem links de contato públicos na listagem.',
-    features: [
-      { ok: true,  texto: 'Perfil básico no guia' },
-      { ok: true,  texto: 'Aparece nas buscas por cidade' },
-      { ok: true,  texto: 'Informações de contato registradas internamente' },
-      { ok: false, texto: 'Links de contato públicos (WhatsApp, Instagram, site)' },
-      { ok: false, texto: 'Posição de destaque nas listagens' },
-      { ok: false, texto: 'Badge "Em Destaque"' },
-      { ok: false, texto: 'Aparece em múltiplas cidades' },
-      { ok: false, texto: 'Suporte prioritário' },
+    promoNote: null as string | null,
+    inclui: [
+      'Perfil básico no guia',
+      'Aparece nas buscas por cidade',
+      'Informações de contato registradas internamente',
+      'Ícone padrão da categoria',
+      'Cidades relacionadas ao atendimento',
+    ],
+    naoInclui: [
+      'Logo do parceiro',
+      'Fotos do negócio',
+      'Links de contato públicos (WhatsApp, Instagram, site)',
+      'Posição de destaque nas listagens',
+      'Badge "Em Destaque"',
+      'Suporte prioritário',
     ],
     cta: 'Cadastrar gratuitamente',
     ctaStyle: 'outline' as const,
@@ -52,18 +57,21 @@ const PLANOS = [
     nome: 'Destaque',
     destaque: true,
     preco: '49',
-    periodo: '/mês',
     desc: 'Para negócios que querem aparecer para pescadores da região e gerar mais contatos.',
+    note: null as string | null,
     promoNote: 'Valor promocional para os primeiros parceiros',
-    features: [
-      { ok: true, texto: 'Perfil completo no guia' },
-      { ok: true, texto: 'Aparece nas buscas por cidade' },
-      { ok: true, texto: 'Links de contato públicos (WhatsApp, Instagram, site)' },
-      { ok: true, texto: 'Posição de destaque nas listagens' },
-      { ok: true, texto: 'Maior visibilidade nas listagens e páginas relacionadas' },
-      { ok: true, texto: 'Aparece em múltiplas cidades' },
-      { ok: true, texto: 'Suporte prioritário' },
+    inclui: [
+      'Perfil completo no guia',
+      'Logo do parceiro',
+      'Fotos do negócio',
+      'Links de contato públicos (WhatsApp, Instagram, site)',
+      'Posição de destaque nas listagens',
+      'Maior visibilidade nas páginas relacionadas',
+      'Badge "Em Destaque"',
+      'Suporte prioritário',
+      'Cidades relacionadas ao atendimento',
     ],
+    naoInclui: [] as string[],
     cta: 'Quero o Destaque',
     ctaStyle: 'filled' as const,
   },
@@ -104,8 +112,10 @@ type FormData = {
   negocio: string
   cidade: string
   whatsapp: string
+  email: string
   instagram: string
   cidadesAtendidas: string
+  indicadoPor: string
   categoria: string
   plano: string
   observacoes: string
@@ -113,11 +123,13 @@ type FormData = {
 
 const FORM_VAZIO: FormData = {
   nome: '', negocio: '', cidade: '', whatsapp: '',
-  instagram: '', cidadesAtendidas: '', categoria: '', plano: 'gratuito', observacoes: '',
+  email: '', instagram: '', cidadesAtendidas: '', indicadoPor: '',
+  categoria: '', plano: 'gratuito', observacoes: '',
 }
 
 export default function AnunciePage() {
   const [form, setForm] = useState<FormData>(FORM_VAZIO)
+  const [errors, setErrors] = useState<Record<string, string>>({})
   const [enviado, setEnviado] = useState(false)
   const [carregando, setCarregando] = useState(false)
 
@@ -125,8 +137,42 @@ export default function AnunciePage() {
     setForm(f => ({ ...f, [field]: value }))
   }
 
+  function clearError(field: string) {
+    setErrors(e => { const n = { ...e }; delete n[field]; return n })
+  }
+
+  function maskPhone(value: string): string {
+    const digits = value.replace(/\D/g, '').slice(0, 11)
+    if (!digits.length) return ''
+    if (digits.length <= 2) return `(${digits}`
+    if (digits.length <= 7) return `(${digits.slice(0, 2)}) ${digits.slice(2)}`
+    return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`
+  }
+
+  function validate(): boolean {
+    const e: Record<string, string> = {}
+    if (!form.nome.trim()) e.nome = 'Nome é obrigatório'
+    else if (form.nome.length > 80) e.nome = 'Máximo 80 caracteres'
+    if (!form.negocio.trim()) e.negocio = 'Nome do negócio é obrigatório'
+    else if (form.negocio.length > 80) e.negocio = 'Máximo 80 caracteres'
+    if (!form.categoria) e.categoria = 'Selecione a categoria'
+    if (!form.cidade) e.cidade = 'Selecione a cidade'
+    const digits = form.whatsapp.replace(/\D/g, '')
+    if (!digits) e.whatsapp = 'WhatsApp é obrigatório'
+    else if (digits.length !== 11) e.whatsapp = 'Informe um WhatsApp válido com DDD (11 dígitos)'
+    if (form.email) {
+      if (form.email.length > 50) e.email = 'Máximo 50 caracteres'
+      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = 'E-mail inválido'
+    }
+    if (form.indicadoPor.length > 50) e.indicadoPor = 'Máximo 50 caracteres'
+    if (form.observacoes.length > 250) e.observacoes = 'Máximo 250 caracteres'
+    setErrors(e)
+    return Object.keys(e).length === 0
+  }
+
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
+    if (!validate()) return
     setCarregando(true)
 
     const linhas = [
@@ -137,15 +183,17 @@ export default function AnunciePage() {
       `Categoria: ${form.categoria}`,
       `Cidade: ${form.cidade}`,
       `WhatsApp: ${form.whatsapp}`,
-      form.instagram       ? `Instagram: ${form.instagram}`                   : null,
-      form.cidadesAtendidas ? `Cidades atendidas: ${form.cidadesAtendidas}`   : null,
+      form.email            ? `E-mail: ${form.email}`                           : null,
+      form.instagram        ? `Instagram: ${form.instagram}`                    : null,
+      form.cidadesAtendidas ? `Cidades atendidas: ${form.cidadesAtendidas}`     : null,
       `Plano: ${form.plano === 'destaque' ? 'Destaque (R$ 49/mês)' : 'Gratuito'}`,
-      form.observacoes     ? `Observações: ${form.observacoes}`               : null,
+      form.indicadoPor      ? `Indicado por: ${form.indicadoPor}`               : null,
+      form.observacoes      ? `Observações: ${form.observacoes}`                : null,
     ].filter(Boolean)
 
     const waUrl = `https://wa.me/5513996243365?text=${encodeURIComponent(linhas.join('\n'))}`
 
-    window.open(waUrl, '_blank')  // must run inside the user-gesture tick — browsers block popups from setTimeout
+    window.open(waUrl, '_blank')
     setTimeout(() => {
       setCarregando(false)
       setEnviado(true)
@@ -240,31 +288,44 @@ export default function AnunciePage() {
                   <><sup>R$</sup>{plano.preco}<sub>/mês</sub></>
                 )}
               </div>
-              {'promoNote' in plano && plano.promoNote && (
+              {plano.promoNote && (
                 <p style={{ fontSize: 12, color: '#0b78aa', fontWeight: 600, marginBottom: 8, marginTop: -4 }}>
                   {plano.promoNote}
                 </p>
               )}
               <p className="plano-desc">{plano.desc}</p>
-              {'note' in plano && plano.note && (
+              {plano.note && (
                 <p style={{ fontSize: 12, color: '#94a3b8', marginBottom: 12, lineHeight: 1.5 }}>
                   {plano.note}
                 </p>
               )}
 
               <ul className="plano-features">
-                {plano.features.map(f => (
-                  <li key={f.texto} className={`plano-feature${f.ok ? '' : ' off'}`}>
-                    <span className="plano-check">{f.ok ? '✓' : '–'}</span>
-                    {f.texto}
+                {plano.inclui.map(f => (
+                  <li key={f} className="plano-feature">
+                    <span className="plano-check">✓</span>
+                    <span className="plano-feature-text">{f}</span>
                   </li>
                 ))}
+                {plano.naoInclui.length > 0 && (
+                  <>
+                    <li className="plano-feature-divider" aria-hidden="true" />
+                    {plano.naoInclui.map(f => (
+                      <li key={f} className="plano-feature off">
+                        <span className="plano-check">–</span>
+                        <span className="plano-feature-text">{f}</span>
+                      </li>
+                    ))}
+                  </>
+                )}
               </ul>
 
               <button
                 onClick={() => scrollToForm(plano.id)}
                 className={plano.ctaStyle === 'filled' ? 'form-submit' : 'small-btn'}
-                style={plano.ctaStyle === 'outline' ? { marginTop: 0, width: '100%', padding: '13px 20px', fontSize: 14 } : {}}
+                style={plano.ctaStyle === 'outline'
+                  ? { marginTop: 'auto', width: '100%', padding: '13px 20px', fontSize: 14 }
+                  : { marginTop: 'auto' }}
               >
                 {plano.cta}
               </button>
@@ -299,97 +360,167 @@ export default function AnunciePage() {
             </div>
           ) : (
             <form className="form-grid" onSubmit={handleSubmit}>
+
+              {/* Row 1: nome | negocio */}
               <div className="form-row">
                 <div className="form-group">
                   <label className="form-label" htmlFor="nome">Seu nome</label>
                   <input
-                    id="nome" type="text" className="form-input" required
-                    placeholder="Ex.: João Silva"
-                    value={form.nome} onChange={e => set('nome', e.target.value)}
+                    id="nome" type="text"
+                    className={`form-input${errors.nome ? ' form-input-error' : ''}`}
+                    required placeholder="Ex.: João Silva" maxLength={80}
+                    value={form.nome}
+                    onChange={e => { set('nome', e.target.value); clearError('nome') }}
                   />
+                  {errors.nome && <span className="form-error">{errors.nome}</span>}
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="negocio">Nome do negócio</label>
                   <input
-                    id="negocio" type="text" className="form-input" required
-                    placeholder="Ex.: Loja do Pescador"
-                    value={form.negocio} onChange={e => set('negocio', e.target.value)}
+                    id="negocio" type="text"
+                    className={`form-input${errors.negocio ? ' form-input-error' : ''}`}
+                    required placeholder="Ex.: Loja do Pescador" maxLength={80}
+                    value={form.negocio}
+                    onChange={e => { set('negocio', e.target.value); clearError('negocio') }}
                   />
+                  {errors.negocio && <span className="form-error">{errors.negocio}</span>}
                 </div>
               </div>
 
+              {/* Row 2: categoria | cidade */}
               <div className="form-row">
                 <div className="form-group">
                   <label className="form-label" htmlFor="categoria">Categoria</label>
                   <select
-                    id="categoria" className="form-select" required
-                    value={form.categoria} onChange={e => set('categoria', e.target.value)}
+                    id="categoria"
+                    className={`form-select${errors.categoria ? ' form-input-error' : ''}`}
+                    required
+                    value={form.categoria}
+                    onChange={e => { set('categoria', e.target.value); clearError('categoria') }}
                   >
                     <option value="">Selecione a categoria</option>
                     {CATEGORIAS.map(c => <option key={c} value={c}>{c}</option>)}
                   </select>
+                  {errors.categoria && <span className="form-error">{errors.categoria}</span>}
                 </div>
                 <div className="form-group">
                   <label className="form-label" htmlFor="cidade">Cidade</label>
                   <select
-                    id="cidade" className="form-select" required
-                    value={form.cidade} onChange={e => set('cidade', e.target.value)}
+                    id="cidade"
+                    className={`form-select${errors.cidade ? ' form-input-error' : ''}`}
+                    required
+                    value={form.cidade}
+                    onChange={e => { set('cidade', e.target.value); clearError('cidade') }}
                   >
                     <option value="">Selecione a cidade</option>
                     {CIDADES.map(c => <option key={c} value={c}>{c}</option>)}
                   </select>
+                  {errors.cidade && <span className="form-error">{errors.cidade}</span>}
                 </div>
               </div>
 
+              {/* Row 3: whatsapp | email */}
               <div className="form-row">
                 <div className="form-group">
                   <label className="form-label" htmlFor="whatsapp">WhatsApp</label>
                   <input
-                    id="whatsapp" type="tel" className="form-input" required
-                    placeholder="(13) 99999-9999"
-                    value={form.whatsapp} onChange={e => set('whatsapp', e.target.value)}
+                    id="whatsapp" type="tel"
+                    className={`form-input${errors.whatsapp ? ' form-input-error' : ''}`}
+                    required placeholder="(13) 99999-9999"
+                    value={form.whatsapp}
+                    onChange={e => { set('whatsapp', maskPhone(e.target.value)); clearError('whatsapp') }}
+                  />
+                  {errors.whatsapp && <span className="form-error">{errors.whatsapp}</span>}
+                </div>
+                <div className="form-group">
+                  <label className="form-label" htmlFor="email">
+                    E-mail <span style={{ fontWeight: 400, color: '#94a3b8' }}>(opcional)</span>
+                  </label>
+                  <input
+                    id="email" type="email"
+                    className={`form-input${errors.email ? ' form-input-error' : ''}`}
+                    placeholder="seuemail@exemplo.com" maxLength={50}
+                    value={form.email}
+                    onChange={e => { set('email', e.target.value); clearError('email') }}
+                  />
+                  {errors.email && <span className="form-error">{errors.email}</span>}
+                </div>
+              </div>
+
+              {/* Row 4: instagram | cidadesAtendidas */}
+              <div className="form-row">
+                <div className="form-group">
+                  <label className="form-label" htmlFor="instagram">
+                    Instagram <span style={{ fontWeight: 400, color: '#94a3b8' }}>(opcional)</span>
+                  </label>
+                  <input
+                    id="instagram" type="text" className="form-input"
+                    placeholder="@seunegocio" maxLength={50}
+                    value={form.instagram}
+                    onChange={e => set('instagram', e.target.value)}
                   />
                 </div>
                 <div className="form-group">
-                  <label className="form-label" htmlFor="instagram">Instagram <span style={{ fontWeight: 400, color: '#94a3b8' }}>(opcional)</span></label>
+                  <label className="form-label" htmlFor="cidadesAtendidas">
+                    Cidades atendidas <span style={{ fontWeight: 400, color: '#94a3b8' }}>(opcional)</span>
+                  </label>
                   <input
-                    id="instagram" type="text" className="form-input"
-                    placeholder="@seunegocio"
-                    value={form.instagram} onChange={e => set('instagram', e.target.value)}
+                    id="cidadesAtendidas" type="text" className="form-input"
+                    placeholder="Ex.: Praia Grande, Santos" maxLength={100}
+                    value={form.cidadesAtendidas}
+                    onChange={e => set('cidadesAtendidas', e.target.value)}
                   />
                 </div>
               </div>
 
+              {/* Row 5: plano | indicadoPor */}
               <div className="form-row">
                 <div className="form-group">
                   <label className="form-label" htmlFor="plano">Plano de interesse</label>
                   <select
                     id="plano" className="form-select"
-                    value={form.plano} onChange={e => set('plano', e.target.value)}
+                    value={form.plano}
+                    onChange={e => set('plano', e.target.value)}
                   >
                     <option value="gratuito">Gratuito — R$ 0/mês</option>
                     <option value="destaque">Destaque — R$ 49/mês</option>
                   </select>
                 </div>
                 <div className="form-group">
-                  <label className="form-label" htmlFor="cidadesAtendidas">Cidades atendidas <span style={{ fontWeight: 400, color: '#94a3b8' }}>(opcional)</span></label>
+                  <label className="form-label" htmlFor="indicadoPor">
+                    Indicado por <span style={{ fontWeight: 400, color: '#94a3b8' }}>(opcional)</span>
+                  </label>
                   <input
-                    id="cidadesAtendidas" type="text" className="form-input"
-                    placeholder="Ex.: Praia Grande, Santos"
-                    value={form.cidadesAtendidas} onChange={e => set('cidadesAtendidas', e.target.value)}
+                    id="indicadoPor" type="text"
+                    className={`form-input${errors.indicadoPor ? ' form-input-error' : ''}`}
+                    placeholder="Nome de quem indicou" maxLength={50}
+                    value={form.indicadoPor}
+                    onChange={e => { set('indicadoPor', e.target.value); clearError('indicadoPor') }}
                   />
+                  {errors.indicadoPor && <span className="form-error">{errors.indicadoPor}</span>}
                 </div>
               </div>
 
+              {/* Row 6: observacoes (full width) */}
               <div className="form-group" style={{ gridColumn: '1 / -1' }}>
-                <label className="form-label" htmlFor="observacoes">Observações <span style={{ fontWeight: 400, color: '#94a3b8' }}>(opcional)</span></label>
+                <label className="form-label" htmlFor="observacoes">
+                  Observações <span style={{ fontWeight: 400, color: '#94a3b8' }}>(opcional)</span>
+                </label>
                 <textarea
-                  id="observacoes" className="form-input"
+                  id="observacoes"
+                  className={`form-input${errors.observacoes ? ' form-input-error' : ''}`}
                   placeholder="Conte mais sobre seu negócio, horários de funcionamento, especialidades..."
-                  rows={3}
+                  rows={3} maxLength={260}
                   style={{ resize: 'vertical', fontFamily: 'inherit' }}
-                  value={form.observacoes} onChange={e => set('observacoes', e.target.value)}
+                  value={form.observacoes}
+                  onChange={e => { set('observacoes', e.target.value); clearError('observacoes') }}
                 />
+                <div className="form-obs-footer">
+                  <span className={`form-obs-counter${form.observacoes.length >= 226 ? form.observacoes.length > 250 ? ' form-obs-counter-error' : ' form-obs-counter-warn' : ''}`}>
+                    {form.observacoes.length}/250
+                  </span>
+                </div>
+                {errors.observacoes && <span className="form-error">{errors.observacoes}</span>}
               </div>
 
               {form.plano === 'gratuito' && (

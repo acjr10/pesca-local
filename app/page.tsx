@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import pesqueirosData from '@/data/pesqueiros.json'
 import cidadesData from '@/data/cidades.json'
+import parceirosData from '@/data/parceiros.json'
 import ConditionsWidget from './components/ConditionsWidget'
 
 const formatCityName = (slug: string): string =>
@@ -26,10 +27,26 @@ const SPECIES_SLUGS: Record<string, string> = {
   'Linguado': 'linguado',
 }
 
+const CATEGORIA_EMOJI: Record<string, string> = {
+  'Loja de pesca': '🎣', 'Guia de pesca': '⛵',
+  'Marina': '⚓', 'Náutica': '🛥️', 'Aluguel de barco': '🚤',
+}
+
+function isDestaque(p: any): boolean {
+  return p.plano === 'destaque'
+}
+
 
 export default function Home() {
   const pesqueiros = (pesqueirosData as any[]).slice(0, 3)
   const router = useRouter()
+
+  const parcAtivos     = (parceirosData as any[]).filter((p: any) => p.ativo)
+  const parcDestaques  = parcAtivos.filter((p: any) => isDestaque(p))
+  const parcGratuitos  = parcAtivos.filter((p: any) => !isDestaque(p))
+  const homeParceiros  = parcDestaques.length >= 3
+    ? parcDestaques
+    : [...parcDestaques, ...parcGratuitos].slice(0, 3)
 
   const [cidade, setCidade] = useState('')
   const [especie, setEspecie] = useState('')
@@ -179,31 +196,46 @@ export default function Home() {
           <a href="/parceiros" className="section-link">Ver todos os parceiros →</a>
         </div>
         <div className="partners-grid">
-          <article className="partner-card featured">
-            <span className="tag-featured">Destaque</span>
-            <div className="partner-logo">DEDÉ<br/>BIG FISH</div>
-            <h3>Dedé Big Fish</h3>
-            <div className="partner-meta">Loja de pesca · Praia Grande, SP</div>
-            <div className="stars">★ 4,7 (128)</div>
-            <a href={`https://wa.me/551334936979?text=${encodeURIComponent('Olá Dedé Big Fish! Vi seu negócio no Pesca Local (pescalocal.com.br) e tenho interesse. Pode me ajudar?')}`} target="_blank" rel="noopener noreferrer" className="whatsapp-btn" style={{display:'block',textAlign:'center'}}>Falar no WhatsApp</a>
-            <a href="/parceiros/dede-big-fish" className="ver-btn" style={{display:'block',marginTop:8}}>Ver perfil →</a>
-          </article>
-          <article className="partner-card">
-            <div className="partner-logo alt">⛵</div>
-            <h3>Guia de Pesca Santos</h3>
-            <div className="partner-meta">Guia de pesca · Santos, SP</div>
-            <div className="stars">★ 4,9 (86)</div>
-            <a href={`https://wa.me/551397790227?text=${encodeURIComponent('Olá Guia de Pesca Santos! Vi seu negócio no Pesca Local (pescalocal.com.br) e tenho interesse. Pode me ajudar?')}`} target="_blank" rel="noopener noreferrer" className="whatsapp-btn" style={{display:'block',textAlign:'center'}}>Falar no WhatsApp</a>
-            <a href="/parceiros/guia-de-pesca-santos" className="ver-btn" style={{display:'block',marginTop:8}}>Ver perfil →</a>
-          </article>
-          <article className="partner-card">
-            <div className="partner-logo alt">🎣</div>
-            <h3>São Bento Pesca & Cia</h3>
-            <div className="partner-meta">Loja de pesca · Santos, SP</div>
-            <div className="stars">★ 4,8 (75)</div>
-            <a href="https://www.instagram.com/saobentopescaecia/" target="_blank" rel="noopener noreferrer" className="small-btn" style={{display:'block',textAlign:'center',marginTop:0}}>📸 Ver no Instagram</a>
-            <a href="/parceiros/sao-bento-pesca-e-cia" className="ver-btn" style={{display:'block',marginTop:8}}>Ver perfil →</a>
-          </article>
+          {homeParceiros.map((p: any) => {
+            const dest = isDestaque(p)
+            return (
+              <article key={p.id} className={`partner-card${dest ? ' featured' : ''}`}>
+                {dest && <span className="tag-featured">Em Destaque</span>}
+                <div className="partner-logo alt">{CATEGORIA_EMOJI[p.categoria] ?? '🎣'}</div>
+                <h3>{p.nome}</h3>
+                <div className="partner-meta">{p.categoria} · {formatCityName(p.cidade)}, SP</div>
+                {dest && p.estrelas > 0 && (
+                  <div className="stars">
+                    {'★'.repeat(Math.round(p.estrelas))}{'☆'.repeat(5 - Math.round(p.estrelas))}
+                    {' '}{p.estrelas}
+                  </div>
+                )}
+                {dest && p.whatsapp && (
+                  <a
+                    href={`https://wa.me/${p.whatsapp}?text=${encodeURIComponent(`Olá ${p.nome}! Vi seu negócio no Pesca Local (pescalocal.com.br) e tenho interesse. Pode me ajudar?`)}`}
+                    target="_blank" rel="noopener noreferrer"
+                    className="whatsapp-btn"
+                    style={{display:'block',textAlign:'center',marginBottom:8}}
+                  >
+                    Falar no WhatsApp
+                  </a>
+                )}
+                {dest && p.instagram && (
+                  <a href={p.instagram} target="_blank" rel="noopener noreferrer"
+                    className="small-btn" style={{display:'block',textAlign:'center',marginBottom:8}}>
+                    📸 Instagram
+                  </a>
+                )}
+                {dest && p.site && (
+                  <a href={p.site} target="_blank" rel="noopener noreferrer"
+                    className="small-btn" style={{display:'block',textAlign:'center',marginBottom:8}}>
+                    🌐 Site
+                  </a>
+                )}
+                <a href={`/parceiros/${p.id}`} className="ver-btn" style={{display:'block',marginTop:8}}>Ver perfil →</a>
+              </article>
+            )
+          })}
         </div>
       </section>
 

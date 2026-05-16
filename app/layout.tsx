@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import './globals.css'
 import MobileNav from './components/MobileNav'
 import { SITE_URL } from '@/lib/config'
@@ -14,6 +15,12 @@ export const metadata: Metadata = {
   },
   description: DESCRIPTION,
   robots: { index: true, follow: true },
+  icons: {
+    icon: [
+      { url: '/favicon.png', type: 'image/png' },
+      { url: '/favicon.ico' },
+    ],
+  },
   openGraph: {
     title:       TITLE,
     description: DESCRIPTION,
@@ -38,13 +45,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="page">
 
           <header className="topbar">
-            <div className="brand">
-              <div className="brand-mark"><div className="fish-mini"></div></div>
-              <div>
-                <div className="brand-title">Pesca Local</div>
-                <div className="brand-subtitle">Baixada Santista</div>
+            <a href="/" className="header-brand">
+              <Image
+                src="/logo-icon.png"
+                alt="Pesca Local"
+                width={44}
+                height={44}
+                className="header-brand-icon"
+                style={{ objectFit: 'contain' }}
+                priority
+              />
+              <div className="header-brand-text">
+                <span className="header-brand-name">Pesca Local</span>
+                <span className="header-brand-tagline">Baixada Santista</span>
               </div>
-            </div>
+            </a>
             <nav className="nav">
               <a href="/">Início</a>
               <a href="/cidades">Cidades</a>

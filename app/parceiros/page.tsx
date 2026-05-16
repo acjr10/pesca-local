@@ -27,10 +27,15 @@ function cidadeNome(id: string) {
   return (cidadesData as any[]).find(c => c.id === id)?.nome ?? id
 }
 
+function isDestaque(p: any): boolean {
+  return p.plano === 'destaque'
+}
+
 function ParceiroCard({ p }: { p: any }) {
+  const dest = isDestaque(p)
   return (
-    <article className={`partner-card ${p.plano === 'destaque' ? 'featured' : ''}`}>
-      {p.plano === 'destaque' && <span className="tag-featured">Em Destaque</span>}
+    <article className={`partner-card${dest ? ' featured' : ''}`}>
+      {dest && <span className="tag-featured">Em Destaque</span>}
 
       <div className="partner-logo alt">
         {CATEGORIA_EMOJI[p.categoria] ?? '🎣'}
@@ -39,7 +44,7 @@ function ParceiroCard({ p }: { p: any }) {
       <h3>{p.nome}</h3>
       <div className="partner-meta">{p.categoria} · {cidadeNome(p.cidade)}</div>
 
-      {p.estrelas > 0 && (
+      {dest && p.estrelas > 0 && (
         <div className="stars">
           {'★'.repeat(Math.round(p.estrelas))}{'☆'.repeat(5 - Math.round(p.estrelas))}
           {' '}{p.estrelas} <span style={{ fontWeight: 400, color: '#94a3b8', fontSize: 12 }}>({p.avaliacoes} avaliações)</span>
@@ -50,7 +55,7 @@ function ParceiroCard({ p }: { p: any }) {
         {p.descricao}
       </p>
 
-      {p.whatsapp && (
+      {dest && p.whatsapp && (
         <a
           href={`https://wa.me/${p.whatsapp}?text=${encodeURIComponent(`Olá ${p.nome}! Vi seu negócio no Pesca Local (pescalocal.com.br) e tenho interesse. Pode me ajudar?`)}`}
           target="_blank"
@@ -59,6 +64,30 @@ function ParceiroCard({ p }: { p: any }) {
           style={{ display: 'block', textAlign: 'center', marginBottom: 8 }}
         >
           WhatsApp
+        </a>
+      )}
+
+      {dest && p.instagram && (
+        <a
+          href={p.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="small-btn"
+          style={{ display: 'block', textAlign: 'center', marginBottom: 8 }}
+        >
+          📸 Instagram
+        </a>
+      )}
+
+      {dest && p.site && (
+        <a
+          href={p.site}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="small-btn"
+          style={{ display: 'block', textAlign: 'center', marginBottom: 8 }}
+        >
+          🌐 Site
         </a>
       )}
 

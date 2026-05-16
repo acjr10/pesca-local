@@ -7,6 +7,9 @@ import pesqueirosData from '@/data/pesqueiros.json'
 import cidadesData from '@/data/cidades.json'
 import ConditionsWidget from './components/ConditionsWidget'
 
+const formatCityName = (slug: string): string =>
+  ({'praia-grande':'Praia Grande','sao-vicente':'São Vicente','santos':'Santos','mongagua':'Mongaguá','itanhaem':'Itanhaém','peruibe':'Peruíbe'} as Record<string,string>)[slug] || slug
+
 const CITY_SLUGS: Record<string, string> = {
   'Praia Grande': 'praia-grande',
   'São Vicente': 'sao-vicente',
@@ -160,7 +163,7 @@ export default function Home() {
               <h3>{e.nome}</h3>
               <div className="species-meta"><strong>Melhor época</strong>{e.epoca}</div>
               <div className="species-meta"><strong>Isca</strong>{e.isca}</div>
-              <span className="small-btn">Ver detalhes</span>
+              <span className="small-btn">Ver guia da espécie</span>
             </a>
           ))}
         </div>
@@ -211,10 +214,10 @@ export default function Home() {
           {pesqueiros.map((p: any) => (
             <article key={p.id} className="pond-card">
               <h3>{p.nome}</h3>
-              <span className="pond-city">📍 {p.cidade}, SP</span>
+              <span className="pond-city">📍 {formatCityName(p.cidade)}, SP</span>
               <div className="pond-fish">🐟 {(p.peixes as string[]).slice(0, 4).join(', ')}</div>
               <div className="pond-amenities">{(p.estrutura as string[]).slice(0, 3).map((e: string) => <span key={e}>{e}</span>)}</div>
-              <a href={`/pesqueiros/${p.id}`} className="small-btn" style={{display:'block',textAlign:'center'}}>Ver detalhes</a>
+              <a href={`/pesqueiros/${p.id}`} className="small-btn" style={{display:'block',textAlign:'center'}}>Ver pesqueiro</a>
             </article>
           ))}
         </div>
@@ -227,7 +230,7 @@ export default function Home() {
           {[
             {n:'1',titulo:'Escolha a cidade',desc:'Selecione a cidade que você quer pescar.',icon:'🗺️'},
             {n:'2',titulo:'Veja espécies e pontos',desc:'Descubra as melhores espécies e pontos da região.',icon:'🐟'},
-            {n:'3',titulo:'Consulte maré e clima',desc:'Confira as condições do dia para planejar sua pescaria.',icon:'🌤️'},
+            {n:'3',titulo:'Consulte clima, ondas e planejamento',desc:'Confira dados de clima, vento, ondas e janelas recomendadas para planejar melhor sua pescaria.',icon:'🌤️'},
             {n:'4',titulo:'Encontre lojas, guias e pesqueiros',desc:'Tudo que você precisa para pescar com sucesso.',icon:'🏪'},
           ].map(s => (
             <div key={s.n} className="step">
@@ -243,7 +246,7 @@ export default function Home() {
       <section className="cta-section">
         <div className="cta-text">
           <h2>Tem uma loja, marina, guia ou pesqueiro?</h2>
-          <p>Apareça para milhares de pescadores da região e gere mais clientes todos os dias.</p>
+          <p>Apareça para pescadores da sua região no momento em que eles estão planejando a próxima pescaria.</p>
         </div>
         <div className="cta-benefits">
           <div className="benefit">📣<span>Mais visibilidade<br/>para seu negócio</span></div>

@@ -212,6 +212,9 @@ button, input, select { font-family: inherit; }
 }
 .small-btn:hover { background: #dff1ff; }
 
+/* PARCEIROS FILTROS */
+.parceiros-filtros { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+
 /* PARTNERS */
 .partners-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .partner-card {
@@ -851,6 +854,8 @@ button, input, select { font-family: inherit; }
   .cities-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .species-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .partners-grid { grid-template-columns: 1fr; }
+  .parceiros-filtros { flex-direction: column; }
+  .parceiros-filtros select { width: 100%; }
   .ponds-grid { grid-template-columns: 1fr; }
   .cidade-info-grid { grid-template-columns: repeat(2, 1fr); }
   .pontos-grid { grid-template-columns: 1fr; }

@@ -80,7 +80,7 @@ async function fetchData() {
   }
 }
 
-const DISCLAIMER = 'Dados via Open-Meteo. Índice experimental — não substitui avaliação das condições locais, maré e segurança.'
+const DISCLAIMER = 'Dados meteorológicos via Open-Meteo. O índice é experimental e não substitui a avaliação das condições locais.'
 
 export default function ConditionsWidget() {
   const [data, setData]       = useState<{ weather: any; marine: any } | null>(null)
@@ -118,10 +118,10 @@ export default function ConditionsWidget() {
           <h2 className="section-title">Planejamento da pescaria · Praia Grande</h2>
         </div>
         <p style={{ fontSize: 13, color: '#94a3b8', marginTop: 8 }}>
-          Não foi possível carregar os dados. Verifique clima, vento, ondas e maré antes de sair.{' '}
+          Não foi possível carregar os dados agora. Consulte clima, vento, ondas e maré antes de sair.{' '}
           <a href="/previsao" style={{ color: '#0b78aa', fontWeight: 700 }}>Ver previsão completa →</a>
         </p>
-        <p style={{ fontSize: 11, color: 'rgba(100,116,139,0.8)', marginTop: 12 }}>{DISCLAIMER}</p>
+        <p style={{ fontSize: 11, color: '#94a3b8', marginTop: 12 }}>{DISCLAIMER}</p>
       </section>
     )
   }
@@ -186,7 +186,7 @@ export default function ConditionsWidget() {
         </div>
       </div>
 
-      <p style={{ fontSize: 11, color: 'rgba(100,116,139,0.8)', marginTop: 12, lineHeight: 1.5 }}>
+      <p style={{ fontSize: 11, color: '#94a3b8', marginTop: 12, lineHeight: 1.5 }}>
         {DISCLAIMER}
       </p>
     </section>

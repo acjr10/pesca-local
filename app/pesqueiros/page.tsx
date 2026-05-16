@@ -84,21 +84,21 @@ export default function PesqueirosPage() {
                 </div>
               )}
 
-              <div className="pond-fish">🐟 {(p.peixes as string[]).join(', ')}</div>
+              <div className="pond-fish">🐟 {((p.peixes as string[]) ?? []).join(', ')}</div>
 
               <div className="pond-amenities">
-                {(p.estrutura as string[]).map(e => <span key={e}>{e}</span>)}
+                {((p.estrutura as string[]) ?? []).map(e => <span key={e}>{e}</span>)}
               </div>
 
               <div className="cidade-tipos" style={{ marginBottom: 16 }}>
-                {(p.tiposPesca as string[]).map(t => (
+                {((p.tiposPesca as string[]) ?? []).map(t => (
                   <span key={t} className="tipo-tag">{t}</span>
                 ))}
               </div>
 
               {p.whatsapp && (
                 <a
-                  href={`https://wa.me/${p.whatsapp}`}
+                  href={`https://wa.me/${p.whatsapp}?text=${encodeURIComponent(`Olá ${p.nome}! Vi seu pesqueiro no Pesca Local (pescalocal.com.br) e tenho interesse. Pode me ajudar?`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="whatsapp-btn"

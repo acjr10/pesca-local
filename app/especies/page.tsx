@@ -21,7 +21,7 @@ export default function EspeciesPage() {
                   {especie.nomeCientifico}
                 </p>
                 <div className="city-list-tags">
-                  {(especie.ambiente as string[]).slice(0, 4).map((a) => (
+                  {((especie.ambiente as string[]) ?? []).slice(0, 4).map((a) => (
                     <span key={a} className="tipo-tag">{a}</span>
                   ))}
                 </div>

@@ -1,229 +1,2316 @@
 [
   {
-    "id": "canto-do-forte",
+    "id": "aviacao-tupi",
+    "nome": "Aviação / Tupi",
+    "cidade": "praia-grande",
+    "tipo": "Praia / surfcasting leve",
+    "descricao": "Trecho de praia com boa extensão para procurar valas, betaras, corvinas e pescadas em horários de menor movimento.",
+    "especies": [
+      "betara",
+      "corvina",
+      "pescada",
+      "bagre",
+      "tainha"
+    ],
+    "melhorEpoca": "Outono, inverno e primavera.",
+    "melhorHorario": "Amanhecer, fim de tarde e noite.",
+    "mareFavoravel": "Enchente com valas visíveis ou início da vazante.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "tatuíra",
+      "camarão",
+      "sardinha em tira"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso pela orla dos bairros Aviação e Tupi.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Avia%C3%A7%C3%A3o+%2F+Tupi+praia+grande+SP",
+    "estacionamento": "Estacionamento urbano.",
+    "estrutura": "Quiosques e comércio em pontos da orla.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "areia limpa com valas",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Atenção a banhistas, corrente de retorno e vento lateral.",
+    "indicadoPara": [
+      "praia",
+      "iniciante",
+      "betara"
+    ],
+    "quandoEvitar": "Mar batido com sujeira e muitos banhistas.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "boqueirao-guilhermina",
+    "nome": "Boqueirão / Guilhermina",
+    "cidade": "praia-grande",
+    "tipo": "Praia urbana",
+    "descricao": "Trecho central e acessível da orla, interessante para pesca de praia em horários de menor movimento e para testar canais de areia.",
+    "especies": [
+      "pescada",
+      "corvina",
+      "bagre",
+      "betara",
+      "tainha",
+      "carapicu"
+    ],
+    "melhorEpoca": "Outono e inverno para praia; verão somente em horários com menos banhistas.",
+    "melhorHorario": "Amanhecer e noite, respeitando segurança local.",
+    "mareFavoravel": "Maré enchendo ou vazante inicial com canais formados.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "tatuíra",
+      "camarão",
+      "sardinha",
+      "massa para tainha"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso direto pela orla.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Boqueir%C3%A3o+%2F+Guilhermina+praia+grande+SP",
+    "estacionamento": "Estacionamento urbano pago/rotativo conforme local.",
+    "estrutura": "Quiosques e comércio próximos.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "areia",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Não pescar próximo a banhistas; atenção à segurança noturna.",
+    "indicadoPara": [
+      "iniciante",
+      "praia",
+      "pesca leve"
+    ],
+    "quandoEvitar": "Praia lotada, ressaca ou mar muito lateral.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "canto-do-forte-praia",
     "nome": "Canto do Forte",
     "cidade": "praia-grande",
     "tipo": "Praia / costão urbano",
-    "descricao": "Trecho tradicional de Praia Grande, com acesso urbano e boa referência para pesca de praia e tentativas com iscas artificiais em momentos de mar favorável.",
+    "descricao": "Trecho de praia próximo ao canto rochoso, bom para leitura de valas e tentativas com artificial em condição segura.",
     "especies": [
       "robalo",
       "pescada",
       "corvina",
       "betara",
+      "linguado",
+      "bagre",
+      "carapicu"
+    ],
+    "melhorEpoca": "Primavera/verão para robalo e linguado; outono/inverno para betara e corvina.",
+    "melhorHorario": "Amanhecer, fim de tarde e maré mexendo.",
+    "mareFavoravel": "Enchente e início da vazante com mar sem ressaca.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "tatuíra",
+      "camarão",
+      "sardinha",
+      "jig head",
+      "camarão artificial",
+      "Corrupto fresco tirado na própria praia",
+      "Minhoca de praia",
+      "Tirinhas finas de lula"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso pela orla do Canto do Forte.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Canto+do+Forte+praia+grande+SP",
+    "estacionamento": "Estacionamento urbano; pode lotar em finais de semana.",
+    "estrutura": "Orla urbanizada e comércio próximo; sem estrutura específica de pesca.",
+    "dificuldadeAcesso": "Fácil a médio",
+    "tipoFundo": "areia com possível pedra no canto",
+    "riscoEnrosco": "Médio perto de pedra",
+    "segurancaECuidados": "Evitar costão com mar batendo e arremesso perto de banhistas.",
+    "indicadoPara": [
+      "praia",
+      "surfcasting",
+      "intermediario"
+    ],
+    "quandoEvitar": "Ressaca, praia cheia ou vento frontal forte.",
+    "fontePesquisa": "levantamento editorial + fontes públicas + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Mar abrigado pela ponta de Itaipu, ondas calmas e formação de pequenas valas arenosas paralelas às pedras do quartel.",
+        "setupRecomendado": "Varas de praia médias (3.00m a 3.60m) são suficientes. Chumbadas losango ou pirâmide leve (50g a 70g) já travam bem a linha na areia fina.",
+        "iscasQueConsagram": [
+          "Corrupto fresco tirado na própria praia",
+          "Minhoca de praia",
+          "Tirinhas finas de lula"
+        ],
+        "bizuLocal": "Arremesse na diagonal bem rente ao início do costão de pedras; os grandes linguados ficam deitados ali na transição da areia caçando carapicus.",
+        "segurancaELogistica": "Zona nobre da cidade, ultra segura, super iluminada e policiada 24h. Estacionamento em zona azul na orla."
+      }
+    ]
+  },
+  {
+    "id": "ocian-vila-mirim",
+    "nome": "Ocian / Vila Mirim",
+    "cidade": "praia-grande",
+    "tipo": "Praia / pesca de espera",
+    "descricao": "Trecho com possibilidade de canais de praia e pesca de espera para bagre, corvina, pescada e betara.",
+    "especies": [
+      "bagre",
+      "corvina",
+      "pescada",
+      "betara",
+      "tainha"
+    ],
+    "melhorEpoca": "Outono/inverno para corvina e betara; ano todo para bagre.",
+    "melhorHorario": "Noite, amanhecer e fim de tarde.",
+    "mareFavoravel": "Maré em movimento com chumbada segurando no fundo.",
+    "iscasRecomendadas": [
+      "sardinha",
+      "camarão",
+      "corrupto",
+      "tatuíra",
+      "filé de peixe",
+      "Corrupto inteiro com muito elastricot",
+      "Filé de sardinha salgada",
+      "Camarão com casca"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso pela orla da Ocian/Vila Mirim.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ocian+%2F+Vila+Mirim+praia+grande+SP",
+    "estacionamento": "Estacionamento urbano, sujeito a lotação.",
+    "estrutura": "Comércio e quiosques próximos em vários trechos.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "areia",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Evitar arremesso em áreas de banho; atenção à segurança à noite.",
+    "indicadoPara": [
+      "praia",
+      "espera",
+      "iniciante"
+    ],
+    "quandoEvitar": "Ressaca forte e corrente lateral que arrasta tudo.",
+    "fontePesquisa": "levantamento editorial + fontes públicas + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Mar aberto com arrebentação forte. Apresenta valas profundas (canais) bem nítidos entre os bancos de areia que mudam de lugar após ressacas.",
+        "setupRecomendado": "Equipamento pesado de Surfcasting (varas de 4.20m). Uso de arranque cônico e chumbadas pesadas pirâmide ou satélite (90g a 130g) para vencer o lagamar.",
+        "iscasQueConsagram": [
+          "Corrupto inteiro com muito elastricot",
+          "Filé de sardinha salgada",
+          "Camarão com casca"
+        ],
+        "bizuLocal": "Aproveite o período noturno no início da maré enchente. Lince o mais longe possível para cruzar o primeiro banco de areia e cair no poço mais fundo.",
+        "segurancaELogistica": "Boa iluminação nos postes da orla, mas a praia fica deserta na madrugada. Estacionamento fácil na avenida da praia."
+      }
+    ]
+  },
+  {
+    "id": "pg-pilares-ponte-pensil",
+    "nome": "Pilares da Ponte Pênsil (Lado Praia Grande)",
+    "cidade": "praia-grande",
+    "tipo": "Pilares e Estruturas de Concreto",
+    "descricao": "Canal estuarino profundo com correnteza extremamente violenta no meio. Os pilares são revestidos de cracas vivas cortantes que servem de abrigo e engorda para grandes predadores.",
+    "especies": [
+      "robalo",
+      "espada",
+      "corvina"
+    ],
+    "melhorEpoca": "A validar conforme espécie, época do ano e condição local.",
+    "melhorHorario": "Amanhecer, fim de tarde ou noite, conforme segurança e espécie-alvo.",
+    "mareFavoravel": "Maré em movimento; validar localmente se o ponto favorece enchente, vazante ou estofa.",
+    "iscasRecomendadas": [
+      "Camarão vivo médio no chicote de correr",
+      "Jig head com shad cor limão ou osso",
+      "Boia luminosa com filé de sardinha duplo à noite"
+    ],
+    "materialRecomendado": [
+      "Uso obrigatório de líder grosso (0.45mm a 0.52mm) com pelo menos 2 metros. Para rodada ou artificial, use jig heads pesados (18g a 24g) para conseguir vencer o fluxo da água e passar rente ao pilar."
+    ],
+    "acesso": "Fácil acesso a pé pela base da ponte no Canto do Forte ou embarcado/caiaque pelo Mar Pequeno.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pilares+da+Ponte+P%C3%AAnsil+%28Lado+Praia+Grande%29+Praia+Grande+SP",
+    "estacionamento": "",
+    "estrutura": [],
+    "dificuldadeAcesso": "Médio",
+    "tipoFundo": "canal profundo com pilares, cracas e estrutura de concreto",
+    "riscoEnrosco": "Alto",
+    "segurancaECuidados": [
+      "Área bem iluminada à noite devido à iluminação pública da ponte, considerada segura e muito frequentada por pescadores noturnos. Estacionamento nas ruas laterais do Canto do Forte."
+    ],
+    "indicadoPara": [
+      "robalo",
+      "intermediario",
+      "noturna",
+      "estrutura"
+    ],
+    "quandoEvitar": "Evitar correnteza extrema, temporal, raios, pesca sozinho à noite ou sem material para tirar peixe da estrutura.",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Canal estuarino profundo com correnteza extremamente violenta no meio. Os pilares são revestidos de cracas vivas cortantes que servem de abrigo e engorda para grandes predadores.",
+        "setupRecomendado": "Uso obrigatório de líder grosso (0.45mm a 0.52mm) com pelo menos 2 metros. Para rodada ou artificial, use jig heads pesados (18g a 24g) para conseguir vencer o fluxo da água e passar rente ao pilar.",
+        "iscasQueConsagram": [
+          "Camarão vivo médio no chicote de correr",
+          "Jig head com shad cor limão ou osso",
+          "Boia luminosa com filé de sardinha duplo à noite"
+        ],
+        "bizuLocal": "O robalo flecha se posiciona exatamente atrás do pilar (no remanso da correnteza) esperando o refluxo da maré vazante para atacar o camarão que desce do Portinho.",
+        "segurancaELogistica": "Área bem iluminada à noite devido à iluminação pública da ponte, considerada segura e muito frequentada por pescadores noturnos. Estacionamento nas ruas laterais do Canto do Forte."
+      }
+    ],
+    "fontePesquisa": "levantamento complementar Gemini + validação editorial pendente",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "portinho-deck-de-pesca",
+    "nome": "Portinho - Deck de Pesca",
+    "cidade": "praia-grande",
+    "tipo": "Deck / canal / área de lazer",
+    "descricao": "Deck de pesca no Portinho, às margens do Mar Pequeno. Boa opção para pesca leve, família e reconhecimento de canal.",
+    "especies": [
+      "robalo",
+      "bagre",
+      "parati",
+      "carapicu",
+      "tainha"
+    ],
+    "melhorEpoca": "Ano todo; robalo melhor nos meses quentes e parati/tainha em períodos de água calma.",
+    "melhorHorario": "Manhã cedo e fim de tarde; maré em movimento para robalo.",
+    "mareFavoravel": "Enchente ou vazante moderada; evitar água totalmente parada para predadores.",
+    "iscasRecomendadas": [
+      "camarão vivo",
+      "camarão morto",
+      "massa",
+      "pão",
+      "jig head leve",
+      "camarão artificial",
+      "Camarão vivo pequeno iscado pela cauda",
+      "Camarão sete-barbas morto fresco descascado",
+      "Massa de queijo para parati"
+    ],
+    "materialRecomendado": [
+      "vara 8 a 20 lb",
+      "molinete 2500 a 4000",
+      "multifilamento 15 a 25 lb",
+      "leader fluorcarbon 0,35 mm a 0,50 mm",
+      "jig head 5 g a 18 g conforme corrente"
+    ],
+    "acesso": "Acesso de carro até a Área de Lazer Ézio Dall'Acqua; deck dentro do parque.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Portinho+-+Deck+de+Pesca+praia+grande+SP",
+    "estacionamento": "Estacionamento no complexo/entorno, sujeito a lotação.",
+    "estrutura": "Quiosques, restaurante, playground, museu ambiental e deck de pesca.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "lodo/areia de canal",
+    "riscoEnrosco": "Médio em estruturas e margem",
+    "segurancaECuidados": "Atenção a crianças, tráfego de embarcações e horários do parque.",
+    "indicadoPara": [
+      "iniciante",
+      "familia",
+      "robalo",
+      "pesca leve"
+    ],
+    "quandoEvitar": "Temporal, vento forte ou parque fechado.",
+    "fontePesquisa": "Fonte oficial: Turismo Praia Grande - Portinho/deck de pesca + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Água salobra de baixa profundidade perto do píer, fundo predominantemente de lama mole com presença de pequenos canais onde o camarão legítimo se reproduz.",
+        "setupRecomendado": "Material leve ou Ultra Light. Chumbadas oliva pequenas de correr (8g a 15g) para não enterrar na lama do fundo. Boias de arremesso pequenas para pesca na meia-água.",
+        "iscasQueConsagram": [
+          "Camarão vivo pequeno iscado pela cauda",
+          "Camarão sete-barbas morto fresco descascado",
+          "Massa de queijo para parati"
+        ],
+        "bizuLocal": "Nos dias de semana com o Portinho vazio, os robalos pevas encostam bem embaixo das pranchas de madeira do píer para caçar micro-fantasmas na subida da maré.",
+        "segurancaELogistica": "Muito seguro, conta com guarda municipal, banheiros públicos, quiosques e píer estruturado. Excelente para levar a família ou pescar confortavelmente."
+      }
+    ]
+  },
+  {
+    "id": "solemar-balneario-florida",
+    "nome": "Solemar / Balneário Flórida",
+    "cidade": "praia-grande",
+    "tipo": "Praia mais afastada / surfcasting",
+    "descricao": "Trecho mais ao sul da cidade, com perfil interessante para pesca de praia mais tranquila e leitura de canais.",
+    "especies": [
+      "pescada",
+      "corvina",
+      "betara",
+      "bagre",
       "linguado"
     ],
-    "melhorEpoca": "Primavera e verão para robalo; outono e inverno para espécies de praia.",
-    "melhorHorario": "Amanhecer e fim de tarde.",
-    "mareFavoravel": "Maré enchendo ou vazando com pouca ressaca.",
+    "melhorEpoca": "Outono e inverno; boas janelas em mar sem ressaca.",
+    "melhorHorario": "Amanhecer, fim de tarde e noite.",
+    "mareFavoravel": "Enchente ou vazante inicial com água trabalhando.",
     "iscasRecomendadas": [
-      "Camarão",
-      "Corrupto",
-      "Tatuíra",
-      "Jig head",
-      "Camarão artificial"
+      "corrupto",
+      "tatuíra",
+      "camarão",
+      "sardinha",
+      "filé de peixe"
     ],
-    "nivelDificuldade": "Iniciante a intermediário",
-    "cuidados": [
-      "Evitar dias de ressaca",
-      "Observar banhistas e áreas movimentadas",
-      "Levar apenas o necessário e recolher lixo"
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
     ],
-    "imagem": "/images/pontos/canto-do-forte.jpg"
+    "acesso": "Acesso pela orla/bairros do extremo sul de Praia Grande.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Solemar+%2F+Balne%C3%A1rio+Fl%C3%B3rida+praia+grande+SP",
+    "estacionamento": "Estacionamento urbano e ruas próximas, validar local.",
+    "estrutura": "Menos estrutura turística que áreas centrais; planejar água, luz e segurança.",
+    "dificuldadeAcesso": "Fácil a médio",
+    "tipoFundo": "areia e canais",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Atenção à segurança em horários vazios e ao mar aberto.",
+    "indicadoPara": [
+      "surfcasting",
+      "intermediario",
+      "praia"
+    ],
+    "quandoEvitar": "Noite sem companhia, ressaca ou vento forte.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
   },
   {
-    "id": "portinho-praia-grande",
-    "nome": "Portinho de Praia Grande",
-    "cidade": "praia-grande",
-    "tipo": "Área de lazer / píer / canal",
-    "descricao": "Área de lazer às margens do Mar Pequeno, com estrutura urbana, píer de pesca e opções de lazer. É interessante para pesca leve, família e reconhecimento de condições de canal.",
-    "especies": [
-      "robalo",
-      "bagre",
-      "parati",
-      "carapicu"
-    ],
-    "melhorEpoca": "Ano todo, com destaque para meses mais quentes no robalo.",
-    "melhorHorario": "Manhã cedo, fim de tarde e maré em movimento.",
-    "mareFavoravel": "Maré correndo no Mar Pequeno.",
-    "iscasRecomendadas": [
-      "Camarão vivo",
-      "Camarão morto",
-      "Massa",
-      "Pão",
-      "Iscas artificiais pequenas"
-    ],
-    "nivelDificuldade": "Iniciante",
-    "cuidados": [
-      "Respeitar áreas permitidas",
-      "Atenção a crianças próximas à água",
-      "Usar repelente em horários de pernilongo"
-    ],
-    "imagem": "/images/pontos/portinho-praia-grande.jpg"
-  },
-  {
-    "id": "ponte-pensil",
-    "nome": "Ponte Pênsil",
+    "id": "sv-canal-dos-barreiros",
+    "nome": "Canal dos Barreiros (Próximo à Ponte)",
     "cidade": "sao-vicente",
-    "tipo": "Ponte / canal",
-    "descricao": "Ponto clássico da região de São Vicente, próximo ao Mar Pequeno e a áreas de água salobra. Indicado para pesca de canal com iscas naturais e artificiais.",
+    "tipo": "Canal de Manguezal Profundo",
+    "descricao": "Fundo totalmente lamoso com grande aporte de galhadas orgânicas, troncos e águas muito turvas devido ao fluxo do manguezal interno.",
+    "especies": [
+      "corvina",
+      "bagre",
+      "robalo"
+    ],
+    "melhorEpoca": "A validar conforme espécie, época do ano e condição local.",
+    "melhorHorario": "Amanhecer, fim de tarde ou noite, conforme segurança e espécie-alvo.",
+    "mareFavoravel": "Maré em movimento; validar localmente se o ponto favorece enchente, vazante ou estofa.",
+    "iscasRecomendadas": [
+      "Sardinha amanhecida cortada em cubos",
+      "Miolo de siri limpo",
+      "Camarão descascado curtido no sal grosso"
+    ],
+    "materialRecomendado": [
+      "Chumbadas pirâmide médias (40g a 60g) para prender no lodo sem rodar. Chicotes com pernadas altas (50cm acima do chumbo) para a isca não afundar na lama."
+    ],
+    "acesso": "Acesso pelas margens lodosas próximas às cabeceiras da ponte ou por embarcações de alumínio.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Canal+dos+Barreiros+%28Pr%C3%B3ximo+%C3%A0+Ponte%29+S%C3%A3o+Vicente+SP",
+    "estacionamento": "",
+    "estrutura": [],
+    "dificuldadeAcesso": "Médio/alto",
+    "tipoFundo": "lodo, galhadas e fundo orgânico",
+    "riscoEnrosco": "Médio/alto",
+    "segurancaECuidados": [
+      "Área periférica que requer atenção redobrada à noite. Melhor pescar em grupos ou durante o dia. Sem estrutura comercial de apoio imediata."
+    ],
+    "indicadoPara": [
+      "corvina",
+      "bagre",
+      "robalo",
+      "intermediario"
+    ],
+    "quandoEvitar": "Evitar à noite sozinho, após chuva forte ou em margens instáveis.",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Fundo totalmente lamoso com grande aporte de galhadas orgânicas, troncos e águas muito turvas devido ao fluxo do manguezal interno.",
+        "setupRecomendado": "Chumbadas pirâmide médias (40g a 60g) para prender no lodo sem rodar. Chicotes com pernadas altas (50cm acima do chumbo) para a isca não afundar na lama.",
+        "iscasQueConsagram": [
+          "Sardinha amanhecida cortada em cubos",
+          "Miolo de siri limpo",
+          "Camarão descascado curtido no sal grosso"
+        ],
+        "bizuLocal": "O ponto é um imã de grandes corvinas na vazante; use iscas com cheiro forte (sardinha passada) pois a visibilidade na água lamosa é zero.",
+        "segurancaELogistica": "Área periférica que requer atenção redobrada à noite. Melhor pescar em grupos ou durante o dia. Sem estrutura comercial de apoio imediata."
+      }
+    ],
+    "fontePesquisa": "levantamento complementar Gemini + validação editorial pendente",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "japui-rua-japao-marinas",
+    "nome": "Japuí / Rua Japão / marinas",
+    "cidade": "sao-vicente",
+    "tipo": "Canal / marina / embarcada leve",
+    "descricao": "Região ligada a marinas, esportes náuticos e pesca em água salobra; boa base para saídas e pesca de canal.",
     "especies": [
       "robalo",
-      "pescada",
       "bagre",
+      "pescada",
       "parati",
       "carapicu"
     ],
-    "melhorEpoca": "Ano todo, com maior procura por robalo em meses quentes.",
-    "melhorHorario": "Amanhecer, fim de tarde e viradas de maré.",
-    "mareFavoravel": "Maré em movimento, especialmente enchente e início da vazante.",
+    "melhorEpoca": "Ano todo; robalo em meses quentes.",
+    "melhorHorario": "Amanhecer, entardecer e maré correndo.",
+    "mareFavoravel": "Enchente/vazante com corrente moderada.",
     "iscasRecomendadas": [
-      "Camarão vivo",
-      "Sardinha",
-      "Manjuba",
-      "Jig head",
-      "Plug de meia-água"
+      "camarão vivo",
+      "manjuba",
+      "jig head",
+      "camarão artificial",
+      "massa"
     ],
-    "nivelDificuldade": "Intermediário",
-    "cuidados": [
-      "Atenção ao trânsito e circulação de pessoas",
-      "Cuidado com correnteza",
-      "Não pescar em locais proibidos ou perigosos"
+    "materialRecomendado": [
+      "vara 8 a 20 lb",
+      "molinete 2500 a 4000",
+      "multifilamento 15 a 25 lb",
+      "leader fluorcarbon 0,35 mm a 0,50 mm",
+      "jig head 5 g a 18 g conforme corrente"
     ],
-    "imagem": "/images/pontos/ponte-pensil.jpg"
+    "acesso": "Acesso urbano pelo Japuí/Rua Japão; alguns pontos podem depender de autorização/serviço privado.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Japu%C3%AD+%2F+Rua+Jap%C3%A3o+%2F+marinas+sao+vicente+SP",
+    "estacionamento": "Estacionamento variável no entorno.",
+    "estrutura": "Marinas e serviços náuticos próximos; estrutura depende do estabelecimento.",
+    "dificuldadeAcesso": "Médio",
+    "tipoFundo": "lodo/estrutura de marina",
+    "riscoEnrosco": "Médio a alto",
+    "segurancaECuidados": "Não acessar área privada sem autorização; atenção a embarcações.",
+    "indicadoPara": [
+      "robalo",
+      "embarcada",
+      "intermediario"
+    ],
+    "quandoEvitar": "Movimento intenso de embarcações ou área privada sem permissão.",
+    "fontePesquisa": "Fonte: Prefeitura de São Vicente cita Rua Japão como boa para esportes náuticos e pesca",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
   },
   {
     "id": "mar-pequeno-sao-vicente",
     "nome": "Mar Pequeno",
     "cidade": "sao-vicente",
     "tipo": "Canal / estuário",
-    "descricao": "Região de águas abrigadas e salobras entre São Vicente e Praia Grande, procurada para robalo, bagre, parati e pesca leve embarcada ou de margem.",
+    "descricao": "Área de água salobra e abrigada entre São Vicente e Praia Grande, excelente para leitura de maré, robalo e pesca leve.",
     "especies": [
       "robalo",
       "bagre",
       "parati",
       "carapicu",
-      "pescada"
+      "pescada",
+      "tainha"
     ],
-    "melhorEpoca": "Ano todo, com melhores ações de robalo nos meses mais quentes.",
-    "melhorHorario": "Manhã cedo e fim de tarde.",
-    "mareFavoravel": "Maré enchendo ou vazando com água andando.",
+    "melhorEpoca": "Ano todo; robalo melhor na primavera/verão.",
+    "melhorHorario": "Amanhecer e fim de tarde.",
+    "mareFavoravel": "Enchente ou vazante moderada; evitar água parada.",
     "iscasRecomendadas": [
-      "Camarão vivo",
-      "Lambari",
-      "Manjuba",
-      "Camarão artificial",
-      "Soft shad"
+      "camarão vivo",
+      "lambari",
+      "manjuba",
+      "massa",
+      "pão",
+      "camarão artificial",
+      "soft shad"
     ],
-    "nivelDificuldade": "Intermediário",
-    "cuidados": [
-      "Observar tráfego de embarcações",
-      "Usar colete se embarcado",
-      "Evitar margens instáveis"
+    "materialRecomendado": [
+      "vara 8 a 20 lb",
+      "molinete 2500 a 4000",
+      "multifilamento 15 a 25 lb",
+      "leader fluorcarbon 0,35 mm a 0,50 mm",
+      "jig head 5 g a 18 g conforme corrente"
     ],
-    "imagem": "/images/pontos/mar-pequeno-sao-vicente.jpg"
+    "acesso": "Acesso por margens/embarcações locais; validar pontos seguros.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mar+Pequeno+sao+vicente+SP",
+    "estacionamento": "Depende do ponto de acesso.",
+    "estrutura": "Estrutura varia; em alguns trechos há marinas e áreas urbanas.",
+    "dificuldadeAcesso": "Médio",
+    "tipoFundo": "lodo/areia de estuário",
+    "riscoEnrosco": "Médio",
+    "segurancaECuidados": "Cuidado com lama, margem instável e embarcações.",
+    "indicadoPara": [
+      "robalo",
+      "pesca leve",
+      "embarcada leve"
+    ],
+    "quandoEvitar": "Vento forte, chuva intensa ou pontos de margem instável.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "sv-parcel-do-itarare",
+    "nome": "Parcel do Itararé (Ilha Porchat)",
+    "cidade": "sao-vicente",
+    "tipo": "Parcel de Pedras Submersas / Mar Aberto",
+    "descricao": "Formação rochosa submersa imensa cercada por fundo de areia escura e profundidade que varia de 4 a 12 metros com muita marola.",
+    "especies": [
+      "pescada",
+      "robalo",
+      "garoupa",
+      "espada"
+    ],
+    "melhorEpoca": "A validar conforme espécie, época do ano e condição local.",
+    "melhorHorario": "Amanhecer, fim de tarde ou noite, conforme segurança e espécie-alvo.",
+    "mareFavoravel": "Maré em movimento; validar localmente se o ponto favorece enchente, vazante ou estofa.",
+    "iscasRecomendadas": [
+      "Camarão sete-barbas vivo grande",
+      "Jumping Jig cor prata ou glow",
+      "Filé de sardinha fresca com casca"
+    ],
+    "materialRecomendado": [
+      "Carretilha ou molinete robusto com multifilamento 25lb. Jumping jigs de 15g a 28g ou pesca de rodada com chumbo oliva pesado (40g)."
+    ],
+    "acesso": "Acesso apenas embarcado (barco ou caiaque), contornando as pedras da base da Ilha Porchat em direção ao mar aberto.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Parcel+do+Itarar%C3%A9+%28Ilha+Porchat%29+S%C3%A3o+Vicente+SP",
+    "estacionamento": "",
+    "estrutura": [],
+    "dificuldadeAcesso": "Avançado",
+    "tipoFundo": "parcel de pedra submerso com areia ao redor",
+    "riscoEnrosco": "Alto",
+    "segurancaECuidados": [
+      "Requer muita atenção com as condições de ondulação (swell) e correntes de retorno. Não recomendado para caiaquistas iniciantes."
+    ],
+    "indicadoPara": [
+      "embarcada",
+      "caiaque experiente",
+      "pescada",
+      "robalo"
+    ],
+    "quandoEvitar": "Evitar sem experiência, sem colete, com swell, vento forte ou tráfego intenso.",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Formação rochosa submersa imensa cercada por fundo de areia escura e profundidade que varia de 4 a 12 metros com muita marola.",
+        "setupRecomendado": "Carretilha ou molinete robusto com multifilamento 25lb. Jumping jigs de 15g a 28g ou pesca de rodada com chumbo oliva pesado (40g).",
+        "iscasQueConsagram": [
+          "Camarão sete-barbas vivo grande",
+          "Jumping Jig cor prata ou glow",
+          "Filé de sardinha fresca com casca"
+        ],
+        "bizuLocal": "Deixe o barco rodar (derivar) soprando o vento contra a ilha e trabalhe o jumping jig com toques rápidos e secos a um palmo do fundo para pegar as grandes pescadas-amarelas.",
+        "segurancaELogistica": "Requer muita atenção com as condições de ondulação (swell) e correntes de retorno. Não recomendado para caiaquistas iniciantes."
+      }
+    ],
+    "fontePesquisa": "levantamento complementar Gemini + validação editorial pendente",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "ponte-pensil-plataforma",
+    "nome": "Ponte Pênsil / Plataforma de Pesca",
+    "cidade": "sao-vicente",
+    "tipo": "Ponte / plataforma / canal",
+    "descricao": "Região clássica de São Vicente para pesca em canal, com estruturas, corrente e passagem de espécies de água salobra.",
+    "especies": [
+      "robalo",
+      "espada",
+      "bagre",
+      "parati",
+      "carapicu",
+      "pescada",
+      "tainha"
+    ],
+    "melhorEpoca": "Ano todo; robalo em meses quentes, espada em noites favoráveis.",
+    "melhorHorario": "Amanhecer, entardecer e noite para espada.",
+    "mareFavoravel": "Maré correndo; início da vazante e enchente para robalo.",
+    "iscasRecomendadas": [
+      "camarão vivo",
+      "manjuba",
+      "sardinha",
+      "jig head",
+      "plug meia-água",
+      "boia luminosa",
+      "Camarão vivo no visual sob as luzes",
+      "Plug de meia-água osso com barbela curta",
+      "Miolo de pão sovado para tainha"
+    ],
+    "materialRecomendado": [
+      "vara 8 a 20 lb",
+      "molinete 2500 a 4000",
+      "multifilamento 15 a 25 lb",
+      "leader fluorcarbon 0,35 mm a 0,50 mm",
+      "jig head 5 g a 18 g conforme corrente",
+      "passaguá"
+    ],
+    "acesso": "Acesso urbano pela região da Ponte Pênsil; verificar condições e áreas permitidas.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ponte+P%C3%AAnsil+%2F+Plataforma+de+Pesca+sao+vicente+SP",
+    "estacionamento": "Estacionamento urbano no entorno, sujeito a regras locais.",
+    "estrutura": "Estrutura urbana e deck/plataforma; confirmar condições atuais.",
+    "dificuldadeAcesso": "Médio",
+    "tipoFundo": "canal com estrutura/pedra",
+    "riscoEnrosco": "Alto perto de pilares e pedras",
+    "segurancaECuidados": "Atenção a correnteza, altura, trânsito de pessoas e embarcações.",
+    "indicadoPara": [
+      "robalo",
+      "espada",
+      "intermediario"
+    ],
+    "quandoEvitar": "Temporal, raios, correnteza forte ou reforma/interdição local.",
+    "fontePesquisa": "Fonte: Prefeitura de São Vicente e referências locais de plataforma + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Encontro das águas do Mar Pequeno com a baía. Fundo de pedra e craca nas margens, passando para canal arenoso profundo no centro.",
+        "setupRecomendado": "Para pescar nas pedras, use boia de correr para evitar o enrosco do fundo. Se for bater artificial, recolha rápido ao se aproximar da margem.",
+        "iscasQueConsagram": [
+          "Camarão vivo no visual sob as luzes",
+          "Plug de meia-água osso com barbela curta",
+          "Miolo de pão sovado para tainha"
+        ],
+        "bizuLocal": "Nas noites frias, os cardumes de peixe-espada entram babando atrás das manjubas bem na zona de sombra projetada pelas luzes da ponte.",
+        "segurancaELogistica": "Zona turística, muito movimentada e com policiamento frequente. Há bares, restaurantes e marinas muito próximos para apoio."
+      }
+    ]
+  },
+  {
+    "id": "praia-do-gonzaguinha",
+    "nome": "Praia do Gonzaguinha",
+    "cidade": "sao-vicente",
+    "tipo": "Praia abrigada / pesca leve",
+    "descricao": "Praia urbana mais abrigada, boa para pesca leve, parati, carapicu e observação de cardumes pequenos.",
+    "especies": [
+      "parati",
+      "carapicu",
+      "tainha",
+      "bagre"
+    ],
+    "melhorEpoca": "Ano todo, melhor com água calma.",
+    "melhorHorario": "Manhã e fim de tarde.",
+    "mareFavoravel": "Maré lenta a moderada.",
+    "iscasRecomendadas": [
+      "massa",
+      "pão",
+      "camarão pequeno",
+      "sabiki pequeno",
+      "Massa de trigo com queijo e essência de baunilha",
+      "Minhoca de praia em pedacinhos",
+      "Miolo de pão sovado"
+    ],
+    "materialRecomendado": [
+      "vara leve 4 a 10 lb",
+      "molinete 1000 a 2500",
+      "linha 0,18 mm a 0,25 mm",
+      "anzol nº 10 a 16",
+      "boia pequena"
+    ],
+    "acesso": "Acesso pela orla central de São Vicente.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praia+do+Gonzaguinha+sao+vicente+SP",
+    "estacionamento": "Estacionamento urbano.",
+    "estrutura": "Comércio, praia urbana e estrutura próxima.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "areia/lodo leve",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Não pescar em área de banho ou eventos; atenção a lotação.",
+    "indicadoPara": [
+      "iniciante",
+      "familia",
+      "pesca leve"
+    ],
+    "quandoEvitar": "Praia lotada ou água imprópria após chuvas fortes.",
+    "fontePesquisa": "levantamento editorial + fontes públicas + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Água extremamente calma, quase sem ondas (mar de baía). Fundo de areia batida compacta e águas salobras recebendo galerias urbanas.",
+        "setupRecomendado": "Material Ultra Light total. Linhas mono 0.20mm, anzóis Akita Kitsune minúsculos e micro-boias flutuantes vermelhas no chicote.",
+        "iscasQueConsagram": [
+          "Massa de trigo com queijo e essência de baunilha",
+          "Minhoca de praia em pedacinhos",
+          "Miolo de pão sovado"
+        ],
+        "bizuLocal": "As grandes tainhas limpam o fundo perto das saídas de água doce na maré cheia parada; faça uma ceva pesada com farelo de arroz para juntar o cardume.",
+        "segurancaELogistica": "Muito movimentado, iluminado, cercado por comércio, lanchonetes e calçadão movimentado. Muito seguro à noite."
+      }
+    ]
+  },
+  {
+    "id": "praia-do-itarare",
+    "nome": "Praia do Itararé",
+    "cidade": "sao-vicente",
+    "tipo": "Praia urbana",
+    "descricao": "Praia extensa e urbana, útil para pesca leve e surfcasting em horários de menor movimento.",
+    "especies": [
+      "betara",
+      "pescada",
+      "bagre",
+      "corvina",
+      "carapicu"
+    ],
+    "melhorEpoca": "Outono/inverno para praia; ano todo com janelas de maré.",
+    "melhorHorario": "Amanhecer e noite.",
+    "mareFavoravel": "Enchente ou início da vazante com canal formado.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "tatuíra",
+      "camarão",
+      "sardinha"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso pela orla do Itararé.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praia+do+Itarar%C3%A9+sao+vicente+SP",
+    "estacionamento": "Estacionamento urbano, sujeito a lotação.",
+    "estrutura": "Orla e comércio próximos.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "areia",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Evitar banhistas e mar forte.",
+    "indicadoPara": [
+      "praia",
+      "iniciante"
+    ],
+    "quandoEvitar": "Praia cheia ou ressaca.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "praia-dos-milionarios-ilha-porchat",
+    "nome": "Praia dos Milionários / pedras da Ilha Porchat",
+    "cidade": "sao-vicente",
+    "tipo": "Praia pequena / pedra / costão urbano",
+    "descricao": "Praia curta junto às pedras da Ilha Porchat; indicada para pesca leve e tentativas em pedras somente com mar seguro.",
+    "especies": [
+      "robalo",
+      "espada",
+      "carapicu",
+      "parati",
+      "bagre"
+    ],
+    "melhorEpoca": "Primavera/verão para robalo; noites frias podem render espada.",
+    "melhorHorario": "Amanhecer, fim de tarde e noite com segurança.",
+    "mareFavoravel": "Maré em movimento; evitar mar batendo nas pedras.",
+    "iscasRecomendadas": [
+      "camarão",
+      "manjuba",
+      "sardinha",
+      "plug meia-água",
+      "jig leve"
+    ],
+    "materialRecomendado": [
+      "vara 8 a 20 lb",
+      "molinete 2500 a 4000",
+      "multifilamento 15 a 25 lb",
+      "leader fluorcarbon 0,35 mm a 0,50 mm",
+      "jig head 5 g a 18 g conforme corrente"
+    ],
+    "acesso": "Acesso pela região da Ilha Porchat/Praia dos Milionários.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praia+dos+Milion%C3%A1rios+%2F+pedras+da+Ilha+Porchat+sao+vicente+SP",
+    "estacionamento": "Estacionamento urbano limitado.",
+    "estrutura": "Praia urbana; possível aluguel de barcos/passeios na região.",
+    "dificuldadeAcesso": "Fácil na areia; médio/alto nas pedras",
+    "tipoFundo": "areia + pedra",
+    "riscoEnrosco": "Alto nas pedras",
+    "segurancaECuidados": "Costão escorregadio, ondas e queda; não pescar sozinho nas pedras.",
+    "indicadoPara": [
+      "intermediario",
+      "robalo",
+      "costao"
+    ],
+    "quandoEvitar": "Ressaca, pedra molhada ou maré subindo forte.",
+    "fontePesquisa": "Fonte: Prefeitura de São Vicente descreve pedras como local de pesca",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "canal-estuario-santos",
+    "nome": "Canal / Estuário de Santos",
+    "cidade": "santos",
+    "tipo": "Canal / embarcada / estuário",
+    "descricao": "Área de influência portuária e estuarina com potencial para pescaria embarcada guiada, mas exige respeito total a áreas restritas e navegação.",
+    "especies": [
+      "robalo",
+      "pescada",
+      "corvina",
+      "bagre",
+      "espada"
+    ],
+    "melhorEpoca": "Ano todo, com melhor leitura por guia local.",
+    "melhorHorario": "Viradas de maré e janelas com menor tráfego.",
+    "mareFavoravel": "Maré correndo.",
+    "iscasRecomendadas": [
+      "camarão vivo",
+      "sardinha",
+      "manjuba",
+      "jig head",
+      "jumping jig"
+    ],
+    "materialRecomendado": [
+      "vara 8 a 20 lb",
+      "molinete 2500 a 4000",
+      "multifilamento 15 a 25 lb",
+      "leader fluorcarbon 0,35 mm a 0,50 mm",
+      "jig head 5 g a 18 g conforme corrente"
+    ],
+    "acesso": "Preferencialmente embarcado com guia/serviço autorizado.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Canal+%2F+Estu%C3%A1rio+de+Santos+santos+SP",
+    "estacionamento": "Não aplicável; embarque em marina/ponto autorizado.",
+    "estrutura": "Estrutura depende do operador/embarcação.",
+    "dificuldadeAcesso": "Avançado",
+    "tipoFundo": "lodo/canal/estrutura portuária",
+    "riscoEnrosco": "Alto",
+    "segurancaECuidados": "Não acessar área restrita; atenção a navios, corrente e legislação.",
+    "indicadoPara": [
+      "embarcada",
+      "avancado",
+      "guia"
+    ],
+    "quandoEvitar": "Sem guia, temporal, neblina, tráfego intenso ou área proibida.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
   },
   {
     "id": "deck-do-pescador-santos",
     "nome": "Deck do Pescador",
     "cidade": "santos",
     "tipo": "Deck / píer urbano",
-    "descricao": "Estrutura urbana avançando sobre o mar, em frente ao Museu de Pesca, muito conhecida para pesca recreativa em Santos.",
+    "descricao": "Ponto estruturado na Ponta da Praia, em frente ao Museu de Pesca, avançando sobre o mar e muito usado por pescadores recreativos.",
     "especies": [
       "pescada",
       "corvina",
       "espada",
       "bagre",
       "parati",
-      "carapicu"
+      "carapicu",
+      "robalo"
     ],
-    "melhorEpoca": "Ano todo, variando conforme maré, vento e presença de cardumes.",
-    "melhorHorario": "Manhã cedo, fim de tarde e noite para espada em alguns períodos.",
+    "melhorEpoca": "Ano todo; espada à noite, corvina/pescada em maré boa.",
+    "melhorHorario": "Manhã cedo, fim de tarde e noite para espada.",
     "mareFavoravel": "Maré em movimento.",
     "iscasRecomendadas": [
-      "Sardinha",
-      "Camarão",
-      "Manjuba",
-      "Sabiki",
-      "Filé de peixe"
+      "sardinha",
+      "camarão",
+      "manjuba",
+      "sabiki",
+      "boia luminosa",
+      "jig leve"
     ],
-    "nivelDificuldade": "Iniciante",
-    "cuidados": [
-      "Consultar horário e regras de uso",
-      "Atenção a lotação",
-      "Usar passaguá para peixes maiores",
-      "Não deixar linhas no deck"
+    "materialRecomendado": [
+      "vara 12 a 25 lb",
+      "molinete 3000 a 5000",
+      "linha 0,30 mm ou multifilamento 20 a 30 lb",
+      "passaguá",
+      "chicote de fundo ou boia conforme espécie"
     ],
-    "imagem": "/images/pontos/deck-do-pescador-santos.jpg"
+    "acesso": "Acesso pela Ponta da Praia/Museu de Pesca.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Deck+do+Pescador+santos+SP",
+    "estacionamento": "Estacionamento urbano no entorno, sujeito a lotação.",
+    "estrutura": "Banheiros adaptados, lanchonete e pequena loja de artigos de pesca informados pelo turismo local.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "estrutura/píer sobre canal/mar",
+    "riscoEnrosco": "Médio",
+    "segurancaECuidados": "Usar passaguá, respeitar lotação e regras do deck.",
+    "indicadoPara": [
+      "iniciante",
+      "familia",
+      "noturna",
+      "pier"
+    ],
+    "quandoEvitar": "Ressaca, lotação ou manutenção/interdição.",
+    "fontePesquisa": "Fonte oficial: Turismo Santos - Deck do Pescador",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
   },
   {
-    "id": "ponta-da-praia-santos",
-    "nome": "Ponta da Praia",
+    "id": "emissario-submarino-santos",
+    "nome": "Emissário Submarino / Quebra-Mar",
     "cidade": "santos",
-    "tipo": "Canal / orla / proximidade de marinas",
-    "descricao": "Região de Santos próxima ao canal e à infraestrutura náutica, boa para pesca urbana, acesso a guias e saídas embarcadas.",
+    "tipo": "Quebra-mar / praia / observação costeira",
+    "descricao": "Área do Parque Roberto Mário Santini, avançando sobre o mar, interessante para observação de condição e pesca de praia no entorno permitido.",
     "especies": [
       "pescada",
       "corvina",
+      "betara",
+      "bagre",
       "espada",
       "robalo",
-      "bagre"
+      "linguado",
+      "garoupa"
+    ],
+    "melhorEpoca": "Outono/inverno para praia; noites para espada em condição segura.",
+    "melhorHorario": "Amanhecer, fim de tarde e noite com segurança.",
+    "mareFavoravel": "Maré em movimento, sem ressaca.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "tatuíra",
+      "camarão",
+      "sardinha",
+      "jig metálico",
+      "Plug de meia-água articulado cor prata",
+      "Camarão artificial articulado",
+      "Corrupto no elástico para arremesso longo"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso pela orla do José Menino.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Emiss%C3%A1rio+Submarino+%2F+Quebra-Mar+santos+SP",
+    "estacionamento": "Estacionamento urbano no entorno.",
+    "estrutura": "Parque público, orla e comércio próximos.",
+    "dificuldadeAcesso": "Fácil a médio",
+    "tipoFundo": "areia + estrutura de pedra/concreto",
+    "riscoEnrosco": "Médio/alto em pedra",
+    "segurancaECuidados": "Evitar ponta/estrutura com mar batendo; atenção a proibições locais.",
+    "indicadoPara": [
+      "praia",
+      "intermediario",
+      "observacao"
+    ],
+    "quandoEvitar": "Ressaca, onda sobre estrutura ou área sinalizada como proibida.",
+    "fontePesquisa": "Fonte: Turismo Santos informa Parque Roberto Mário Santini/Emissário avança sobre o mar + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Ponta de pedras que avança mar adentro dividindo a praia de Santos e São Vicente. Fundo misto de pedra na beira e areia fina no arremesso longo.",
+        "setupRecomendado": "Varas de ação rápida para conseguir tirar o peixe rápido das pedras do gabião antes que ele enrosque. Líder de fluorocarbono de 0.40mm grosso.",
+        "iscasQueConsagram": [
+          "Plug de meia-água articulado cor prata",
+          "Camarão artificial articulado",
+          "Corrupto no elástico para arremesso longo"
+        ],
+        "bizuLocal": "O linguado adora ficar camuflado na faixa de areia paralela às pedras do quebra-mar. Arremesse na areia e venha arrastando a isca milimetricamente em direção às pedras.",
+        "segurancaELogistica": "Parque totalmente revitalizado, seguro, iluminado, com banheiros, lanchonetes e segurança privada do complexo."
+      }
+    ]
+  },
+  {
+    "id": "san-ilha-das-palmas",
+    "nome": "Entorno da Ilha das Palmas (Boca da Barra)",
+    "cidade": "santos",
+    "tipo": "Costão Rochoso Marítimo / Água Profunda",
+    "descricao": "Paredões de pedra que descem abruptamente para o mar de águas verdes e limpas. Grande incidência de correntes oceânicas.",
+    "especies": [
+      "robalo",
+      "pescada",
+      "sororoca",
+      "espada"
+    ],
+    "melhorEpoca": "A validar conforme espécie, época do ano e condição local.",
+    "melhorHorario": "Amanhecer, fim de tarde ou noite, conforme segurança e espécie-alvo.",
+    "mareFavoravel": "Maré em movimento; validar localmente se o ponto favorece enchente, vazante ou estofa.",
+    "iscasRecomendadas": [
+      "Camarão vivo grande de mangue",
+      "Micro jig de metal cromado",
+      "Plug de barbela longa cor dorso azul e barriga limão"
+    ],
+    "materialRecomendado": [
+      "Equipamento de pesca vertical ou arremesso pesado. Iscas artificiais do tipo micro jigs de 20g a 40g ou plugs de barbela longa para corrico."
+    ],
+    "acesso": "Acesso exclusivo por barcos de pesca contratados na Ponta da Praia ou descendo de embarcações particulares.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Entorno+da+Ilha+das+Palmas+%28Boca+da+Barra%29+Santos+SP",
+    "estacionamento": "",
+    "estrutura": [],
+    "dificuldadeAcesso": "Avançado",
+    "tipoFundo": "costão rochoso e água profunda",
+    "riscoEnrosco": "Alto",
+    "segurancaECuidados": [
+      "Piscina em mar aberto, requer rádio VHF, coletes e marinheiro experiente devido ao tráfego de grandes navios de carga na entrada do canal."
+    ],
+    "indicadoPara": [
+      "embarcada",
+      "guia",
+      "avancado"
+    ],
+    "quandoEvitar": "Evitar sem marinheiro experiente, sem equipamentos de segurança, com neblina, mar grosso ou tráfego intenso.",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Paredões de pedra que descem abruptamente para o mar de águas verdes e limpas. Grande incidência de correntes oceânicas.",
+        "setupRecomendado": "Equipamento de pesca vertical ou arremesso pesado. Iscas artificiais do tipo micro jigs de 20g a 40g ou plugs de barbela longa para corrico.",
+        "iscasQueConsagram": [
+          "Camarão vivo grande de mangue",
+          "Micro jig de metal cromado",
+          "Plug de barbela longa cor dorso azul e barriga limão"
+        ],
+        "bizuLocal": "Os monstros robalos flechas habitam as fendas profundas das pedras da ilha; use equipamentos pesados (25lb) e não dê folga de linha na fisgada ou perderá o peixe nas cracas.",
+        "segurancaELogistica": "Piscina em mar aberto, requer rádio VHF, coletes e marinheiro experiente devido ao tráfego de grandes navios de carga na entrada do canal."
+      }
+    ],
+    "fontePesquisa": "levantamento complementar Gemini + validação editorial pendente",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "mureta-ponta-da-praia",
+    "nome": "Mureta da Ponta da Praia",
+    "cidade": "santos",
+    "tipo": "Mureta / canal urbano",
+    "descricao": "Trecho urbano de mureta próximo ao estuário, usado por pescadores para pesca leve, espera e tentativas de robalo/espada.",
+    "especies": [
+      "robalo",
+      "espada",
+      "bagre",
+      "pescada",
+      "carapicu",
+      "parati",
+      "corvina"
     ],
     "melhorEpoca": "Ano todo.",
-    "melhorHorario": "Amanhecer e fim de tarde; à noite para espécies como espada.",
-    "mareFavoravel": "Maré correndo e água com boa oxigenação.",
+    "melhorHorario": "Fim de tarde, noite e viradas de maré.",
+    "mareFavoravel": "Maré correndo, principalmente vazante/enchente.",
     "iscasRecomendadas": [
-      "Sardinha",
-      "Camarão",
-      "Manjuba",
-      "Jumping jig",
-      "Iscas de meia-água"
+      "camarão",
+      "sardinha",
+      "manjuba",
+      "jig head",
+      "plug meia-água",
+      "Boia luminosa com sapatilha de dois anzóis para sardinha",
+      "Camarão vivo iscado pelo chifre",
+      "Jig head de 21g com shad osso"
     ],
-    "nivelDificuldade": "Iniciante a intermediário",
-    "cuidados": [
-      "Respeitar áreas de navegação",
-      "Evitar locais restritos",
-      "Atenção à segurança urbana"
+    "materialRecomendado": [
+      "vara 8 a 20 lb",
+      "molinete 2500 a 4000",
+      "multifilamento 15 a 25 lb",
+      "leader fluorcarbon 0,35 mm a 0,50 mm",
+      "jig head 5 g a 18 g conforme corrente"
     ],
-    "imagem": "/images/pontos/ponta-da-praia-santos.jpg"
+    "acesso": "Acesso pela Ponta da Praia.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mureta+da+Ponta+da+Praia+santos+SP",
+    "estacionamento": "Estacionamento urbano, difícil em horários de pico.",
+    "estrutura": "Orla, comércio e serviços próximos.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "canal com pedra/estrutura",
+    "riscoEnrosco": "Médio/alto",
+    "segurancaECuidados": "Cuidado com queda, linha em pedestres e áreas de navegação.",
+    "indicadoPara": [
+      "robalo",
+      "pesca urbana",
+      "intermediario"
+    ],
+    "quandoEvitar": "Mar muito batido, vento forte ou grande fluxo de pessoas.",
+    "fontePesquisa": "levantamento editorial + fontes públicas + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Muralha de concreto vertical que desce direto para o canal de navegação do porto mais profundo do país. Correnteza absurda e tráfego constante de navios.",
+        "setupRecomendado": "Varas longas (2.70m a 3.00m) para conseguir içar o peixe do deck alto. Chumbadas pesadas de correr de 60g a 100g para manter a linha verticalizada no canal.",
+        "iscasQueConsagram": [
+          "Boia luminosa com sapatilha de dois anzóis para sardinha",
+          "Camarão vivo iscado pelo chifre",
+          "Jig head de 21g com shad osso"
+        ],
+        "bizuLocal": "Na virada da maré cheia para a vazante, as espadas encostam na parede de concreto para encurralar as manjubas contra o muro. Pesque colado na estrutura.",
+        "segurancaELogistica": "Estrutura fantástica de turismo, super segura, policiamento constante, lixeiras e bancos. Próximo ao Mercado de Peixes e lojas de pesca."
+      }
+    ]
+  },
+  {
+    "id": "ponta-da-praia-museu-pesca",
+    "nome": "Ponta da Praia / Museu de Pesca",
+    "cidade": "santos",
+    "tipo": "Orla / canal / apoio ao Deck",
+    "descricao": "Região estratégica para pesca urbana e apoio a saídas embarcadas, próxima ao Deck do Pescador e ao canal.",
+    "especies": [
+      "robalo",
+      "pescada",
+      "espada",
+      "bagre",
+      "parati"
+    ],
+    "melhorEpoca": "Ano todo, conforme maré.",
+    "melhorHorario": "Amanhecer, fim de tarde e noite.",
+    "mareFavoravel": "Maré em movimento.",
+    "iscasRecomendadas": [
+      "camarão",
+      "sardinha",
+      "manjuba",
+      "jig head",
+      "plug"
+    ],
+    "materialRecomendado": [
+      "vara 8 a 20 lb",
+      "molinete 2500 a 4000",
+      "multifilamento 15 a 25 lb",
+      "leader fluorcarbon 0,35 mm a 0,50 mm",
+      "jig head 5 g a 18 g conforme corrente"
+    ],
+    "acesso": "Acesso pela Ponta da Praia.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ponta+da+Praia+%2F+Museu+de+Pesca+santos+SP",
+    "estacionamento": "Estacionamento urbano.",
+    "estrutura": "Museu, orla, comércio e serviços próximos.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "canal/estrutura",
+    "riscoEnrosco": "Médio",
+    "segurancaECuidados": "Respeitar áreas onde a pesca é permitida; atenção à navegação.",
+    "indicadoPara": [
+      "pesca urbana",
+      "robalo",
+      "embarcada"
+    ],
+    "quandoEvitar": "Grande movimento de pessoas ou área restrita.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "praia-aparecida-canal-6",
+    "nome": "Praia da Aparecida / Canal 6",
+    "cidade": "santos",
+    "tipo": "Praia urbana",
+    "descricao": "Trecho de praia urbana em Santos, útil para pesca de praia leve em horários com pouco movimento.",
+    "especies": [
+      "betara",
+      "pescada",
+      "bagre",
+      "corvina",
+      "carapicu",
+      "parati",
+      "robalo",
+      "tainha"
+    ],
+    "melhorEpoca": "Outono/inverno e dias de praia menos cheia.",
+    "melhorHorario": "Amanhecer e noite.",
+    "mareFavoravel": "Enchente ou início da vazante com canal visível.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "tatuíra",
+      "camarão",
+      "sardinha",
+      "Pedaços de camarão morto fresco",
+      "Miolo de pão",
+      "Minhoca de praia"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso pela orla da Aparecida/Canal 6.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praia+da+Aparecida+%2F+Canal+6+santos+SP",
+    "estacionamento": "Estacionamento urbano.",
+    "estrutura": "Quiosques e comércio próximos.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "areia",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Evitar área de banho e horários cheios.",
+    "indicadoPara": [
+      "iniciante",
+      "praia"
+    ],
+    "quandoEvitar": "Praia cheia, ressaca ou água com muita sujeira.",
+    "fontePesquisa": "levantamento editorial + fontes públicas + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Pequenos canais que despejam água doce/pluvial na praia arenosa rasa. Durante a maré cheia, a água do mar invade o canal criando uma zona de transição rica em nutrientes.",
+        "setupRecomendado": "Varas de spinning leves (8lb) ou equipamento de fly/ultra light. Chumbadas esféricas pequenas de correr de 5g a 12g.",
+        "iscasQueConsagram": [
+          "Pedaços de camarão morto fresco",
+          "Miolo de pão",
+          "Minhoca de praia"
+        ],
+        "bizuLocal": "O carapicu e os pequenos robalos pevas entram nas muretas internas do canal logo nas primeiras duas horas da maré enchente para comer detritos.",
+        "segurancaELogistica": "Altamente seguro, muito movimentado por pedestres e ciclistas. Iluminação excelente de toda a orla santista."
+      }
+    ]
+  },
+  {
+    "id": "agenor-de-campos",
+    "nome": "Agenor de Campos",
+    "cidade": "mongagua",
+    "tipo": "Praia / proximidade da plataforma",
+    "descricao": "Região próxima à Plataforma, com praia e fluxo de pescadores; boa para complementar pescaria quando a plataforma estiver cheia.",
+    "especies": [
+      "betara",
+      "pescada",
+      "corvina",
+      "bagre",
+      "espada"
+    ],
+    "melhorEpoca": "Outono/inverno, noites e dias de mar formado.",
+    "melhorHorario": "Amanhecer, fim de tarde e noite.",
+    "mareFavoravel": "Maré em movimento.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "camarão",
+      "sardinha",
+      "tatuíra"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso pela orla de Agenor de Campos.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Agenor+de+Campos+mongagua+SP",
+    "estacionamento": "Estacionamento urbano e área do complexo conforme disponibilidade.",
+    "estrutura": "Comércio e estrutura turística da região da plataforma.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "areia",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Cuidado com banhistas e corrente de retorno.",
+    "indicadoPara": [
+      "praia",
+      "surfcasting"
+    ],
+    "quandoEvitar": "Ressaca e praia cheia.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "florida-mirim-mongagua",
+    "nome": "Flórida Mirim / divisa sul",
+    "cidade": "mongagua",
+    "tipo": "Praia mais tranquila",
+    "descricao": "Trecho mais afastado da área central, bom para pescador que procura praia com menos movimento e valas.",
+    "especies": [
+      "betara",
+      "corvina",
+      "pescada",
+      "bagre",
+      "linguado"
+    ],
+    "melhorEpoca": "Outono, inverno e primavera.",
+    "melhorHorario": "Amanhecer e noite com segurança.",
+    "mareFavoravel": "Maré em movimento com água sem excesso de sujeira.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "tatuíra",
+      "camarão",
+      "sardinha",
+      "filé de peixe"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso por bairros do extremo sul.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fl%C3%B3rida+Mirim+%2F+divisa+sul+mongagua+SP",
+    "estacionamento": "Estacionamento de rua; validar segurança local.",
+    "estrutura": "Menos estrutura; levar água, iluminação e apoio.",
+    "dificuldadeAcesso": "Médio",
+    "tipoFundo": "areia",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Evitar pescar sozinho à noite.",
+    "indicadoPara": [
+      "surfcasting",
+      "intermediario"
+    ],
+    "quandoEvitar": "Noite sem companhia, ressaca ou mar muito lateral.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "jussara-mongagua",
+    "nome": "Jussara",
+    "cidade": "mongagua",
+    "tipo": "Praia",
+    "descricao": "Praia com potencial para pesca de espera e leitura de arrebentação, dependendo da formação de bancos.",
+    "especies": [
+      "betara",
+      "pescada",
+      "bagre",
+      "corvina"
+    ],
+    "melhorEpoca": "Outono/inverno.",
+    "melhorHorario": "Amanhecer, fim de tarde e noite.",
+    "mareFavoravel": "Maré enchendo ou início da vazante.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "camarão",
+      "tatuíra",
+      "sardinha"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso pela orla do bairro Jussara.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jussara+mongagua+SP",
+    "estacionamento": "Estacionamento urbano.",
+    "estrutura": "Estrutura de bairro/orla.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "areia",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Evitar arremesso em área de banho.",
+    "indicadoPara": [
+      "praia",
+      "iniciante"
+    ],
+    "quandoEvitar": "Praia cheia e mar mexido demais.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
   },
   {
     "id": "plataforma-de-pesca-mongagua",
     "nome": "Plataforma de Pesca de Mongaguá",
     "cidade": "mongagua",
-    "tipo": "Plataforma / píer",
-    "descricao": "Um dos pontos turísticos mais conhecidos de Mongaguá, usado para pesca recreativa e observação do mar. A plataforma oferece acesso mais avançado sobre a água em comparação à pesca direto da areia.",
+    "tipo": "Plataforma / píer marítimo",
+    "descricao": "Principal ponto de pesca da cidade, estrutura que avança mar adentro em formato de T, usada para pesca amadora e turismo.",
     "especies": [
       "pescada",
       "corvina",
       "espada",
       "bagre",
-      "tainha"
+      "tainha",
+      "betara",
+      "carapicu",
+      "pampo",
+      "parati"
     ],
-    "melhorEpoca": "Ano todo, com destaque para outono e inverno em corvina e tainha.",
+    "melhorEpoca": "Ano todo; espada e corvina em noites/janelas frias.",
     "melhorHorario": "Manhã cedo, fim de tarde e noite.",
-    "mareFavoravel": "Maré em movimento com mar seguro.",
+    "mareFavoravel": "Maré em movimento; atenção ao vento e ondulação.",
     "iscasRecomendadas": [
-      "Sardinha",
-      "Camarão",
-      "Corrupto",
-      "Manjuba",
-      "Filé de peixe"
+      "sardinha",
+      "camarão",
+      "corrupto",
+      "manjuba",
+      "filé de peixe",
+      "boia luminosa",
+      "Sardinha inteira amarrada em sapatilha",
+      "Corrupto fresco congelado no sal",
+      "Filé de lula em tiras largas",
+      "Camarão sete-barbas com casca amarrado",
+      "Minhoca de praia viva",
+      "Pequenos pedaços de corrupto"
     ],
-    "nivelDificuldade": "Iniciante a intermediário",
-    "cuidados": [
-      "Verificar funcionamento e regras locais",
-      "Evitar dias de ressaca",
-      "Usar passaguá",
-      "Atenção ao vento"
+    "materialRecomendado": [
+      "vara 12 a 25 lb",
+      "molinete 3000 a 5000",
+      "linha 0,30 mm ou multifilamento 20 a 30 lb",
+      "passaguá",
+      "chicote de fundo ou boia conforme espécie"
     ],
-    "imagem": "/images/pontos/plataforma-de-pesca-mongagua.jpg"
+    "acesso": "Acesso pelo Complexo da Plataforma de Pesca.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Plataforma+de+Pesca+de+Mongagu%C3%A1+mongagua+SP",
+    "estacionamento": "Estacionamento no complexo com regras/valores municipais sujeitos a alteração.",
+    "estrutura": "Sanitários e local para lavagem de pescados/apetrechos são informados pela prefeitura.",
+    "dificuldadeAcesso": "Fácil a médio",
+    "tipoFundo": "estrutura sobre mar aberto",
+    "riscoEnrosco": "Médio",
+    "segurancaECuidados": "Checar funcionamento, vento, lotação e ressaca; usar passaguá.",
+    "indicadoPara": [
+      "iniciante",
+      "familia",
+      "noturna",
+      "plataforma"
+    ],
+    "quandoEvitar": "Ressaca, vento forte ou plataforma com restrição.",
+    "fontePesquisa": "Fonte oficial: Prefeitura de Mongaguá - Plataforma de Pesca + levantamento complementar Gemini + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Estrutura de concreto monumental que avança em pleno mar aberto. O fundo é de areia limpa com valas profundas formadas pelos pilares gigantes que quebram a correnteza.",
+        "setupRecomendado": "Varas longas de praia ou costão (3.60m+). Uso obrigatório de linha grossa ou líder de arranque, chumbas pesadas pirâmide ou carambola (100g a 150g) para travar no mar aberto.",
+        "iscasQueConsagram": [
+          "Sardinha inteira amarrada em sapatilha",
+          "Corrupto fresco congelado no sal",
+          "Filé de lula em tiras largas"
+        ],
+        "bizuLocal": "É o ponto definitivo de grandes corvinas do estado. Lance a isca de sardinha nos poços entre os pilares do fundo na maré vazante durante a noite de inverno.",
+        "segurancaELogistica": "Funciona 24 horas, possui banheiros, lanchonete interna, luz elétrica em toda extensão e segurança privada. Excelente infraestrutura raiz."
+      },
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Zona de espuma densa e oxigenação brutal provocada pelo choque das ondas com os primeiros pilares. Água muito mexida e rasa (1.5 a 3 metros).",
+        "setupRecomendado": "Chicotes de praia curtos com rotores anti-enrosco. Chumbadas pirâmide de 80g para não rodar em direção aos pilares cortantes.",
+        "iscasQueConsagram": [
+          "Camarão sete-barbas com casca amarrado",
+          "Minhoca de praia viva",
+          "Pequenos pedaços de corrupto"
+        ],
+        "bizuLocal": "Os carapicus e pampos gigantes frequentam a espuma dos primeiros pilares. Deixe a isca trabalhando colada na pilastra da arrebentação.",
+        "segurancaELogistica": "Mesma estrutura da plataforma, porém sujeito a vento frontal forte e respingos de ondas grandes nas ressacas."
+      }
+    ]
   },
   {
     "id": "praia-do-centro-mongagua",
     "nome": "Praia do Centro de Mongaguá",
     "cidade": "mongagua",
-    "tipo": "Praia",
-    "descricao": "Trecho urbano de praia com boa acessibilidade para pesca de arremesso e leitura de canais de praia.",
+    "tipo": "Praia urbana",
+    "descricao": "Trecho central de praia com acesso fácil para surfcasting e pesca de espera em valas.",
+    "especies": [
+      "pescada",
+      "corvina",
+      "bagre",
+      "betara",
+      "tainha",
+      "carapicu"
+    ],
+    "melhorEpoca": "Outono/inverno e primavera.",
+    "melhorHorario": "Amanhecer, fim de tarde e noite.",
+    "mareFavoravel": "Enchente e início da vazante.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "tatuíra",
+      "camarão",
+      "sardinha",
+      "Corrupto fresco no elástico",
+      "Minhoca marinha de praia",
+      "Sardinha em tiras salgadas"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso pela orla central.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praia+do+Centro+de+Mongagu%C3%A1+mongagua+SP",
+    "estacionamento": "Estacionamento urbano.",
+    "estrutura": "Comércio e quiosques próximos.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "areia",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Evitar banhistas e mar forte.",
+    "indicadoPara": [
+      "praia",
+      "iniciante"
+    ],
+    "quandoEvitar": "Praia cheia ou ressaca.",
+    "fontePesquisa": "levantamento editorial + fontes públicas + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Praia extensa com declive suave, areia escura e compacta com formação de pequenas valas rasas na maré cheia.",
+        "setupRecomendado": "Varas de Surfcasting de 3.90m, linhas finas de nylon no carretel (0.20mm) com arranque cônico para buscar distância máxima atrás da terceira onda.",
+        "iscasQueConsagram": [
+          "Corrupto fresco no elástico",
+          "Minhoca marinha de praia",
+          "Sardinha em tiras salgadas"
+        ],
+        "bizuLocal": "Cante o ponto olhando o mar de dia: procure onde as ondas não quebram (refluxos ou poços). É ali que as betaras se concentram para comer os mariscos arrancados pela onda.",
+        "segurancaELogistica": "Movimentada durante o dia por banhistas. À noite requer atenção nas áreas menos iluminadas longe dos quiosques."
+      }
+    ]
+  },
+  {
+    "id": "vera-cruz-itaoca",
+    "nome": "Vera Cruz / Itaóca",
+    "cidade": "mongagua",
+    "tipo": "Praia / surfcasting",
+    "descricao": "Trecho de praia para buscar valas e canais menos óbvios, interessante para betara, corvina e pescada.",
+    "especies": [
+      "betara",
+      "corvina",
+      "pescada",
+      "bagre"
+    ],
+    "melhorEpoca": "Outono, inverno e primavera.",
+    "melhorHorario": "Amanhecer e fim de tarde.",
+    "mareFavoravel": "Enchente com canais formados.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "tatuíra",
+      "camarão",
+      "sardinha"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso pela orla/bairros Vera Cruz e Itaóca.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Vera+Cruz+%2F+Ita%C3%B3ca+mongagua+SP",
+    "estacionamento": "Estacionamento em ruas próximas.",
+    "estrutura": "Estrutura urbana variável.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "areia",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Planejar segurança em horários vazios.",
+    "indicadoPara": [
+      "praia",
+      "intermediario"
+    ],
+    "quandoEvitar": "Vento frontal forte e ressaca.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "boca-da-barra-itanhaem",
+    "nome": "Boca da Barra",
+    "cidade": "itanhaem",
+    "tipo": "Foz / encontro rio e mar",
+    "descricao": "Encontro do Rio Itanhaém com o mar, um dos pontos mais importantes da cidade para pesca amadora e leitura de maré.",
+    "especies": [
+      "robalo",
+      "pescada",
+      "bagre",
+      "parati",
+      "tainha",
+      "linguado"
+    ],
+    "melhorEpoca": "Ano todo; robalo em meses quentes e praia/fundo no frio.",
+    "melhorHorario": "Amanhecer e fim de tarde.",
+    "mareFavoravel": "Início da vazante e enchente, com corrente controlável.",
+    "iscasRecomendadas": [
+      "camarão vivo",
+      "manjuba",
+      "jig head",
+      "camarão artificial",
+      "sardinha",
+      "massa",
+      "Camarão vivo médio iscado pelo chifre",
+      "Filé de parati cortado em formato de V",
+      "Plug de meia-água cor osso ou transparente"
+    ],
+    "materialRecomendado": [
+      "vara 8 a 20 lb",
+      "molinete 2500 a 4000",
+      "multifilamento 15 a 25 lb",
+      "leader fluorcarbon 0,35 mm a 0,50 mm",
+      "jig head 5 g a 18 g conforme corrente"
+    ],
+    "acesso": "Acesso urbano pela região da Boca da Barra/Praia da Saudade.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Boca+da+Barra+itanhaem+SP",
+    "estacionamento": "Estacionamento urbano no entorno; sujeito a lotação.",
+    "estrutura": "Comércio e lazer próximos; passeios náuticos em áreas próximas.",
+    "dificuldadeAcesso": "Fácil a médio",
+    "tipoFundo": "areia/lodo/foz",
+    "riscoEnrosco": "Médio",
+    "segurancaECuidados": "Cuidado com corrente de foz, banhistas e embarcações.",
+    "indicadoPara": [
+      "robalo",
+      "familia",
+      "iniciante",
+      "foz"
+    ],
+    "quandoEvitar": "Corrente muito forte, ressaca ou maré subindo em área estreita.",
+    "fontePesquisa": "Fonte oficial: Turismo Itanhaém descreve Boca da Barra como ótima para pesca amadora + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Ponto geográfico fantástico de forte vazão de água doce que se choca contra as ondas do mar aberto. Fundo arenoso muito instável com bancos de areia e pedrais submersos cortantes.",
+        "setupRecomendado": "Jig heads pesados de 14g a 21g com shads para vencer o refluxo do rio. Para natural, chumbadas redondas chatas de correr (30g a 50g) para raspar o fundo.",
+        "iscasQueConsagram": [
+          "Camarão vivo médio iscado pelo chifre",
+          "Filé de parati cortado em formato de V",
+          "Plug de meia-água cor osso ou transparente"
+        ],
+        "bizuLocal": "O linguado gigante habita este ponto. Arremesse a isca de filé de peixe na descida da maré e recolha arrastando no chão milímetro por milímetro na divisa da água doce com a salgada.",
+        "segurancaELogistica": "Ponto turístico muito frequentado de dia, requer cuidado nas pescarias na madrugada devido ao isolamento da barra. Comércio e quiosques próximos."
+      }
+    ]
+  },
+  {
+    "id": "ita-pontilhao-ferro",
+    "nome": "Ponte de Ferro (Antiga Linha Ferroviária)",
+    "cidade": "itanhaem",
+    "tipo": "Estrutura Metálica / Pilares de Pedra",
+    "descricao": "Os antigos pilares de pedra cortam o fluxo do rio criando grandes redemoinhos e zonas de remanso profundo. Fundo misto de lama, pedras soltas e ferro velho.",
+    "especies": [
+      "robalo",
+      "bagre",
+      "corvina"
+    ],
+    "melhorEpoca": "A validar conforme espécie, época do ano e condição local.",
+    "melhorHorario": "Amanhecer, fim de tarde ou noite, conforme segurança e espécie-alvo.",
+    "mareFavoravel": "Maré em movimento; validar localmente se o ponto favorece enchente, vazante ou estofa.",
+    "iscasRecomendadas": [
+      "Jig head de 10g com shad cor branca ou amarela",
+      "Camarão vivo solto na correnteza com pequeno chumbo de oliva de 5g"
+    ],
+    "materialRecomendado": [
+      "Equipamento de precisão rápida. Varas de 14lb a 17lb ação rápida para arremessar jigs ou plugs de barbela curta bem colado na base de pedra do pilar."
+    ],
+    "acesso": "Acesso a pé pelas margens do rio subindo pelas trilhas laterais da antiga linha férrea.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ponte+de+Ferro+%28Antiga+Linha+Ferrovi%C3%A1ria%29+Itanha%C3%A9m+SP",
+    "estacionamento": "",
+    "estrutura": [],
+    "dificuldadeAcesso": "A validar",
+    "tipoFundo": "",
+    "riscoEnrosco": "",
+    "segurancaECuidados": [
+      "Acesso estreito e alto, requer atenção para não escorregar. Pouca iluminação à noite, melhor pescar acompanhado."
+    ],
+    "indicadoPara": [],
+    "quandoEvitar": "Evitar com ressaca, temporal, baixa visibilidade, correnteza perigosa ou sem validação local de segurança.",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Os antigos pilares de pedra cortam o fluxo do rio criando grandes redemoinhos e zonas de remanso profundo. Fundo misto de lama, pedras soltas e ferro velho.",
+        "setupRecomendado": "Equipamento de precisão rápida. Varas de 14lb a 17lb ação rápida para arremessar jigs ou plugs de barbela curta bem colado na base de pedra do pilar.",
+        "iscasQueConsagram": [
+          "Jig head de 10g com shad cor branca ou amarela",
+          "Camarão vivo solto na correnteza com pequeno chumbo de oliva de 5g"
+        ],
+        "bizuLocal": "Dê toques curtos de jig head deixando a isca bater na pedra do pilar e rolar para o fundo. O robalo peva fica abrigado no buraco do pilar atacando por reflexo.",
+        "segurancaELogistica": "Acesso estreito e alto, requer atenção para não escorregar. Pouca iluminação à noite, melhor pescar acompanhado."
+      }
+    ],
+    "fontePesquisa": "levantamento complementar Gemini + validação editorial pendente",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "ita-poco-do-baianao",
+    "nome": "Poço do Baianão (Médio Rio Itanhaém)",
+    "cidade": "itanhaem",
+    "tipo": "Rio de Manguezal / Poço Profundo",
+    "descricao": "Curva de rio acentuada que cavou um poço profundo de até 8 metros de profundidade no leito. Margens repletas de árvores caídas e galhadas submersas.",
+    "especies": [
+      "robalo",
+      "corvina",
+      "bagre"
+    ],
+    "melhorEpoca": "A validar conforme espécie, época do ano e condição local.",
+    "melhorHorario": "Amanhecer, fim de tarde ou noite, conforme segurança e espécie-alvo.",
+    "mareFavoravel": "Maré em movimento; validar localmente se o ponto favorece enchente, vazante ou estofa.",
+    "iscasRecomendadas": [
+      "Camarão artificial com anzol offset e peso interno",
+      "Camarão vivo na boia com chicote de 1.5m",
+      "Sardinha em pedaços grandes para espera"
+    ],
+    "materialRecomendado": [
+      "Uso obrigatório de líder de fluorocarbono grosso (0.45mm a 0.50mm) curto para aguentar o atrito com as galhadas rústicas. Iscas artificiais com anzol offset antienrosco."
+    ],
+    "acesso": "Acesso preferencialmente por barcos, caiaques ou descendo por chácaras e marinas particulares na região interior do rio.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Po%C3%A7o+do+Baian%C3%A3o+%28M%C3%A9dio+Rio+Itanha%C3%A9m%29+Itanha%C3%A9m+SP",
+    "estacionamento": "",
+    "estrutura": [],
+    "dificuldadeAcesso": "Avançado",
+    "tipoFundo": "poço de rio, lama, galhadas e mangue",
+    "riscoEnrosco": "Alto",
+    "segurancaECuidados": [
+      "Ponto de pesca rústico e isolado, cercado por vegetação densa de mangue. Obrigatório levar repelente forte de mosquitos e lanterna potente."
+    ],
+    "indicadoPara": [
+      "robalo",
+      "corvina",
+      "embarcada",
+      "caiaque experiente"
+    ],
+    "quandoEvitar": "Evitar sem guia/local, sem repelente, à noite sozinho ou com rio cheio.",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Curva de rio acentuada que cavou um poço profundo de até 8 metros de profundidade no leito. Margens repletas de árvores caídas e galhadas submersas.",
+        "setupRecomendado": "Uso obrigatório de líder de fluorocarbono grosso (0.45mm a 0.50mm) curto para aguentar o atrito com as galhadas rústicas. Iscas artificiais com anzol offset antienrosco.",
+        "iscasQueConsagram": [
+          "Camarão artificial com anzol offset e peso interno",
+          "Camarão vivo na boia com chicote de 1.5m",
+          "Sardinha em pedaços grandes para espera"
+        ],
+        "bizuLocal": "Na maré cheia estofa (parada), grandes corvinas de água salobra entram neste poço para caçar siri mole. Deixe o pedaço de sardinha descansando bem no fundo do poço.",
+        "segurancaELogistica": "Ponto de pesca rústico e isolado, cercado por vegetação densa de mangue. Obrigatório levar repelente forte de mosquitos e lanterna potente."
+      }
+    ],
+    "fontePesquisa": "levantamento complementar Gemini + validação editorial pendente",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "praia-da-saudade",
+    "nome": "Praia da Saudade",
+    "cidade": "itanhaem",
+    "tipo": "Praia calma / entorno da Boca da Barra",
+    "descricao": "Praia aos pés do Morro do Sapucaitava, ligada ao cenário da Boca da Barra, boa para pesca leve e observação de condição.",
+    "especies": [
+      "parati",
+      "carapicu",
+      "tainha",
+      "bagre",
+      "linguado"
+    ],
+    "melhorEpoca": "Ano todo, melhor com água calma.",
+    "melhorHorario": "Manhã e fim de tarde.",
+    "mareFavoravel": "Maré lenta a moderada.",
+    "iscasRecomendadas": [
+      "massa",
+      "pão",
+      "camarão pequeno",
+      "jig leve",
+      "sardinha"
+    ],
+    "materialRecomendado": [
+      "vara leve 4 a 12 lb",
+      "molinete 1000 a 3000",
+      "linha 0,20 mm a 0,30 mm",
+      "boia pequena",
+      "anzol nº 8 a 16"
+    ],
+    "acesso": "Acesso urbano pela região da Praia da Saudade/Boca da Barra.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praia+da+Saudade+itanhaem+SP",
+    "estacionamento": "Estacionamento urbano limitado.",
+    "estrutura": "Praia turística e comércio próximo na região central.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "areia/foz",
+    "riscoEnrosco": "Baixo a médio",
+    "segurancaECuidados": "Atenção a banhistas e corrente perto da foz.",
+    "indicadoPara": [
+      "iniciante",
+      "familia",
+      "pesca leve"
+    ],
+    "quandoEvitar": "Praia cheia ou corrente forte na foz.",
+    "fontePesquisa": "Fonte oficial: Turismo Itanhaém descreve Praia da Saudade no roteiro de pesca/praias",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "cibratel",
+    "nome": "Praia do Cibratel",
+    "cidade": "itanhaem",
+    "tipo": "Praia / surfcasting",
+    "descricao": "Praia extensa e conhecida para pesca de praia, com potencial para valas, betara, corvina e pescada.",
+    "especies": [
+      "betara",
+      "corvina",
+      "pescada",
+      "bagre",
+      "linguado",
+      "garoupa",
+      "carapicu"
+    ],
+    "melhorEpoca": "Outono, inverno e primavera.",
+    "melhorHorario": "Amanhecer, fim de tarde e noite.",
+    "mareFavoravel": "Enchente e início da vazante com canal formado.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "tatuíra",
+      "camarão",
+      "sardinha",
+      "filé de peixe",
+      "Corrupto fresco em pedaços generosos",
+      "Minhoca marinha de praia",
+      "Camarão morto com casca amarrado"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso pela orla/bairro Cibratel.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praia+do+Cibratel+itanhaem+SP",
+    "estacionamento": "Estacionamento urbano em ruas próximas.",
+    "estrutura": "Estrutura de bairro e quiosques em trechos da orla.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "areia",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Atenção a banhistas e corrente de retorno.",
+    "indicadoPara": [
+      "surfcasting",
+      "praia",
+      "intermediario"
+    ],
+    "quandoEvitar": "Ressaca forte e vento frontal.",
+    "fontePesquisa": "levantamento editorial + fontes públicas + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Praia rasa arenosa que morre em um costão de pedras baixas. Formação constante de valas profundas paralelas ao costão onde o mar bate e espalha nutrientes.",
+        "setupRecomendado": "Chicote de praia longo com anzóis Maruseigo pequenos. Chumbadas do tipo pirâmide de 70g a 90g arremessadas na transição da areia com as pedras.",
+        "iscasQueConsagram": [
+          "Corrupto fresco em pedaços generosos",
+          "Minhoca marinha de praia",
+          "Camarão morto com casca amarrado"
+        ],
+        "bizuLocal": "Arremesse a isca de corrupto na areia limpa, mas o mais próximo possível das primeiras pedras isoladas do costão; as maiores betaras da região pastam ali para comer os pequenos caranguejos.",
+        "segurancaELogistica": "Área residencial tranquila, segura durante o dia e início da noite. Conta com quiosques de praia próximos para apoio técnico e alimentação."
+      }
+    ]
+  },
+  {
+    "id": "praia-do-gaivota",
+    "nome": "Praia do Gaivota",
+    "cidade": "itanhaem",
+    "tipo": "Praia mais afastada / surfcasting",
+    "descricao": "Trecho mais ao sul de Itanhaém, interessante para pesca de praia com menos movimento e busca de canais.",
+    "especies": [
+      "betara",
+      "pescada",
+      "corvina",
+      "bagre",
+      "linguado"
+    ],
+    "melhorEpoca": "Outono, inverno e primavera.",
+    "melhorHorario": "Amanhecer, fim de tarde e noite com companhia.",
+    "mareFavoravel": "Enchente e vazante inicial.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "tatuíra",
+      "camarão",
+      "sardinha"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso por bairros do extremo sul de Itanhaém.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praia+do+Gaivota+itanhaem+SP",
+    "estacionamento": "Estacionamento em ruas próximas; validar segurança.",
+    "estrutura": "Menos estrutura; levar iluminação, água e apoio.",
+    "dificuldadeAcesso": "Médio",
+    "tipoFundo": "areia e canais",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Evitar pescar sozinho à noite; atenção ao mar aberto.",
+    "indicadoPara": [
+      "surfcasting",
+      "intermediario"
+    ],
+    "quandoEvitar": "Noite sem apoio, ressaca ou vento forte.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "praia-do-sonho-conchas",
+    "nome": "Praia do Sonho / Praia das Conchas",
+    "cidade": "itanhaem",
+    "tipo": "Praia / costão / conchas",
+    "descricao": "Região turística com praias, rochas e acesso à Praia das Conchas, onde a pesca amadora é frequente segundo material local.",
+    "especies": [
+      "pescada",
+      "betara",
+      "corvina",
+      "espada",
+      "linguado",
+      "carapicu",
+      "parati"
+    ],
+    "melhorEpoca": "Outono/inverno e noites seguras.",
+    "melhorHorario": "Amanhecer, fim de tarde e noite com cautela.",
+    "mareFavoravel": "Maré em movimento; mar baixo para observar pedras.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "camarão",
+      "sardinha",
+      "tatuíra",
+      "jig metálico",
+      "Minhoca de praia",
+      "Camarão morto limpo em cubinhos",
+      "Corrupto no elástico"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas",
+      "calçado antiderrapante"
+    ],
+    "acesso": "Acesso pela Praia do Sonho e trilha/rochas para Praia das Conchas.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praia+do+Sonho+%2F+Praia+das+Conchas+itanhaem+SP",
+    "estacionamento": "Estacionamento urbano no entorno turístico.",
+    "estrutura": "Comércio e estrutura próximos na Praia do Sonho; Conchas é mais rústica.",
+    "dificuldadeAcesso": "Médio",
+    "tipoFundo": "areia/conchas/rocha",
+    "riscoEnrosco": "Médio/alto",
+    "segurancaECuidados": "Pedras escorregadias, ouriços e ondas; não pescar com ressaca.",
+    "indicadoPara": [
+      "intermediario",
+      "costao",
+      "praia"
+    ],
+    "quandoEvitar": "Ressaca, maré alta nas pedras, chuva ou falta de luz.",
+    "fontePesquisa": "Fonte: Turismo Itanhaém cita Praia das Conchas com pesca amadora frequente + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Praia mansa abrigada pelas pedras da Cama de Anchieta. Fundo de areia limpa misturado com pedriscos soltos que se desprendem do morro.",
+        "setupRecomendado": "Equipamento leve de praia (varas de 3.00m). Chumbadas pirâmide ou gota leves de 40g a 60g são suficientes devido ao mar calmo.",
+        "iscasQueConsagram": [
+          "Minhoca de praia",
+          "Camarão morto limpo em cubinhos",
+          "Corrupto no elástico"
+        ],
+        "bizuLocal": "O carapicu e o parati batem em quantidade absurda na espuma da primeira valinha, a menos de 5 metros da areia seca. Não precisa arremessar longe; jogue a isca na beirada da espuma.",
+        "segurancaELogistica": "Ponto turístico cartão-postal da cidade, super iluminado à noite pelos refletores da orla, seguro e movimentado."
+      }
+    ]
+  },
+  {
+    "id": "suaarao",
+    "nome": "Praia do Suarão",
+    "cidade": "itanhaem",
+    "tipo": "Praia / pesca de espera",
+    "descricao": "Trecho de praia com boa extensão para leitura de valas e pesca de espera, especialmente em horários de menor movimento.",
+    "especies": [
+      "betara",
+      "pescada",
+      "corvina",
+      "bagre",
+      "tainha"
+    ],
+    "melhorEpoca": "Outono/inverno.",
+    "melhorHorario": "Amanhecer e noite.",
+    "mareFavoravel": "Maré em movimento com chumbada segurando.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "camarão",
+      "sardinha",
+      "tatuíra"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso pela orla do Suarão.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praia+do+Suar%C3%A3o+itanhaem+SP",
+    "estacionamento": "Estacionamento urbano.",
+    "estrutura": "Estrutura de bairro/orla.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "areia",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Não arremessar próximo de banhistas; atenção à segurança noturna.",
+    "indicadoPara": [
+      "praia",
+      "iniciante"
+    ],
+    "quandoEvitar": "Praia cheia ou mar muito lateral.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "praia-dos-pescadores-ilha-das-cabras",
+    "nome": "Praia dos Pescadores / Ilha das Cabras",
+    "cidade": "itanhaem",
+    "tipo": "Praia / ilha rochosa / pesca amadora",
+    "descricao": "Praia tradicional de Itanhaém; a Ilha das Cabras fica em frente e pode ser acessada em maré baixa, mas exige atenção total à segurança.",
+    "especies": [
+      "pescada",
+      "corvina",
+      "betara",
+      "bagre",
+      "espada",
+      "carapicu"
+    ],
+    "melhorEpoca": "Outono/inverno para fundo e betara; noites para espada em condição segura.",
+    "melhorHorario": "Amanhecer, fim de tarde e maré baixa para observar acesso à ilha.",
+    "mareFavoravel": "Maré baixa apenas para acesso à ilha; pesca depende de segurança e água em movimento.",
+    "iscasRecomendadas": [
+      "camarão",
+      "corrupto",
+      "sardinha",
+      "manjuba",
+      "jig leve"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas",
+      "calçado antiderrapante em pedra"
+    ],
+    "acesso": "Acesso pela Praia dos Pescadores; travessia à Ilha das Cabras apenas quando a maré baixa permite.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praia+dos+Pescadores+%2F+Ilha+das+Cabras+itanhaem+SP",
+    "estacionamento": "Estacionamento urbano no entorno.",
+    "estrutura": "Praia turística; estrutura urbana próxima.",
+    "dificuldadeAcesso": "Fácil na praia; médio/alto na ilha",
+    "tipoFundo": "areia + rocha",
+    "riscoEnrosco": "Alto em rocha",
+    "segurancaECuidados": "Não atravessar com maré subindo; cuidado com ouriços, pedras e ondas.",
+    "indicadoPara": [
+      "praia",
+      "intermediario",
+      "costao"
+    ],
+    "quandoEvitar": "Maré subindo, pedra molhada, ressaca ou pouca visibilidade.",
+    "fontePesquisa": "Fonte oficial: Turismo Itanhaém cita Ilha das Cabras como apropriada para pesca e acessível na maré baixa",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "rio-itanhaem",
+    "nome": "Rio Itanhaém",
+    "cidade": "itanhaem",
+    "tipo": "Rio / estuário / mangue",
+    "descricao": "Rio costeiro com influência de maré, mangue e água salobra, um dos melhores ambientes da região para robalo e pesca leve.",
+    "especies": [
+      "robalo",
+      "bagre",
+      "parati",
+      "carapicu",
+      "pescada",
+      "tainha"
+    ],
+    "melhorEpoca": "Primavera/verão para robalo; ano todo para pesca leve.",
+    "melhorHorario": "Amanhecer, entardecer e maré em movimento.",
+    "mareFavoravel": "Vazante e enchente moderadas; evitar estofa longa para predador.",
+    "iscasRecomendadas": [
+      "camarão vivo",
+      "lambari",
+      "manjuba",
+      "camarão artificial",
+      "jig head",
+      "massa"
+    ],
+    "materialRecomendado": [
+      "vara 8 a 20 lb",
+      "molinete 2500 a 4000",
+      "multifilamento 15 a 25 lb",
+      "leader fluorcarbon 0,35 mm a 0,50 mm",
+      "jig head 5 g a 18 g conforme corrente"
+    ],
+    "acesso": "Acesso por margens, marinas ou embarcação; validar ponto seguro.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rio+Itanha%C3%A9m+itanhaem+SP",
+    "estacionamento": "Depende do acesso escolhido.",
+    "estrutura": "Estrutura varia; pode exigir guia/embarcação.",
+    "dificuldadeAcesso": "Médio",
+    "tipoFundo": "lodo/mangue/canal",
+    "riscoEnrosco": "Médio",
+    "segurancaECuidados": "Respeitar manguezal, corrente e áreas de preservação.",
+    "indicadoPara": [
+      "robalo",
+      "embarcada",
+      "intermediario"
+    ],
+    "quandoEvitar": "Temporal, corrente forte, margem instável ou área protegida sem permissão.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "barra-do-una-peruibe",
+    "nome": "Barra do Una / região de Juréia",
+    "cidade": "peruibe",
+    "tipo": "Rio / barra / área natural sensível",
+    "descricao": "Região natural de grande potencial, mas com necessidade de validar regras ambientais, acesso e permissão antes de qualquer recomendação.",
+    "especies": [
+      "robalo",
+      "bagre",
+      "parati",
+      "tainha",
+      "pescada"
+    ],
+    "melhorEpoca": "Depende de autorização, acesso e condição ambiental.",
+    "melhorHorario": "Amanhecer e fim de tarde se permitido.",
+    "mareFavoravel": "Maré em movimento.",
+    "iscasRecomendadas": [
+      "camarão vivo",
+      "manjuba",
+      "massa",
+      "camarão artificial"
+    ],
+    "materialRecomendado": [
+      "vara 8 a 20 lb",
+      "molinete 2500 a 4000",
+      "multifilamento 15 a 25 lb",
+      "leader fluorcarbon 0,35 mm a 0,50 mm",
+      "jig head 5 g a 18 g conforme corrente"
+    ],
+    "acesso": "Acesso longo e sujeito a regras locais/ambientais; recomendado apenas com orientação local.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Barra+do+Una+%2F+regi%C3%A3o+de+Jur%C3%A9ia+peruibe+SP",
+    "estacionamento": "Estacionamento/apoio dependem do acesso e da comunidade local.",
+    "estrutura": "Estrutura limitada; área sensível.",
+    "dificuldadeAcesso": "Avançado",
+    "tipoFundo": "rio/barra/mangue/areia",
+    "riscoEnrosco": "Médio",
+    "segurancaECuidados": "Validar legislação, unidade de conservação e autorização; preservar ambiente.",
+    "indicadoPara": [
+      "avancado",
+      "natureza",
+      "guia"
+    ],
+    "quandoEvitar": "Sem orientação local, restrição ambiental, temporal ou mar forte.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "costeira-prainha-guarau",
+    "nome": "Costeira / Prainha do Guaraú",
+    "cidade": "peruibe",
+    "tipo": "Costão / praia pequena",
+    "descricao": "Região de costeira próxima ao Guaraú, com potencial para pesca de pedra/costeira, exigindo mar muito seguro.",
+    "especies": [
+      "espada",
+      "pescada",
+      "robalo",
+      "corvina",
+      "betara"
+    ],
+    "melhorEpoca": "Outono/inverno e noites seguras para espada.",
+    "melhorHorario": "Amanhecer, fim de tarde e noite somente com segurança.",
+    "mareFavoravel": "Maré em movimento e mar baixo/seguro.",
+    "iscasRecomendadas": [
+      "sardinha",
+      "camarão",
+      "jig metálico",
+      "plug",
+      "manjuba"
+    ],
+    "materialRecomendado": [
+      "vara 12 a 25 lb",
+      "molinete 4000",
+      "linha 20 a 30 lb",
+      "leader reforçado",
+      "calçado antiderrapante",
+      "passaguá"
+    ],
+    "acesso": "Acesso local pela região do Guaraú; validar trilha/entrada permitida.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Costeira+%2F+Prainha+do+Guara%C3%BA+peruibe+SP",
+    "estacionamento": "Estacionamento local variável.",
+    "estrutura": "Estrutura limitada; levar água, iluminação e segurança.",
+    "dificuldadeAcesso": "Médio/alto",
+    "tipoFundo": "rocha/costeira",
+    "riscoEnrosco": "Alto",
+    "segurancaECuidados": "Não pescar com mar batendo; risco de queda e onda surpresa.",
+    "indicadoPara": [
+      "costao",
+      "avancado"
+    ],
+    "quandoEvitar": "Ressaca, pedra molhada, vento forte ou maré subindo.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "costao-peruibe",
+    "nome": "Costão de Peruíbe",
+    "cidade": "peruibe",
+    "tipo": "Costão / pedra",
+    "descricao": "Trechos de costão podem render pesca costeira, mas exigem experiência e avaliação de mar.",
+    "especies": [
+      "espada",
+      "robalo",
+      "pescada",
+      "corvina",
+      "linguado",
+      "garoupa"
+    ],
+    "melhorEpoca": "Outono/inverno e noites calmas para predadores.",
+    "melhorHorario": "Amanhecer, fim de tarde e noite segura.",
+    "mareFavoravel": "Maré em movimento, com mar baixo e sem batida.",
+    "iscasRecomendadas": [
+      "sardinha",
+      "manjuba",
+      "jig metálico",
+      "plug",
+      "camarão",
+      "Plug de superfície tipo Popper cor osso",
+      "Camarão vivo na boia longa",
+      "Filé de sardinha fresca amarrado com muito elástico"
+    ],
+    "materialRecomendado": [
+      "vara 12 a 30 lb",
+      "molinete 4000 a 5000",
+      "linha 25 a 30 lb",
+      "leader 0,50 mm+",
+      "calçado antiderrapante",
+      "passaguá"
+    ],
+    "acesso": "Acesso por pontos locais de costeira; validar segurança e permissão.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cost%C3%A3o+de+Peru%C3%ADbe+peruibe+SP",
+    "estacionamento": "Estacionamento depende do ponto.",
+    "estrutura": "Estrutura limitada ou inexistente.",
+    "dificuldadeAcesso": "Alto",
+    "tipoFundo": "rocha",
+    "riscoEnrosco": "Alto",
+    "segurancaECuidados": "Costão é perigoso; nunca pescar sozinho ou com ressaca.",
+    "indicadoPara": [
+      "avancado",
+      "costao"
+    ],
+    "quandoEvitar": "Qualquer ressaca, pedra molhada ou vento forte.",
+    "fontePesquisa": "levantamento editorial + fontes públicas + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Paredão de pedras escuras que avança no mar aberto recebendo diretamente o impacto das ondas. Fundo totalmente de pedra, lapa e craca com grande profundidade na ponta.",
+        "setupRecomendado": "Vara pesada de 20lb, carretilha ou molinete com multifilamento de 30lb. Uso de chumbadas redondas leves de correr ou plugs de superfície/meia-água para não perder material nas pedras.",
+        "iscasQueConsagram": [
+          "Plug de superfície tipo Popper cor osso",
+          "Camarão vivo na boia longa",
+          "Filé de sardinha fresca amarrado com muito elástico"
+        ],
+        "bizuLocal": "Os robalos flechas da região caçam na espuma das ondas batendo na pedra. Arremesse o plug de superfície paralelo ao costão e trabalhe fazendo muito barulho (poitado) na espuma.",
+        "segurancaELogistica": "Ponto escorregadio e perigoso em dias de ressaca marítima. Não recomendável pescar sozinho ou sem calçado adequado (tênis velho ou sapatilha). Sem iluminação à noite."
+      }
+    ]
+  },
+  {
+    "id": "per-rio-preto",
+    "nome": "Poços do Rio Preto (Margem do Mangue)",
+    "cidade": "peruibe",
+    "tipo": "Rio Estuarino / Fundo de Lama e Galhada",
+    "descricao": "Rio de águas escuras e calmas com forte influência de maré. Margens tomadas por raízes aéreas de mangue vermelho e fundo lamoso denso.",
+    "especies": [
+      "bagre",
+      "robalo",
+      "corvina"
+    ],
+    "melhorEpoca": "A validar conforme espécie, época do ano e condição local.",
+    "melhorHorario": "Amanhecer, fim de tarde ou noite, conforme segurança e espécie-alvo.",
+    "mareFavoravel": "Maré em movimento; validar localmente se o ponto favorece enchente, vazante ou estofa.",
+    "iscasRecomendadas": [
+      "Miolo de siri tirado na hora",
+      "Camarão morto fresco descascado e salgado",
+      "Tripa de galinha azeda para bagre"
+    ],
+    "materialRecomendado": [
+      "Equipamento de fundo leve. Chumbadas oliva furadas de correr de 10g a 20g para a isca deitar suave no lodo sem sumir no substrato mole."
+    ],
+    "acesso": "Acesso por estradas de terra secundárias que beiram o rio na área continental ou alugando barcos na foz.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Po%C3%A7os+do+Rio+Preto+%28Margem+do+Mangue%29+Peru%C3%ADbe+SP",
+    "estacionamento": "",
+    "estrutura": [],
+    "dificuldadeAcesso": "Avançado",
+    "tipoFundo": "rio estuarino, lama e galhadas",
+    "riscoEnrosco": "Médio/alto",
+    "segurancaECuidados": [
+      "Zona rural afastada da cidade. Levar repelente contra borrachudos (obrigatório) e mantimentos. Celular costuma ficar sem sinal na região profunda."
+    ],
+    "indicadoPara": [
+      "bagre",
+      "robalo",
+      "natureza",
+      "guia"
+    ],
+    "quandoEvitar": "Evitar sem guia/local, sem sinal de celular, em temporal ou sem validação de acesso.",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Rio de águas escuras e calmas com forte influência de maré. Margens tomadas por raízes aéreas de mangue vermelho e fundo lamoso denso.",
+        "setupRecomendado": "Equipamento de fundo leve. Chumbadas oliva furadas de correr de 10g a 20g para a isca deitar suave no lodo sem sumir no substrato mole.",
+        "iscasQueConsagram": [
+          "Miolo de siri tirado na hora",
+          "Camarão morto fresco descascado e salgado",
+          "Tripa de galinha azeda para bagre"
+        ],
+        "bizuLocal": "O local é infestado de bagres gigantes (bandeiras e cacumos) nas noites de lua minguante. Use anzóis Baitholder com farpa na haste para prender bem o miolo de siri mole no fundo.",
+        "segurancaELogistica": "Zona rural afastada da cidade. Levar repelente contra borrachudos (obrigatório) e mantimentos. Celular costuma ficar sem sinal na região profunda."
+      }
+    ],
+    "fontePesquisa": "levantamento complementar Gemini + validação editorial pendente",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "praia-do-centro-peruibe",
+    "nome": "Praia do Centro de Peruíbe",
+    "cidade": "peruibe",
+    "tipo": "Praia urbana",
+    "descricao": "Praia urbana extensa, útil para pesca de praia em horários sem banhistas e leitura de canais.",
     "especies": [
       "pescada",
       "corvina",
@@ -231,146 +2318,219 @@
       "betara",
       "tainha"
     ],
-    "melhorEpoca": "Outono, inverno e primavera.",
-    "melhorHorario": "Amanhecer e fim de tarde.",
-    "mareFavoravel": "Maré enchendo ou início da vazante.",
+    "melhorEpoca": "Outono/inverno; verão em horários adequados.",
+    "melhorHorario": "Amanhecer, noite e fim de tarde.",
+    "mareFavoravel": "Enchente ou vazante inicial com valas.",
     "iscasRecomendadas": [
-      "Corrupto",
-      "Tatuíra",
-      "Camarão",
-      "Sardinha"
+      "corrupto",
+      "tatuíra",
+      "camarão",
+      "sardinha"
     ],
-    "nivelDificuldade": "Iniciante",
-    "cuidados": [
-      "Observar banhistas",
-      "Evitar arremessos em áreas movimentadas",
-      "Cuidado com ressaca"
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
     ],
-    "imagem": "/images/pontos/praia-do-centro-mongagua.jpg"
-  },
-  {
-    "id": "rio-itanhaem",
-    "nome": "Rio Itanhaém",
-    "cidade": "itanhaem",
-    "tipo": "Rio / estuário",
-    "descricao": "Rio costeiro importante de Itanhaém, com áreas de água salobra, mangue e influência de maré. É um dos pontos mais interessantes para robalo e pesca leve na cidade.",
-    "especies": [
-      "robalo",
-      "pescada",
-      "bagre",
-      "parati",
-      "carapicu"
+    "acesso": "Acesso pela orla central.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praia+do+Centro+de+Peru%C3%ADbe+peruibe+SP",
+    "estacionamento": "Estacionamento urbano.",
+    "estrutura": "Quiosques e comércio próximos.",
+    "dificuldadeAcesso": "Fácil",
+    "tipoFundo": "areia",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Evitar banhistas e respeitar regras locais.",
+    "indicadoPara": [
+      "iniciante",
+      "praia",
+      "familia"
     ],
-    "melhorEpoca": "Primavera e verão para robalo; ano todo para pesca leve.",
-    "melhorHorario": "Amanhecer e entardecer.",
-    "mareFavoravel": "Maré enchendo e vazando, com água andando.",
-    "iscasRecomendadas": [
-      "Camarão vivo",
-      "Lambari",
-      "Manjuba",
-      "Jig head",
-      "Camarão artificial"
-    ],
-    "nivelDificuldade": "Intermediário",
-    "cuidados": [
-      "Respeitar áreas de mangue",
-      "Usar colete se embarcado",
-      "Atenção a troncos, galhadas e correnteza"
-    ],
-    "imagem": "/images/pontos/rio-itanhaem.jpg"
-  },
-  {
-    "id": "praia-dos-pescadores-itanhaem",
-    "nome": "Praia dos Pescadores",
-    "cidade": "itanhaem",
-    "tipo": "Praia / costão próximo",
-    "descricao": "Região tradicional de Itanhaém, com ligação cultural com a pesca e proximidade de pontos turísticos. Boa para pesca leve e observação das condições costeiras.",
-    "especies": [
-      "pescada",
-      "corvina",
-      "betara",
-      "linguado",
-      "bagre"
-    ],
-    "melhorEpoca": "Outono e inverno para corvina e betara; primavera e verão para pesca variada.",
-    "melhorHorario": "Amanhecer e fim de tarde.",
-    "mareFavoravel": "Maré enchendo com canais visíveis na arrebentação.",
-    "iscasRecomendadas": [
-      "Corrupto",
-      "Camarão",
-      "Tatuíra",
-      "Sardinha",
-      "Jig head leve"
-    ],
-    "nivelDificuldade": "Iniciante a intermediário",
-    "cuidados": [
-      "Atenção a pedras e escorregões",
-      "Evitar mar forte",
-      "Respeitar banhistas e áreas turísticas"
-    ],
-    "imagem": "/images/pontos/praia-dos-pescadores-itanhaem.jpg"
+    "quandoEvitar": "Praia lotada, ressaca ou vento muito forte.",
+    "fontePesquisa": "levantamento editorial + fontes públicas",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
   },
   {
     "id": "praia-do-guarau",
     "nome": "Praia do Guaraú",
     "cidade": "peruibe",
-    "tipo": "Praia / costeira",
-    "descricao": "Ponto natural muito conhecido em Peruíbe, com praia, costeira e proximidade de rio. É uma região de grande beleza e potencial para pescarias costeiras, exigindo atenção às condições do mar.",
+    "tipo": "Praia / costeira / ambiente natural",
+    "descricao": "Praia conhecida de Peruíbe, próxima a rio, costeira e ambiente natural. Boa para pesca de praia/costeira em condição segura.",
     "especies": [
       "pescada",
       "corvina",
       "robalo",
       "tainha",
       "betara",
-      "linguado"
+      "linguado",
+      "bagre"
     ],
-    "melhorEpoca": "Abril a novembro, variando por espécie e condição climática.",
+    "melhorEpoca": "Abril a novembro costuma render boas janelas; verão exige atenção a banhistas.",
     "melhorHorario": "Amanhecer e fim de tarde.",
-    "mareFavoravel": "Maré em movimento e mar com segurança para arremesso.",
+    "mareFavoravel": "Maré em movimento, sem ressaca.",
     "iscasRecomendadas": [
-      "Camarão",
-      "Sardinha",
-      "Corrupto",
-      "Tatuíra",
-      "Iscas artificiais soft"
+      "camarão",
+      "sardinha",
+      "corrupto",
+      "tatuíra",
+      "jig head",
+      "camarão artificial"
     ],
-    "nivelDificuldade": "Intermediário",
-    "cuidados": [
-      "Avaliar ondas e correnteza",
-      "Não pescar em costões com mar batendo",
-      "Respeitar áreas ambientais"
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas",
+      "vara 8 a 20 lb",
+      "molinete 2500 a 4000"
     ],
-    "imagem": "/images/pontos/praia-do-guarau.jpg"
+    "acesso": "Acesso por estrada ao bairro Guaraú.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praia+do+Guara%C3%BA+peruibe+SP",
+    "estacionamento": "Estacionamento em áreas locais/ruas, sujeito a movimento.",
+    "estrutura": "Quiosques/restaurantes em trechos; confirmar funcionamento.",
+    "dificuldadeAcesso": "Fácil a médio",
+    "tipoFundo": "areia + influência de rio/costeira",
+    "riscoEnrosco": "Baixo a médio",
+    "segurancaECuidados": "Atenção a correnteza, vento e áreas naturais.",
+    "indicadoPara": [
+      "praia",
+      "familia",
+      "intermediario"
+    ],
+    "quandoEvitar": "Ressaca, vento forte ou áreas ambientais sem orientação.",
+    "fontePesquisa": "Fonte: referências de turismo e avaliações citam Guaraú com praia, rio e pesca",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva"
+  },
+  {
+    "id": "praia-do-oasis",
+    "nome": "Praia do Oásis",
+    "cidade": "peruibe",
+    "tipo": "Praia / surfcasting",
+    "descricao": "Trecho de praia com boa extensão para pesca de espera, valas e espécies de praia.",
+    "especies": [
+      "betara",
+      "corvina",
+      "pescada",
+      "bagre",
+      "linguado",
+      "pampo"
+    ],
+    "melhorEpoca": "Outono, inverno e primavera.",
+    "melhorHorario": "Amanhecer, fim de tarde e noite com segurança.",
+    "mareFavoravel": "Enchente e início da vazante.",
+    "iscasRecomendadas": [
+      "corrupto",
+      "tatuíra",
+      "camarão",
+      "sardinha",
+      "Corrupto inteiro passado no elástico",
+      "Minhoca de praia viva",
+      "Filé de sardinha salgada em tiras finas"
+    ],
+    "materialRecomendado": [
+      "vara de praia 3,60 m a 4,20 m",
+      "molinete 4000 a 6000",
+      "linha mono 0,25 mm a 0,35 mm com arranque",
+      "chumbada 60 g a 120 g conforme corrente",
+      "chicote de praia com 1 ou 2 pernadas"
+    ],
+    "acesso": "Acesso pela orla/bairro Oásis.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praia+do+O%C3%A1sis+peruibe+SP",
+    "estacionamento": "Estacionamento urbano/ruas próximas.",
+    "estrutura": "Estrutura de bairro; planejar conforme trecho.",
+    "dificuldadeAcesso": "Fácil a médio",
+    "tipoFundo": "areia",
+    "riscoEnrosco": "Baixo",
+    "segurancaECuidados": "Atenção à segurança em horários vazios.",
+    "indicadoPara": [
+      "praia",
+      "surfcasting"
+    ],
+    "quandoEvitar": "Ressaca forte ou praia muito vazia à noite.",
+    "fontePesquisa": "levantamento editorial + fontes públicas + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Praia de mar aberto com ondas fortes, areia grossa e formação de lagamares (valas profundas) afastados da beirada. Exige arremessos de longa distância.",
+        "setupRecomendado": "Varas longas de Surfcasting de competição (4.20m a 4.50m) de carbono. Molinetes cônicos com linhas 0.18mm e arranque grosso para aguentar a pancada do arremesso longo.",
+        "iscasQueConsagram": [
+          "Corrupto inteiro passado no elástico",
+          "Minhoca de praia viva",
+          "Filé de sardinha salgada em tiras finas"
+        ],
+        "bizuLocal": "As grandes betaras (papa-terras de quilo) entram nesta praia durante as ressacas de vento Sul, logo após o mar começar a acalmar e a água clarear um pouco.",
+        "segurancaELogistica": "Praia muito extensa e deserta à noite, recomendável pescar em duplas ou grupos de amigos. Estacionamento nas ruas residenciais próximas."
+      }
+    ]
   },
   {
     "id": "rio-guarau",
     "nome": "Rio Guaraú",
     "cidade": "peruibe",
-    "tipo": "Rio / estuário",
-    "descricao": "Região de estuário em Peruíbe, com influência de maré e ambiente indicado para robalo, peixes de água salobra e pesca com iscas naturais ou artificiais.",
+    "tipo": "Rio / estuário / mangue",
+    "descricao": "Rio no bairro Guaraú, com manguezal/restinga e fundo de lama; usado para pesca amadora e passeios.",
     "especies": [
       "robalo",
       "bagre",
       "parati",
       "carapicu",
-      "pescada"
+      "tainha",
+      "pescada",
+      "linguado"
     ],
-    "melhorEpoca": "Primavera e verão para robalo; ano todo para pesca leve.",
-    "melhorHorario": "Manhã cedo e entardecer.",
-    "mareFavoravel": "Maré enchendo ou vazando.",
+    "melhorEpoca": "Ano todo; robalo melhor em meses quentes.",
+    "melhorHorario": "Amanhecer, fim de tarde e maré em movimento.",
+    "mareFavoravel": "Enchente e vazante moderadas.",
     "iscasRecomendadas": [
-      "Camarão vivo",
-      "Camarão artificial",
-      "Lambari",
-      "Manjuba",
-      "Jig head"
+      "camarão vivo",
+      "lambari",
+      "manjuba",
+      "massa",
+      "camarão artificial",
+      "jig head",
+      "Camarão artificial transparente com glitter",
+      "Camarão vivo pequeno de praia",
+      "Plug de meia-água translúcido"
     ],
-    "nivelDificuldade": "Intermediário",
-    "cuidados": [
-      "Verificar acesso e regras locais",
-      "Usar colete se embarcado",
-      "Evitar descarte de lixo e linha em área natural"
+    "materialRecomendado": [
+      "vara 8 a 20 lb",
+      "molinete 2500 a 4000",
+      "multifilamento 15 a 25 lb",
+      "leader fluorcarbon 0,35 mm a 0,50 mm",
+      "jig head 5 g a 18 g conforme corrente"
     ],
-    "imagem": "/images/pontos/rio-guarau.jpg"
+    "acesso": "Acesso pelo bairro Guaraú; alguns trechos podem exigir embarcação/guia.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rio+Guara%C3%BA+peruibe+SP",
+    "estacionamento": "Estacionamento local variável.",
+    "estrutura": "Estrutura depende do ponto/operador local.",
+    "dificuldadeAcesso": "Médio",
+    "tipoFundo": "lama/mangue/restinga",
+    "riscoEnrosco": "Médio",
+    "segurancaECuidados": "Respeitar manguezal, áreas de preservação e tráfego de barcos.",
+    "indicadoPara": [
+      "robalo",
+      "embarcada leve",
+      "natureza"
+    ],
+    "quandoEvitar": "Temporal, corrente forte ou área protegida sem permissão.",
+    "fontePesquisa": "Fonte: Eu Amo Peruíbe descreve Rio Guaraú, manguezal/restinga, fundo de lama e uso para pesca amadora + levantamento complementar Gemini",
+    "statusValidacao": "validar em campo antes de apresentar como recomendação definitiva",
+    "detalhesTecnicosLocais": [
+      {
+        "origem": "levantamento complementar Gemini",
+        "dinamicaDoPonto": "Água extremamente limpa e cristalina na maré cheia, misturando a água verde do mar com a água escura cor de chá do rio da Jureia. Fundo de areia clara e pedras limpas.",
+        "setupRecomendado": "Equipamento leve e refinado. Linhas finas de multifilamento (15lb) e líder transparente de fluorocarbono de 0.35mm. Jig heads leves de 7g a 12g com shads transparentes.",
+        "iscasQueConsagram": [
+          "Camarão artificial transparente com glitter",
+          "Camarão vivo pequeno de praia",
+          "Plug de meia-água translúcido"
+        ],
+        "bizuLocal": "Como a água aqui é muito limpa, os robalos são extremamente ariscos. Pesque no início da manhã ou final de tarde usando plugs puramente transparentes com recolhimento lento e errático.",
+        "segurancaELogistica": "Região de preservação ambiental paradisíaca, muito segura e bucólica. Conta com pequenas marinas, pousadas e quiosques rústicos de apoio."
+      }
+    ]
   }
 ]

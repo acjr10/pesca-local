@@ -18,13 +18,13 @@ export default function CidadesPage() {
                 <h2>{cidade.nome}</h2>
                 <p>{cidade.descricao}</p>
                 <div className="city-list-tags">
-                  {cidade.tiposPesca.map((t: string) => (
+                  {cidade.tiposPescaFortes?.map((t: string) => (
                     <span key={t} className="tipo-tag">{t}</span>
                   ))}
                 </div>
                 <div className="city-list-stats">
-                  <span>🐟 {cidade.especies.length} espécies</span>
-                  <span>📍 {cidade.pontos.length} pontos</span>
+                  <span>🏖️ {cidade.tiposPescaFortes?.length ?? 0} tipos de pesca</span>
+                  <span>📍 {cidade.totalPontosLevantados ?? 0} pontos</span>
                   <span>🗓️ Melhor época: {cidade.melhorEpoca}</span>
                 </div>
                 <div className="ver-btn">Ver guia da cidade →</div>

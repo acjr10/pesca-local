@@ -4,296 +4,343 @@
     "nome": "Praia Grande",
     "estado": "SP",
     "regiao": "Baixada Santista / litoral sul de São Paulo",
-    "descricao": "Praia Grande combina pesca de praia ao longo da orla, pesca em áreas de canal e opções no Mar Pequeno, especialmente na região do Portinho. É uma cidade indicada para pescadores iniciantes e intermediários que procuram robalo, pescada, corvina, bagre e espécies costeiras, com boa oferta de lojas de pesca e acesso fácil a São Vicente e Santos.",
-    "tiposPesca": [
+    "resumoPesca": "Cidade forte para pesca de praia e canal, com destaque para o Portinho/Mar Pequeno e uma orla extensa onde a leitura de valas, canais e vento faz diferença.",
+    "tiposPescaFortes": [
       "Praia",
       "Canal",
-      "Píer",
-      "Embarcada leve",
-      "Pesca de lazer"
+      "Deck",
+      "Pesca de lazer",
+      "Embarcada leve"
     ],
-    "especies": [
-      "robalo",
-      "pescada",
-      "corvina",
-      "bagre",
-      "espada",
-      "tainha",
-      "betara",
-      "linguado"
+    "pontosPrioritarios": [
+      "aviacao-tupi",
+      "boqueirao-guilhermina",
+      "canto-do-forte-praia",
+      "ocian-vila-mirim",
+      "pg-pilares-ponte-pensil",
+      "portinho-deck-de-pesca",
+      "solemar-balneario-florida"
     ],
-    "pontos": [
-      "canto-do-forte",
-      "portinho-praia-grande"
+    "roteirosPorPerfil": {
+      "iniciante": [
+        "Portinho Deck de Pesca",
+        "Boqueirão/Guilhermina em horários sem banhistas"
+      ],
+      "praia": [
+        "Canto do Forte",
+        "Aviação/Tupi",
+        "Ocian/Vila Mirim",
+        "Solemar/Balneário Flórida"
+      ],
+      "robalo": [
+        "Portinho/Mar Pequeno",
+        "saídas de água e áreas de canal"
+      ],
+      "familia": [
+        "Portinho",
+        "orla urbana em horários seguros"
+      ],
+      "embarcada": [
+        "saídas pelo Mar Pequeno e marinas próximas"
+      ]
+    },
+    "cuidadosLocais": [
+      "evitar arremessar perto de banhistas",
+      "checar ressaca e vento sul",
+      "no Portinho respeitar áreas permitidas e horário local",
+      "em canais observar tráfego de embarcações"
     ],
-    "melhorEpoca": "Primavera e verão para robalos e pescadas; outono e inverno para tainha, corvina e pesca de praia mais variada.",
-    "melhorHorario": "Amanhecer, fim de tarde e períodos de maré em movimento. Em praias, o começo da enchente e a vazante costumam render melhor.",
-    "iscasRecomendadas": [
-      "Camarão vivo",
-      "Camarão morto",
-      "Sardinha",
-      "Corrupto",
-      "Tatuíra",
-      "Iscas artificiais de meia-água",
-      "Jig head com shad"
-    ],
-    "materiaisRecomendados": [
-      "Vara de praia 3,60 m a 4,20 m",
-      "Vara média 12 a 25 lb para canal",
-      "Molinete 3000 a 5000",
-      "Linha monofilamento 0,25 a 0,35 mm",
-      "Chicote de praia com pernadas",
-      "Jig head de 5 g a 14 g"
-    ],
-    "observacoes": "Verificar vento sul, ressaca e balneabilidade antes da pescaria. No Portinho, respeitar áreas permitidas, fluxo de embarcações e regras locais.",
-    "imagem": "/images/cidades/praia-grande.jpg"
+    "quandoEvitar": "Evite praia aberta com ressaca, vento frontal forte, mar muito sujo ou orla lotada.",
+    "observacaoLocal": "A cidade é boa para começar porque tem acesso fácil, estrutura urbana e bons cenários para testar leitura de praia.",
+    "melhorEpoca": "Mar a Nov",
+    "melhorHorario": "Madrugada e amanhecer",
+    "iscasRecomendadas": ["Camarão vivo", "Tainha", "Sardinha", "Lambari"],
+    "totalPontosLevantados": 7
   },
   {
     "id": "sao-vicente",
     "nome": "São Vicente",
     "estado": "SP",
     "regiao": "Baixada Santista",
-    "descricao": "São Vicente é uma das bases mais tradicionais para pesca de canal, estuário e saídas embarcadas próximas. A região da Ponte Pênsil e do Mar Pequeno é bastante procurada por pescadores que buscam robalo, pescada, bagre, parati e espécies de água salobra.",
-    "tiposPesca": [
+    "resumoPesca": "Cidade muito forte para canal, estuário, ponte, píer e costão urbano. É uma das bases mais interessantes para robalo, espada, bagre, parati e pesca leve.",
+    "tiposPescaFortes": [
       "Canal",
       "Estuário",
       "Ponte",
-      "Embarcada",
-      "Pesqueiro"
+      "Costão",
+      "Praia urbana",
+      "Embarcada leve"
     ],
-    "especies": [
-      "robalo",
-      "pescada",
-      "bagre",
-      "parati",
-      "carapicu",
-      "espada",
-      "corvina",
-      "tainha"
+    "pontosPrioritarios": [
+      "sv-canal-dos-barreiros",
+      "japui-rua-japao-marinas",
+      "mar-pequeno-sao-vicente",
+      "sv-parcel-do-itarare",
+      "ponte-pensil-plataforma",
+      "praia-do-gonzaguinha",
+      "praia-do-itarare",
+      "praia-dos-milionarios-ilha-porchat"
     ],
-    "pontos": [
-      "ponte-pensil",
-      "mar-pequeno-sao-vicente"
+    "roteirosPorPerfil": {
+      "iniciante": [
+        "Praia dos Milionários em condição segura",
+        "Gonzaguinha em pesca leve"
+      ],
+      "praia": [
+        "Itararé",
+        "Milionários"
+      ],
+      "robalo": [
+        "Ponte Pênsil",
+        "Mar Pequeno",
+        "Japuí/Rua Japão"
+      ],
+      "familia": [
+        "Gonzaguinha e Milionários com atenção a lotação"
+      ],
+      "embarcada": [
+        "marinas e saídas pelo Japuí/Mar Pequeno"
+      ]
+    },
+    "cuidadosLocais": [
+      "correnteza forte em canal",
+      "tráfego de barcos e jet skis",
+      "não pescar em área proibida",
+      "atenção em pedras e costões"
     ],
-    "melhorEpoca": "Ano todo, com melhores resultados para robalo nos meses mais quentes e para tainha e parati nos meses mais frios.",
-    "melhorHorario": "Amanhecer, entardecer e janelas de maré correndo. Em canal, observar a virada de maré e locais com estrutura submersa.",
-    "iscasRecomendadas": [
-      "Camarão vivo",
-      "Camarão morto",
-      "Sardinha",
-      "Manjuba",
-      "Lambari",
-      "Isca artificial soft",
-      "Plug de meia-água"
-    ],
-    "materiaisRecomendados": [
-      "Vara 10 a 20 lb",
-      "Molinete 2500 a 4000",
-      "Linha multifilamento 15 a 30 lb",
-      "Leader fluorcarbon 0,35 a 0,50 mm",
-      "Anzóis robaleiros",
-      "Jig heads leves"
-    ],
-    "observacoes": "Atenção ao tráfego de barcos, correnteza e locais de acesso. Em áreas de ponte e canal, usar calçado adequado e evitar pescar em pontos perigosos durante chuva ou vento forte.",
-    "imagem": "/images/cidades/sao-vicente.jpg"
+    "quandoEvitar": "Evite temporal, raios, vento forte, correnteza excessiva ou locais com movimentação intensa de embarcações.",
+    "observacaoLocal": "A região de ponte, canal e estruturas pede atenção à segurança, mas é muito rica para pesca de robalo e espécies de água salobra.",
+    "melhorEpoca": "Ano todo, pico Mar a Nov",
+    "melhorHorario": "Virada da maré, amanhecer",
+    "iscasRecomendadas": ["Camarão vivo", "Espada fatiada", "Lambari", "Minhoca"],
+    "totalPontosLevantados": 8
   },
   {
     "id": "santos",
     "nome": "Santos",
     "estado": "SP",
     "regiao": "Baixada Santista",
-    "descricao": "Santos oferece pesca urbana, estruturas tradicionais como o Deck do Pescador, proximidade com o canal do porto e forte presença de lojas, clubes e serviços náuticos. A cidade é interessante para pesca leve, pesca de praia, pesca em deck e saídas embarcadas para costeira e canal.",
-    "tiposPesca": [
+    "resumoPesca": "Cidade forte para pesca urbana estruturada, deck, mureta, canal e saídas embarcadas. O Deck do Pescador e a Ponta da Praia são os pontos mais óbvios para o MVP.",
+    "tiposPescaFortes": [
       "Deck",
-      "Praia",
+      "Mureta",
+      "Praia urbana",
       "Canal",
-      "Costeira",
-      "Embarcada"
+      "Embarcada",
+      "Costeira próxima"
     ],
-    "especies": [
-      "pescada",
-      "corvina",
-      "robalo",
-      "espada",
-      "bagre",
-      "parati",
-      "tainha",
-      "carapicu"
-    ],
-    "pontos": [
+    "pontosPrioritarios": [
+      "canal-estuario-santos",
       "deck-do-pescador-santos",
-      "ponta-da-praia-santos"
+      "emissario-submarino-santos",
+      "san-ilha-das-palmas",
+      "mureta-ponta-da-praia",
+      "ponta-da-praia-museu-pesca",
+      "praia-aparecida-canal-6"
     ],
-    "melhorEpoca": "Ano todo, com variação por espécie. Corvina, pescada e espada aparecem bem em janelas de maré favoráveis; tainha ganha força no inverno.",
-    "melhorHorario": "Manhã cedo, fim de tarde e noite para algumas espécies como espada. Em estruturas urbanas, a maré em movimento é mais importante que o horário isolado.",
-    "iscasRecomendadas": [
-      "Sardinha",
-      "Camarão",
-      "Manjuba",
-      "Corrupto",
-      "Tatuíra",
-      "Iscas artificiais pequenas",
-      "Sabiki para peixes menores"
+    "roteirosPorPerfil": {
+      "iniciante": [
+        "Deck do Pescador",
+        "orla em pontos permitidos"
+      ],
+      "praia": [
+        "Aparecida/Canal 6",
+        "Emissário/José Menino com cautela"
+      ],
+      "robalo": [
+        "Ponta da Praia e muretas/canal, sempre respeitando restrições"
+      ],
+      "familia": [
+        "Deck do Pescador e orla durante o dia"
+      ],
+      "embarcada": [
+        "Ponta da Praia e marinas/clubes náuticos"
+      ]
+    },
+    "cuidadosLocais": [
+      "atenção a área portuária e navegação",
+      "respeitar restrições locais",
+      "usar passaguá em deck",
+      "não bloquear passagem de pedestres"
     ],
-    "materiaisRecomendados": [
-      "Vara média 10 a 25 lb",
-      "Molinete 3000 a 5000",
-      "Linha monofilamento ou multifilamento",
-      "Chicotes com 1 ou 2 anzóis",
-      "Chumbadas pirâmide e oliva",
-      "Leader resistente à abrasão"
-    ],
-    "observacoes": "Consultar regras de acesso no Deck do Pescador e atenção às áreas de navegação e segurança portuária. Evitar locais proibidos próximos ao canal do porto.",
-    "imagem": "/images/cidades/santos.jpg"
+    "quandoEvitar": "Evite áreas portuárias restritas, ressaca no emissário e pontos urbanos muito movimentados.",
+    "observacaoLocal": "É uma cidade excelente para validação do produto porque combina pescador urbano, estrutura e serviços náuticos.",
+    "melhorEpoca": "Set a Mar",
+    "melhorHorario": "Amanhecer e fim de tarde",
+    "iscasRecomendadas": ["Camarão", "Sardinha", "Minhoca", "Lambari"],
+    "totalPontosLevantados": 7
   },
   {
     "id": "mongagua",
     "nome": "Mongaguá",
     "estado": "SP",
     "regiao": "Litoral sul de São Paulo",
-    "descricao": "Mongaguá é conhecida pela plataforma de pesca e por pontos de praia bastante frequentados. A cidade é boa para pesca de praia, pesca de plataforma e também serve de base para quem procura pesqueiros e pescarias de lazer no litoral sul.",
-    "tiposPesca": [
+    "resumoPesca": "Cidade muito associada à Plataforma de Pesca e à pesca de praia. Boa para pescada, corvina, espada, bagre, betara e tainha, dependendo de mar, vento e época.",
+    "tiposPescaFortes": [
       "Plataforma",
       "Praia",
       "Pesqueiro",
-      "Costeira próxima"
+      "Pesca noturna",
+      "Surfcasting"
     ],
-    "especies": [
-      "pescada",
-      "corvina",
-      "bagre",
-      "espada",
-      "tainha",
-      "betara",
-      "parati",
-      "linguado"
-    ],
-    "pontos": [
+    "pontosPrioritarios": [
+      "agenor-de-campos",
+      "florida-mirim-mongagua",
+      "jussara-mongagua",
       "plataforma-de-pesca-mongagua",
-      "praia-do-centro-mongagua"
+      "praia-do-centro-mongagua",
+      "vera-cruz-itaoca"
     ],
-    "melhorEpoca": "Outono e inverno para corvina, tainha e pesca de praia; primavera e verão para pescada, bagre e espécies costeiras variadas.",
-    "melhorHorario": "Amanhecer e fim de tarde na praia; na plataforma, períodos noturnos e maré em movimento podem favorecer espada, pescada e bagre.",
-    "iscasRecomendadas": [
-      "Camarão",
-      "Sardinha",
-      "Corrupto",
-      "Tatuíra",
-      "Manjuba",
-      "Filé de peixe",
-      "Isca artificial metálica leve"
+    "roteirosPorPerfil": {
+      "iniciante": [
+        "Plataforma em dia de mar seguro",
+        "Praia do Centro fora de horários de banhistas"
+      ],
+      "praia": [
+        "Centro",
+        "Agenor de Campos",
+        "Vera Cruz/Itaóca",
+        "Jussara"
+      ],
+      "robalo": [
+        "saídas de água e trechos com estrutura, com baixa previsibilidade"
+      ],
+      "familia": [
+        "Plataforma e orla urbana com atenção a regras locais"
+      ],
+      "embarcada": [
+        "costeira próxima com serviços locais quando disponível"
+      ]
+    },
+    "cuidadosLocais": [
+      "verificar funcionamento e regras da plataforma",
+      "evitar ressaca",
+      "atenção ao vento lateral",
+      "usar passaguá em plataforma"
     ],
-    "materiaisRecomendados": [
-      "Vara de praia 3,90 m a 4,50 m",
-      "Molinete 4000 a 6000",
-      "Linha 0,30 a 0,40 mm",
-      "Chumbadas para arremesso",
-      "Chicote para praia",
-      "Passaguá em plataforma"
-    ],
-    "observacoes": "Checar condições do mar e vento antes de usar a plataforma. Em dias de ressaca, evitar áreas expostas e priorizar segurança.",
-    "imagem": "/images/cidades/mongagua.jpg"
+    "quandoEvitar": "Evite plataforma ou praia aberta com ressaca, vento forte e risco de onda sobre estrutura.",
+    "observacaoLocal": "A Plataforma dá identidade forte à cidade, mas as praias também merecem conteúdo próprio por valas e arrebentação.",
+    "melhorEpoca": "Abr a Set na plataforma, ano todo na praia",
+    "melhorHorario": "Noturno e madrugada",
+    "iscasRecomendadas": ["Sardinha", "Camarão", "Minhoca", "Lambari"],
+    "totalPontosLevantados": 6
   },
   {
     "id": "itanhaem",
     "nome": "Itanhaém",
     "estado": "SP",
     "regiao": "Litoral sul de São Paulo",
-    "descricao": "Itanhaém reúne praia, costões, rios e manguezais, com destaque para o Rio Itanhaém e regiões próximas à foz. É uma cidade versátil para quem busca robalo, pescada, corvina, bagre e espécies de água salobra, além de acesso a pesqueiros e guias.",
-    "tiposPesca": [
+    "resumoPesca": "Cidade muito rica para pesca, com praia, rio, foz, costão, ilha e áreas de mangue. Deve ter mais pontos do que o MVP inicial mostrava.",
+    "tiposPescaFortes": [
       "Rio",
       "Estuário",
+      "Foz",
       "Praia",
       "Costão",
-      "Pesqueiro",
+      "Ilha",
       "Embarcada leve"
     ],
-    "especies": [
-      "robalo",
-      "pescada",
-      "corvina",
-      "bagre",
-      "parati",
-      "carapicu",
-      "tainha",
-      "linguado",
-      "betara"
+    "pontosPrioritarios": [
+      "boca-da-barra-itanhaem",
+      "ita-pontilhao-ferro",
+      "ita-poco-do-baianao",
+      "praia-da-saudade",
+      "cibratel",
+      "praia-do-gaivota",
+      "praia-do-sonho-conchas",
+      "suaarao",
+      "praia-dos-pescadores-ilha-das-cabras",
+      "rio-itanhaem"
     ],
-    "pontos": [
-      "rio-itanhaem",
-      "praia-dos-pescadores-itanhaem"
+    "roteirosPorPerfil": {
+      "iniciante": [
+        "Boca da Barra com segurança",
+        "Praia dos Pescadores em condição calma"
+      ],
+      "praia": [
+        "Cibratel",
+        "Suarão",
+        "Gaivota"
+      ],
+      "robalo": [
+        "Rio Itanhaém",
+        "Boca da Barra e mangues"
+      ],
+      "familia": [
+        "Boca da Barra e praias com estrutura, observando banhistas"
+      ],
+      "embarcada": [
+        "Rio Itanhaém e saídas locais"
+      ]
+    },
+    "cuidadosLocais": [
+      "travessia para Ilha das Cabras apenas em maré baixa e com segurança",
+      "costões escorregadios",
+      "atenção a áreas ambientais",
+      "evitar foz com corrente forte"
     ],
-    "melhorEpoca": "Primavera e verão para robalo no rio e estuário; outono e inverno para tainha, corvina e pesca de praia.",
-    "melhorHorario": "Amanhecer e entardecer. No rio, priorizar maré enchendo ou vazando; na praia, observar canais, valas e formação dos bancos de areia.",
-    "iscasRecomendadas": [
-      "Camarão vivo",
-      "Camarão artificial",
-      "Sardinha",
-      "Manjuba",
-      "Lambari",
-      "Corrupto",
-      "Jig head com soft"
-    ],
-    "materiaisRecomendados": [
-      "Vara 8 a 17 lb para robalo",
-      "Vara de praia 3,60 m a 4,20 m",
-      "Molinete 2500 a 5000",
-      "Multifilamento 15 a 30 lb",
-      "Leader fluorcarbon",
-      "Anzóis e jig heads variados"
-    ],
-    "observacoes": "Em rios e manguezais, respeitar áreas de preservação e evitar descarte de linha e anzóis. Em costões, usar calçado antiderrapante e nunca pescar com mar batendo forte.",
-    "imagem": "/images/cidades/itanhaem.jpg"
+    "quandoEvitar": "Evite costões com mar batendo, foz com corrente excessiva e travessias em maré subindo.",
+    "observacaoLocal": "Itanhaém deve virar uma das páginas mais completas do site porque combina muitos ambientes de pesca em uma única cidade.",
+    "melhorEpoca": "Mar a Nov",
+    "melhorHorario": "Virada da maré",
+    "iscasRecomendadas": ["Camarão vivo", "Tainha", "Lambari", "Minhoca"],
+    "totalPontosLevantados": 10
   },
   {
     "id": "peruibe",
     "nome": "Peruíbe",
     "estado": "SP",
     "regiao": "Litoral sul de São Paulo",
-    "descricao": "Peruíbe tem forte vocação para pesca de praia, rio, estuário e costeira, com destaque para a região do Guaraú e áreas próximas a ambientes preservados. É uma das cidades mais interessantes do MVP para quem busca pescada, corvina, robalo, tainha e pescarias em cenários naturais.",
-    "tiposPesca": [
+    "resumoPesca": "Cidade com forte vocação para pesca de praia, rio, estuário e costeira natural, especialmente Guaraú e áreas próximas a ambientes preservados.",
+    "tiposPescaFortes": [
       "Praia",
       "Rio",
       "Estuário",
       "Costeira",
-      "Embarcada",
-      "Pesqueiro"
+      "Ambiente natural",
+      "Embarcada"
     ],
-    "especies": [
-      "pescada",
-      "corvina",
-      "robalo",
-      "tainha",
-      "bagre",
-      "espada",
-      "betara",
-      "linguado",
-      "parati"
-    ],
-    "pontos": [
+    "pontosPrioritarios": [
+      "barra-do-una-peruibe",
+      "costeira-prainha-guarau",
+      "costao-peruibe",
+      "per-rio-preto",
+      "praia-do-centro-peruibe",
       "praia-do-guarau",
+      "praia-do-oasis",
       "rio-guarau"
     ],
-    "melhorEpoca": "Abril a novembro costuma ser uma boa janela para pescarias em Peruíbe, com variações por espécie e condição de mar.",
-    "melhorHorario": "Amanhecer, fim de tarde e períodos de maré em movimento. Na região do Guaraú, avaliar vento, corrente e condição do mar.",
-    "iscasRecomendadas": [
-      "Camarão",
-      "Sardinha",
-      "Corrupto",
-      "Tatuíra",
-      "Manjuba",
-      "Iscas artificiais soft",
-      "Plug de meia-água"
+    "roteirosPorPerfil": {
+      "iniciante": [
+        "Praia do Centro em condição segura",
+        "Guaraú em pontos com acesso fácil"
+      ],
+      "praia": [
+        "Centro",
+        "Oásis",
+        "Guaraú"
+      ],
+      "robalo": [
+        "Rio Guaraú e estuários"
+      ],
+      "familia": [
+        "Guaraú e praias com estrutura em dias de mar calmo"
+      ],
+      "embarcada": [
+        "saídas locais e costeira, sempre com guia/condição segura"
+      ]
+    },
+    "cuidadosLocais": [
+      "atenção a áreas de preservação",
+      "verificar regras locais e acesso",
+      "costeira exige mar calmo",
+      "Guaraú pode ter vento e correnteza fortes"
     ],
-    "materiaisRecomendados": [
-      "Vara de praia 3,90 m a 4,50 m",
-      "Vara média 10 a 20 lb para rio e estuário",
-      "Molinete 3000 a 6000",
-      "Linha 0,28 a 0,40 mm",
-      "Leader resistente",
-      "Chicotes e jig heads variados"
-    ],
-    "observacoes": "Atenção às áreas ambientais e regras locais, principalmente em regiões próximas à Juréia e ao Guaraú. Consultar condições de mar, vento e acesso antes da pescaria.",
-    "imagem": "/images/cidades/peruibe.jpg"
+    "quandoEvitar": "Evite costeiras com mar batendo, ressaca e áreas ambientais sem informação clara de permissão.",
+    "observacaoLocal": "Peruíbe tem grande potencial para conteúdo porque mistura pesca de praia, rio e natureza, mas exige cuidado ambiental e validação local.",
+    "melhorEpoca": "Mar a Nov",
+    "melhorHorario": "Amanhecer e crepúsculo",
+    "iscasRecomendadas": ["Camarão", "Tainha", "Lambari", "Sardinha"],
+    "totalPontosLevantados": 8
   }
 ]

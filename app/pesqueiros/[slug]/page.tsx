@@ -17,7 +17,7 @@ export default async function PesqueiroPage({ params }: { params: Promise<{ slug
           <h1>{p.nome}</h1>
           <p className="cidade-desc">{p.descricao}</p>
           <div className="cidade-tipos">
-            {(p.tiposPesca as string[]).map((t: string) => (
+            {((p.tiposPesca as string[]) ?? []).map((t: string) => (
               <span key={t} className="tipo-tag">{t}</span>
             ))}
           </div>
@@ -36,7 +36,7 @@ export default async function PesqueiroPage({ params }: { params: Promise<{ slug
           <div className="info-card">
             <div className="info-icon">🐟</div>
             <div className="info-label">Peixes disponíveis</div>
-            <div className="info-value">{(p.peixes as string[]).join(', ')}</div>
+            <div className="info-value">{((p.peixes as string[]) ?? []).join(', ')}</div>
           </div>
           <div className="info-card">
             <div className="info-icon">{p.pescaNoturna ? '🌙' : '☀️'}</div>
@@ -46,7 +46,7 @@ export default async function PesqueiroPage({ params }: { params: Promise<{ slug
           <div className="info-card">
             <div className="info-icon">🏗️</div>
             <div className="info-label">Estrutura</div>
-            <div className="info-value">{(p.estrutura as string[]).length} itens de infraestrutura</div>
+            <div className="info-value">{((p.estrutura as string[]) ?? []).length} itens de infraestrutura</div>
           </div>
         </div>
 
@@ -55,7 +55,7 @@ export default async function PesqueiroPage({ params }: { params: Promise<{ slug
           <h2 className="section-title">🐟 Peixes disponíveis</h2>
           <div className="ponto-card">
             <div className="ponto-iscas">
-              {(p.peixes as string[]).map((peixe: string) => (
+              {((p.peixes as string[]) ?? []).map((peixe: string) => (
                 <span key={peixe} className="tipo-tag">{peixe}</span>
               ))}
             </div>
@@ -67,7 +67,7 @@ export default async function PesqueiroPage({ params }: { params: Promise<{ slug
           <h2 className="section-title">🏗️ Estrutura e comodidades</h2>
           <div className="ponto-card">
             <div className="pond-amenities" style={{ marginBottom: 0 }}>
-              {(p.estrutura as string[]).map((e: string) => (
+              {((p.estrutura as string[]) ?? []).map((e: string) => (
                 <span key={e}>{e}</span>
               ))}
             </div>
@@ -84,7 +84,7 @@ export default async function PesqueiroPage({ params }: { params: Promise<{ slug
                 <span className="ponto-tipo">Iscas</span>
               </div>
               <div className="ponto-iscas">
-                {(p.iscasRecomendadas as string[]).map((i: string) => (
+                {((p.iscasRecomendadas as string[]) ?? []).map((i: string) => (
                   <span key={i} className="tipo-tag">{i}</span>
                 ))}
               </div>
@@ -97,7 +97,7 @@ export default async function PesqueiroPage({ params }: { params: Promise<{ slug
                 </span>
               </div>
               <div className="ponto-iscas">
-                {(p.materialRecomendado as string[]).map((m: string) => (
+                {((p.materialRecomendado as string[]) ?? []).map((m: string) => (
                   <span key={m} className="tipo-tag">{m}</span>
                 ))}
               </div>
@@ -115,10 +115,10 @@ export default async function PesqueiroPage({ params }: { params: Promise<{ slug
               </div>
               <div className="city-list-info">
                 <h2>{cidade.nome}</h2>
-                <p>{cidade.descricao}</p>
+                <p>{cidade.resumoPesca ?? cidade.descricao}</p>
                 <div className="city-list-stats">
-                  <span>🐟 {cidade.especies?.length} espécies</span>
-                  <span>📍 {cidade.pontos?.length} pontos</span>
+                  <span>🏖️ {cidade.tiposPescaFortes?.length ?? 0} tipos de pesca</span>
+                  <span>📍 {cidade.totalPontosLevantados ?? 0} pontos</span>
                 </div>
                 <div className="ver-btn">Ver guia da cidade →</div>
               </div>
@@ -136,7 +136,7 @@ export default async function PesqueiroPage({ params }: { params: Promise<{ slug
           </p>
           {p.whatsapp ? (
             <a
-              href={`https://wa.me/${p.whatsapp}`}
+              href={`https://wa.me/${p.whatsapp}?text=${encodeURIComponent(`Olá ${p.nome}! Vi seu pesqueiro no Pesca Local (pescalocal.com.br) e tenho interesse. Pode me ajudar?`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="cta-primary"

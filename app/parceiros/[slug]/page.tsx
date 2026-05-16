@@ -52,7 +52,7 @@ export default async function ParceiroPage({ params }: { params: Promise<{ slug:
             <div className="info-icon">⭐</div>
             <div className="info-label">Avaliação</div>
             <div className="info-value">
-              {p.estrelas} ★ — {p.avaliacoes} avaliações
+              {p.estrelas > 0 ? `${p.estrelas} ★ — ${p.avaliacoes} avaliações` : 'Sem avaliações'}
             </div>
           </div>
           <div className="info-card">
@@ -63,7 +63,7 @@ export default async function ParceiroPage({ params }: { params: Promise<{ slug:
         </div>
 
         {/* AVALIAÇÃO */}
-        {p.estrelas && (
+        {p.estrelas > 0 && (
           <div className="cidade-section">
             <h2 className="section-title">⭐ Avaliação dos pescadores</h2>
             <div className="ponto-card" style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
@@ -96,7 +96,7 @@ export default async function ParceiroPage({ params }: { params: Promise<{ slug:
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
                   {p.whatsapp && (
                     <a
-                      href={`https://wa.me/${p.whatsapp}`}
+                      href={`https://wa.me/${p.whatsapp}?text=${encodeURIComponent(`Olá ${p.nome}! Vi seu negócio no Pesca Local (pescalocal.com.br) e tenho interesse. Pode me ajudar?`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="whatsapp-btn"
@@ -158,7 +158,7 @@ export default async function ParceiroPage({ params }: { params: Promise<{ slug:
               <p>Este parceiro tem plano Destaque no Pesca Local e é indicado pela nossa equipe para pescadores da região.</p>
               {p.whatsapp ? (
                 <a
-                  href={`https://wa.me/${p.whatsapp}`}
+                  href={`https://wa.me/${p.whatsapp}?text=${encodeURIComponent(`Olá ${p.nome}! Vi seu negócio no Pesca Local (pescalocal.com.br) e tenho interesse. Pode me ajudar?`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cta-primary"

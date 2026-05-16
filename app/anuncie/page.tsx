@@ -145,10 +145,10 @@ export default function AnunciePage() {
 
     const waUrl = `https://wa.me/5513996243365?text=${encodeURIComponent(linhas.join('\n'))}`
 
+    window.open(waUrl, '_blank')  // must run inside the user-gesture tick — browsers block popups from setTimeout
     setTimeout(() => {
       setCarregando(false)
       setEnviado(true)
-      window.open(waUrl, '_blank')
     }, 900)
   }
 

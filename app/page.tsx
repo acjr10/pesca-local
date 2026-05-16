@@ -123,13 +123,13 @@ export default function Home() {
                 </div>
                 <div className="city-card-body">
                   <div className="city-chips">
-                    {(c.tiposPesca as string[]).slice(0, 3).map((t: string) => (
+                    {((c.tiposPescaFortes as string[]) || []).slice(0, 3).map((t: string) => (
                       <span key={t} className="city-chip">{t}</span>
                     ))}
                   </div>
                   <div className="city-stats-row">
                     <span className="city-stats">
-                      {(c.especies as string[]).length} espécies · {(c.pontos as string[]).length} pontos
+                      {(c.tiposPescaFortes as string[])?.length ?? 0} tipos · {c.totalPontosLevantados ?? 0} pontos
                     </span>
                     <span className="city-guide-link">Ver guia →</span>
                   </div>
@@ -182,7 +182,7 @@ export default function Home() {
             <h3>Dedé Big Fish</h3>
             <div className="partner-meta">Loja de pesca · Praia Grande, SP</div>
             <div className="stars">★ 4,7 (128)</div>
-            <a href="https://wa.me/551334936979" target="_blank" rel="noopener noreferrer" className="whatsapp-btn" style={{display:'block',textAlign:'center'}}>Falar no WhatsApp</a>
+            <a href={`https://wa.me/551334936979?text=${encodeURIComponent('Olá Dedé Big Fish! Vi seu negócio no Pesca Local (pescalocal.com.br) e tenho interesse. Pode me ajudar?')}`} target="_blank" rel="noopener noreferrer" className="whatsapp-btn" style={{display:'block',textAlign:'center'}}>Falar no WhatsApp</a>
             <a href="/parceiros/dede-big-fish" className="ver-btn" style={{display:'block',marginTop:8}}>Ver perfil →</a>
           </article>
           <article className="partner-card">
@@ -190,7 +190,7 @@ export default function Home() {
             <h3>Guia de Pesca Santos</h3>
             <div className="partner-meta">Guia de pesca · Santos, SP</div>
             <div className="stars">★ 4,9 (86)</div>
-            <a href="https://wa.me/551397790227" target="_blank" rel="noopener noreferrer" className="whatsapp-btn" style={{display:'block',textAlign:'center'}}>Falar no WhatsApp</a>
+            <a href={`https://wa.me/551397790227?text=${encodeURIComponent('Olá Guia de Pesca Santos! Vi seu negócio no Pesca Local (pescalocal.com.br) e tenho interesse. Pode me ajudar?')}`} target="_blank" rel="noopener noreferrer" className="whatsapp-btn" style={{display:'block',textAlign:'center'}}>Falar no WhatsApp</a>
             <a href="/parceiros/guia-de-pesca-santos" className="ver-btn" style={{display:'block',marginTop:8}}>Ver perfil →</a>
           </article>
           <article className="partner-card">

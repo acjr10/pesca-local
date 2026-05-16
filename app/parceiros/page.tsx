@@ -52,7 +52,7 @@ function ParceiroCard({ p }: { p: any }) {
 
       {p.whatsapp && (
         <a
-          href={`https://wa.me/${p.whatsapp}`}
+          href={`https://wa.me/${p.whatsapp}?text=${encodeURIComponent(`Olá ${p.nome}! Vi seu negócio no Pesca Local (pescalocal.com.br) e tenho interesse. Pode me ajudar?`)}`}
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-btn"

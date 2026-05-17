@@ -52,7 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 width={44}
                 height={44}
                 className="header-brand-icon"
-                style={{ objectFit: 'contain' }}
+                style={{ objectFit: 'contain', background: 'transparent' }}
                 priority
               />
               <div className="header-brand-text">

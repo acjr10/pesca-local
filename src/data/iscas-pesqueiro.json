@@ -1,0 +1,51 @@
+{
+  "iscasUniversaisPesqueiro": [
+    "massa",
+    "ração",
+    "salsicha",
+    "camarão",
+    "milho",
+    "pão",
+    "beijinho",
+    "goiabada",
+    "banana",
+    "filé de peixe",
+    "lambari",
+    "coração de frango"
+  ],
+  "iscasParaPeixesPequenos": [
+    "massa",
+    "pão",
+    "ração triturada",
+    "milho",
+    "bicho-da-laranja",
+    "minhoca pequena"
+  ],
+  "iscasParaPeixesRedondos": [
+    "ração",
+    "massa",
+    "salsicha",
+    "beijinho",
+    "goiabada",
+    "banana",
+    "frutas"
+  ],
+  "iscasParaPeixesDeCouro": [
+    "salsicha",
+    "coração de frango",
+    "filé de peixe",
+    "lambari",
+    "tilapinha",
+    "miúdos"
+  ],
+  "iscasParaPredadores": [
+    "lambari",
+    "tilapinha",
+    "filé de peixe",
+    "spinner",
+    "plug de meia-água",
+    "frog",
+    "soft"
+  ],
+  "observacaoUso": "Use esta base para gerar recomendações automáticas nas páginas de pesqueiros, cruzando os peixes disponíveis no local com as iscas e equipamentos sugeridos."
+}

@@ -267,6 +267,144 @@ button, input, select { font-family: inherit; }
   border-radius: 6px; padding: 4px 9px; font-weight: 600;
 }
 
+/* POND CARD — FLEX LAYOUT */
+.pond-card-flex { display: flex; flex-direction: column; }
+.pond-card-top { flex: 1; }
+.pond-card-header-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+.pond-card-header-row h3 { margin-bottom: 0; flex: 1; }
+.pond-card-destaque { border-color: #14c8c2; box-shadow: 0 0 0 3px rgba(20,200,194,0.15); }
+.pond-badge-destaque {
+  display: inline-block; background: linear-gradient(135deg, #14c8c2, #0ba7d6);
+  color: #031526; font-size: 10px; font-weight: 800; padding: 3px 10px;
+  border-radius: 20px; letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap; flex-shrink: 0;
+}
+.pond-card-actions { margin-top: auto; padding-top: 16px; display: flex; flex-direction: column; gap: 8px; }
+.pond-ver-detalhes {
+  display: block; text-align: center; padding: 10px 16px;
+  border: 1.5px solid #dbe6ee; border-radius: 10px;
+  font-size: 14px; font-weight: 700; color: #0b78aa;
+  transition: border-color 0.18s, color 0.18s;
+}
+.pond-ver-detalhes:hover { border-color: #0e96c5; color: #0e96c5; }
+
+/* ANTES DE IR */
+.antes-de-ir-lista { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.antes-de-ir-lista li {
+  padding: 10px 14px 10px 40px; background: #f0faf9;
+  border-radius: 10px; font-size: 14px; color: #1e293b; font-weight: 500;
+  position: relative;
+}
+.antes-de-ir-lista li::before {
+  content: '✓'; position: absolute; left: 14px; top: 10px;
+  color: #14c8c2; font-weight: 900; font-size: 14px;
+}
+
+/* CTA GRATUITO */
+.pesqueiro-info-basica {
+  background: #f8fafc; border: 1px solid #dbe6ee; border-radius: 16px;
+  padding: 28px 32px; margin-top: 20px; margin-bottom: 20px;
+}
+.pesqueiro-info-basica h3 { font-size: 18px; font-weight: 800; color: #031526; margin-bottom: 10px; }
+.pesqueiro-info-basica p { font-size: 14px; color: #64748b; line-height: 1.6; margin: 0; }
+
+/* VAI PESCAR NESTE PESQUEIRO? */
+.pesqueiro-parceiros-sub { font-size: 14px; color: #64748b; margin-bottom: 20px; margin-top: -8px; }
+.pesqueiro-parceiros-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.pesqueiro-parceiro-card {
+  background: #fff; border: 1px solid #dbe6ee; border-radius: 14px;
+  padding: 18px; display: flex; flex-direction: column; gap: 10px;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.pesqueiro-parceiro-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(3,21,38,0.09); }
+.pesqueiro-parceiro-destaque { border-color: #14c8c2; box-shadow: 0 0 0 2px rgba(20,200,194,0.12); }
+.pesqueiro-parceiro-top { display: flex; align-items: center; gap: 12px; }
+.pesqueiro-parceiro-icon { font-size: 28px; flex-shrink: 0; }
+.pesqueiro-parceiro-info { flex: 1; min-width: 0; }
+.pesqueiro-parceiro-nome { font-size: 14px; font-weight: 800; color: #031526; line-height: 1.3; }
+.pesqueiro-parceiro-cidade { font-size: 12px; color: #64748b; font-weight: 600; margin-top: 2px; }
+.pesqueiro-parceiro-desc { font-size: 13px; color: #475569; line-height: 1.5; margin: 0; }
+.pesqueiro-parceiro-actions { display: flex; flex-direction: column; gap: 8px; margin-top: auto; }
+.pesqueiro-parceiro-ver {
+  display: block; text-align: center; padding: 9px 14px;
+  border: 1.5px solid #dbe6ee; border-radius: 9px;
+  font-size: 13px; font-weight: 700; color: #0b78aa;
+  transition: border-color 0.18s, color 0.18s;
+}
+.pesqueiro-parceiro-ver:hover { border-color: #0e96c5; color: #0e96c5; }
+
+/* PEIXES DE PESQUEIRO — LISTING */
+.peixes-pp-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.peixe-pp-card {
+  background: #fff; border: 1px solid #dbe6ee; border-radius: 14px;
+  padding: 18px; display: flex; flex-direction: column; gap: 10px;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.peixe-pp-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(3,21,38,0.09); }
+.peixe-pp-nome { font-size: 16px; font-weight: 800; color: #031526; }
+.peixe-pp-meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.peixe-pp-iscas-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.peixe-pp-mais { font-size: 11px; color: #64748b; font-weight: 700; align-self: center; }
+
+/* BADGES PORTE / DIFICULDADE */
+.badge-porte { font-size: 11px; background: #eff8ff; color: #0b78aa; border-radius: 20px; padding: 3px 10px; font-weight: 600; }
+.badge-dif { font-size: 11px; border-radius: 20px; padding: 3px 10px; font-weight: 700; }
+.badge-verde { background: #dcfce7; color: #16a34a; }
+.badge-amarelo { background: #fef9c3; color: #b45309; }
+.badge-laranja { background: #ffedd5; color: #c2410c; }
+.badge-vermelho { background: #fee2e2; color: #b91c1c; }
+
+/* PEIXES DE PESQUEIRO — HERO */
+.peixe-pp-hero { background: linear-gradient(135deg, #031526 0%, #064a7a 100%); color: #fff; }
+.peixe-pp-hero-inner { padding-top: 40px; padding-bottom: 40px; }
+.peixe-pp-hero h1 { font-size: 36px; font-weight: 900; margin: 8px 0 14px; color: #fff; }
+.peixe-pp-hero .cidade-region { color: rgba(255,255,255,0.7); }
+
+/* EQUIPAMENTO */
+.peixe-equip-card { background: #fff; border: 1px solid #dbe6ee; border-radius: 14px; padding: 18px; }
+.peixe-equip-row { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f1f5f9; align-items: baseline; }
+.peixe-equip-row:last-child { border-bottom: none; }
+.peixe-equip-label { font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.06em; min-width: 80px; flex-shrink: 0; }
+.peixe-equip-val { font-size: 14px; color: #1e293b; font-weight: 500; }
+
+/* DICA */
+.peixe-dica-box { background: #f0faf9; border-left: 4px solid #14c8c2; border-radius: 0 12px 12px 0; padding: 16px 20px; font-size: 15px; color: #1e293b; font-weight: 500; line-height: 1.6; }
+
+/* PESQUEIRO REF CARD (página do peixe) */
+.peixe-pesqueiro-ref-card { background: #fff; border: 1px solid #dbe6ee; border-radius: 14px; padding: 18px; display: block; transition: transform 0.18s, box-shadow 0.18s; }
+.peixe-pesqueiro-ref-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(3,21,38,0.09); }
+.peixe-pesqueiro-ref-nome { font-size: 15px; font-weight: 800; color: #031526; margin-bottom: 4px; }
+.peixe-pesqueiro-ref-cidade { font-size: 12px; color: #64748b; font-weight: 600; margin-bottom: 10px; }
+
+/* EQUIPAMENTO MIX */
+.equip-mix-box { background: #eff8ff; border: 1px solid #bae6fd; border-radius: 12px; padding: 16px 20px; display: flex; gap: 14px; align-items: flex-start; }
+.equip-mix-icon { font-size: 22px; flex-shrink: 0; }
+.equip-mix-msg { font-size: 14px; color: #1e293b; line-height: 1.6; margin: 0; }
+.equip-mix-msg strong { color: #031526; }
+
+/* DICAS POR PEIXE (na página do pesqueiro) */
+.peixe-dicas-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.peixe-dica-card { background: #fff; border: 1px solid #dbe6ee; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 10px; }
+.peixe-dica-header { display: flex; flex-direction: column; gap: 6px; }
+.peixe-dica-nome { font-size: 15px; font-weight: 800; color: #0b78aa; text-decoration: none; }
+.peixe-dica-nome:hover { color: #0e96c5; }
+.peixe-dica-iscas { display: flex; gap: 6px; flex-wrap: wrap; }
+.peixe-dica-texto { font-size: 13px; color: #475569; line-height: 1.5; margin: 0; }
+
+/* BANNER PEIXES PESQUEIRO (listagem /pesqueiros) */
+.peixes-pesqueiro-banner {
+  margin-bottom: 32px; background: linear-gradient(135deg, #031526 0%, #064a7a 100%);
+  border-radius: 18px; padding: 28px 32px;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+}
+.peixes-pesqueiro-banner h2 { font-size: 18px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+.peixes-pesqueiro-banner p { font-size: 13px; color: rgba(255,255,255,0.65); margin: 0; }
+.banner-btn {
+  background: #14c8c2; color: #031526; border: none; border-radius: 10px;
+  padding: 11px 20px; font-size: 14px; font-weight: 800; cursor: pointer;
+  white-space: nowrap; transition: background 0.2s; text-decoration: none; display: inline-block;
+}
+.banner-btn:hover { background: #0ea8a3; color: #031526; }
+
 /* HOW */
 .how-section { background: #031526; padding: 52px; }
 .how-section .section-title { color: #fff; margin-bottom: 32px; }
@@ -1092,6 +1230,11 @@ button, input, select { font-family: inherit; }
   .parceiros-filtros { flex-direction: column; }
   .parceiros-filtros select { width: 100%; }
   .ponds-grid { grid-template-columns: 1fr; }
+  .pesqueiro-parceiros-grid { grid-template-columns: 1fr; }
+  .peixes-pp-grid { grid-template-columns: repeat(2, 1fr); }
+  .peixe-dicas-grid { grid-template-columns: 1fr; }
+  .peixes-pesqueiro-banner { flex-direction: column; }
+  .peixes-pesqueiro-banner .banner-btn { width: 100%; text-align: center; }
   .cidade-info-grid { grid-template-columns: repeat(2, 1fr); }
   .pontos-grid { grid-template-columns: 1fr; }
   .forecast-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; overflow-x: auto; }

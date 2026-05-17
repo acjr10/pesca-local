@@ -1,0 +1,445 @@
+[
+  {
+    "id": "tilapia",
+    "nome": "Tilápia",
+    "categoria": "pesqueiro",
+    "porte": "pequeno a médio",
+    "dificuldade": "iniciante",
+    "iscas": [
+      "massa",
+      "ração",
+      "milho",
+      "pão",
+      "bicho-da-laranja",
+      "minhoca"
+    ],
+    "equipamento": {
+      "vara": "vara telescópica ou vara leve 6 a 12 lb",
+      "linha": "monofilamento 0,20 mm a 0,30 mm",
+      "anzol": "Maruseigo nº 10 a 14 ou Chinu pequeno",
+      "boia": "boia pequena e sensível"
+    },
+    "dica": "Use isca pequena e fisgue só quando a boia afundar firme."
+  },
+  {
+    "id": "carpa",
+    "nome": "Carpa",
+    "categoria": "pesqueiro",
+    "porte": "médio a grande",
+    "dificuldade": "iniciante a intermediário",
+    "iscas": [
+      "massa",
+      "ração",
+      "milho",
+      "batata cozida",
+      "pão",
+      "banana"
+    ],
+    "equipamento": {
+      "vara": "vara média 10 a 20 lb",
+      "linha": "monofilamento 0,30 mm a 0,40 mm",
+      "anzol": "Chinu nº 4 a 8 ou Maruseigo nº 14 a 18",
+      "boia": "boia média ou pesca de fundo leve"
+    },
+    "dica": "A carpa costuma comer de forma manhosa; evite fisgar no primeiro toque."
+  },
+  {
+    "id": "pacu",
+    "nome": "Pacu",
+    "categoria": "pesqueiro",
+    "porte": "médio a grande",
+    "dificuldade": "intermediário",
+    "iscas": [
+      "massa",
+      "ração na pinga",
+      "salsicha",
+      "beijinho",
+      "goiabada",
+      "frutas"
+    ],
+    "equipamento": {
+      "vara": "vara média 12 a 25 lb",
+      "linha": "monofilamento 0,35 mm a 0,45 mm",
+      "anzol": "Chinu nº 6 a 8 ou anzol 1/0 a 3/0",
+      "leader": "leader 0,45 mm a 0,60 mm"
+    },
+    "dica": "Deixe o peixe carregar a isca antes de firmar a fisgada."
+  },
+  {
+    "id": "tambacu",
+    "nome": "Tambacu",
+    "categoria": "pesqueiro",
+    "porte": "grande",
+    "dificuldade": "intermediário",
+    "iscas": [
+      "ração",
+      "massa",
+      "salsicha",
+      "beijinho",
+      "goiabada",
+      "banana",
+      "frutas"
+    ],
+    "equipamento": {
+      "vara": "vara média/pesada 17 a 30 lb",
+      "linha": "monofilamento 0,40 mm a 0,50 mm",
+      "anzol": "Chinu nº 8 a 10 ou anzol 2/0 a 4/0",
+      "leader": "leader 0,50 mm a 0,70 mm"
+    },
+    "dica": "Use montagem reforçada e mantenha a fricção bem regulada, porque a primeira corrida costuma ser forte."
+  },
+  {
+    "id": "tambaqui",
+    "nome": "Tambaqui",
+    "categoria": "pesqueiro",
+    "porte": "grande",
+    "dificuldade": "intermediário a avançado",
+    "iscas": [
+      "ração",
+      "massa",
+      "salsicha",
+      "beijinho",
+      "goiabada",
+      "frutas",
+      "banana"
+    ],
+    "equipamento": {
+      "vara": "vara pesada 20 a 40 lb",
+      "linha": "monofilamento 0,45 mm a 0,60 mm",
+      "anzol": "Chinu nº 8 a 12 ou anzol 3/0 a 5/0",
+      "leader": "leader 0,60 mm a 0,80 mm"
+    },
+    "dica": "Evite material leve demais; o tambaqui grande costuma tomar linha rápido."
+  },
+  {
+    "id": "pintado",
+    "nome": "Pintado",
+    "categoria": "pesqueiro",
+    "porte": "grande",
+    "dificuldade": "intermediário a avançado",
+    "iscas": [
+      "salsicha",
+      "filé de peixe",
+      "lambari",
+      "coração de frango",
+      "tilapinha",
+      "tuvirinha onde permitido"
+    ],
+    "equipamento": {
+      "vara": "vara média/pesada 20 a 40 lb",
+      "linha": "monofilamento 0,45 mm a 0,60 mm ou multifilamento 40 lb",
+      "anzol": "anzol 4/0 a 7/0",
+      "leader": "leader 0,70 mm a 0,90 mm"
+    },
+    "dica": "Pesque mais próximo ao fundo e espere o peixe carregar antes de fisgar."
+  },
+  {
+    "id": "cachara",
+    "nome": "Cachara",
+    "categoria": "pesqueiro",
+    "porte": "grande",
+    "dificuldade": "intermediário a avançado",
+    "iscas": [
+      "salsicha",
+      "filé de peixe",
+      "lambari",
+      "coração de frango",
+      "tilapinha",
+      "tuvirinha onde permitido"
+    ],
+    "equipamento": {
+      "vara": "vara média/pesada 20 a 40 lb",
+      "linha": "monofilamento 0,45 mm a 0,60 mm",
+      "anzol": "anzol 4/0 a 7/0",
+      "leader": "leader 0,70 mm a 0,90 mm"
+    },
+    "dica": "Assim como o pintado, costuma responder bem a iscas de fundo e naturais."
+  },
+  {
+    "id": "pirarara",
+    "nome": "Pirarara",
+    "categoria": "pesqueiro",
+    "porte": "grande",
+    "dificuldade": "intermediário a avançado",
+    "iscas": [
+      "salsicha",
+      "coração de frango",
+      "filé de peixe",
+      "lambari",
+      "tilapinha",
+      "miúdos"
+    ],
+    "equipamento": {
+      "vara": "vara pesada 30 a 60 lb",
+      "linha": "monofilamento 0,60 mm a 0,80 mm ou multifilamento 50 a 80 lb",
+      "anzol": "anzol 6/0 a 10/0",
+      "leader": "leader 0,80 mm a 1,00 mm"
+    },
+    "dica": "Use equipamento forte e fricção bem regulada; a pirarara costuma brigar no fundo e tomar muita linha."
+  },
+  {
+    "id": "traira",
+    "nome": "Traíra",
+    "categoria": "pesqueiro",
+    "porte": "médio",
+    "dificuldade": "intermediário",
+    "iscas": [
+      "lambari",
+      "salsicha",
+      "filé de peixe",
+      "minhoca",
+      "spinner",
+      "frog",
+      "soft"
+    ],
+    "equipamento": {
+      "vara": "vara 12 a 25 lb",
+      "linha": "multifilamento 20 a 30 lb ou monofilamento 0,35 mm",
+      "anzol": "anzol 2/0 a 5/0 ou anti-enrosco para artificial",
+      "leader": "leader reforçado ou empate de aço curto quando necessário"
+    },
+    "dica": "Trabalhe a isca perto de vegetação, sombra e estruturas; cuidado com os dentes."
+  },
+  {
+    "id": "matrinxa",
+    "nome": "Matrinxã",
+    "categoria": "pesqueiro",
+    "porte": "médio",
+    "dificuldade": "intermediário",
+    "iscas": [
+      "ração",
+      "frutas",
+      "massa",
+      "salsicha",
+      "banana",
+      "pequenos plugs"
+    ],
+    "equipamento": {
+      "vara": "vara leve/média 8 a 17 lb",
+      "linha": "monofilamento 0,30 mm a 0,35 mm ou multifilamento 20 lb",
+      "anzol": "Chinu nº 4 a 8 ou anzol 1/0 a 2/0",
+      "leader": "leader 0,35 mm a 0,45 mm"
+    },
+    "dica": "É um peixe rápido e brigador; use fricção bem regulada e evite linha muito frouxa."
+  },
+  {
+    "id": "dourado",
+    "nome": "Dourado",
+    "categoria": "pesqueiro",
+    "porte": "médio a grande",
+    "dificuldade": "avançado",
+    "iscas": [
+      "lambari",
+      "tilapinha",
+      "salsicha",
+      "tuvirinha onde permitido",
+      "plug de meia-água",
+      "spinner"
+    ],
+    "equipamento": {
+      "vara": "vara média/pesada 17 a 30 lb",
+      "linha": "multifilamento 30 a 40 lb",
+      "anzol": "anzol 4/0 a 7/0 ou garatéias reforçadas",
+      "leader": "leader 0,60 mm a 0,80 mm ou empate quando necessário"
+    },
+    "dica": "Use material reforçado e mantenha a linha tensionada, porque o dourado costuma saltar e escapar com facilidade."
+  },
+  {
+    "id": "piraputanga",
+    "nome": "Piraputanga",
+    "categoria": "pesqueiro",
+    "porte": "médio",
+    "dificuldade": "intermediário",
+    "iscas": [
+      "frutas",
+      "ração",
+      "massa",
+      "salsicha",
+      "banana",
+      "pequenos plugs"
+    ],
+    "equipamento": {
+      "vara": "vara leve/média 8 a 17 lb",
+      "linha": "monofilamento 0,28 mm a 0,35 mm",
+      "anzol": "Chinu nº 4 a 8 ou anzol 1/0",
+      "leader": "leader 0,35 mm a 0,45 mm"
+    },
+    "dica": "Iscas menores e apresentação natural costumam funcionar melhor."
+  },
+  {
+    "id": "catfish",
+    "nome": "Catfish",
+    "categoria": "pesqueiro",
+    "porte": "médio a grande",
+    "dificuldade": "iniciante a intermediário",
+    "iscas": [
+      "salsicha",
+      "coração de frango",
+      "filé de peixe",
+      "ração",
+      "massa com cheiro",
+      "miúdos"
+    ],
+    "equipamento": {
+      "vara": "vara média 12 a 25 lb",
+      "linha": "monofilamento 0,35 mm a 0,45 mm",
+      "anzol": "anzol 2/0 a 5/0",
+      "leader": "leader 0,45 mm a 0,60 mm"
+    },
+    "dica": "Pesque no fundo com iscas de cheiro forte e cuidado ao manusear."
+  },
+  {
+    "id": "bagre-africano",
+    "nome": "Bagre africano",
+    "categoria": "pesqueiro",
+    "porte": "grande",
+    "dificuldade": "intermediário",
+    "iscas": [
+      "salsicha",
+      "coração de frango",
+      "filé de peixe",
+      "miúdos",
+      "massa com cheiro",
+      "ração"
+    ],
+    "equipamento": {
+      "vara": "vara média/pesada 17 a 30 lb",
+      "linha": "monofilamento 0,40 mm a 0,50 mm",
+      "anzol": "anzol 3/0 a 6/0",
+      "leader": "leader 0,50 mm a 0,70 mm"
+    },
+    "dica": "Use equipamento reforçado e alicate para manuseio, pois pode ser forte e escorregadio."
+  },
+  {
+    "id": "lambari",
+    "nome": "Lambari",
+    "categoria": "pesqueiro",
+    "porte": "pequeno",
+    "dificuldade": "iniciante",
+    "iscas": [
+      "massa",
+      "pão",
+      "miolo de pão",
+      "bicho-da-laranja",
+      "ração triturada",
+      "minhoca pequena"
+    ],
+    "equipamento": {
+      "vara": "vara telescópica leve",
+      "linha": "monofilamento 0,14 mm a 0,20 mm",
+      "anzol": "anzol nº 16 a 20",
+      "boia": "boia pequena ou pesca sem boia"
+    },
+    "dica": "Use isca minúscula e anzol pequeno; lambari belisca rápido."
+  },
+  {
+    "id": "curimbata",
+    "nome": "Curimbatá",
+    "categoria": "pesqueiro",
+    "porte": "médio",
+    "dificuldade": "intermediário",
+    "iscas": [
+      "massa",
+      "ração",
+      "pão",
+      "milho",
+      "ceva",
+      "massa com queijo"
+    ],
+    "equipamento": {
+      "vara": "vara leve/média 8 a 17 lb",
+      "linha": "monofilamento 0,25 mm a 0,35 mm",
+      "anzol": "Chinu nº 4 a 8 ou Maruseigo nº 10 a 14",
+      "boia": "boia sensível ou montagem de fundo leve"
+    },
+    "dica": "Ceva ajuda bastante; use montagem leve e espere a puxada firmar."
+  },
+  {
+    "id": "piau",
+    "nome": "Piau",
+    "categoria": "pesqueiro",
+    "porte": "médio",
+    "dificuldade": "iniciante a intermediário",
+    "iscas": [
+      "milho",
+      "massa",
+      "minhoca",
+      "pão",
+      "ração",
+      "larva"
+    ],
+    "equipamento": {
+      "vara": "vara leve/média 8 a 17 lb",
+      "linha": "monofilamento 0,25 mm a 0,35 mm",
+      "anzol": "Chinu nº 4 a 8 ou Maruseigo nº 10 a 14",
+      "boia": "boia sensível ou pesca de fundo leve"
+    },
+    "dica": "Use iscas pequenas e naturais; piau costuma beliscar antes de carregar."
+  },
+  {
+    "id": "piapara",
+    "nome": "Piapara",
+    "categoria": "pesqueiro",
+    "porte": "médio",
+    "dificuldade": "intermediário",
+    "iscas": [
+      "milho",
+      "massa",
+      "minhoca",
+      "pão",
+      "queijo",
+      "ração"
+    ],
+    "equipamento": {
+      "vara": "vara média 10 a 20 lb",
+      "linha": "monofilamento 0,30 mm a 0,40 mm",
+      "anzol": "Chinu nº 4 a 8 ou Maruseigo nº 12 a 16",
+      "leader": "leader 0,35 mm a 0,45 mm"
+    },
+    "dica": "A piapara costuma ser desconfiada; use montagem mais leve e isca bem apresentada."
+  },
+  {
+    "id": "pirarucu",
+    "nome": "Pirarucu",
+    "categoria": "pesqueiro",
+    "porte": "grande",
+    "dificuldade": "avançado",
+    "iscas": [
+      "tilapinha",
+      "lambari",
+      "filé de peixe",
+      "salsicha",
+      "coração de frango",
+      "ração grande"
+    ],
+    "equipamento": {
+      "vara": "vara pesada 40 a 80 lb",
+      "linha": "multifilamento 80 lb ou monofilamento reforçado",
+      "anzol": "anzol 8/0 a 12/0",
+      "leader": "leader 0,90 mm a 1,20 mm"
+    },
+    "dica": "Use equipamento muito reforçado e confirme as regras do pesqueiro para captura, manejo e soltura."
+  },
+  {
+    "id": "jau",
+    "nome": "Jaú",
+    "categoria": "pesqueiro",
+    "porte": "grande",
+    "dificuldade": "avançado",
+    "iscas": [
+      "filé de peixe",
+      "tilapinha",
+      "lambari",
+      "coração de frango",
+      "salsicha",
+      "miúdos"
+    ],
+    "equipamento": {
+      "vara": "vara pesada 40 a 80 lb",
+      "linha": "multifilamento 60 a 100 lb ou monofilamento reforçado",
+      "anzol": "anzol 8/0 a 12/0",
+      "leader": "leader 0,90 mm a 1,20 mm"
+    },
+    "dica": "Pesque no fundo com material pesado; o jaú grande exige paciência, força e fricção bem ajustada."
+  }
+]

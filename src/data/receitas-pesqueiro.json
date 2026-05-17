@@ -1,0 +1,281 @@
+[
+  {
+    "id": "beijinho-tradicional",
+    "nome": "Beijinho tradicional para pesqueiro",
+    "tipo": "massa doce",
+    "destaque": true,
+    "indicadaPara": [
+      "pacu",
+      "tambacu",
+      "tambaqui",
+      "matrinxa",
+      "piraputanga"
+    ],
+    "ingredientes": [
+      "1 lata de leite condensado",
+      "100 g de coco ralado",
+      "1 colher de sopa de margarina",
+      "leite em pó até dar ponto",
+      "ração triturada opcional para dar mais firmeza"
+    ],
+    "preparo": [
+      "Misture o leite condensado, o coco ralado e a margarina em uma panela.",
+      "Leve ao fogo baixo, mexendo até engrossar e soltar levemente do fundo.",
+      "Espere esfriar completamente.",
+      "Adicione leite em pó aos poucos até virar uma massa firme e moldável.",
+      "Faça bolinhas pequenas e guarde em pote fechado."
+    ],
+    "modoDeUso": "Use bolinhas pequenas no anzol, deixando a ponta levemente exposta. Funciona bem com boia ou montagem de fundo leve.",
+    "observacao": "É uma das iscas mais populares para peixes redondos em pesqueiros, mas o resultado pode variar conforme a ração usada no local e o comportamento dos peixes no dia."
+  },
+  {
+    "id": "massa-racao-basica",
+    "nome": "Massa básica de ração",
+    "tipo": "massa de ração",
+    "destaque": false,
+    "indicadaPara": [
+      "tilapia",
+      "carpa",
+      "pacu",
+      "tambacu",
+      "curimbata",
+      "piau"
+    ],
+    "ingredientes": [
+      "2 xícaras de ração de peixe triturada",
+      "1 xícara de farinha de trigo",
+      "água aos poucos",
+      "1 colher de sopa de açúcar opcional"
+    ],
+    "preparo": [
+      "Triture a ração até virar farelo.",
+      "Misture com a farinha de trigo.",
+      "Adicione água aos poucos até formar uma massa firme.",
+      "Sove até a massa ficar homogênea e sem esfarelar.",
+      "Guarde em pote ou saco plástico bem fechado."
+    ],
+    "modoDeUso": "Modele bolinhas pequenas para tilápia e carpa, ou bolinhas maiores para pacu e tambacu.",
+    "observacao": "Receita simples e versátil. Pode ser ajustada com mais farinha para ficar firme ou mais água para ficar macia."
+  },
+  {
+    "id": "massa-tilapia-leite-po",
+    "nome": "Massa de leite em pó para tilápia",
+    "tipo": "massa doce leve",
+    "destaque": false,
+    "indicadaPara": [
+      "tilapia",
+      "lambari",
+      "carpa"
+    ],
+    "ingredientes": [
+      "1 xícara de leite em pó",
+      "1/2 xícara de farinha de trigo",
+      "1 colher de sopa de açúcar",
+      "água aos poucos",
+      "algumas gotas de essência de baunilha opcional"
+    ],
+    "preparo": [
+      "Misture o leite em pó, a farinha e o açúcar.",
+      "Adicione água aos poucos até dar liga.",
+      "Sove até formar uma massa macia.",
+      "Se quiser, adicione poucas gotas de baunilha.",
+      "Guarde em pote fechado para não ressecar."
+    ],
+    "modoDeUso": "Use pedacinhos pequenos no anzol, principalmente com boia sensível.",
+    "observacao": "Boa para tilápia manhosa. Evite deixar muito mole, pois pode sair fácil no arremesso."
+  },
+  {
+    "id": "racao-na-pinga",
+    "nome": "Ração na pinga",
+    "tipo": "ração preparada",
+    "destaque": false,
+    "indicadaPara": [
+      "pacu",
+      "tambacu",
+      "tambaqui",
+      "matrinxa",
+      "piraputanga"
+    ],
+    "ingredientes": [
+      "1 porção de ração para peixe",
+      "pinga/cachaça suficiente para umedecer",
+      "1 colher de açúcar ou mel opcional"
+    ],
+    "preparo": [
+      "Coloque a ração em um pote com tampa.",
+      "Umedeça com pouca pinga, sem encharcar.",
+      "Misture bem e deixe descansar por alguns minutos.",
+      "Se quiser, adicione um pouco de açúcar ou mel.",
+      "Use quando a ração estiver aromatizada, mas ainda firme."
+    ],
+    "modoDeUso": "Isca no anzol com cuidado ou use em montagem própria para ração. Funciona melhor quando os peixes estão acostumados com ração.",
+    "observacao": "Não exagere na pinga para não amolecer demais a ração."
+  },
+  {
+    "id": "massa-doce-goiabada-banana",
+    "nome": "Massa doce de goiabada e banana",
+    "tipo": "massa doce",
+    "destaque": false,
+    "indicadaPara": [
+      "pacu",
+      "tambacu",
+      "tambaqui",
+      "piraputanga",
+      "matrinxa"
+    ],
+    "ingredientes": [
+      "1 banana madura amassada",
+      "2 colheres de sopa de goiabada amassada",
+      "1 xícara de farinha de trigo",
+      "leite em pó ou ração triturada até dar ponto"
+    ],
+    "preparo": [
+      "Amasse bem a banana e a goiabada.",
+      "Misture com a farinha de trigo.",
+      "Adicione leite em pó ou ração triturada até firmar.",
+      "Sove até formar uma massa moldável.",
+      "Faça bolinhas e mantenha em pote fechado."
+    ],
+    "modoDeUso": "Use bolinhas médias para pacu, tambacu e tambaqui. Pode funcionar bem com boia cevadeira ou montagem de fundo.",
+    "observacao": "Massa aromática e doce, boa para peixes redondos. Em dias quentes, leve em pote bem fechado para não amolecer demais."
+  },
+  {
+    "id": "massa-queijo-curimbata-piau",
+    "nome": "Massa com queijo para curimbatá, piau e piapara",
+    "tipo": "massa salgada",
+    "destaque": false,
+    "indicadaPara": [
+      "curimbata",
+      "piau",
+      "piapara",
+      "carpa"
+    ],
+    "ingredientes": [
+      "1 xícara de farinha de trigo",
+      "1/2 xícara de fubá",
+      "2 colheres de sopa de queijo ralado",
+      "água aos poucos",
+      "ração triturada opcional"
+    ],
+    "preparo": [
+      "Misture a farinha, o fubá e o queijo ralado.",
+      "Adicione água aos poucos até dar liga.",
+      "Sove até a massa ficar firme.",
+      "Se precisar, adicione ração triturada para reforçar o cheiro.",
+      "Guarde em pote fechado."
+    ],
+    "modoDeUso": "Use porções pequenas no anzol, com boia sensível ou fundo leve.",
+    "observacao": "Boa opção para peixes mais manhosos. Evite massa grande demais, pois esses peixes costumam beliscar antes de carregar."
+  },
+  {
+    "id": "massa-milho-carpas-tilapias",
+    "nome": "Massa de milho para carpa e tilápia",
+    "tipo": "massa de milho",
+    "destaque": false,
+    "indicadaPara": [
+      "carpa",
+      "tilapia",
+      "curimbata",
+      "piau",
+      "piapara"
+    ],
+    "ingredientes": [
+      "1 lata de milho verde escorrido",
+      "1 xícara de fubá",
+      "1/2 xícara de farinha de trigo",
+      "ração triturada até dar ponto"
+    ],
+    "preparo": [
+      "Amasse ou bata o milho até formar uma pasta.",
+      "Misture com o fubá e a farinha.",
+      "Adicione ração triturada até firmar.",
+      "Sove até conseguir modelar bolinhas.",
+      "Guarde em pote fechado."
+    ],
+    "modoDeUso": "Use bolinhas pequenas a médias, mantendo a ponta do anzol levemente exposta.",
+    "observacao": "Funciona bem em pesqueiros onde os peixes já estão acostumados com milho ou massas mais suaves."
+  },
+  {
+    "id": "massa-salsicha-racao",
+    "nome": "Massa de salsicha com ração",
+    "tipo": "massa forte",
+    "destaque": false,
+    "indicadaPara": [
+      "pacu",
+      "tambacu",
+      "tambaqui",
+      "catfish",
+      "bagre-africano"
+    ],
+    "ingredientes": [
+      "2 salsichas amassadas",
+      "1 xícara de ração triturada",
+      "1/2 xícara de farinha de trigo",
+      "água apenas se necessário"
+    ],
+    "preparo": [
+      "Amasse bem as salsichas.",
+      "Misture com a ração triturada.",
+      "Adicione farinha de trigo para dar liga.",
+      "Se estiver seca, coloque água aos poucos.",
+      "Sove até ficar firme o suficiente para prender no anzol."
+    ],
+    "modoDeUso": "Use bolinhas médias ou pedaços firmes no anzol. Boa para fundo e para peixes maiores.",
+    "observacao": "Tem cheiro forte e pode atrair peixes de couro também. Não deixe muito mole."
+  },
+  {
+    "id": "massa-pao-racao-triturada",
+    "nome": "Massa de pão com ração triturada",
+    "tipo": "massa simples",
+    "destaque": false,
+    "indicadaPara": [
+      "tilapia",
+      "lambari",
+      "carpa",
+      "curimbata"
+    ],
+    "ingredientes": [
+      "miolo de 2 pães franceses",
+      "ração triturada",
+      "água aos poucos",
+      "1 colher de leite em pó opcional"
+    ],
+    "preparo": [
+      "Retire o miolo dos pães.",
+      "Umedeça levemente com água.",
+      "Misture ração triturada até dar ponto.",
+      "Sove até ficar uma massa firme.",
+      "Adicione leite em pó se quiser deixar mais atrativa."
+    ],
+    "modoDeUso": "Use pedaços pequenos no anzol, principalmente para tilápia, lambari e carpa.",
+    "observacao": "É uma receita barata e rápida. Ideal para levar como opção extra."
+  },
+  {
+    "id": "massa-frutas-peixes-redondos",
+    "nome": "Massa de frutas para peixes redondos",
+    "tipo": "massa frutada",
+    "destaque": false,
+    "indicadaPara": [
+      "pacu",
+      "tambacu",
+      "tambaqui",
+      "piraputanga",
+      "matrinxa"
+    ],
+    "ingredientes": [
+      "1 banana madura",
+      "1 pedaço pequeno de mamão ou goiaba",
+      "1 xícara de ração triturada",
+      "farinha de trigo ou leite em pó até dar ponto"
+    ],
+    "preparo": [
+      "Amasse bem as frutas.",
+      "Misture com a ração triturada.",
+      "Adicione farinha ou leite em pó até firmar.",
+      "Sove até formar uma massa moldável.",
+      "Guarde em pote fechado e use no mesmo dia, se possível."
+    ],
+    "modoDeUso": "Modele bolinhas médias e use em montagem de boia ou fundo. Boa para testar quando peixes redondos estão ativos na superfície.",
+    "observacao": "Por levar fruta, pode amolecer rápido no calor. Leve em pote bem fechado e evite deixar no sol."
+  }
+]

@@ -1,5 +1,6 @@
 import peixesData from '@/data/peixes-pesqueiro.json'
 import pesqueirosData from '@/data/pesqueiros.json'
+import receitasData from '@/data/receitas-pesqueiro.json'
 import { normalizeNome } from '@/lib/normalize'
 
 const CIDADE_NOME: Record<string, string> = {
@@ -39,6 +40,12 @@ export default async function PeixePesqueiroPage({ params }: { params: Promise<{
   const pesqueirosComEsse = (pesqueirosData as any[]).filter(p =>
     (p.peixes as string[]).some((nome: string) => normalizeNome(nome) === peixe.id)
   )
+
+  const todasReceitas = (receitasData as any[]).filter(r =>
+    (r.indicadaPara as string[]).includes(peixe.id)
+  )
+  const receitasRelacionadas = todasReceitas.slice(0, 3)
+  const temMaisReceitas = todasReceitas.length > 3
 
   return (
     <>
@@ -81,6 +88,44 @@ export default async function PeixePesqueiroPage({ params }: { params: Promise<{
         <div className="cidade-section">
           <h2 className="section-title">💡 Dica prática</h2>
           <div className="peixe-dica-box">{peixe.dica}</div>
+        </div>
+
+        {/* RECEITAS RELACIONADAS — ESCOPO 4 */}
+        <div className="cidade-section">
+          <h2 className="section-title">🪱 Massas e iscas indicadas</h2>
+          <p className="pesqueiro-parceiros-sub">Receitas que costumam funcionar bem para {peixe.nome}.</p>
+          {receitasRelacionadas.length === 0 ? (
+            <div className="ponto-card" style={{ color: '#64748b', fontSize: 14 }}>
+              Ainda não temos receitas específicas para este peixe.
+            </div>
+          ) : (
+            <>
+              <div className="receitas-mini-grid">
+                {receitasRelacionadas.map((r: any) => (
+                  <div key={r.id} className="receita-mini-card">
+                    <div className="receita-mini-header">
+                      <div className="receita-mini-nome">{r.nome}</div>
+                      <span className="receita-mini-tipo">{r.tipo}</span>
+                    </div>
+                    <div className="receita-mini-ings">
+                      {(r.ingredientes as string[]).slice(0, 3).join(' · ')}
+                      {(r.ingredientes as string[]).length > 3 && ' · ...'}
+                    </div>
+                    <a href="/pesqueiros/massas-e-iscas" className="receita-mini-link">
+                      Ver receita completa →
+                    </a>
+                  </div>
+                ))}
+              </div>
+              {temMaisReceitas && (
+                <div style={{ marginTop: 16 }}>
+                  <a href="/pesqueiros/massas-e-iscas" className="pond-ver-detalhes" style={{ display: 'inline-block' }}>
+                    Ver todas as receitas →
+                  </a>
+                </div>
+              )}
+            </>
+          )}
         </div>
 
         {pesqueirosComEsse.length > 0 && (

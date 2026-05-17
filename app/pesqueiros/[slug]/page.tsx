@@ -2,6 +2,7 @@ import pesqueirosData from '@/data/pesqueiros.json'
 import cidadesData from '@/data/cidades.json'
 import parceirosData from '@/data/parceiros.json'
 import peixesData from '@/data/peixes-pesqueiro.json'
+import receitasData from '@/data/receitas-pesqueiro.json'
 import { normalizeNome } from '@/lib/normalize'
 
 const CIDADE_NOME: Record<string, string> = {
@@ -58,6 +59,10 @@ export default async function PesqueiroPage({ params }: { params: Promise<{ slug
   const peixesLeves  = peixesMapeados.filter((px: any) => PORTE_LEVE.includes(px.porte))
   const peixesGrandes = peixesMapeados.filter((px: any) => PORTE_GRANDE.includes(px.porte))
   const isMix = peixesLeves.length > 0 && peixesGrandes.length > 0
+
+  const temReceitasParaEstePesqueiro = (receitasData as any[]).some(r =>
+    peixesMapeados.some((px: any) => (r.indicadaPara as string[]).includes(px.id))
+  )
 
   const peixeRefEquip = isMix
     ? null
@@ -208,6 +213,17 @@ export default async function PesqueiroPage({ params }: { params: Promise<{ slug
                   </div>
                 ))}
               </div>
+
+              {/* ESCOPO 5 — CTA Massas */}
+              {temReceitasParaEstePesqueiro && (
+                <div className="massas-cta-inline">
+                  <h4>Quer preparar suas iscas?</h4>
+                  <p>Veja receitas de massas e iscas indicadas para os peixes deste pesqueiro.</p>
+                  <a href="/pesqueiros/massas-e-iscas" className="pond-ver-detalhes" style={{ display: 'inline-block' }}>
+                    Ver receitas de massas →
+                  </a>
+                </div>
+              )}
             </>
           )}
         </div>

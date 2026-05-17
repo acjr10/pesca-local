@@ -19,25 +19,38 @@ export default function PeixesPesqueiroPage() {
           <p>Veja iscas, equipamentos e dicas para os peixes mais encontrados em pesqueiros.</p>
         </div>
 
+        {/* CTA MASSAS — ESCOPO 3 */}
+        <div className="massas-cta-block">
+          <div className="massas-cta-text">
+            <h3>🪱 Massas e iscas para pesqueiro</h3>
+            <p>Veja receitas práticas como beijinho, massa de ração, ração na pinga e massas doces para peixes redondos.</p>
+          </div>
+          <a href="/pesqueiros/massas-e-iscas" className="banner-btn">Ver receitas de massas →</a>
+        </div>
+
         <div className="peixes-pp-grid">
           {peixes.map(peixe => (
-            <div key={peixe.id} className="peixe-pp-card">
-              <div className="peixe-pp-nome">{peixe.nome}</div>
-              <div className="peixe-pp-meta">
-                <span className="badge-porte">{peixe.porte}</span>
-                <span className={`badge-dif ${difClass(peixe.dificuldade)}`}>{peixe.dificuldade}</span>
+            <div key={peixe.id} className="peixe-pp-card pond-card-flex">
+              <div className="pond-card-top">
+                <div className="peixe-pp-header-row">
+                  <div className="peixe-pp-nome">{peixe.nome}</div>
+                  <span className={`badge-dif ${difClass(peixe.dificuldade)}`}>{peixe.dificuldade}</span>
+                </div>
+                <div className="peixe-pp-porte-row">
+                  <span className="badge-porte">{peixe.porte}</span>
+                </div>
+                <div className="peixe-pp-iscas-row">
+                  {(peixe.iscas as string[]).slice(0, 3).map((isca: string) => (
+                    <span key={isca} className="tipo-tag">{isca}</span>
+                  ))}
+                  {(peixe.iscas as string[]).length > 3 && (
+                    <span className="peixe-pp-mais">+{(peixe.iscas as string[]).length - 3}</span>
+                  )}
+                </div>
               </div>
-              <div className="peixe-pp-iscas-row">
-                {(peixe.iscas as string[]).slice(0, 3).map((isca: string) => (
-                  <span key={isca} className="tipo-tag">{isca}</span>
-                ))}
-                {(peixe.iscas as string[]).length > 3 && (
-                  <span className="peixe-pp-mais">+{(peixe.iscas as string[]).length - 3}</span>
-                )}
+              <div className="pond-card-actions">
+                <a href={`/pesqueiros/peixes/${peixe.id}`} className="pond-ver-detalhes">Ver dicas →</a>
               </div>
-              <a href={`/pesqueiros/peixes/${peixe.id}`} className="pond-ver-detalhes" style={{ marginTop: 'auto' }}>
-                Ver dicas →
-              </a>
             </div>
           ))}
         </div>

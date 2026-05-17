@@ -3,20 +3,11 @@ import Image from 'next/image'
 import especiesData from '@/data/especies.json'
 import parceirosData from '@/data/parceiros.json'
 
-const DIFICULDADE_COR: Record<string, string> = {
-  'Iniciante':                 '#14c8c2',
-  'Iniciante a intermediário': '#f59e0b',
-  'Intermediário':             '#f59e0b',
-  'Intermediário a avançado':  '#ef4444',
-  'Avançado':                  '#ef4444',
-}
-
-const DIFICULDADE_TEXTO: Record<string, string> = {
-  'Iniciante':                 '#031526',
-  'Iniciante a intermediário': '#1a0f00',
-  'Intermediário':             '#1a0f00',
-  'Intermediário a avançado':  '#fff',
-  'Avançado':                  '#fff',
+function difClass(nivel: string): string {
+  const n = nivel.toLowerCase()
+  if (n.includes('avançado')) return 'badge-dif-avancado'
+  if (n.includes('intermediário')) return 'badge-dif-intermediario'
+  return 'badge-dif-iniciante'
 }
 
 const EQUIP_LABEL: Record<string, string> = {
@@ -46,6 +37,16 @@ const FALLBACK_CATEGORIAS: Record<string, string[]> = {
   linguado: ['Guia de pesca', 'Loja de pesca', 'Aluguel de barco'],
 }
 
+function formatPhone(raw: string): string {
+  const digits = raw.replace(/\D/g, '')
+  const local = digits.startsWith('55') ? digits.slice(2) : digits
+  const ddd = local.slice(0, 2)
+  const num = local.slice(2)
+  if (num.length === 9) return `(${ddd}) ${num.slice(0, 5)}-${num.slice(5)}`
+  if (num.length === 8) return `(${ddd}) ${num.slice(0, 4)}-${num.slice(4)}`
+  return local
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
   const especie = (especiesData as any[]).find(e => e.id === slug)
@@ -68,8 +69,6 @@ export default async function EspeciePage({ params }: { params: Promise<{ slug: 
     .filter(p => p.ativo && categoriasFiltro.includes(p.categoria))
     .slice(0, 3)
 
-  const difCor    = DIFICULDADE_COR[especie.nivelDificuldade as string]   ?? '#f59e0b'
-  const difTexto  = DIFICULDADE_TEXTO[especie.nivelDificuldade as string] ?? '#1a0f00'
   const cidadesCtx: Record<string, string> = especie?.cidadesContexto ?? {}
 
   return (
@@ -93,7 +92,7 @@ export default async function EspeciePage({ params }: { params: Promise<{ slug: 
             {especie.nomeCientifico}
           </p>
           <div style={{ marginBottom: 10 }}>
-            <span style={{ background: difCor, color: difTexto, borderRadius: 20, padding: '4px 16px', fontSize: 13, fontWeight: 700, display: 'inline-block' }}>
+            <span className={difClass(especie.nivelDificuldade as string)}>
               {especie.nivelDificuldade}
             </span>
           </div>
@@ -325,7 +324,10 @@ export default async function EspeciePage({ params }: { params: Promise<{ slug: 
             <div className="cidades-contexto-grid">
               {Object.entries(cidadesCtx).map(([cidadeSlug, contexto]) => (
                 <a key={cidadeSlug} href={`/cidades/${cidadeSlug}`} className="cidade-contexto-card">
-                  <div className={`cidade-contexto-thumb city-${cidadeSlug}`}>
+                  <div
+                    className={`cidade-contexto-thumb city-${cidadeSlug}`}
+                    style={{ backgroundImage: `url('/cidades/${cidadeSlug}.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                  >
                     <div className="city-thumb-overlay" />
                     <span className="cidade-contexto-nome">
                       {CIDADE_NOME[cidadeSlug] ?? cidadeSlug}
@@ -367,7 +369,7 @@ export default async function EspeciePage({ params }: { params: Promise<{ slug: 
                   <p style={{ fontSize: 13, color: '#334155', margin: '0 0 12px', lineHeight: 1.5 }}>
                     {p.descricao}
                   </p>
-                  {p.whatsapp && (
+                  {p.plano === 'destaque' && p.whatsapp && (
                     <a
                       href={`https://wa.me/${p.whatsapp}?text=${encodeURIComponent(`Olá ${p.nome}! Vi seu negócio no Pesca Local (pescalocal.com.br) e tenho interesse. Pode me ajudar?`)}`}
                       target="_blank"
@@ -377,6 +379,11 @@ export default async function EspeciePage({ params }: { params: Promise<{ slug: 
                     >
                       WhatsApp
                     </a>
+                  )}
+                  {p.plano !== 'destaque' && p.whatsapp && (
+                    <p style={{ fontSize: 13, color: '#334155', margin: '0 0 8px' }}>
+                      Telefone: {formatPhone(p.whatsapp)}
+                    </p>
                   )}
                   <a href={`/parceiros/${p.id}`} className="ver-btn">Ver perfil →</a>
                 </article>

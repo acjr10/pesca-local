@@ -1,5 +1,16 @@
+import type { Metadata } from 'next'
 import especiesData from '@/data/especies.json'
 
+function difClass(nivel: string): string {
+  const n = nivel.toLowerCase()
+  if (n.includes('avançado')) return 'badge-dif-avancado'
+  if (n.includes('intermediário')) return 'badge-dif-intermediario'
+  return 'badge-dif-iniciante'
+}
+
+export const metadata: Metadata = {
+  title: 'Espécies de Pesca na Baixada Santista | Pesca Local',
+}
 
 export default function EspeciesPage() {
   return (
@@ -16,7 +27,10 @@ export default function EspeciesPage() {
                 <img src={`/especies/${especie.id}.png`} alt={`Ilustração de ${especie.nome}`} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
               </div>
               <div className="city-list-info">
-                <h2>{especie.nome}</h2>
+                <div className="especie-card-header">
+                  <h2>{especie.nome}</h2>
+                  <span className={difClass(especie.nivelDificuldade)}>{especie.nivelDificuldade}</span>
+                </div>
                 <p style={{ fontSize: 13, color: '#64748b', fontStyle: 'italic', marginBottom: 0 }}>
                   {especie.nomeCientifico}
                 </p>
@@ -27,7 +41,6 @@ export default function EspeciesPage() {
                 </div>
                 <div className="city-list-stats">
                   <span>🗓️ {especie.melhorEpoca}</span>
-                  <span>📊 {especie.nivelDificuldade}</span>
                 </div>
                 <div className="ver-btn">Ver detalhes →</div>
               </div>

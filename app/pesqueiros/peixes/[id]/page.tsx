@@ -13,11 +13,10 @@ const CIDADE_NOME: Record<string, string> = {
 }
 
 function difClass(dif: string): string {
-  if (dif === 'iniciante') return 'badge-verde'
-  if (dif === 'iniciante a intermediário') return 'badge-laranja'
-  if (dif === 'intermediário') return 'badge-amarelo'
-  if (dif === 'intermediário a avançado') return 'badge-laranja'
-  return 'badge-vermelho'
+  const n = dif.toLowerCase()
+  if (n.includes('avançado')) return 'badge-dif-avancado'
+  if (n.includes('intermediário')) return 'badge-dif-intermediario'
+  return 'badge-dif-iniciante'
 }
 
 export default async function PeixePesqueiroPage({ params }: { params: Promise<{ id: string }> }) {
@@ -55,7 +54,7 @@ export default async function PeixePesqueiroPage({ params }: { params: Promise<{
           <h1>{peixe.nome}</h1>
           <div className="peixe-pp-meta">
             <span className="badge-porte">Porte: {peixe.porte}</span>
-            <span className={`badge-dif ${difClass(peixe.dificuldade)}`}>Dificuldade: {peixe.dificuldade}</span>
+            <span className={difClass(peixe.dificuldade)}>Dificuldade: {peixe.dificuldade}</span>
           </div>
         </div>
       </div>

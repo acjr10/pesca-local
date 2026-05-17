@@ -34,27 +34,32 @@
       ],
       "robalo": [
         "Portinho/Mar Pequeno",
-        "saídas de água e áreas de canal"
+        "Saídas de água e áreas de canal"
       ],
       "familia": [
         "Portinho",
-        "orla urbana em horários seguros"
+        "Orla urbana em horários seguros"
       ],
       "embarcada": [
-        "saídas pelo Mar Pequeno e marinas próximas"
+        "Saídas pelo Mar Pequeno e marinas próximas"
       ]
     },
     "cuidadosLocais": [
-      "evitar arremessar perto de banhistas",
-      "checar ressaca e vento sul",
-      "no Portinho respeitar áreas permitidas e horário local",
-      "em canais observar tráfego de embarcações"
+      "Evitar arremessar perto de banhistas",
+      "Checar ressaca e vento sul",
+      "No Portinho respeitar áreas permitidas e horário local",
+      "Em canais observar tráfego de embarcações"
     ],
     "quandoEvitar": "Evite praia aberta com ressaca, vento frontal forte, mar muito sujo ou orla lotada.",
     "observacaoLocal": "A cidade é boa para começar porque tem acesso fácil, estrutura urbana e bons cenários para testar leitura de praia.",
     "melhorEpoca": "Mar a Nov",
     "melhorHorario": "Madrugada e amanhecer",
-    "iscasRecomendadas": ["Camarão vivo", "Tainha", "Sardinha", "Lambari"],
+    "iscasRecomendadas": [
+      "Camarão vivo",
+      "Tainha",
+      "Sardinha",
+      "Lambari"
+    ],
     "totalPontosLevantados": 7
   },
   {
@@ -99,20 +104,25 @@
         "Gonzaguinha e Milionários com atenção a lotação"
       ],
       "embarcada": [
-        "marinas e saídas pelo Japuí/Mar Pequeno"
+        "Marinas e saídas pelo Japuí/Mar Pequeno"
       ]
     },
     "cuidadosLocais": [
-      "correnteza forte em canal",
-      "tráfego de barcos e jet skis",
-      "não pescar em área proibida",
-      "atenção em pedras e costões"
+      "Correnteza forte em canal",
+      "Tráfego de barcos e jet skis",
+      "Não pescar em área proibida",
+      "Atenção em pedras e costões"
     ],
     "quandoEvitar": "Evite temporal, raios, vento forte, correnteza excessiva ou locais com movimentação intensa de embarcações.",
     "observacaoLocal": "A região de ponte, canal e estruturas pede atenção à segurança, mas é muito rica para pesca de robalo e espécies de água salobra.",
     "melhorEpoca": "Ano todo, pico Mar a Nov",
     "melhorHorario": "Virada da maré, amanhecer",
-    "iscasRecomendadas": ["Camarão vivo", "Espada fatiada", "Lambari", "Minhoca"],
+    "iscasRecomendadas": [
+      "Camarão vivo",
+      "Espada fatiada",
+      "Lambari",
+      "Minhoca"
+    ],
     "totalPontosLevantados": 8
   },
   {
@@ -141,7 +151,7 @@
     "roteirosPorPerfil": {
       "iniciante": [
         "Deck do Pescador",
-        "orla em pontos permitidos"
+        "Orla em pontos permitidos"
       ],
       "praia": [
         "Aparecida/Canal 6",
@@ -158,16 +168,21 @@
       ]
     },
     "cuidadosLocais": [
-      "atenção a área portuária e navegação",
-      "respeitar restrições locais",
-      "usar passaguá em deck",
-      "não bloquear passagem de pedestres"
+      "Atenção a área portuária e navegação",
+      "Respeitar restrições locais",
+      "Usar passaguá em deck",
+      "Não bloquear passagem de pedestres"
     ],
     "quandoEvitar": "Evite áreas portuárias restritas, ressaca no emissário e pontos urbanos muito movimentados.",
     "observacaoLocal": "É uma cidade excelente para validação do produto porque combina pescador urbano, estrutura e serviços náuticos.",
     "melhorEpoca": "Set a Mar",
     "melhorHorario": "Amanhecer e fim de tarde",
-    "iscasRecomendadas": ["Camarão", "Sardinha", "Minhoca", "Lambari"],
+    "iscasRecomendadas": [
+      "Camarão",
+      "Sardinha",
+      "Minhoca",
+      "Lambari"
+    ],
     "totalPontosLevantados": 7
   },
   {
@@ -203,26 +218,31 @@
         "Jussara"
       ],
       "robalo": [
-        "saídas de água e trechos com estrutura, com baixa previsibilidade"
+        "Saídas de água e trechos com estrutura, com baixa previsibilidade"
       ],
       "familia": [
         "Plataforma e orla urbana com atenção a regras locais"
       ],
       "embarcada": [
-        "costeira próxima com serviços locais quando disponível"
+        "Costeira próxima com serviços locais quando disponível"
       ]
     },
     "cuidadosLocais": [
-      "verificar funcionamento e regras da plataforma",
-      "evitar ressaca",
-      "atenção ao vento lateral",
-      "usar passaguá em plataforma"
+      "Verificar funcionamento e regras da plataforma",
+      "Evitar ressaca",
+      "Atenção ao vento lateral",
+      "Usar passaguá em plataforma"
     ],
     "quandoEvitar": "Evite plataforma ou praia aberta com ressaca, vento forte e risco de onda sobre estrutura.",
     "observacaoLocal": "A Plataforma dá identidade forte à cidade, mas as praias também merecem conteúdo próprio por valas e arrebentação.",
     "melhorEpoca": "Abr a Set na plataforma, ano todo na praia",
     "melhorHorario": "Noturno e madrugada",
-    "iscasRecomendadas": ["Sardinha", "Camarão", "Minhoca", "Lambari"],
+    "iscasRecomendadas": [
+      "Sardinha",
+      "Camarão",
+      "Minhoca",
+      "Lambari"
+    ],
     "totalPontosLevantados": 6
   },
   {
@@ -274,16 +294,21 @@
       ]
     },
     "cuidadosLocais": [
-      "travessia para Ilha das Cabras apenas em maré baixa e com segurança",
-      "costões escorregadios",
-      "atenção a áreas ambientais",
-      "evitar foz com corrente forte"
+      "Travessia para Ilha das Cabras apenas em maré baixa e com segurança",
+      "Costões escorregadios",
+      "Atenção a áreas ambientais",
+      "Evitar foz com corrente forte"
     ],
     "quandoEvitar": "Evite costões com mar batendo, foz com corrente excessiva e travessias em maré subindo.",
     "observacaoLocal": "Itanhaém deve virar uma das páginas mais completas do site porque combina muitos ambientes de pesca em uma única cidade.",
     "melhorEpoca": "Mar a Nov",
     "melhorHorario": "Virada da maré",
-    "iscasRecomendadas": ["Camarão vivo", "Tainha", "Lambari", "Minhoca"],
+    "iscasRecomendadas": [
+      "Camarão vivo",
+      "Tainha",
+      "Lambari",
+      "Minhoca"
+    ],
     "totalPontosLevantados": 10
   },
   {
@@ -327,20 +352,25 @@
         "Guaraú e praias com estrutura em dias de mar calmo"
       ],
       "embarcada": [
-        "saídas locais e costeira, sempre com guia/condição segura"
+        "Saídas locais e costeira, sempre com guia/condição segura"
       ]
     },
     "cuidadosLocais": [
-      "atenção a áreas de preservação",
-      "verificar regras locais e acesso",
-      "costeira exige mar calmo",
+      "Atenção a áreas de preservação",
+      "Verificar regras locais e acesso",
+      "Costeira exige mar calmo",
       "Guaraú pode ter vento e correnteza fortes"
     ],
     "quandoEvitar": "Evite costeiras com mar batendo, ressaca e áreas ambientais sem informação clara de permissão.",
     "observacaoLocal": "Peruíbe tem grande potencial para conteúdo porque mistura pesca de praia, rio e natureza, mas exige cuidado ambiental e validação local.",
     "melhorEpoca": "Mar a Nov",
     "melhorHorario": "Amanhecer e crepúsculo",
-    "iscasRecomendadas": ["Camarão", "Tainha", "Lambari", "Sardinha"],
+    "iscasRecomendadas": [
+      "Camarão",
+      "Tainha",
+      "Lambari",
+      "Sardinha"
+    ],
     "totalPontosLevantados": 8
   }
 ]

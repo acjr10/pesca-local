@@ -25,6 +25,16 @@ function isPesqueiroDestaque(pesqueiro: any) {
   return pesqueiro.plano === 'destaque'
 }
 
+function formatPhone(raw: string): string {
+  const digits = raw.replace(/\D/g, '')
+  const local = digits.startsWith('55') ? digits.slice(2) : digits
+  const ddd = local.slice(0, 2)
+  const num = local.slice(2)
+  if (num.length === 9) return `(${ddd}) ${num.slice(0, 5)}-${num.slice(5)}`
+  if (num.length === 8) return `(${ddd}) ${num.slice(0, 4)}-${num.slice(4)}`
+  return local
+}
+
 export default function PesqueirosPage() {
   const [cidadeFiltro, setCidadeFiltro] = useState('')
 
@@ -114,6 +124,11 @@ export default function PesqueirosPage() {
                   </div>
                 </div>
 
+                {!destaque && p.whatsapp && (
+                  <p style={{ fontSize: 13, color: '#334155', margin: '0 0 8px' }}>
+                    Telefone: {formatPhone(p.whatsapp)}
+                  </p>
+                )}
                 <div className="pond-card-actions">
                   {destaque && p.whatsapp && (
                     <a

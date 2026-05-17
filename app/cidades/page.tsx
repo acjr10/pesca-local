@@ -1,4 +1,9 @@
+import type { Metadata } from 'next'
 import cidadesData from '@/data/cidades.json'
+
+export const metadata: Metadata = {
+  title: 'Cidades para pescar na Baixada Santista | Pesca Local',
+}
 
 export default function CidadesPage() {
   return (

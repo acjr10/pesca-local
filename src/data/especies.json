@@ -45,35 +45,35 @@
     ],
     "imagem": "/images/especies/robalo.jpg",
     "ondeEncontrar": [
-      "pés de pilares de pontes e trapiches",
-      "galhadas, troncos submersos e margens com sombra",
-      "encostas de pedras, costões e estruturas com cracas",
-      "bocas de rios, manguezais e saídas de água doce",
-      "canais com corrente e remansos próximos da corrente forte",
-      "encontro de água limpa com água mais turva"
+      "Pés de pilares de pontes e trapiches",
+      "Galhadas, troncos submersos e margens com sombra",
+      "Encostas de pedras, costões e estruturas com cracas",
+      "Bocas de rios, manguezais e saídas de água doce",
+      "Canais com corrente e remansos próximos da corrente forte",
+      "Encontro de água limpa com água mais turva"
     ],
     "comoPescar": "Arremesse rente à estrutura e trabalhe a isca passando na cara do peixe, não no meio vazio. Com artificial, use toques de ponta de vara, recolhimento lento a moderado e pausas curtas; muitos ataques acontecem na pausa ou na descida da isca. Com camarão vivo, mantenha a isca nadando livre na meia-água, com pouco peso, perto de pilares, pedras e galhadas.",
     "dicaMestre": "O robalo da Baixada costuma atacar na pausa da isca, bem perto da estrutura, principalmente no começo da vazante ou da enchente.",
     "iscasPorSituacao": {
       "aguaLimpa": [
-        "camarão artificial transparente/natural",
-        "plug meia-água cor osso ou translúcido",
-        "shad branco ou prata",
-        "camarão vivo médio",
-        "manjuba pequena"
+        "Camarão artificial transparente/natural",
+        "Plug meia-água cor osso ou translúcido",
+        "Shad branco ou prata",
+        "Camarão vivo médio",
+        "Manjuba pequena"
       ],
       "aguaTurva": [
-        "jig head com shad chartreuse",
-        "camarão artificial branco ou rosa",
-        "plug osso/branco opaco",
-        "soft com vibração",
-        "camarão vivo"
+        "Jig head com shad chartreuse",
+        "Camarão artificial branco ou rosa",
+        "Plug osso/branco opaco",
+        "Soft com vibração",
+        "Camarão vivo"
       ],
       "pescaDeEspera": [
-        "camarão vivo",
-        "manjuba viva",
-        "lambari",
-        "camarão morto fresco"
+        "Camarão vivo",
+        "Manjuba viva",
+        "Lambari",
+        "Camarão morto fresco"
       ],
       "apresentacao": "No camarão vivo, isque abaixo do chifre, evitando atingir o cérebro, para manter o movimento natural. No soft, alinhe bem a isca no jig head para ela nadar reta e faça pausas perto da estrutura."
     },
@@ -99,12 +99,12 @@
     "impactoVento": "Vento sul forte pode sujar a água e empurrar o peixe para áreas mais abrigadas. Vento norte/nordeste fraco tende a deixar o canal mais pescável e facilita o trabalho das artificiais.",
     "tamanhoComumRegiao": "Pevas de 400 g a 1,5 kg são expectativas realistas. Flechas maiores aparecem, mas não são rotina; exigem maré, estrutura, silêncio e horário bem escolhidos.",
     "errosComuns": [
-      "arremessar longe demais e ignorar a estrutura próxima",
-      "trabalhar a isca rápido demais, sem pausas",
-      "usar leader curto ou fino perto de cracas e pilares",
-      "matar o camarão vivo ao iscar errado",
-      "fazer barulho no barco, píer ou margem",
-      "fisgar no primeiro toque sem sentir peso"
+      "Arremessar longe demais e ignorar a estrutura próxima",
+      "Trabalhar a isca rápido demais, sem pausas",
+      "Usar leader curto ou fino perto de cracas e pilares",
+      "Matar o camarão vivo ao iscar errado",
+      "Fazer barulho no barco, píer ou margem",
+      "Fisgar no primeiro toque sem sentir peso"
     ],
     "nivelDificuldadeMotivo": "Intermediário a alto. O robalo exige precisão no arremesso, leitura de maré e estrutura, além de apresentação correta da isca.",
     "cidadesContexto": {
@@ -175,36 +175,36 @@
     ],
     "imagem": "/images/especies/pescada.jpg",
     "ondeEncontrar": [
-      "canais profundos de estuários",
-      "fundos de areia ou lama após a arrebentação",
-      "valas de praia atrás da terceira onda",
-      "pilares de plataformas e píeres longos",
-      "parcéis e lajes submersas em pescaria embarcada",
-      "regiões com cardumes de camarão e manjuba"
+      "Canais profundos de estuários",
+      "Fundos de areia ou lama após a arrebentação",
+      "Valas de praia atrás da terceira onda",
+      "Pilares de plataformas e píeres longos",
+      "Parcéis e lajes submersas em pescaria embarcada",
+      "Regiões com cardumes de camarão e manjuba"
     ],
     "comoPescar": "Pesque próximo ao fundo, com isca natural fresca ou jig leve, mantendo a linha sempre em contato. Na praia, arremesse no canal ou na vala formada pela arrebentação. Embarcado, a rodada com pequenos toques verticais funciona bem. A pescada tem boca mais sensível, então a fisgada deve ser firme, mas sem violência.",
     "dicaMestre": "A pescada costuma escapar quando o pescador fisga forte demais; sentiu o peso, firme a vara e trabalhe com fricção macia.",
     "iscasPorSituacao": {
       "aguaLimpa": [
-        "camarão vivo ou fresco",
-        "sardinha em filé fino",
-        "manjuba",
-        "shad branco",
-        "jig metálico prata"
+        "Camarão vivo ou fresco",
+        "Sardinha em filé fino",
+        "Manjuba",
+        "Shad branco",
+        "Jig metálico prata"
       ],
       "aguaTurva": [
-        "camarão morto fresco",
-        "filé de sardinha com cheiro",
-        "corrupto",
-        "shad chartreuse",
-        "jig com brilho"
+        "Camarão morto fresco",
+        "Filé de sardinha com cheiro",
+        "Corrupto",
+        "Shad chartreuse",
+        "Jig com brilho"
       ],
       "pescaDeEspera": [
-        "camarão morto inteiro",
-        "sardinha em filé",
-        "manjuba",
-        "filé de peixe",
-        "corrupto"
+        "Camarão morto inteiro",
+        "Sardinha em filé",
+        "Manjuba",
+        "Filé de peixe",
+        "Corrupto"
       ],
       "apresentacao": "Corte o filé de sardinha em tira ou gota, deixando o couro ajudar na firmeza. Use elasticot em arremessos fortes ou quando a isca estiver mole."
     },
@@ -230,12 +230,12 @@
     "impactoVento": "Vento leste moderado pode formar boa condição de praia. Vento sul forte e ressaca tendem a afastar o peixe e dificultar a apresentação.",
     "tamanhoComumRegiao": "O mais comum são pescadas de 300 g a 1,2 kg. Exemplares maiores aparecem embarcado, em parcéis e canais profundos.",
     "errosComuns": [
-      "dar fisgada violenta e rasgar a boca",
-      "usar anzol grande demais para camarão pequeno",
-      "deixar a linha frouxa",
-      "usar isca velha e sem cheiro",
-      "trabalhar a isca muito alta do fundo",
-      "não trocar a isca depois de lavada"
+      "Dar fisgada violenta e rasgar a boca",
+      "Usar anzol grande demais para camarão pequeno",
+      "Deixar a linha frouxa",
+      "Usar isca velha e sem cheiro",
+      "Trabalhar a isca muito alta do fundo",
+      "Não trocar a isca depois de lavada"
     ],
     "nivelDificuldadeMotivo": "Intermediário. Encontrar o cardume e manter a isca no fundo certo é a parte mais difícil; a captura melhora muito com sensibilidade e fricção regulada.",
     "cidadesContexto": {
@@ -303,34 +303,34 @@
     ],
     "imagem": "/images/especies/corvina.jpg",
     "ondeEncontrar": [
-      "poços profundos em canais",
-      "fundo de lama, areia ou cascalho miúdo",
-      "plataformas e píeres",
-      "canais de maré atrás de bancos de areia",
-      "áreas embarcadas próximas à costa",
-      "pontos com sedimento e alimento no fundo"
+      "Poços profundos em canais",
+      "Fundo de lama, areia ou cascalho miúdo",
+      "Plataformas e píeres",
+      "Canais de maré atrás de bancos de areia",
+      "Áreas embarcadas próximas à costa",
+      "Pontos com sedimento e alimento no fundo"
     ],
     "comoPescar": "A corvina é peixe de fundo. Apoie a chumbada no substrato e mantenha a linha tensionada, esperando as batidas fortes e cadenciadas. Use iscas naturais com bom odor, como camarão, sardinha, corrupto e filé de peixe. Em praia, o segredo é acertar a vala; em canal, é manter a isca parada no poço.",
     "dicaMestre": "Corvina segue rastro de cheiro no fundo; isca fresca, bem presa e trabalhando parada no poço vale mais do que arremessar longe.",
     "iscasPorSituacao": {
       "aguaLimpa": [
-        "camarão fresco",
-        "corrupto",
-        "tatuíra",
-        "sardinha em cubos"
+        "Camarão fresco",
+        "Corrupto",
+        "Tatuíra",
+        "Sardinha em cubos"
       ],
       "aguaTurva": [
-        "filé de sardinha com cheiro forte",
-        "camarão salgado",
-        "corrupto",
-        "miolo de siri"
+        "Filé de sardinha com cheiro forte",
+        "Camarão salgado",
+        "Corrupto",
+        "Miolo de siri"
       ],
       "pescaDeEspera": [
-        "corrupto inteiro",
-        "sardinha em pedaço",
-        "camarão",
-        "filé de peixe",
-        "tatuíra"
+        "Corrupto inteiro",
+        "Sardinha em pedaço",
+        "Camarão",
+        "Filé de peixe",
+        "Tatuíra"
       ],
       "apresentacao": "Cubra bem o anzol, mas deixe a ponta exposta. Use elasticot no corrupto ou sardinha mole para resistir ao arremesso e à corrente."
     },
@@ -356,12 +356,12 @@
     "impactoVento": "Mar mexido sem ressaca pesada pode ativar a corvina. Vento sul forte demais atrapalha arremesso e segurança, mas água levemente turva não é problema para ela.",
     "tamanhoComumRegiao": "Corvinas de 400 g a 1,5 kg são expectativa realista. Exemplares acima disso aparecem em plataforma, canal portuário e embarcado.",
     "errosComuns": [
-      "fisgar no primeiro belisco",
-      "usar chumbada leve que sai rodando",
-      "deixar a isca fora do fundo",
-      "não prender isca mole com elasticot",
-      "usar chicote curto demais em praia mexida",
-      "não insistir quando passa cardume"
+      "Fisgar no primeiro belisco",
+      "Usar chumbada leve que sai rodando",
+      "Deixar a isca fora do fundo",
+      "Não prender isca mole com elasticot",
+      "Usar chicote curto demais em praia mexida",
+      "Não insistir quando passa cardume"
     ],
     "nivelDificuldadeMotivo": "Baixo a intermediário. A corvina é acessível, mas quem lê fundo, vala e peso correto pega muito mais.",
     "cidadesContexto": {
@@ -430,34 +430,34 @@
     ],
     "imagem": "/images/especies/bagre.jpg",
     "ondeEncontrar": [
-      "fundos lodosos de estuários e manguezais",
-      "praias rasas com água turva",
-      "bocas de rios depois de chuva",
-      "canais com matéria orgânica no fundo",
-      "poços e áreas sombreadas",
-      "maré vazando em fundo de lama"
+      "Fundos lodosos de estuários e manguezais",
+      "Praias rasas com água turva",
+      "Bocas de rios depois de chuva",
+      "Canais com matéria orgânica no fundo",
+      "Poços e áreas sombreadas",
+      "Maré vazando em fundo de lama"
     ],
     "comoPescar": "Pesca de espera no fundo, com isca de cheiro forte. Use chumbada suficiente para manter a montagem no lugar e aguarde os toques até o peixe carregar. Não exige técnica refinada, mas exige cuidado no manuseio: use alicate de contenção e alicate de bico para retirar o anzol.",
     "dicaMestre": "Bagre é fácil de pegar e perigoso de manusear; o alicate é mais importante que a isca.",
     "iscasPorSituacao": {
       "aguaLimpa": [
-        "camarão morto",
-        "sardinha em cubos",
-        "filé de peixe"
+        "Camarão morto",
+        "Sardinha em cubos",
+        "Filé de peixe"
       ],
       "aguaTurva": [
-        "sardinha",
-        "camarão passado",
-        "miúdos de peixe",
-        "coração de boi em pedaços",
-        "filé com cheiro forte"
+        "Sardinha",
+        "Camarão passado",
+        "Miúdos de peixe",
+        "Coração de boi em pedaços",
+        "Filé com cheiro forte"
       ],
       "pescaDeEspera": [
-        "sardinha",
-        "camarão",
-        "filé de peixe",
-        "corrupto",
-        "miúdos de peixe"
+        "Sardinha",
+        "Camarão",
+        "Filé de peixe",
+        "Corrupto",
+        "Miúdos de peixe"
       ],
       "apresentacao": "Amasse levemente a cabeça do camarão ou use pedaços de sardinha para liberar cheiro. Deixe a ponta do anzol exposta."
     },
@@ -483,12 +483,12 @@
     "impactoVento": "Vento que suja e mexe a água pode favorecer o bagre, porque ele caça muito por olfato e tato.",
     "tamanhoComumRegiao": "Bagres pequenos e médios são comuns, de 200 g a 1,5 kg. Exemplares maiores aparecem em canais e fundos lodosos.",
     "errosComuns": [
-      "pegar o peixe sem alicate",
-      "subestimar ferrões peitorais e dorsal",
-      "usar anzol pequeno e deixar o peixe engolir fundo",
-      "pescar fora do fundo",
-      "usar isca sem cheiro",
-      "cortar a linha sem tentar soltar corretamente"
+      "Pegar o peixe sem alicate",
+      "Subestimar ferrões peitorais e dorsal",
+      "Usar anzol pequeno e deixar o peixe engolir fundo",
+      "Pescar fora do fundo",
+      "Usar isca sem cheiro",
+      "Cortar a linha sem tentar soltar corretamente"
     ],
     "nivelDificuldadeMotivo": "Baixo para capturar, mas exige atenção à segurança. O risco principal é o manuseio, não a técnica.",
     "cidadesContexto": {
@@ -556,34 +556,34 @@
     ],
     "imagem": "/images/especies/espada.jpg",
     "ondeEncontrar": [
-      "pontas de píeres e plataformas",
-      "costões rochosos com profundidade",
-      "entradas de canais",
-      "pontos iluminados à noite",
-      "meia-água com cardume de manjuba",
-      "áreas costeiras com sardinha e pequenos peixes"
+      "Pontas de píeres e plataformas",
+      "Costões rochosos com profundidade",
+      "Entradas de canais",
+      "Pontos iluminados à noite",
+      "Meia-água com cardume de manjuba",
+      "Áreas costeiras com sardinha e pequenos peixes"
     ],
     "comoPescar": "É uma pescaria principalmente noturna. Use boia luminosa com sardinha/manjuba na meia-água ou plugs/jigs brilhantes trabalhados com recolhimento contínuo. Quando usar boia, espere ela afundar ou andar de lado antes da fisgada. Como a espada tem dentes cortantes, tenha empate de aço ou leader muito resistente.",
     "dicaMestre": "Se a isca volta cortada no meio, a espada está ali; coloque empate de aço e pesque na meia-água.",
     "iscasPorSituacao": {
       "aguaLimpa": [
-        "sardinha em tira",
-        "manjuba",
-        "plug cromado",
-        "jig prata",
-        "isca articulada branca"
+        "Sardinha em tira",
+        "Manjuba",
+        "Plug cromado",
+        "Jig prata",
+        "Isca articulada branca"
       ],
       "aguaTurva": [
-        "sardinha com vísceras expostas",
-        "jig glow",
-        "plug branco",
-        "colher clara",
-        "isca com brilho"
+        "Sardinha com vísceras expostas",
+        "Jig glow",
+        "Plug branco",
+        "Colher clara",
+        "Isca com brilho"
       ],
       "pescaDeEspera": [
-        "sardinha inteira ou em tira",
-        "manjuba",
-        "filé de peixe comprido com boia luminosa"
+        "Sardinha inteira ou em tira",
+        "Manjuba",
+        "Filé de peixe comprido com boia luminosa"
       ],
       "apresentacao": "Use tira comprida de sardinha bem presa com elasticot em anzol de haste longa ou tandem. Na boia luminosa, regule a profundidade entre 1,5 e 3 m."
     },
@@ -609,12 +609,12 @@
     "impactoVento": "Vento forte atrapalha boia e controle de linha. Vento norte fraco e água mais calma ajudam em píeres e plataformas.",
     "tamanhoComumRegiao": "Espadas de 70 cm a 1,20 m são realistas em boas noites, geralmente entre 600 g e 1,5 kg.",
     "errosComuns": [
-      "não usar empate de aço quando está cortando",
-      "fisgar assim que a boia pisca",
-      "pescar só no fundo",
-      "recolher artificial devagar demais",
-      "iluminar a água com lanterna",
-      "aproximar a mão da boca do peixe"
+      "Não usar empate de aço quando está cortando",
+      "Fisgar assim que a boia pisca",
+      "Pescar só no fundo",
+      "Recolher artificial devagar demais",
+      "Iluminar a água com lanterna",
+      "Aproximar a mão da boca do peixe"
     ],
     "nivelDificuldadeMotivo": "Intermediário. Quando o cardume encosta é ativa, mas exige horário, montagem noturna e cuidado com dentes.",
     "cidadesContexto": {
@@ -681,33 +681,33 @@
     ],
     "imagem": "/images/especies/parati.jpg",
     "ondeEncontrar": [
-      "canais rasos e calmos",
-      "margens lodosas de rios estuarinos",
-      "praias com ondas fracas",
-      "remansos perto de pilares e trapiches",
-      "áreas de água limpa e rasa",
-      "bancos de areia na maré cheia"
+      "Canais rasos e calmos",
+      "Margens lodosas de rios estuarinos",
+      "Praias com ondas fracas",
+      "Remansos perto de pilares e trapiches",
+      "Áreas de água limpa e rasa",
+      "Bancos de areia na maré cheia"
     ],
     "comoPescar": "Use material leve, linha fina e anzóis pequenos. O parati belisca com sutileza, então a ponteira ou boia precisa ser sensível. Iscas pequenas de massa, pão, camarão picado ou minhoca de praia funcionam melhor. Ceva leve ajuda, mas em excesso espalha o cardume.",
     "dicaMestre": "Para parati, o segredo é linha fina, isca minúscula e pouca pressa na fisgada.",
     "iscasPorSituacao": {
       "aguaLimpa": [
-        "miolo de pão",
-        "massa suave",
-        "camarão em cubinhos",
-        "minhoca de praia onde permitida"
+        "Miolo de pão",
+        "Massa suave",
+        "Camarão em cubinhos",
+        "Minhoca de praia onde permitida"
       ],
       "aguaTurva": [
-        "massa com cheiro leve",
-        "pão sovado",
-        "corrupto em pedacinhos",
-        "camarão pequeno"
+        "Massa com cheiro leve",
+        "Pão sovado",
+        "Corrupto em pedacinhos",
+        "Camarão pequeno"
       ],
       "pescaDeEspera": [
-        "massa",
-        "pão",
-        "camarão picado",
-        "sabiki pequeno"
+        "Massa",
+        "Pão",
+        "Camarão picado",
+        "Sabiki pequeno"
       ],
       "apresentacao": "Corte o camarão em cubinhos do tamanho da curvatura do anzol. A isca deve cobrir pouco e deixar a ponta pronta para fisgar."
     },
@@ -733,12 +733,12 @@
     "impactoVento": "Vento forte atrapalha boia leve e visibilidade. Calmaria ou vento norte fraco favorece.",
     "tamanhoComumRegiao": "Paratis de 15 cm a 30 cm são comuns, geralmente de 100 g a 400 g.",
     "errosComuns": [
-      "usar anzol grande demais",
-      "isca grande demais",
-      "linha grossa e visível",
-      "fisgar com força",
-      "cevar demais",
-      "usar boia pesada"
+      "Usar anzol grande demais",
+      "Isca grande demais",
+      "Linha grossa e visível",
+      "Fisgar com força",
+      "Cevar demais",
+      "Usar boia pesada"
     ],
     "nivelDificuldadeMotivo": "Intermediário leve. A espécie é comum, mas exige montagem delicada e percepção de toques sutis.",
     "cidadesContexto": {
@@ -805,31 +805,31 @@
     ],
     "imagem": "/images/especies/tainha.jpg",
     "ondeEncontrar": [
-      "superfície de canais e estuários",
-      "praias e barras durante passagem de cardumes",
-      "margens rasas de rios salobros",
-      "remansos perto de pontes e marinas",
-      "águas calmas com cardume visível",
-      "pontos com aves e movimentação na superfície"
+      "Superfície de canais e estuários",
+      "Praias e barras durante passagem de cardumes",
+      "Margens rasas de rios salobros",
+      "Remansos perto de pontes e marinas",
+      "Águas calmas com cardume visível",
+      "Pontos com aves e movimentação na superfície"
     ],
     "comoPescar": "A tainha não é predadora ativa: ela suga alimento. Use massa, pão, algas ou chuveirinho, com boia leve e apresentação natural. Cevar o local com farelo/pão ajuda a manter o cardume. Fisgue apenas quando a boia afundar de verdade ou quando sentir peso firme.",
     "dicaMestre": "Na tainha, cevar pouco e sempre é mais eficiente do que trocar de isca a cada cinco minutos.",
     "iscasPorSituacao": {
       "aguaLimpa": [
-        "miolo de pão sovado",
-        "massa de farinha",
-        "alga verde",
-        "pão francês"
+        "Miolo de pão sovado",
+        "Massa de farinha",
+        "Alga verde",
+        "Pão francês"
       ],
       "aguaTurva": [
-        "massa com sardinha amassada",
-        "chuveirinho com pão",
-        "farelo de arroz com pão"
+        "Massa com sardinha amassada",
+        "Chuveirinho com pão",
+        "Farelo de arroz com pão"
       ],
       "pescaDeEspera": [
-        "boia com chuveirinho de pão",
-        "massa flutuante",
-        "pão prensado"
+        "Boia com chuveirinho de pão",
+        "Massa flutuante",
+        "Pão prensado"
       ],
       "apresentacao": "Molhe o pão levemente e sove até formar massa firme. No chuveirinho, deixe as pontas dos anzóis discretamente expostas."
     },
@@ -855,12 +855,12 @@
     "impactoVento": "Vento norte fraco e água calma ajudam a ver cardume e controlar a boia. Vento sul forte espalha a boia e atrapalha a apresentação.",
     "tamanhoComumRegiao": "Tainhas médias de 400 g a 1,5 kg aparecem com mais frequência. Na temporada, exemplares maiores podem surgir com cardumes migratórios.",
     "errosComuns": [
-      "fisgar nas primeiras sugadas",
-      "usar anzol pesado demais",
-      "não cevar o ponto",
-      "fazer sombra ou barulho",
-      "deixar a massa dura demais",
-      "travamento excessivo da fricção"
+      "Fisgar nas primeiras sugadas",
+      "Usar anzol pesado demais",
+      "Não cevar o ponto",
+      "Fazer sombra ou barulho",
+      "Deixar a massa dura demais",
+      "Travamento excessivo da fricção"
     ],
     "nivelDificuldadeMotivo": "Intermediário a alto. Exige observação do cardume, montagem leve e paciência com toques sutis.",
     "cidadesContexto": {
@@ -926,31 +926,31 @@
     ],
     "imagem": "/images/especies/carapicu.jpg",
     "ondeEncontrar": [
-      "beirada de praia com espuma fraca",
-      "águas rasas de canais",
-      "píeres e trapiches baixos",
-      "fundos de areia limpa perto de costões rasos",
-      "remansos claros",
-      "cardumes pequenos junto à margem"
+      "Beirada de praia com espuma fraca",
+      "Águas rasas de canais",
+      "Píeres e trapiches baixos",
+      "Fundos de areia limpa perto de costões rasos",
+      "Remansos claros",
+      "Cardumes pequenos junto à margem"
     ],
     "comoPescar": "Pesque leve e perto. O carapicu costuma ficar colado na beirada, onde a onda espalha alimento. Use chicote curto, anzol pequeno e pedaços mínimos de camarão, lula ou massa. Ele dá batidas rápidas; a fisgada precisa ser curta e delicada.",
     "dicaMestre": "Carapicu não pede arremesso longe: muitas vezes ele está na primeira valinha da praia.",
     "iscasPorSituacao": {
       "aguaLimpa": [
-        "camarão em pedacinho",
-        "tira fina de lula",
-        "minhoca de praia em pedaço pequeno",
-        "massa pequena"
+        "Camarão em pedacinho",
+        "Tira fina de lula",
+        "Minhoca de praia em pedaço pequeno",
+        "Massa pequena"
       ],
       "aguaTurva": [
-        "corrupto em pedacinho",
-        "sardinha salgada mínima",
-        "camarão com cheiro"
+        "Corrupto em pedacinho",
+        "Sardinha salgada mínima",
+        "Camarão com cheiro"
       ],
       "pescaDeEspera": [
-        "chicote de dois ou três anzóis pequenos",
-        "sabiki pequeno",
-        "camarão picado"
+        "Chicote de dois ou três anzóis pequenos",
+        "Sabiki pequeno",
+        "Camarão picado"
       ],
       "apresentacao": "Corte tiras de lula ou camarão bem pequenas, deixando uma pontinha solta para balançar. Use anzol pequeno e pouca isca."
     },
@@ -976,12 +976,12 @@
     "impactoVento": "Vento fraco e mar mais transparente favorecem. Mar batido, muito sujo, espalha o cardume.",
     "tamanhoComumRegiao": "Peixe pequeno, geralmente de 10 cm a 20 cm. O valor é a ação e a diversão, não o tamanho.",
     "errosComuns": [
-      "arremessar longe demais",
-      "usar isca grande",
-      "usar anzol pesado",
-      "fisgar com força",
-      "usar linha grossa",
-      "não trocar isca lavada"
+      "Arremessar longe demais",
+      "Usar isca grande",
+      "Usar anzol pesado",
+      "Fisgar com força",
+      "Usar linha grossa",
+      "Não trocar isca lavada"
     ],
     "nivelDificuldadeMotivo": "Baixo. É ativo e abundante, mas exige montagem pequena e mão leve.",
     "cidadesContexto": {
@@ -1045,33 +1045,33 @@
     ],
     "imagem": "/images/especies/betara.jpg",
     "ondeEncontrar": [
-      "valas profundas entre bancos de areia",
-      "canais após a arrebentação",
-      "fundo arenoso limpo",
-      "zonas de espuma concentrada",
-      "transição de areia com cascalho ou pedrinhas",
-      "praias com corrupto, tatuíra e alimento natural"
+      "Valas profundas entre bancos de areia",
+      "Canais após a arrebentação",
+      "Fundo arenoso limpo",
+      "Zonas de espuma concentrada",
+      "Transição de areia com cascalho ou pedrinhas",
+      "Praias com corrupto, tatuíra e alimento natural"
     ],
     "comoPescar": "Leia a praia antes de arremessar. A betara fica nas valas e canais, sugando alimento do fundo. Use chicote de praia com pernadas leves, iscas naturais pequenas e chumbada que segure na areia. Mantenha a linha esticada e espere o toque firmar antes da fisgada.",
     "dicaMestre": "A melhor isca para betara é corrupto fresco bem preso no elasticot e colocado dentro da vala certa.",
     "iscasPorSituacao": {
       "aguaLimpa": [
-        "corrupto fresco",
-        "tatuíra",
-        "minhoca de praia onde permitida",
-        "camarão pequeno"
+        "Corrupto fresco",
+        "Tatuíra",
+        "Minhoca de praia onde permitida",
+        "Camarão pequeno"
       ],
       "aguaTurva": [
-        "corrupto com elasticot",
-        "camarão",
-        "sardinha em tira pequena",
-        "siri mole"
+        "Corrupto com elasticot",
+        "Camarão",
+        "Sardinha em tira pequena",
+        "Siri mole"
       ],
       "pescaDeEspera": [
-        "corrupto",
-        "tatuíra",
-        "camarão",
-        "minhoca de praia onde permitida"
+        "Corrupto",
+        "Tatuíra",
+        "Camarão",
+        "Minhoca de praia onde permitida"
       ],
       "apresentacao": "Use agulha de isca se tiver. Envolva o corrupto com elasticot para resistir ao arremesso sem desmanchar."
     },
@@ -1097,12 +1097,12 @@
     "impactoVento": "Vento leste moderado pode formar valas boas. Vento sul forte e ressaca pesada enterram isca e dificultam leitura.",
     "tamanhoComumRegiao": "Betaras de 20 cm a 35 cm são comuns. Exemplares maiores aparecem em praias bem formadas, especialmente em pescaria noturna.",
     "errosComuns": [
-      "arremessar em cima do banco raso",
-      "não usar elasticot no corrupto",
-      "usar chumbada leve demais",
-      "anzol grande demais",
-      "linha frouxa no espeto",
-      "não observar manchas escuras/valas"
+      "Arremessar em cima do banco raso",
+      "Não usar elasticot no corrupto",
+      "Usar chumbada leve demais",
+      "Anzol grande demais",
+      "Linha frouxa no espeto",
+      "Não observar manchas escuras/valas"
     ],
     "nivelDificuldadeMotivo": "Intermediário. A espécie responde bem, mas depende de leitura de praia e montagem adequada.",
     "cidadesContexto": {
@@ -1169,34 +1169,34 @@
     ],
     "imagem": "/images/especies/linguado.jpg",
     "ondeEncontrar": [
-      "fundo arenoso raso perto de pedras",
-      "bordas de valas e canais",
-      "bocas de barra e foz de rio",
-      "remansos atrás de pilares",
-      "areia limpa com pequenos peixes",
-      "zonas de transição entre areia e cascalho"
+      "Fundo arenoso raso perto de pedras",
+      "Bordas de valas e canais",
+      "Bocas de barra e foz de rio",
+      "Remansos atrás de pilares",
+      "Areia limpa com pequenos peixes",
+      "Zonas de transição entre areia e cascalho"
     ],
     "comoPescar": "O linguado caça de emboscada no fundo. Trabalhe a isca muito devagar, quase raspando a areia. Com jig head, use toques curtos e pausas; com filé ou camarão, deixe a isca passar natural no fundo. Ao sentir o toque, espere sentir peso antes de fisgar firme.",
     "dicaMestre": "No linguado, a isca precisa raspar o fundo; se vier alta, ela passa por cima do peixe.",
     "iscasPorSituacao": {
       "aguaLimpa": [
-        "camarão vivo pequeno",
-        "manjuba pequena",
-        "filé fino de parati/carapicu",
-        "shad branco",
-        "camarão artificial natural"
+        "Camarão vivo pequeno",
+        "Manjuba pequena",
+        "Filé fino de parati/carapicu",
+        "Shad branco",
+        "Camarão artificial natural"
       ],
       "aguaTurva": [
-        "filé de sardinha em tira fina",
-        "shad chartreuse",
-        "soft com scent",
-        "camarão com cheiro"
+        "Filé de sardinha em tira fina",
+        "Shad chartreuse",
+        "Soft com scent",
+        "Camarão com cheiro"
       ],
       "pescaDeEspera": [
-        "camarão",
-        "manjuba",
-        "pequeno peixe",
-        "filé de peixe fino"
+        "Camarão",
+        "Manjuba",
+        "Pequeno peixe",
+        "Filé de peixe fino"
       ],
       "apresentacao": "Corte o filé em tira fina e comprida, prendendo só a ponta grossa para nadar rente à areia. No jig, alinhe o soft para não girar."
     },
@@ -1222,12 +1222,12 @@
     "impactoVento": "Vento norte/nordeste e água mais limpa ajudam, porque o linguado é visual. Água muito suja, com alga e onda forte, derruba a produtividade.",
     "tamanhoComumRegiao": "Linguados de 400 g a 1,5 kg são uma expectativa realista; exemplares grandes existem, mas são menos frequentes.",
     "errosComuns": [
-      "trabalhar a isca alta demais",
-      "recolher rápido",
-      "fisgar no primeiro toque",
-      "usar leader fino demais",
-      "ignorar bordas de vala",
-      "erguer o peixe sem passaguá quando é maior"
+      "Trabalhar a isca alta demais",
+      "Recolher rápido",
+      "Fisgar no primeiro toque",
+      "Usar leader fino demais",
+      "Ignorar bordas de vala",
+      "Erguer o peixe sem passaguá quando é maior"
     ],
     "nivelDificuldadeMotivo": "Alto/intermediário. Exige leitura de fundo, paciência e tempo certo de fisgada.",
     "cidadesContexto": {

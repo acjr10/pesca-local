@@ -5,6 +5,16 @@ import parceirosData from '@/data/parceiros.json'
 import pesqueirosData from '@/data/pesqueiros.json'
 import ConditionsWidget from '../../components/ConditionsWidget'
 
+function formatPhone(raw: string): string {
+  const digits = raw.replace(/\D/g, '')
+  const local = digits.startsWith('55') ? digits.slice(2) : digits
+  const ddd = local.slice(0, 2)
+  const num = local.slice(2)
+  if (num.length === 9) return `(${ddd}) ${num.slice(0, 5)}-${num.slice(5)}`
+  if (num.length === 8) return `(${ddd}) ${num.slice(0, 4)}-${num.slice(4)}`
+  return local
+}
+
 const CITY_COORDS: Record<string, { lat: number; lon: number }> = {
   'praia-grande': { lat: -24.0057, lon: -46.4022 },
   'sao-vicente':  { lat: -23.9608, lon: -46.3922 },
@@ -287,7 +297,12 @@ export default async function CidadePage({ params }: { params: Promise<{ slug: s
                   <p style={{ fontSize: 13, color: '#334155', margin: '0 0 12px', lineHeight: 1.5 }}>
                     {p.descricao}
                   </p>
-                  {p.whatsapp && (
+                  {p.plano !== 'destaque' && p.whatsapp && (
+                    <p style={{ fontSize: 13, color: '#334155', margin: '0 0 8px' }}>
+                      Telefone: {formatPhone(p.whatsapp)}
+                    </p>
+                  )}
+                  {p.plano === 'destaque' && p.whatsapp && (
                     <a
                       href={`https://wa.me/${p.whatsapp}?text=${encodeURIComponent(`Olá ${p.nome}! Vi seu negócio no Pesca Local na página de ${cidade.nome} e tenho interesse. Pode me ajudar?`)}`}
                       target="_blank"
@@ -320,7 +335,7 @@ export default async function CidadePage({ params }: { params: Promise<{ slug: s
                   <div className="pond-amenities">
                     {(p.estrutura as string[])?.map((e: string) => <span key={e}>{e}</span>)}
                   </div>
-                  {p.whatsapp && (
+                  {p.plano === 'destaque' && p.whatsapp && (
                     <a
                       href={`https://wa.me/${p.whatsapp}?text=${encodeURIComponent(`Olá ${p.nome}! Vi seu pesqueiro no Pesca Local na página de ${cidade.nome} e tenho interesse. Pode me ajudar?`)}`}
                       target="_blank"

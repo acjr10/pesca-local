@@ -31,11 +31,20 @@ function isPesqueiroDestaque(pesqueiro: any) {
 }
 
 function difClass(dif: string): string {
-  if (dif === 'iniciante') return 'badge-verde'
-  if (dif === 'iniciante a intermediário') return 'badge-laranja'
-  if (dif === 'intermediário') return 'badge-amarelo'
-  if (dif === 'intermediário a avançado') return 'badge-laranja'
-  return 'badge-vermelho'
+  const n = dif.toLowerCase()
+  if (n.includes('avançado')) return 'badge-dif-avancado'
+  if (n.includes('intermediário')) return 'badge-dif-intermediario'
+  return 'badge-dif-iniciante'
+}
+
+function formatPhone(raw: string): string {
+  const digits = raw.replace(/\D/g, '')
+  const local = digits.startsWith('55') ? digits.slice(2) : digits
+  const ddd = local.slice(0, 2)
+  const num = local.slice(2)
+  if (num.length === 9) return `(${ddd}) ${num.slice(0, 5)}-${num.slice(5)}`
+  if (num.length === 8) return `(${ddd}) ${num.slice(0, 4)}-${num.slice(4)}`
+  return local
 }
 
 export default async function PesqueiroPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -201,7 +210,7 @@ export default async function PesqueiroPage({ params }: { params: Promise<{ slug
                       <a href={`/pesqueiros/peixes/${peixe.id}`} className="peixe-dica-nome">{peixe.nome}</a>
                       <div className="peixe-pp-meta">
                         <span className="badge-porte">{peixe.porte}</span>
-                        <span className={`badge-dif ${difClass(peixe.dificuldade)}`}>{peixe.dificuldade}</span>
+                        <span className={difClass(peixe.dificuldade)}>{peixe.dificuldade}</span>
                       </div>
                     </div>
                     <div className="peixe-dica-iscas">
@@ -302,6 +311,11 @@ export default async function PesqueiroPage({ params }: { params: Promise<{ slug
                       {parDestaque && <span className="pond-badge-destaque">Destaque</span>}
                     </div>
                     <p className="pesqueiro-parceiro-desc">{par.descricao}</p>
+                    {!parDestaque && par.whatsapp && (
+                      <p style={{ fontSize: 13, color: '#334155', margin: '0 0 8px' }}>
+                        Telefone: {formatPhone(par.whatsapp)}
+                      </p>
+                    )}
                     <div className="pesqueiro-parceiro-actions">
                       {parDestaque && par.whatsapp && (
                         <a

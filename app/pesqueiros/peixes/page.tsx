@@ -1,11 +1,10 @@
 import peixesData from '@/data/peixes-pesqueiro.json'
 
 function difClass(dif: string): string {
-  if (dif === 'iniciante') return 'badge-verde'
-  if (dif === 'iniciante a intermediário') return 'badge-laranja'
-  if (dif === 'intermediário') return 'badge-amarelo'
-  if (dif === 'intermediário a avançado') return 'badge-laranja'
-  return 'badge-vermelho'
+  const n = dif.toLowerCase()
+  if (n.includes('avançado')) return 'badge-dif-avancado'
+  if (n.includes('intermediário')) return 'badge-dif-intermediario'
+  return 'badge-dif-iniciante'
 }
 
 export default function PeixesPesqueiroPage() {
@@ -34,7 +33,7 @@ export default function PeixesPesqueiroPage() {
               <div className="pond-card-top">
                 <div className="peixe-pp-header-row">
                   <div className="peixe-pp-nome">{peixe.nome}</div>
-                  <span className={`badge-dif ${difClass(peixe.dificuldade)}`}>{peixe.dificuldade}</span>
+                  <span className={difClass(peixe.dificuldade)}>{peixe.dificuldade}</span>
                 </div>
                 <div className="peixe-pp-porte-row">
                   <span className="badge-porte">{peixe.porte}</span>

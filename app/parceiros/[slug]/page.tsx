@@ -1,6 +1,16 @@
 import parceirosData from '@/data/parceiros.json'
 import cidadesData from '@/data/cidades.json'
 
+function formatPhone(raw: string): string {
+  const digits = raw.replace(/\D/g, '')
+  const local = digits.startsWith('55') ? digits.slice(2) : digits
+  const ddd = local.slice(0, 2)
+  const num = local.slice(2)
+  if (num.length === 9) return `(${ddd}) ${num.slice(0, 5)}-${num.slice(5)}`
+  if (num.length === 8) return `(${ddd}) ${num.slice(0, 4)}-${num.slice(4)}`
+  return local
+}
+
 const CATEGORIA_EMOJI: Record<string, string> = {
   'Loja de pesca': '🎣',
   'Guia de pesca': '⛵',
@@ -16,7 +26,6 @@ export default async function ParceiroPage({ params }: { params: Promise<{ slug:
   const cidade = (cidadesData as any[]).find(c => c.id === p.cidade)
   const isDestaque = p.plano === 'destaque'
   const emoji = CATEGORIA_EMOJI[p.categoria] ?? '🎣'
-  const temContato = p.whatsapp || p.instagram || p.site
 
   return (
     <>
@@ -88,47 +97,63 @@ export default async function ParceiroPage({ params }: { params: Promise<{ slug:
         )}
 
         {/* CONTATO */}
-        {temContato && (
-          <div className="cidade-section">
-            <h2 className="section-title">📲 Entre em contato</h2>
-            <div className="pontos-grid">
-              <div className="ponto-card">
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                  {p.whatsapp && (
-                    <a
-                      href={`https://wa.me/${p.whatsapp}?text=${encodeURIComponent(`Olá ${p.nome}! Vi seu negócio no Pesca Local (pescalocal.com.br) e tenho interesse. Pode me ajudar?`)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="whatsapp-btn"
-                      style={{ display: 'block', textAlign: 'center' }}
-                    >
-                      Falar no WhatsApp
-                    </a>
-                  )}
-                  {p.instagram && (
-                    <a
-                      href={p.instagram}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="small-btn"
-                      style={{ display: 'block', textAlign: 'center' }}
-                    >
-                      📸 Ver no Instagram
-                    </a>
-                  )}
-                  {p.site && (
-                    <a
-                      href={p.site}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="small-btn"
-                      style={{ display: 'block', textAlign: 'center' }}
-                    >
-                      🌐 Acessar site
-                    </a>
-                  )}
-                </div>
+        <div className="cidade-section">
+          <h2 className="section-title">📲 Entre em contato</h2>
+          <div className="pontos-grid">
+            <div className="ponto-card">
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                {isDestaque ? (
+                  <>
+                    {p.whatsapp && (
+                      <a
+                        href={`https://wa.me/${p.whatsapp}?text=${encodeURIComponent(`Olá ${p.nome}! Vi seu negócio no Pesca Local (pescalocal.com.br) e tenho interesse. Pode me ajudar?`)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="whatsapp-btn"
+                        style={{ display: 'block', textAlign: 'center' }}
+                      >
+                        Falar no WhatsApp
+                      </a>
+                    )}
+                    {p.instagram && (
+                      <a
+                        href={p.instagram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="small-btn"
+                        style={{ display: 'block', textAlign: 'center' }}
+                      >
+                        📸 Ver no Instagram
+                      </a>
+                    )}
+                    {p.site && (
+                      <a
+                        href={p.site}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="small-btn"
+                        style={{ display: 'block', textAlign: 'center' }}
+                      >
+                        🌐 Acessar site
+                      </a>
+                    )}
+                    {!p.whatsapp && !p.instagram && !p.site && (
+                      <p style={{ fontSize: 14, color: '#94a3b8', margin: 0, fontStyle: 'italic' }}>
+                        Não há informações de contato disponíveis.
+                      </p>
+                    )}
+                  </>
+                ) : p.whatsapp ? (
+                  <p style={{ fontSize: 14, color: '#334155', margin: 0 }}>
+                    Telefone: {formatPhone(p.whatsapp)}
+                  </p>
+                ) : (
+                  <p style={{ fontSize: 14, color: '#94a3b8', margin: 0, fontStyle: 'italic' }}>
+                    Não há informações de contato disponíveis.
+                  </p>
+                )}
               </div>
+            </div>
 
               <div className="ponto-card">
                 <div className="ponto-header">
@@ -148,7 +173,6 @@ export default async function ParceiroPage({ params }: { params: Promise<{ slug:
               </div>
             </div>
           </div>
-        )}
 
         {/* CTA */}
         <div className="cidade-cta">

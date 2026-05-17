@@ -47,7 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <header className="topbar">
             <a href="/" className="header-brand">
               <Image
-                src="/logo-icon.png"
+                src="/favicon.png"
                 alt="Pesca Local"
                 width={44}
                 height={44}

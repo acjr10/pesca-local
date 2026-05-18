@@ -6,7 +6,9 @@ import Image from 'next/image'
 import pesqueirosData from '@/data/pesqueiros.json'
 import cidadesData from '@/data/cidades.json'
 import parceirosData from '@/data/parceiros.json'
+import canaisData from '@/data/canais-youtube.json'
 import ConditionsWidget from './components/ConditionsWidget'
+import CanalImagem from './components/CanalImagem'
 
 const formatCityName = (slug: string): string =>
   ({'praia-grande':'Praia Grande','sao-vicente':'São Vicente','santos':'Santos','mongagua':'Mongaguá','itanhaem':'Itanhaém','peruibe':'Peruíbe'} as Record<string,string>)[slug] || slug
@@ -48,6 +50,7 @@ function formatPhone(raw: string): string {
 
 export default function Home() {
   const pesqueiros = (pesqueirosData as any[]).slice(0, 3)
+  const canaisAtivos = (canaisData as any[]).filter((c: any) => c.ativo).slice(0, 3)
   const router = useRouter()
 
   const parcAtivos     = (parceirosData as any[]).filter((p: any) => p.ativo)
@@ -268,6 +271,33 @@ export default function Home() {
               <div className="pond-amenities">{(p.estrutura as string[]).slice(0, 3).map((e: string) => <span key={e}>{e}</span>)}</div>
               <a href={`/pesqueiros/${p.id}`} className="small-btn" style={{display:'block',textAlign:'center'}}>Ver pesqueiro</a>
             </article>
+          ))}
+        </div>
+      </section>
+
+      {/* VÍDEOS */}
+      <section className="section">
+        <div className="section-header">
+          <h2 className="section-title">🎬 Vídeos de pesca da região</h2>
+          <a href="/videos" className="section-link">Ver todos →</a>
+        </div>
+        <p style={{ fontSize: 15, color: '#64748b', marginBottom: 24, lineHeight: 1.6 }}>
+          Veja pescarias, dicas e conteúdos de canais parceiros da Baixada Santista e litoral sul de São Paulo.
+        </p>
+        <div className="canais-home-grid">
+          {canaisAtivos.map((canal: any) => (
+            <a key={canal.id} href="/videos" className="canal-home-card">
+              <CanalImagem
+                src={canal.imagem}
+                alt={canal.nome}
+                imgClass="canal-home-img"
+                fallbackClass="canal-home-icon"
+              />
+              <div className="canal-home-info">
+                <div className="canal-home-nome">{canal.nome}</div>
+                <div className="canal-home-desc">{canal.descricao}</div>
+              </div>
+            </a>
           ))}
         </div>
       </section>

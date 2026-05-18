@@ -392,6 +392,17 @@ export default async function EspeciePage({ params }: { params: Promise<{ slug: 
           </div>
         )}
 
+        {/* ── VÍDEOS ────────────────────────────────────────────────── */}
+        <div className="cidade-section">
+          <div className="videos-cta-inline">
+            <div className="videos-cta-inline-text">
+              <h3>Vídeos relacionados</h3>
+              <p>Veja pescarias e dicas em vídeo que podem ajudar nessa modalidade.</p>
+            </div>
+            <a href="/videos" className="banner-btn">Ver vídeos</a>
+          </div>
+        </div>
+
       </div>
     </>
   )

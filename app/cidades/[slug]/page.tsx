@@ -353,6 +353,17 @@ export default async function CidadePage({ params }: { params: Promise<{ slug: s
           </div>
         )}
 
+        {/* ── VÍDEOS ────────────────────────────────────────────────── */}
+        <div className="cidade-section">
+          <div className="videos-cta-inline">
+            <div className="videos-cta-inline-text">
+              <h3>Vídeos de pesca na região</h3>
+              <p>Veja conteúdos de canais parceiros relacionados à pesca na Baixada Santista e litoral sul de São Paulo.</p>
+            </div>
+            <a href="/videos" className="banner-btn">Ver vídeos</a>
+          </div>
+        </div>
+
         {/* ── 9. CTA ────────────────────────────────────────────────── */}
         <div className="cidade-cta">
           <h3>Tem um negócio em {cidade.nome}?</h3>

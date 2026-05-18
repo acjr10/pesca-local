@@ -1,0 +1,32 @@
+[
+  {
+    "id": "pescando-e-cuidando",
+    "nome": "Pescando e Cuidando",
+    "youtubeUrl": "https://www.youtube.com/@pescandoecuidando3130",
+    "imagem": "/images/canais/pescando-e-cuidando.jpg",
+    "descricao": "Canal parceiro com pescarias, dicas e conteúdos relacionados ao universo da pesca.",
+    "regiao": "Baixada Santista e litoral de São Paulo",
+    "ativo": true,
+    "destaque": true
+  },
+  {
+    "id": "danilodogtv-pescarias",
+    "nome": "DaniloDogTv Pescarias",
+    "youtubeUrl": "https://www.youtube.com/@DaniloDogTv",
+    "imagem": "/images/canais/danilodogtv-pescarias.jpg",
+    "descricao": "Canal parceiro com vídeos de pescarias, experiências e dicas práticas para pescadores.",
+    "regiao": "Baixada Santista e litoral de São Paulo",
+    "ativo": true,
+    "destaque": true
+  },
+  {
+    "id": "soares-pescando-no-mar",
+    "nome": "Soares pescando no mar",
+    "youtubeUrl": "https://www.youtube.com/@pescandonomar",
+    "imagem": "/images/canais/soares-pescando-no-mar.jpg",
+    "descricao": "Canal parceiro com foco em pescarias no mar, dicas e experiências de pesca costeira.",
+    "regiao": "Litoral de São Paulo",
+    "ativo": true,
+    "destaque": true
+  }
+]

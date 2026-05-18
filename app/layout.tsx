@@ -85,7 +85,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </div>
               <p>O guia completo da pesca na Baixada Santista e litoral sul de São Paulo.</p>
             </div>
-            <div className="footer-col"><h4>Explorar</h4><ul><li><a href="/cidades">Cidades</a></li><li><a href="/especies">Espécies</a></li><li><a href="/pesqueiros">Pesqueiros</a></li><li><a href="/parceiros">Parceiros</a></li><li><a href="/previsao">Previsão</a></li></ul></div>
+            <div className="footer-col"><h4>Explorar</h4><ul><li><a href="/cidades">Cidades</a></li><li><a href="/especies">Espécies</a></li><li><a href="/pesqueiros">Pesqueiros</a></li><li><a href="/parceiros">Parceiros</a></li><li><a href="/previsao">Previsão</a></li><li><a href="/videos">Vídeos</a></li></ul></div>
             <div className="footer-col"><h4>Parceiros</h4><ul><li><a href="/anuncie">Seja um parceiro</a></li><li><a href="/anuncie">Anuncie aqui</a></li><li><a href="/anuncie#planos">Planos e preços</a></li></ul></div>
             <div className="footer-col"><h4>Contato</h4><ul><li><a href="https://wa.me/5513996243365" target="_blank" rel="noopener noreferrer">Fale pelo WhatsApp</a></li><li>Baixada Santista, SP</li></ul></div>
             <div className="footer-bottom">© 2025 Pesca Local. Todos os direitos reservados.</div>

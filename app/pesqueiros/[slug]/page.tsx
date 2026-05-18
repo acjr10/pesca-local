@@ -337,6 +337,17 @@ export default async function PesqueiroPage({ params }: { params: Promise<{ slug
           </div>
         )}
 
+        {/* ── VÍDEOS ────────────────────────────────────────────────── */}
+        <div className="cidade-section">
+          <div className="videos-cta-inline">
+            <div className="videos-cta-inline-text">
+              <h3>Aprenda com pescarias reais</h3>
+              <p>Veja vídeos de canais parceiros com dicas de iscas, equipamentos e pescarias.</p>
+            </div>
+            <a href="/videos" className="banner-btn">Ver vídeos</a>
+          </div>
+        </div>
+
       </div>
     </>
   )

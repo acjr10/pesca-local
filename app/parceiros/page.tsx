@@ -3,6 +3,8 @@
 import { useState } from 'react'
 import parceirosData from '@/data/parceiros.json'
 import cidadesData from '@/data/cidades.json'
+import canaisData from '@/data/canais-youtube.json'
+import CanalImagem from '../components/CanalImagem'
 
 const CATEGORIA_EMOJI: Record<string, string> = {
   'Loja de pesca': '🎣',
@@ -116,7 +118,8 @@ export default function ParceirosPage() {
   const [cidadeFiltro, setCidadeFiltro]       = useState('')
   const [categoriaFiltro, setCategoriaFiltro] = useState('')
 
-  const ativos = (parceirosData as any[]).filter(p => p.ativo)
+  const ativos      = (parceirosData  as any[]).filter(p => p.ativo)
+  const canaisAtivos = (canaisData as any[]).filter((c: any) => c.ativo)
 
   const filtrados = ativos.filter(p =>
     (!cidadeFiltro    || p.cidade    === cidadeFiltro) &&
@@ -190,6 +193,54 @@ export default function ParceirosPage() {
             </div>
           </div>
         )}
+
+        {/* SEPARADOR CANAIS */}
+        {canaisAtivos.length > 0 && (
+          <div className="canais-parceiros-divider">
+            <span>Canais parceiros</span>
+          </div>
+        )}
+
+        {/* CANAIS PARCEIROS DE PESCA */}
+        {canaisAtivos.length > 0 && (
+          <div className="cidade-section">
+            <div className="section-header" style={{ alignItems: 'flex-start' }}>
+              <div>
+                <h2 className="section-title">🎬 Canais parceiros de pesca</h2>
+                <p className="canais-parceiros-sub">Conteúdos de pescaria, dicas e experiências de canais parceiros da região.</p>
+              </div>
+              <a href="/videos" className="section-link" style={{ whiteSpace: 'nowrap', marginTop: 4 }}>
+                Ver todos os vídeos →
+              </a>
+            </div>
+            <div className="canais-grid">
+              {canaisAtivos.map((canal: any) => (
+                <article key={canal.id} className="canal-card">
+                  <CanalImagem
+                    src={canal.imagem}
+                    alt={canal.nome}
+                    imgClass="canal-card-img"
+                    fallbackClass="canal-card-icon"
+                  />
+                  <div className="canal-card-body">
+                    <h3 className="canal-card-nome">{canal.nome}</h3>
+                    <p className="canal-card-regiao">{canal.regiao}</p>
+                    <p className="canal-card-desc">{canal.descricao}</p>
+                    <a
+                      href={canal.youtubeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="canal-yt-btn"
+                    >
+                      Ver canal no YouTube
+                    </a>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        )}
+
       </div>
     </div>
   )
